@@ -43,6 +43,7 @@ jobs:
           EQEmu Patcher/EQEmu Patcher/bin/Release/eqemupatcher.exe
   patch:
     runs-on: ubuntu-latest
+    needs: build
     steps:
     - name: Build filelist
       run: |
