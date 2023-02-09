@@ -5,8 +5,13 @@ EQEmu File Comparison and Patcher
 ![alt tag](http://i.imgur.com/FSVgkzh.png)
 ---
 
-There are two ways to set up eqemupatcher. The easier is the [quickbuild](#quick-build). The more custom is the [advancedbuild](#advanced-build)
+There are two ways to set up eqemupatcher:
+The easier but limited is the [Quick Build](#quick-build) steps.
+The more custom but advanced is the [Advanced Build](#advanced-build) steps.
+
 # Quick Build
+
+A video will be presented soon with this information!
 
 # Advanced Build
 * eqemupatcher.exe is the client side patcher. Read Client Setup for more information on how to use it.
