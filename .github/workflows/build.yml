@@ -1,4 +1,4 @@
-name: MSBuild
+name: Build and Release
 
 on:
   push:
@@ -32,13 +32,26 @@ jobs:
       # Add additional options to the MSBuild command line here (like platform or verbosity level).
       # See https://docs.microsoft.com/visualstudio/msbuild/msbuild-command-line-reference
       run: cd "EQEmu Patcher" && msbuild /m /p:Configuration=${{env.BUILD_CONFIGURATION}} /p:Version=${{env.VERSION}} /p:FILELIST_URL=${{env.FILELIST_URL}} /p:SERVER_NAME="${{env.SERVER_NAME}}" "EQEmu Patcher.sln"
-
-    - uses: "marvinpinto/action-automatic-releases@latest"
-      name: Release
-      with:
-        repo_token: "${{ secrets.GITHUB_TOKEN }}"
-        automatic_release_tag: "latest"
-        prerelease: false
-        title: "Latest Release"
-        files: |
-          EQEmu Patcher/EQEmu Patcher/bin/Release/eqemupatcher.exe
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build filelist
+        run: |
+          cd rof
+          wget --no-verbose https://github.com/xackery/filelistbuilder/releases/download/latest/filelistbuilder-linux-x64
+          chmod +x filelistbuilder-linux-x64
+          echo -e "client: rof\n" > filelistbuilder.yml
+          echo "download prefix set to $FILELIST_URL"
+          echo "downloadprefix: $FILELIST_URL" >> filelistbuilder.yml
+          ./filelistbuilder-linux-x64
+          
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        name: Release
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: false
+          title: "Latest Release"
+          files: |
+            EQEmu Patcher/EQEmu Patcher/bin/Release/eqemupatcher.exe
+            rof/filelist_rof.yml
