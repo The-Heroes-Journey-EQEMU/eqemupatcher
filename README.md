@@ -4,7 +4,11 @@ EQEmu File Comparison and Patcher
 
 ![alt tag](http://i.imgur.com/FSVgkzh.png)
 ---
-It is REQUIRED as a server administrator to compile eqemupatcher.exe yourself to configure it properly.
+
+There are two ways to set up eqemupatcher. The easier is the [quickbuild](#quick-build). The more custom is the [advancedbuild](#advanced-build)
+# Quick Build
+
+# Advanced Build
 * eqemupatcher.exe is the client side patcher. Read Client Setup for more information on how to use it.
 * filelistbuilder.exe is the server side patch prepper. Read Server Setup for more information on how to use it.
 
