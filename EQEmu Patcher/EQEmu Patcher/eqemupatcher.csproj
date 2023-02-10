@@ -98,6 +98,7 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="PatcherUrl.cs" />
     <Compile Include="PatchVersion.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -170,6 +171,9 @@
       </AssemblyAttributes>
       <AssemblyAttributes Include="EQEmu_Patcher.FileListUrl">
         <_Parameter1>$(FILELIST_URL)</_Parameter1>
+      </AssemblyAttributes>
+      <AssemblyAttributes Include="EQEmu_Patcher.PatcherUrl">
+        <_Parameter1>$(PATCHER_URL)</_Parameter1>
       </AssemblyAttributes>
     </ItemGroup>
     <WriteCodeFragment AssemblyAttributes="@(AssemblyAttributes)" Language="C#" OutputFile="SolutionInfo.cs">

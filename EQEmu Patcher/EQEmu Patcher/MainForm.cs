@@ -1,17 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using YamlDotNet.Serialization;
 using YamlDotNet.Serialization.NamingConventions;
-//using System.Windows.Shell;
 
 namespace EQEmu_Patcher
 {
@@ -19,12 +13,9 @@ namespace EQEmu_Patcher
     public partial class MainForm : Form
     {
 
-        /****
-         *  EDIT THESE VARIABLES FOR EACH SERVER
-         * 
-         ****/
         public static string serverName;
         public static string filelistUrl;
+        public static string patcherUrl;
         public static bool defaultAutoPlay = false; //When a user runs this first time, what should Autoplay be set to?
         public static bool defaultAutoPatch = false; //When a user runs this first time, what should Autopatch be set to?
 
@@ -39,7 +30,6 @@ namespace EQEmu_Patcher
             VersionTypes.Rain_Of_Fear_2 //rof
             //VersionTypes.Broken_Mirror, //bro
         }; 
-        //*** END OF EDIT ***
 
 
         bool isLoading;
@@ -65,8 +55,19 @@ namespace EQEmu_Patcher
             {
                 filelistUrl = "https://patch.clumsysworld.com/";
             }
+            var currentDirectory = new DirectoryInfo(Application.StartupPath);
+            if (currentDirectory.Parent != null)
+            {
+                AutoUpdater.InstallationPath = currentDirectory.Parent.FullName;
+            }
 
-            if (MainForm.defaultAutoPlay || MainForm.defaultAutoPatch)
+            patcherUrl = Assembly.GetExecutingAssembly().GetCustomAttribute<PatcherUrl>().Value;
+            if (patcherUrl != "")
+            {
+            }
+            Console.WriteLine("Start patch");
+            Console.WriteLine("End Patch");
+            if (defaultAutoPlay || defaultAutoPatch)
             {
                 Console.WriteLine("Auto default enabled");
             }
