@@ -14,6 +14,7 @@ The more custom but advanced is the [Advanced Build](#advanced-build) steps.
 A video will be presented soon with this information!
 
 # Advanced Build
+
 * eqemupatcher.exe is the client side patcher. Read Client Setup for more information on how to use it.
 * filelistbuilder.exe is the server side patch prepper. Read Server Setup for more information on how to use it.
 
@@ -27,8 +28,12 @@ After finishing the Server Setup process, simply distribute eqemupatcher.exe to 
 There are two parts to getting eqemupatcher working. First is getting filelistbuilder configured, second is configuring and compiling the eqemupatcher client.
 
 * Fork this repository, so you can modify and version your own changes. If you are unfamiliar with forking, I suggest checking out https://help.github.com/articles/fork-a-repo/ to learn more. When I refer to the EQemu Patcher\ directory, I am referring to your forked copy of the source code here.
+* Enable CICD actions
 
 #### Filelistbuilder setup - Building the patch data.
+
+Theere are two ways to generate the patch data. If you don't have large patches, you can host it on github, by copying the content to the repo's rof/ folder. You can do this on the website if no files exceed 25mb. If they exceed 25mb, I recommend using Github Desktop.
+
 * *Optional:* If you have golang installed, you can compile filelistbuilder.go yourself by going into your EQEmu Patcher\flielistbuilder\ directory and compiling filelistbuilder.go. 
 * Download the filelistbuilder binary version that fits your server operating system here: https://github.com/xackery/filelistbuilder/releases
 * *Note:* It is important that your server generates the filelist.yml file, as an md5 can change when being hosted and cause challenges.
