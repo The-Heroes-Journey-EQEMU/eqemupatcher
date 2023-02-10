@@ -46,24 +46,31 @@ namespace EQEmu_Patcher
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+            Console.WriteLine("Initializing");
             serverName = Assembly.GetExecutingAssembly().GetCustomAttribute<ServerName>().Value;
             if (serverName == "") {
-                serverName = "EQEmu Patcher";
+                MessageBox.Show("This patcher was built incorrectly. Please contact the distributor of this and inform them the server name is not provided or screenshot this message.");
+                this.Close();
+                return;
             }
             filelistUrl = Assembly.GetExecutingAssembly().GetCustomAttribute<FileListUrl>().Value;
-            if (filelistUrl == "")
-            {
-                filelistUrl = "https://patch.clumsysworld.com/";
+            if (filelistUrl == "") {
+                MessageBox.Show("This patcher was built incorrectly. Please contact the distributor of this and inform them the file list url is not provided or screenshot this message.", serverName);
+                this.Close();
+                return;
             }
             var currentDirectory = new DirectoryInfo(Application.StartupPath);
             if (currentDirectory.Parent != null)
             {
-                AutoUpdater.InstallationPath = currentDirectory.Parent.FullName;
+                
             }
 
             patcherUrl = Assembly.GetExecutingAssembly().GetCustomAttribute<PatcherUrl>().Value;
-            if (patcherUrl != "")
+            if (patcherUrl == "")
             {
+                MessageBox.Show("This patcher was built incorrectly. Please contact the distributor of this and inform them the patcher url is not provided or screenshot this message.", serverName);
+                this.Close();
+                return;
             }
             Console.WriteLine("Start patch");
             Console.WriteLine("End Patch");
@@ -274,6 +281,9 @@ namespace EQEmu_Patcher
                         break;
                     case "6BFAE252C1A64FE8A3E176CAEE7AAE60": //This is one of the live EQ binaries.
                     case "AD970AD6DB97E5BB21141C205CAD6E68": //2016/08/27
+                    case "2FD5E6243BCC909D9FD0587A156A1165": //https://github.com/xackery/eqemupatcher/issues/20
+                    case "26DC13388395A20B73E1B5A08415B0F8": //Legacy of Norrath Custom RoF2 Client https://github.com/xackery/eqemupatcher/issues/16
+                    case "3B44C6CD42313CB80C323647BCB296EF": //https://github.com/xackery/eqemupatcher/issues/15
                         currentVersion = VersionTypes.Broken_Mirror;
                         splashLogo.Image = Properties.Resources.brokenmirror;
                         break;
@@ -549,7 +559,12 @@ namespace EQEmu_Patcher
 
             if (filesToDownload.Count == 0)
             {
-                LogEvent("Up to date with patch "+filelist.version+".");
+                string version = filelist.version;
+                if (version.Length >= 8)
+                {
+                    version = version.Substring(0, 8);
+                }
+                LogEvent($"Up to date with patch {version}.");
                 progressBar.Maximum = progressBar.Value = 1;
                 IniLibrary.instance.LastPatchedVersion = filelist.version;
                 IniLibrary.Save();
