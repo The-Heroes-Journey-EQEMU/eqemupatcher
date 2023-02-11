@@ -32,7 +32,11 @@ jobs:
       working-directory: ${{env.GITHUB_WORKSPACE}}
       # Add additional options to the MSBuild command line here (like platform or verbosity level).
       # See https://docs.microsoft.com/visualstudio/msbuild/msbuild-command-line-reference
-      run: cd "EQEmu Patcher" && msbuild /m /p:Configuration=${{env.BUILD_CONFIGURATION}} /p:Version=${{env.VERSION}} /p:FILELIST_URL=${{env.FILELIST_URL}} /p:SERVER_NAME="${{env.SERVER_NAME}}" "EQEmu Patcher.sln"
+      run: |
+        cd "EQEmu Patcher" && msbuild /m /p:Configuration=${{env.BUILD_CONFIGURATION}} /p:Version=${{env.VERSION}} /p:FILELIST_URL=${{env.FILELIST_URL}} /p:SERVER_NAME="${{env.SERVER_NAME}}" "EQEmu Patcher.sln"
+        copy "EQEmu Patcher/EQEmu Patcher/bin/Release/eqemupatcher.exe" eqemupatcher.exe
+    - name: Checksum Binary
+      run: bash -c 'md5=($(md5sum -b eqemupatcher.exe)) && echo "launcheq.exe md5 is set to $md5" && echo $md5 > eqemupatcher-hash.txt'
     - uses: "marvinpinto/action-automatic-releases@latest"
       name: Release
       with:
@@ -41,7 +45,8 @@ jobs:
         prerelease: false
         title: "Latest Release"
         files: |
-          EQEmu Patcher/EQEmu Patcher/bin/Release/eqemupatcher.exe
+          eqemupatcher.exe
+          eqemupatcher-hash.txt
   patch:
     runs-on: ubuntu-latest
     needs: build
@@ -56,7 +61,7 @@ jobs:
         echo -e "client: rof\n" > filelistbuilder.yml
         echo "download prefix set to $FILELIST_URL"
         echo "downloadprefix: $STORAGE_URL" >> filelistbuilder.yml
-        ./filelistbuilder-linux-x64
+        ./filelistbuilder-linux-x64       
     - name: Upload filelist_rof.yml to release
       uses: svenstaro/upload-release-action@v2
       with:
