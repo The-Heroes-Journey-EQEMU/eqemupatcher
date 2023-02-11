@@ -37,7 +37,7 @@ jobs:
       run: bash -c 'cd EQEmu\ Patcher && md5=($(md5sum -b eqemupatcher.exe)) && echo "launcheq.exe md5 is set to $md5" && echo $md5 > eqemupatcher-hash.txt'
     - name: Generate patch
       run: |
-        wget --no-verbose https://github.com/xackery/filelistbuilder/releases/download/latest/filelistbuilder-win-x64.exe
+        C:\msys64\usr\bin\wget.exe --no-verbose https://github.com/xackery/filelistbuilder/releases/download/latest/filelistbuilder-win-x64.exe
         filelistbuilder-win-x64.exe rof $STORAGE_URL "EQEmu Patcher/EQEmu Patcher/bin/Release/eqemupatcher.exe"
     - uses: "marvinpinto/action-automatic-releases@latest"
       name: Release
