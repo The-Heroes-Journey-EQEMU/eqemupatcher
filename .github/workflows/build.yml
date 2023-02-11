@@ -34,7 +34,7 @@ jobs:
       # See https://docs.microsoft.com/visualstudio/msbuild/msbuild-command-line-reference
       run: |
         cd "EQEmu Patcher" && msbuild /m /p:Configuration=${{env.BUILD_CONFIGURATION}} /p:Version=${{env.VERSION}} /p:FILELIST_URL=${{env.FILELIST_URL}} /p:SERVER_NAME="${{env.SERVER_NAME}}" "EQEmu Patcher.sln"
-        copy "EQEmu Patcher/EQEmu Patcher/bin/Release/eqemupatcher.exe" eqemupatcher.exe
+        copy "EQEmu Patcher/EQEmu Patcher/EQEmu Patcher/bin/Release/eqemupatcher.exe" eqemupatcher.exe
     - name: Checksum Binary
       run: bash -c 'md5=($(md5sum -b eqemupatcher.exe)) && echo "launcheq.exe md5 is set to $md5" && echo $md5 > eqemupatcher-hash.txt'
     - uses: "marvinpinto/action-automatic-releases@latest"
