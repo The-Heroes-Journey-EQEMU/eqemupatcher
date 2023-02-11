@@ -35,8 +35,10 @@ jobs:
         copy "EQEmu Patcher/bin/Release/eqemupatcher.exe" eqemupatcher.exe
     - name: Checksum Binary
       run: bash -c 'cd EQEmu\ Patcher && md5=($(md5sum -b eqemupatcher.exe)) && echo "launcheq.exe md5 is set to $md5" && echo $md5 > eqemupatcher-hash.txt'
-    - name: where!
-      run: tree /f
+    - name: Generate patch
+      run: |
+        wget --no-verbose https://github.com/xackery/filelistbuilder/releases/download/latest/filelistbuilder-win-x64.exe
+        filelistbuilder-win-x64.exe rof $STORAGE_URL "EQEmu Patcher/EQEmu Patcher/bin/Release/eqemupatcher.exe"
     - uses: "marvinpinto/action-automatic-releases@latest"
       name: Release
       with:
@@ -45,29 +47,5 @@ jobs:
         prerelease: false
         title: "Latest Release"
         files: |
-          eqemupatcher.exe
-          eqemupatcher-hash.txt
-  patch:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-    - uses: actions/checkout@v3    
-    - name: Build filelist
-      run: |
-        ls -alh
-        cd rof
-        wget --no-verbose https://github.com/xackery/filelistbuilder/releases/download/latest/filelistbuilder-linux-x64
-        chmod +x filelistbuilder-linux-x64
-        echo -e "client: rof\n" > filelistbuilder.yml
-        echo "download prefix set to $FILELIST_URL"
-        echo "downloadprefix: $STORAGE_URL" >> filelistbuilder.yml
-        ./filelistbuilder-linux-x64       
-    - name: Upload filelist_rof.yml to release
-      uses: svenstaro/upload-release-action@v2
-      with:
-        repo_token: ${{ secrets.GITHUB_TOKEN }}
-        file: rof/filelist_rof.yml
-        asset_name: filelist_rof.yml
-        tag: latest
-        overwrite: true
-          
+          EQEmu Patcher/EQEmu Patcher/bin/Release/eqemupatcher.exe
+          filelist_rof.yml
