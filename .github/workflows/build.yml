@@ -37,7 +37,7 @@ jobs:
       run: |
         cd "rof"
         C:\msys64\usr\bin\wget.exe --no-verbose https://github.com/xackery/filelistbuilder/releases/download/latest/filelistbuilder-win-x64.exe
-        .\filelistbuilder-win-x64.exe "rof" "${{env.STORAGE_URL}}" "EQEmu Patcher/EQEmu Patcher/bin/Release/eqemupatcher.exe"
+        .\filelistbuilder-win-x64.exe "rof" "${{env.STORAGE_URL}}" "../EQEmu Patcher/EQEmu Patcher/bin/Release/eqemupatcher.exe"
 
     - uses: "marvinpinto/action-automatic-releases@latest"
       name: Release
@@ -48,4 +48,4 @@ jobs:
         title: "Latest Release"
         files: |
           EQEmu Patcher/EQEmu Patcher/bin/Release/eqemupatcher.exe
-          filelist_rof.yml
+          rof/filelist_rof.yml
