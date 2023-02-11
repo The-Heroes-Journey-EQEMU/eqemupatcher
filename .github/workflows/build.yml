@@ -32,13 +32,12 @@ jobs:
       working-directory: ${{env.GITHUB_WORKSPACE}}
       run: |
         cd "EQEmu Patcher" && msbuild /m /p:Configuration=${{env.BUILD_CONFIGURATION}} /p:Version=${{env.VERSION}} /p:FILELIST_URL=${{env.FILELIST_URL}} /p:SERVER_NAME="${{env.SERVER_NAME}}" "EQEmu Patcher.sln"
-        copy "EQEmu Patcher/bin/Release/eqemupatcher.exe" eqemupatcher.exe
-    - name: Checksum Binary
-      run: bash -c 'cd EQEmu\ Patcher && md5=($(md5sum -b eqemupatcher.exe)) && echo "launcheq.exe md5 is set to $md5" && echo $md5 > eqemupatcher-hash.txt'
+
     - name: Generate patch
       run: |
         C:\msys64\usr\bin\wget.exe --no-verbose https://github.com/xackery/filelistbuilder/releases/download/latest/filelistbuilder-win-x64.exe
-        .\filelistbuilder-win-x64.exe rof $STORAGE_URL "EQEmu Patcher/EQEmu Patcher/bin/Release/eqemupatcher.exe"
+        .\filelistbuilder-win-x64.exe "rof" "$STORAGE_URL" "EQEmu Patcher/EQEmu Patcher/bin/Release/eqemupatcher.exe"
+
     - uses: "marvinpinto/action-automatic-releases@latest"
       name: Release
       with:
