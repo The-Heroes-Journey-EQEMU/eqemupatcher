@@ -9,6 +9,8 @@ using YamlDotNet.Serialization;
 using YamlDotNet.Serialization.NamingConventions;
 using Microsoft.WindowsAPICodePack.Taskbar;
 using System.Diagnostics;
+using System.Threading;
+using System.Runtime.InteropServices.ComTypes;
 
 namespace EQEmu_Patcher
 {
@@ -22,6 +24,8 @@ namespace EQEmu_Patcher
         public static bool defaultAutoPlay = false; //When a user runs this first time, what should Autoplay be set to?
         public static bool defaultAutoPatch = false; //When a user runs this first time, what should Autopatch be set to?
         bool isPatching = false;
+        bool isPatchCancelled = false;
+        CancellationTokenSource cts;
         System.Diagnostics.Process process;
 
         //Note that for supported versions, the 3 letter suffix is needed on the filelist_###.yml file.
@@ -49,10 +53,11 @@ namespace EQEmu_Patcher
             InitializeComponent();
         }
 
-        private void MainForm_Load(object sender, EventArgs e)
+        private async void MainForm_Load(object sender, EventArgs e)
         {
             
             Console.WriteLine("Initializing");
+            cts = new CancellationTokenSource();
 
             serverName = Assembly.GetExecutingAssembly().GetCustomAttribute<ServerName>().Value;
 #if (DEBUG)
@@ -63,7 +68,6 @@ namespace EQEmu_Patcher
                 this.Close();
                 return;
             }
-            if (!serverName.EndsWith("/")) serverName += "/";
             
             filelistUrl = Assembly.GetExecutingAssembly().GetCustomAttribute<FileListUrl>().Value;
 #if (DEBUG)
@@ -146,7 +150,7 @@ namespace EQEmu_Patcher
 
             this.Text = serverName + " (Client: " + currentVersion.ToString().Replace("_", " ") + ")";
             progressBar.Minimum = 0;
-            progressBar.Maximum = 100;
+            progressBar.Maximum = 10000;
             progressBar.Value = 0;
             StatusLibrary.SubscribeProgress(new StatusLibrary.ProgressHandler((int value) => {
                 Invoke((MethodInvoker)delegate {
@@ -155,8 +159,8 @@ namespace EQEmu_Patcher
                         return;
                     }
                     var taskbar = TaskbarManager.Instance;                    
-                    taskbar.SetProgressValue(value, 100);
-                    taskbar.SetProgressState((value == 100) ? TaskbarProgressBarState.NoProgress : TaskbarProgressBarState.Normal);
+                    taskbar.SetProgressValue(value, 10000);
+                    taskbar.SetProgressState((value == 10000) ? TaskbarProgressBarState.NoProgress : TaskbarProgressBarState.Normal);
                 });
             }));
 
@@ -167,7 +171,7 @@ namespace EQEmu_Patcher
                         txtList.Visible = true;
                         splashLogo.Visible = false;
                     }
-                    txtList.Text += message + "\r\n";
+                    txtList.AppendText(message + "\r\n");
                 });
             }));
 
@@ -186,11 +190,12 @@ namespace EQEmu_Patcher
             }));
 
             string webUrl = $"{filelistUrl}{suffix}/filelist_{suffix}.yml";
-            string response = DownloadFile(webUrl, "filelist.yml");
+            
+            string response = await DownloadFile(cts, webUrl, "filelist.yml");
             if (response != "")
             {
                 webUrl = $"{filelistUrl}/filelist_{ suffix}.yml";
-                response = DownloadFile(webUrl, "filelist.yml");
+                response = await DownloadFile(cts, webUrl, "filelist.yml");
                 if (response != "")
                 {
                     MessageBox.Show("Failed to fetch filelist from " + webUrl + ": " + response);
@@ -227,6 +232,7 @@ namespace EQEmu_Patcher
             {
                 splashLogo.Load("eqemupatcher.png");
             }
+            cts.Cancel();
         }
 
         private void detectClientVersion()
@@ -314,35 +320,6 @@ namespace EQEmu_Patcher
             clientVersions.Add(VersionTypes.Broken_Mirror, new ClientVersion("Broken Mirror", "brokenmirror"));
         }
 
-        private int getFileCount(System.IO.DirectoryInfo root) {
-            int count = 0;
-
-            FileInfo[] files;
-            try
-            {
-                files = root.GetFiles("*.*");
-            }
-            // This is thrown if even one of the files requires permissions greater
-            // than the application provides.
-            catch (UnauthorizedAccessException e)
-            {
-                StatusLibrary.Log(e.Message);
-                return 0;
-            }
-
-            catch (System.IO.DirectoryNotFoundException e)
-            {
-                StatusLibrary.Log(e.Message);
-                return 0;
-            }
-
-            if (files != null)
-            {
-              return files.Length;
-            }
-            return count;
-        }
-
 
         private void btnStart_Click(object sender, EventArgs e)
         {
@@ -366,19 +343,23 @@ namespace EQEmu_Patcher
 
         private void btnCheck_Click(object sender, EventArgs e)
         {
+            if (isPatching)
+            {
+                isPatchCancelled = true;
+                cts.Cancel();
+            }
             Console.WriteLine("patch button called");
             StartPatch();
-        }        
+        }
 
-        private string DownloadFile(string url, string path)
+        public static async Task<string> DownloadFile(CancellationTokenSource cts, string url, string path)
         {
-
             path = path.Replace("/", "\\");
             if (path.Contains("\\")) { //Make directory if needed.
                 string dir = Application.StartupPath + "\\" + path.Substring(0, path.LastIndexOf("\\"));
                 Directory.CreateDirectory(dir);
             }
-            return UtilityLibrary.DownloadFile(url, path);
+            return await UtilityLibrary.DownloadFile(cts, url, path);
         }
 
         private void StartPatch()
@@ -388,6 +369,8 @@ namespace EQEmu_Patcher
                 Console.WriteLine("premature patch call");
                 return;
             }
+            cts = new CancellationTokenSource();
+            isPatchCancelled = false;
             txtList.Text = "";
             StatusLibrary.SetPatchState(true);
             isPatching = true;
@@ -402,10 +385,12 @@ namespace EQEmu_Patcher
                 }
                 StatusLibrary.SetPatchState(false);
                 isPatching = false;
+                isPatchCancelled = false;
+                cts.Cancel();
             });
         }
 
-        private Task AsyncPatch()
+        private async Task AsyncPatch()
         {
             Stopwatch start = Stopwatch.StartNew();
             StatusLibrary.Log("Patching...");
@@ -421,11 +406,9 @@ namespace EQEmu_Patcher
                 filelist = deserializer.Deserialize<FileList>(input);
             }
 
-            long totalBytes = 0; //total patch size
-            long currentBytes = 1; // current patched size
-            long patchedBytes = 0; // how many files patched size
-
-            List<FileEntry> filesToDownload = new List<FileEntry>();
+            double totalBytes = 0; //total patch size
+            double currentBytes = 1; // current patched size
+            double patchedBytes = 0; // how many files patched size
 
             foreach (var entry in filelist.downloads)
             {
@@ -435,28 +418,20 @@ namespace EQEmu_Patcher
 
             foreach (var entry in filelist.downloads)
             {
-                if (!isPatching)
+                if (isPatchCancelled)
                 {
                     Console.WriteLine("cancelled while downloading");
                     StatusLibrary.Log("Patching cancelled.");
-                    return Task.CompletedTask;
+                    return;
                 }
 
-                StatusLibrary.SetProgress((int)(totalBytes / currentBytes));
+                StatusLibrary.SetProgress((int)(currentBytes / totalBytes * 10000));
 
                 var path = entry.name.Replace("/", "\\");
                 if (!UtilityLibrary.IsPathChild(path))
                 {
                     StatusLibrary.Log("Path " + path + " might be outside of your Everquest directory. Skipping download to this location.");
                     continue;
-                }
-
-                if (!File.Exists(path))
-                {
-                    //Console.WriteLine("Downloading: "+ entry.name);
-                    filesToDownload.Add(entry);
-                    if (entry.size < 1) totalBytes += 1;
-                    else totalBytes += entry.size;
                 }
 
                 // check if file exists and is already patched
@@ -471,16 +446,16 @@ namespace EQEmu_Patcher
 
 
                 string url = filelist.downloadprefix + entry.name.Replace("\\", "/");
-                string resp = DownloadFile(url, entry.name);
+                string resp = await DownloadFile(cts, url, entry.name);
                 if (resp != "")
                 {
                     if (resp == "404")
                     {
-                        StatusLibrary.Log($"Failed to download {url}, 404 error (website may be down?)");
-                        return Task.CompletedTask;
+                        StatusLibrary.Log($"Failed to download {entry.name} ({generateSize(entry.size)}) from {url}, 404 error (website may be down?)");
+                        return;
                     }
-                    StatusLibrary.Log($"Failed to download {url}: {resp}");
-                    return Task.CompletedTask;
+                    StatusLibrary.Log($"Failed to download {entry.name} ({generateSize(entry.size)}) from {url}: {resp}");
+                    return;
                 }
                 StatusLibrary.Log($"{entry.name} ({generateSize(entry.size)})");
 
@@ -492,11 +467,11 @@ namespace EQEmu_Patcher
             {
                 foreach (var entry in filelist.deletes)
                 {
-                    if (!isPatching)
+                    if (isPatchCancelled)
                     {
                         Console.WriteLine("cancellled while deleting");
                         StatusLibrary.Log("Patching cancelled.");
-                        return Task.CompletedTask;
+                        return;
                     }
                     if (!UtilityLibrary.IsPathChild(entry.name))
                     {
@@ -521,14 +496,14 @@ namespace EQEmu_Patcher
                 }
                
                 StatusLibrary.Log($"Up to date with patch {version}.");
-                return Task.CompletedTask;
+                return;
             }
             
             string elapsed = start.Elapsed.ToString("ss\\.ff");
             StatusLibrary.Log($"Complete! Patched {generateSize(patchedBytes)} in {elapsed} seconds. Press Play to begin.");
             IniLibrary.instance.LastPatchedVersion = filelist.version;
             IniLibrary.Save();
-            return Task.CompletedTask;
+            return;
         }
 
         private void chkAutoPlay_CheckedChanged(object sender, EventArgs e)

@@ -88,9 +88,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BetterWebClient.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="ClientVersion.cs" />
     <Compile Include="FileListUrl.cs" />
     <Compile Include="IniLibrary.cs" />

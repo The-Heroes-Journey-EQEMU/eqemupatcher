@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Net;
 using System.Security.Cryptography;
+using System.Net.Http;
+using System.Threading;
+using YamlDotNet.Core.Tokens;
+using System.Runtime.InteropServices.ComTypes;
 
 namespace EQEmu_Patcher
 {
@@ -13,25 +17,26 @@ namespace EQEmu_Patcher
     class UtilityLibrary
     {
         //Download a file to current directory
-        public static string DownloadFile(string url, string outFile)
+        public static async Task<string> DownloadFile(CancellationTokenSource cts, string url, string outFile)
         {
 
             try
             {
-                using (var client = new WebClient())
+                var client = new HttpClient();
+                var response = await client.GetAsync(url, HttpCompletionOption.ResponseHeadersRead, cts.Token);
+                response.EnsureSuccessStatusCode();
+                using (var stream = await response.Content.ReadAsStreamAsync())
                 {
-                    client.Encoding = Encoding.UTF8;
-                    client.DownloadFile(url, outFile);
+                    using (var w = File.Create(outFile)) {
+                        await stream.CopyToAsync(w, 81920, cts.Token);
+                    }
                 }
-            } catch( IOException ie)
+            } catch(ArgumentNullException e)
             {
-                return "IOException: "+ie.Message;
-            } catch (WebException we) {
-                if (we.Message == "The remote server returned an error: (404) Not Found.")
-                {
-                    return "404";
-                }
-                return "WebException: "+we.Message;  
+                return "ArgumentNullExpception: " + e.Message;
+            } catch(HttpRequestException e)
+            {
+                return "HttpRequestException: " + e.Message;
             } catch (Exception e)
             {
                 return "Exception: " + e.Message;
@@ -59,48 +64,11 @@ namespace EQEmu_Patcher
             }
         }
 
-        public static string GetJson(string urlPath)
-        {
-            using (WebClient wc = new WebClient())
-            {
-                return wc.DownloadString(urlPath);
-            }
-        }
-
         public static System.Diagnostics.Process StartEverquest()
         {
             return System.Diagnostics.Process.Start("eqgame.exe", "patchme");
         }
 
-
-        public static string GetSHA1(string filePath)
-        {
-            //SHA1 sha = new SHA1CryptoServiceProvider();            
-            //var stream = File.OpenRead(filePath);
-            //return BitConverter.ToString(sha.ComputeHash(stream)).Replace("-", string.Empty); ;
-            /*Encoding enc = Encoding.UTF8;
-
-            var sha = SHA1.Create();
-            var stream = File.OpenRead(filePath);
-
-            string hash = "commit " + stream.Length + "\0";
-            return enc.GetString(sha.ComputeHash(stream));
-
-            return BitConverter.ToString(sha.ComputeHash(stream));*/
-            Encoding enc = Encoding.UTF8;
-
-            string commitBody = File.OpenText(filePath).ReadToEnd();
-            StringBuilder sb = new StringBuilder();
-            sb.Append("commit " + Encoding.UTF8.GetByteCount(commitBody));
-            sb.Append("\0");
-            sb.Append(commitBody);
-
-            var sss = SHA1.Create();
-            var bytez = Encoding.UTF8.GetBytes(sb.ToString());
-            return BitConverter.ToString(sss.ComputeHash(bytez));
-            //var myssh = enc.GetString(sss.ComputeHash(bytez));
-            //return myssh;
-        }
         //Pass the working directory (or later, you can pass another directory) and it returns a hash if the file is found
         public static string GetEverquestExecutableHash(string path)
         {
