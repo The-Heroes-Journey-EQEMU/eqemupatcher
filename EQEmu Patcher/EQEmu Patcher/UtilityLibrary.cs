@@ -44,6 +44,21 @@ namespace EQEmu_Patcher
             return "";
         }
 
+        public static async Task<byte[]> Download(CancellationTokenSource cts, string url)
+        {
+            var client = new HttpClient();
+            var response = await client.GetAsync(url, HttpCompletionOption.ResponseHeadersRead, cts.Token);
+            response.EnsureSuccessStatusCode();
+            using (var stream = await response.Content.ReadAsStreamAsync())
+            {
+                using (var w = new MemoryStream())
+                {
+                    await stream.CopyToAsync(w, 81920, cts.Token);
+                    return w.ToArray();
+                }
+            }
+        }
+
         public static string GetMD5(string filename)
         {
             using (var md5 = MD5.Create())

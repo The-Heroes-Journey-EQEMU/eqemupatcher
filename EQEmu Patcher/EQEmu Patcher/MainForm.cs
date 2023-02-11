@@ -10,8 +10,6 @@ using YamlDotNet.Serialization.NamingConventions;
 using Microsoft.WindowsAPICodePack.Taskbar;
 using System.Diagnostics;
 using System.Threading;
-using System.Runtime.InteropServices.ComTypes;
-
 namespace EQEmu_Patcher
 {
     
@@ -25,6 +23,10 @@ namespace EQEmu_Patcher
         public static bool defaultAutoPatch = false; //When a user runs this first time, what should Autopatch be set to?
         bool isPatching = false;
         bool isPatchCancelled = false;
+        string myHash; //my MD5 generated hash
+        bool isNeedingSelfUpdate;
+        bool isLoading;
+        bool isNeedingPatch;
         CancellationTokenSource cts;
         System.Diagnostics.Process process;
 
@@ -40,9 +42,6 @@ namespace EQEmu_Patcher
             //VersionTypes.Broken_Mirror, //bro
         }; 
 
-
-        bool isLoading;
-        bool isNeedingPatch;
         private Dictionary<VersionTypes, ClientVersion> clientVersions = new Dictionary<VersionTypes, ClientVersion>();
 
         VersionTypes currentVersion;
@@ -96,8 +95,7 @@ namespace EQEmu_Patcher
                 this.Close();
                 return;
             }
-            Console.WriteLine("Start patch");
-            Console.WriteLine("End Patch");
+
             if (defaultAutoPlay || defaultAutoPatch)
             {
                 Console.WriteLine("Auto default enabled");
@@ -204,6 +202,26 @@ namespace EQEmu_Patcher
                 }
             }
 
+            try
+            {
+                var data = await Download(cts, webUrl);
+                response = data.ToString();
+            } catch (Exception ex)
+            {
+                Console.WriteLine($"Failed to save patch: {ex.Message}");
+            }
+
+            if (response != "")
+            {
+                myHash = UtilityLibrary.GetMD5(Application.ExecutablePath);
+                if (response != myHash)
+                {
+                    isNeedingSelfUpdate = true;
+                    isNeedingPatch = true;
+                    btnCheck.BackColor = Color.Red;
+                }
+            }
+
             txtList.Visible = false;
             splashLogo.Visible = true;
             FileList filelist;
@@ -219,11 +237,11 @@ namespace EQEmu_Patcher
             
             if (filelist.version != IniLibrary.instance.LastPatchedVersion)
             {
-                isNeedingPatch = true;
+               isNeedingPatch = true;
                btnCheck.BackColor = Color.Red;
             } else
-            {                
-                if ( IniLibrary.instance.AutoPlay.ToLower() == "true") PlayGame();
+            {
+                if (IniLibrary.instance.AutoPlay.ToLower() == "true") PlayGame();
             }
             chkAutoPlay.Checked = (IniLibrary.instance.AutoPlay == "true");
             chkAutoPatch.Checked = (IniLibrary.instance.AutoPatch == "true");
@@ -362,6 +380,11 @@ namespace EQEmu_Patcher
             return await UtilityLibrary.DownloadFile(cts, url, path);
         }
 
+        public static async Task<byte[]> Download(CancellationTokenSource cts, string url)
+        {
+            return await UtilityLibrary.Download(cts, url);
+        }
+
         private void StartPatch()
         {
             if (isPatching)
@@ -415,6 +438,29 @@ namespace EQEmu_Patcher
                 totalBytes += entry.size;
             }
             if (totalBytes == 0) totalBytes = 1;
+
+            if (myHash != "" && isNeedingSelfUpdate)
+            {
+                StatusLibrary.Log("Self update needed, starting with self patch...");
+                try
+                {
+                    var data = await Download(cts, patcherUrl);
+                    if (File.Exists(Application.ExecutablePath + ".old")) {
+                        File.Delete(Application.ExecutablePath + ".old");
+                    }
+                    File.Move(Application.ExecutablePath, Application.ExecutablePath + ".old");
+                    using (var w = File.Create(Application.ExecutablePath))
+                    {
+                        await w.WriteAsync(data, 0, data.Length, cts.Token);
+                    }
+                    StatusLibrary.Log($"Self update of {generateSize(data.Length)} will be used next run");
+                    
+                } catch (Exception e)
+                {
+                    StatusLibrary.Log($"Self update failed: {e.Message}");
+                }
+                StatusLibrary.Log("Resuming patching...");
+            }
 
             foreach (var entry in filelist.downloads)
             {
