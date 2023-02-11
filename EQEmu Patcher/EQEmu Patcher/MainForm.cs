@@ -6,7 +6,6 @@ using System.Reflection;
 using System.Windows.Forms;
 using YamlDotNet.Serialization;
 using YamlDotNet.Serialization.NamingConventions;
-
 namespace EQEmu_Patcher
 {
     
@@ -53,12 +52,16 @@ namespace EQEmu_Patcher
                 this.Close();
                 return;
             }
-            filelistUrl = Assembly.GetExecutingAssembly().GetCustomAttribute<FileListUrl>().Value;
+            if (!serverName.EndsWith("/")) serverName += "/";
+            
+            filelistUrl = Assembly.GetExecutingAssembly().GetCustomAttribute<FileListUrl>().Value;            
             if (filelistUrl == "") {
                 MessageBox.Show("This patcher was built incorrectly. Please contact the distributor of this and inform them the file list url is not provided or screenshot this message.", serverName);
                 this.Close();
                 return;
             }
+            if (!filelistUrl.EndsWith("/")) filelistUrl += "/";
+
             var currentDirectory = new DirectoryInfo(Application.StartupPath);
             if (currentDirectory.Parent != null)
             {
@@ -126,11 +129,28 @@ namespace EQEmu_Patcher
 
             this.Text = serverName + " (Client: " + currentVersion.ToString().Replace("_", " ") + ")";
 
-            string webUrl = filelistUrl + suffix + "/filelist_" + suffix + ".yml";
+            StatusLibrary.SubscribeProgress(new StatusLibrary.ProgressHandler((int value) => {
+                Invoke((MethodInvoker)delegate {
+                    progressBar.Value = value;
+                });
+            }));
+
+            StatusLibrary.SubscribeLogAdd(new StatusLibrary.LogAddHandler((string message) => {
+                Invoke((MethodInvoker)delegate {
+                    if (!txtList.Visible)
+                    {
+                        txtList.Visible = true;
+                        splashLogo.Visible = false;
+                    }
+                    txtList.AppendText(message + "\r\n");
+                });
+            }));
+
+            string webUrl = $"{filelistUrl}{suffix}/filelist_{suffix}.yml";
             string response = DownloadFile(webUrl, "filelist.yml");
             if (response != "")
             {
-                webUrl = filelistUrl + "/filelist_" + suffix + ".yml";
+                webUrl = $"{filelistUrl}/filelist_{ suffix}.yml";
                 response = DownloadFile(webUrl, "filelist.yml");
                 if (response != "")
                 {
@@ -177,23 +197,23 @@ namespace EQEmu_Patcher
 
         Dictionary<string, string> WalkDirectoryTree(System.IO.DirectoryInfo root)
         {
-            System.IO.FileInfo[] files = null;
             var fileMap = new Dictionary<string, string>();
+            FileInfo[] files;
             try
             {
-                 files = root.GetFiles("*.*");
+                files = root.GetFiles("*.*");
             }
             // This is thrown if even one of the files requires permissions greater
             // than the application provides.
             catch (UnauthorizedAccessException e)
             {
-                txtList.Text += e.Message +"\n";
+                StatusLibrary.Log(e.Message);
                 return fileMap;
             }
 
             catch (System.IO.DirectoryNotFoundException e)
             {
-                txtList.Text += e.Message + "\r\n";
+                StatusLibrary.Log(e.Message);
                 return fileMap;
             }
 
@@ -218,7 +238,7 @@ namespace EQEmu_Patcher
                     // a try-catch block is required here to handle the case
                     // where the file has been deleted since the call to TraverseTree().
                     var md5 = UtilityLibrary.GetMD5(fi.FullName);
-                    txtList.Text += fi.Name + ": " + md5 + "\r\n";
+                    StatusLibrary.Log($"{fi.Name}: {md5}\r\n");
                     if (progressBar.Maximum > progressBar.Value) {
                         progressBar.Value++;
                     }
@@ -297,16 +317,15 @@ namespace EQEmu_Patcher
                     {
                         System.Diagnostics.Process.Start("https://github.com/Xackery/eqemupatcher/issues/new?title=A+New+EQClient+Found&body=Hi+I+Found+A+New+Client!+Hash:+" + hash);
                     }
-                    txtList.Text = "Unable to recognize the Everquest client in this directory, send to developers: " + hash;
+                    StatusLibrary.Log($"Unable to recognize the Everquest client in this directory, send to developers: {hash}");
                 }
                 else
                 {
-                    //txtList.Text = "You seem to have put me in a " + clientVersions[currentVersion].FullName + " client directory";
+                    //StatusLibrary.Log($"You seem to have put me in a {clientVersions[currentVersion].FullName} client directory");
                 }
                 
                 //MessageBox.Show(""+currentVersion);
-                
-                //txtList.Text += "\r\n\r\nIf you wish to help out, press the scan button on the bottom left and wait for it to complete, then copy paste this data as an Issue on github!";
+                //StatusLibrary.Log($"If you wish to help out, press the scan button on the bottom left and wait for it to complete, then copy paste this data as an Issue on github!");                
             }
             catch (UnauthorizedAccessException err)
             {
@@ -340,13 +359,13 @@ namespace EQEmu_Patcher
             // than the application provides.
             catch (UnauthorizedAccessException e)
             {
-                txtList.Text += e.Message + "\n";
+                StatusLibrary.Log(e.Message);
                 return 0;
             }
 
             catch (System.IO.DirectoryNotFoundException e)
             {
-                txtList.Text += e.Message + "\r\n";
+                StatusLibrary.Log(e.Message);
                 return 0;
             }
 
@@ -359,7 +378,6 @@ namespace EQEmu_Patcher
 
         private void btnScan_Click(object sender, EventArgs e)
         {
-            txtList.Text = "";
             progressBar.Maximum = getFileCount(new System.IO.DirectoryInfo(AppDomain.CurrentDomain.BaseDirectory));
             progressBar.Maximum += getFileCount(new System.IO.DirectoryInfo(AppDomain.CurrentDomain.BaseDirectory + "\\Resources"));
             progressBar.Maximum += getFileCount(new System.IO.DirectoryInfo(AppDomain.CurrentDomain.BaseDirectory + "\\sounds"));
@@ -367,7 +385,7 @@ namespace EQEmu_Patcher
             progressBar.Maximum += getFileCount(new System.IO.DirectoryInfo(AppDomain.CurrentDomain.BaseDirectory + "\\storyline"));
           //  progressBar.Maximum += getFileCount(new System.IO.DirectoryInfo(AppDomain.CurrentDomain.BaseDirectory + "\\uifiles"));
           //  progressBar.Maximum += getFileCount(new System.IO.DirectoryInfo(AppDomain.CurrentDomain.BaseDirectory + "\\atlas"));
-            txtList.Text = "Max:" + progressBar.Maximum;
+          
             PatchVersion pv = new PatchVersion();
             pv.ClientVersion = clientVersions[currentVersion].ShortName;
             //Root
@@ -393,7 +411,7 @@ namespace EQEmu_Patcher
             fileMap = WalkDirectoryTree(new System.IO.DirectoryInfo(AppDomain.CurrentDomain.BaseDirectory + "\\atlas"));
             pv.AtlasFiles = fileMap;
             */
-            //txtList.Text = JsonConvert.SerializeObject(pv);
+            //StatusLibrary.Log(JsonConvert.SerializeObject(pv));
         }
 
         private void updateTaskbarProgress()
@@ -457,25 +475,7 @@ namespace EQEmu_Patcher
                 string dir = Application.StartupPath + "\\" + path.Substring(0, path.LastIndexOf("\\"));
                 Directory.CreateDirectory(dir);
             }
-
-            //Console.WriteLine(Application.StartupPath + "\\" + path);
-            LogEvent(path + "...");
-            string reason = UtilityLibrary.DownloadFile(url, path);
-            if (reason != "")
-            {
-                if (reason == "404")
-                {
-                    LogEvent("Failed to download " + url + ", 404 error (website may be down?)");
-                    //MessageBox.Show("Patch server could not be found. (404)");
-                }
-                else
-                {
-                    LogEvent("Failed to download " + url + " for untracked reason: " + reason);
-                    //MessageBox.Show("Patch server failed: (" + reason + ")");
-                }
-                return reason;
-            }
-            return "";
+            return UtilityLibrary.DownloadFile(url, path);
         }
 
         private void StartPatch()
@@ -484,7 +484,7 @@ namespace EQEmu_Patcher
             isPatching = true;
             btnCheck.Text = "Cancel";
 
-            txtList.Text = "Patching...";
+            StatusLibrary.Log("Patching...");
             FileList filelist;
 
             using (var input = File.OpenText("filelist.yml"))
@@ -503,7 +503,7 @@ namespace EQEmu_Patcher
                 var path = entry.name.Replace("/", "\\");
                 if (!UtilityLibrary.IsPathChild(path))
                 {
-                    LogEvent("Path " + path + " might be outside of your Everquest directory. Skipping download to this location.");
+                    StatusLibrary.Log("Path " + path + " might be outside of your Everquest directory. Skipping download to this location.");
                     continue;
                 }
                 //See if file exists.
@@ -528,7 +528,7 @@ namespace EQEmu_Patcher
                 }
                 Application.DoEvents();
                 if (!isPatching) { 
-                    LogEvent("Patching cancelled.");
+                    StatusLibrary.Log("Patching cancelled.");
                     return;
                 }
 
@@ -540,18 +540,18 @@ namespace EQEmu_Patcher
                 {
                     if (!UtilityLibrary.IsPathChild(entry.name))
                     {
-                        LogEvent("Path " + entry.name + " might be outside your Everquest directory. Skipping deletion of this file.");
+                        StatusLibrary.Log("Path " + entry.name + " might be outside your Everquest directory. Skipping deletion of this file.");
                         continue;
                     }
                     if (File.Exists(entry.name))
                     {
-                        LogEvent("Deleting " + entry.name + "...");
+                        StatusLibrary.Log("Deleting " + entry.name + "...");
                         File.Delete(entry.name);
                     }
                     Application.DoEvents();
                     if (!isPatching)
                     {
-                        LogEvent("Patching cancelled.");
+                        StatusLibrary.Log("Patching cancelled.");
                         return;
                     }
                 }
@@ -564,7 +564,7 @@ namespace EQEmu_Patcher
                 {
                     version = version.Substring(0, 8);
                 }
-                LogEvent($"Up to date with patch {version}.");
+                StatusLibrary.Log($"Up to date with patch {version}.");
                 progressBar.Maximum = progressBar.Value = 1;
                 IniLibrary.instance.LastPatchedVersion = filelist.version;
                 IniLibrary.Save();
@@ -573,7 +573,7 @@ namespace EQEmu_Patcher
                 return;
             }
 
-            LogEvent("Downloading " + totalBytes + " bytes for " + filesToDownload.Count + " files...");
+            StatusLibrary.Log("Downloading " + totalBytes + " bytes for " + filesToDownload.Count + " files...");
             int curBytes = 0;
             progressBar.Maximum = totalBytes;
             progressBar.Value = 0;
@@ -581,39 +581,39 @@ namespace EQEmu_Patcher
             {
                 progressBar.Value = (curBytes > totalBytes) ? totalBytes : curBytes;
                 string url = filelist.downloadprefix + entry.name.Replace("\\", "/");
-                DownloadFile(url, entry.name);
+                string resp = DownloadFile(url, entry.name);
+                if (resp != "")
+                {
+                    if (resp == "404")
+                    {
+                        StatusLibrary.Log($"Failed to download {url}, 404 error (website may be down?)");
+                        return;
+                    }
+                    StatusLibrary.Log($"Failed to download {url}: {resp}");
+                    return;
+                }
                 curBytes += entry.size;
                 Application.DoEvents();
                 if (!isPatching)
                 {
-                    LogEvent("Patching cancelled.");
+                    StatusLibrary.Log("Patching cancelled.");
                     return;
                 }
             }
             progressBar.Value = progressBar.Maximum;
-            LogEvent("Complete! Press Play to begin.");
+            StatusLibrary.Log("Complete! Press Play to begin.");
             IniLibrary.instance.LastPatchedVersion = filelist.version;
             IniLibrary.Save();
             btnCheck.BackColor = SystemColors.Control;
             btnCheck.Text = "Patch";
         }
 
-        private void LogEvent(string text)
-        {
-            if (!txtList.Visible)
-            {
-                txtList.Visible = true;
-                splashLogo.Visible = false;
-            }
-            Console.WriteLine(text);
-            txtList.AppendText(text + "\r\n");
-        }
 
         private void chkAutoPlay_CheckedChanged(object sender, EventArgs e)
         {
             if (isLoading) return;
             IniLibrary.instance.AutoPlay = (chkAutoPlay.Checked) ? "true" : "false";
-            if (chkAutoPlay.Checked) LogEvent("To disable autoplay: edit eqemupatcher.yml or wait until next patch.");
+            if (chkAutoPlay.Checked) StatusLibrary.Log("To disable autoplay: edit eqemupatcher.yml or wait until next patch.");
             IniLibrary.Save();
         }
 
