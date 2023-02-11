@@ -3,9 +3,13 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Reflection;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 using YamlDotNet.Serialization;
 using YamlDotNet.Serialization.NamingConventions;
+using Microsoft.WindowsAPICodePack.Taskbar;
+using System.Diagnostics;
+
 namespace EQEmu_Patcher
 {
     
@@ -17,6 +21,8 @@ namespace EQEmu_Patcher
         public static string patcherUrl;
         public static bool defaultAutoPlay = false; //When a user runs this first time, what should Autoplay be set to?
         public static bool defaultAutoPatch = false; //When a user runs this first time, what should Autopatch be set to?
+        bool isPatching = false;
+        System.Diagnostics.Process process;
 
         //Note that for supported versions, the 3 letter suffix is needed on the filelist_###.yml file.
         public static List<VersionTypes> supportedClients = new List<VersionTypes> { //Supported clients for patcher
@@ -45,8 +51,13 @@ namespace EQEmu_Patcher
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+            
             Console.WriteLine("Initializing");
+
             serverName = Assembly.GetExecutingAssembly().GetCustomAttribute<ServerName>().Value;
+#if (DEBUG)
+            serverName = "EQEMU Patcher";
+#endif
             if (serverName == "") {
                 MessageBox.Show("This patcher was built incorrectly. Please contact the distributor of this and inform them the server name is not provided or screenshot this message.");
                 this.Close();
@@ -54,7 +65,10 @@ namespace EQEmu_Patcher
             }
             if (!serverName.EndsWith("/")) serverName += "/";
             
-            filelistUrl = Assembly.GetExecutingAssembly().GetCustomAttribute<FileListUrl>().Value;            
+            filelistUrl = Assembly.GetExecutingAssembly().GetCustomAttribute<FileListUrl>().Value;
+#if (DEBUG)
+            filelistUrl = "https://github.com/xackery/eqemupatcher/releases/download/latest";
+#endif
             if (filelistUrl == "") {
                 MessageBox.Show("This patcher was built incorrectly. Please contact the distributor of this and inform them the file list url is not provided or screenshot this message.", serverName);
                 this.Close();
@@ -69,6 +83,9 @@ namespace EQEmu_Patcher
             }
 
             patcherUrl = Assembly.GetExecutingAssembly().GetCustomAttribute<PatcherUrl>().Value;
+#if (DEBUG)
+            patcherUrl = "https://github.com/xackery/eqemupatcher/releases/download/latest";
+#endif
             if (patcherUrl == "")
             {
                 MessageBox.Show("This patcher was built incorrectly. Please contact the distributor of this and inform them the patcher url is not provided or screenshot this message.", serverName);
@@ -128,10 +145,18 @@ namespace EQEmu_Patcher
             }
 
             this.Text = serverName + " (Client: " + currentVersion.ToString().Replace("_", " ") + ")";
-
+            progressBar.Minimum = 0;
+            progressBar.Maximum = 100;
+            progressBar.Value = 0;
             StatusLibrary.SubscribeProgress(new StatusLibrary.ProgressHandler((int value) => {
                 Invoke((MethodInvoker)delegate {
                     progressBar.Value = value;
+                    if (Environment.OSVersion.Version.Major < 6) {
+                        return;
+                    }
+                    var taskbar = TaskbarManager.Instance;                    
+                    taskbar.SetProgressValue(value, 100);
+                    taskbar.SetProgressState((value == 100) ? TaskbarProgressBarState.NoProgress : TaskbarProgressBarState.Normal);
                 });
             }));
 
@@ -142,7 +167,21 @@ namespace EQEmu_Patcher
                         txtList.Visible = true;
                         splashLogo.Visible = false;
                     }
-                    txtList.AppendText(message + "\r\n");
+                    txtList.Text += message + "\r\n";
+                });
+            }));
+
+            StatusLibrary.SubscribePatchState(new StatusLibrary.PatchStateHandler((bool isPatchGoing) => {
+                Invoke((MethodInvoker)delegate {
+
+                    btnCheck.BackColor = SystemColors.Control;
+                    if (isPatchGoing)
+                    {
+                        btnCheck.Text = "Cancel";
+                        return;
+                    }
+
+                    btnCheck.Text = "Patch";
                 });
             }));
 
@@ -162,7 +201,7 @@ namespace EQEmu_Patcher
 
             txtList.Visible = false;
             splashLogo.Visible = true;
-            FileList filelist;            
+            FileList filelist;
 
             using (var input = File.OpenText("filelist.yml"))
             {
@@ -190,80 +229,8 @@ namespace EQEmu_Patcher
             }
         }
 
-        System.Diagnostics.Process process;
-      
-
-        System.Collections.Specialized.StringCollection log = new System.Collections.Specialized.StringCollection();
-
-        Dictionary<string, string> WalkDirectoryTree(System.IO.DirectoryInfo root)
-        {
-            var fileMap = new Dictionary<string, string>();
-            FileInfo[] files;
-            try
-            {
-                files = root.GetFiles("*.*");
-            }
-            // This is thrown if even one of the files requires permissions greater
-            // than the application provides.
-            catch (UnauthorizedAccessException e)
-            {
-                StatusLibrary.Log(e.Message);
-                return fileMap;
-            }
-
-            catch (System.IO.DirectoryNotFoundException e)
-            {
-                StatusLibrary.Log(e.Message);
-                return fileMap;
-            }
-
-            if (files != null)
-            {
-                
-                foreach (System.IO.FileInfo fi in files)
-                {
-                    if (fi.Name.Contains(".ini"))
-                    { //Skip INI files
-                        progressBar.Value++;
-                        continue;
-                    }
-                    if (fi.Name == System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName)
-                    { //Skip self EXE
-                        progressBar.Value++;
-                        continue;
-                    }
-
-                    // In this example, we only access the existing FileInfo object. If we
-                    // want to open, delete or modify the file, then
-                    // a try-catch block is required here to handle the case
-                    // where the file has been deleted since the call to TraverseTree().
-                    var md5 = UtilityLibrary.GetMD5(fi.FullName);
-                    StatusLibrary.Log($"{fi.Name}: {md5}\r\n");
-                    if (progressBar.Maximum > progressBar.Value) {
-                        progressBar.Value++;
-                    }
-                    fileMap[fi.Name] = md5;
-                    txtList.Refresh();
-                    updateTaskbarProgress();
-                    Application.DoEvents();
-                    
-                }
-                //One final update of data
-                if (progressBar.Maximum > progressBar.Value)
-                {
-                    progressBar.Value++;
-                }
-                txtList.Refresh();
-                updateTaskbarProgress();
-                Application.DoEvents();
-            }
-            return fileMap;
-        }
-        
-
         private void detectClientVersion()
         {
-
             try
             {
 
@@ -349,8 +316,8 @@ namespace EQEmu_Patcher
 
         private int getFileCount(System.IO.DirectoryInfo root) {
             int count = 0;
-                           
-            System.IO.FileInfo[] files = null;
+
+            FileInfo[] files;
             try
             {
                 files = root.GetFiles("*.*");
@@ -376,60 +343,10 @@ namespace EQEmu_Patcher
             return count;
         }
 
-        private void btnScan_Click(object sender, EventArgs e)
-        {
-            progressBar.Maximum = getFileCount(new System.IO.DirectoryInfo(AppDomain.CurrentDomain.BaseDirectory));
-            progressBar.Maximum += getFileCount(new System.IO.DirectoryInfo(AppDomain.CurrentDomain.BaseDirectory + "\\Resources"));
-            progressBar.Maximum += getFileCount(new System.IO.DirectoryInfo(AppDomain.CurrentDomain.BaseDirectory + "\\sounds"));
-            progressBar.Maximum += getFileCount(new System.IO.DirectoryInfo(AppDomain.CurrentDomain.BaseDirectory + "\\SpellEffects"));
-            progressBar.Maximum += getFileCount(new System.IO.DirectoryInfo(AppDomain.CurrentDomain.BaseDirectory + "\\storyline"));
-          //  progressBar.Maximum += getFileCount(new System.IO.DirectoryInfo(AppDomain.CurrentDomain.BaseDirectory + "\\uifiles"));
-          //  progressBar.Maximum += getFileCount(new System.IO.DirectoryInfo(AppDomain.CurrentDomain.BaseDirectory + "\\atlas"));
-          
-            PatchVersion pv = new PatchVersion();
-            pv.ClientVersion = clientVersions[currentVersion].ShortName;
-            //Root
-            var fileMap = WalkDirectoryTree(new System.IO.DirectoryInfo(AppDomain.CurrentDomain.BaseDirectory));
-            pv.RootFiles = fileMap;
-            //Resources
-            fileMap = WalkDirectoryTree(new System.IO.DirectoryInfo(AppDomain.CurrentDomain.BaseDirectory + "\\Resources"));
-            pv.ResourceFiles = fileMap;
-            //Sounds
-            fileMap = WalkDirectoryTree(new System.IO.DirectoryInfo(AppDomain.CurrentDomain.BaseDirectory + "\\sounds"));
-            pv.SoundFiles = fileMap;
-            //SpellEffects
-            fileMap = WalkDirectoryTree(new System.IO.DirectoryInfo(AppDomain.CurrentDomain.BaseDirectory + "\\SpellEffects"));
-            pv.SpellEffectFiles = fileMap;
-            //Storyline
-            fileMap = WalkDirectoryTree(new System.IO.DirectoryInfo(AppDomain.CurrentDomain.BaseDirectory + "\\storyline"));
-            pv.StorylineFiles = fileMap;
-           /*
-            //UIFiles
-            fileMap = WalkDirectoryTree(new System.IO.DirectoryInfo(AppDomain.CurrentDomain.BaseDirectory + "\\uifiles"));
-            pv.UIFiles = fileMap;
-            //Atlas
-            fileMap = WalkDirectoryTree(new System.IO.DirectoryInfo(AppDomain.CurrentDomain.BaseDirectory + "\\atlas"));
-            pv.AtlasFiles = fileMap;
-            */
-            //StatusLibrary.Log(JsonConvert.SerializeObject(pv));
-        }
-
-        private void updateTaskbarProgress()
-        {
-            
-            if (Environment.OSVersion.Version.Major < 6)
-            { //Only works on 6 or greater
-                return;
-            }
-            
-            
-           // tii.ProgressState = TaskbarItemProgressState.Normal;            
-           // tii.ProgressValue = (double)progressBar.Value / progressBar.Maximum;            
-        }
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            PlayGame();            
+            PlayGame();
         }
 
         private void PlayGame()
@@ -446,24 +363,10 @@ namespace EQEmu_Patcher
             }
         }
 
-        private void btnSettings_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        bool isPatching = false;
-
-        public object Keyboard { get; private set; }
 
         private void btnCheck_Click(object sender, EventArgs e)
         {
-            if (isPatching)
-            {
-                btnCheck.Text = "Patch";
-                isPatching = false;
-                return;
-            }
-
+            Console.WriteLine("patch button called");
             StartPatch();
         }        
 
@@ -480,13 +383,35 @@ namespace EQEmu_Patcher
 
         private void StartPatch()
         {
-            if (isPatching) return;
+            if (isPatching)
+            {
+                Console.WriteLine("premature patch call");
+                return;
+            }
+            txtList.Text = "";
+            StatusLibrary.SetPatchState(true);
             isPatching = true;
-            btnCheck.Text = "Cancel";
+            Task.Run(async () =>
+            {
+                try
+                {
+                    await AsyncPatch();
+                } catch (Exception e)
+                {
+                    StatusLibrary.Log($"Exception during patch: {e.Message}");
+                }
+                StatusLibrary.SetPatchState(false);
+                isPatching = false;
+            });
+        }
 
+        private Task AsyncPatch()
+        {
+            Stopwatch start = Stopwatch.StartNew();
             StatusLibrary.Log("Patching...");
+            StatusLibrary.SetProgress(0);
             FileList filelist;
-
+             
             using (var input = File.OpenText("filelist.yml"))
             {
                 var deserializerBuilder = new DeserializerBuilder().WithNamingConvention(new CamelCaseNamingConvention());
@@ -495,18 +420,37 @@ namespace EQEmu_Patcher
 
                 filelist = deserializer.Deserialize<FileList>(input);
             }
-            int totalBytes = 0;
+
+            long totalBytes = 0; //total patch size
+            long currentBytes = 1; // current patched size
+            long patchedBytes = 0; // how many files patched size
+
             List<FileEntry> filesToDownload = new List<FileEntry>();
+
             foreach (var entry in filelist.downloads)
             {
-                Application.DoEvents();
+                totalBytes += entry.size;
+            }
+            if (totalBytes == 0) totalBytes = 1;
+
+            foreach (var entry in filelist.downloads)
+            {
+                if (!isPatching)
+                {
+                    Console.WriteLine("cancelled while downloading");
+                    StatusLibrary.Log("Patching cancelled.");
+                    return Task.CompletedTask;
+                }
+
+                StatusLibrary.SetProgress((int)(totalBytes / currentBytes));
+
                 var path = entry.name.Replace("/", "\\");
                 if (!UtilityLibrary.IsPathChild(path))
                 {
                     StatusLibrary.Log("Path " + path + " might be outside of your Everquest directory. Skipping download to this location.");
                     continue;
                 }
-                //See if file exists.
+
                 if (!File.Exists(path))
                 {
                     //Console.WriteLine("Downloading: "+ entry.name);
@@ -514,30 +458,46 @@ namespace EQEmu_Patcher
                     if (entry.size < 1) totalBytes += 1;
                     else totalBytes += entry.size;
                 }
-                else
-                {
-                    var md5 = UtilityLibrary.GetMD5(path);
 
-                    if (md5.ToUpper() != entry.md5.ToUpper())
+                // check if file exists and is already patched
+                if (File.Exists(path)) {
+                    var md5 = UtilityLibrary.GetMD5(path);
+                    if (md5.ToUpper() == entry.md5.ToUpper())
                     {
-                        Console.WriteLine(entry.name + ": " + md5 + " vs " + entry.md5);
-                        filesToDownload.Add(entry);
-                        if (entry.size < 1) totalBytes += 1;
-                        else totalBytes += entry.size;
+                        currentBytes += entry.size;
+                        continue;
                     }
                 }
-                Application.DoEvents();
-                if (!isPatching) { 
-                    StatusLibrary.Log("Patching cancelled.");
-                    return;
-                }
 
+
+                string url = filelist.downloadprefix + entry.name.Replace("\\", "/");
+                string resp = DownloadFile(url, entry.name);
+                if (resp != "")
+                {
+                    if (resp == "404")
+                    {
+                        StatusLibrary.Log($"Failed to download {url}, 404 error (website may be down?)");
+                        return Task.CompletedTask;
+                    }
+                    StatusLibrary.Log($"Failed to download {url}: {resp}");
+                    return Task.CompletedTask;
+                }
+                StatusLibrary.Log($"{entry.name} ({generateSize(entry.size)})");
+
+                currentBytes += entry.size;
+                patchedBytes += entry.size;
             }
 
             if (filelist.deletes != null && filelist.deletes.Count > 0)
             {
                 foreach (var entry in filelist.deletes)
                 {
+                    if (!isPatching)
+                    {
+                        Console.WriteLine("cancellled while deleting");
+                        StatusLibrary.Log("Patching cancelled.");
+                        return Task.CompletedTask;
+                    }
                     if (!UtilityLibrary.IsPathChild(entry.name))
                     {
                         StatusLibrary.Log("Path " + entry.name + " might be outside your Everquest directory. Skipping deletion of this file.");
@@ -548,66 +508,28 @@ namespace EQEmu_Patcher
                         StatusLibrary.Log("Deleting " + entry.name + "...");
                         File.Delete(entry.name);
                     }
-                    Application.DoEvents();
-                    if (!isPatching)
-                    {
-                        StatusLibrary.Log("Patching cancelled.");
-                        return;
-                    }
                 }
             }
 
-            if (filesToDownload.Count == 0)
+            StatusLibrary.SetProgress(100);
+            if (patchedBytes == 0)
             {
                 string version = filelist.version;
                 if (version.Length >= 8)
                 {
                     version = version.Substring(0, 8);
                 }
+               
                 StatusLibrary.Log($"Up to date with patch {version}.");
-                progressBar.Maximum = progressBar.Value = 1;
-                IniLibrary.instance.LastPatchedVersion = filelist.version;
-                IniLibrary.Save();
-                btnCheck.BackColor = SystemColors.Control;
-                btnCheck.Text = "Patch";
-                return;
+                return Task.CompletedTask;
             }
-
-            StatusLibrary.Log("Downloading " + totalBytes + " bytes for " + filesToDownload.Count + " files...");
-            int curBytes = 0;
-            progressBar.Maximum = totalBytes;
-            progressBar.Value = 0;
-            foreach (var entry in filesToDownload)
-            {
-                progressBar.Value = (curBytes > totalBytes) ? totalBytes : curBytes;
-                string url = filelist.downloadprefix + entry.name.Replace("\\", "/");
-                string resp = DownloadFile(url, entry.name);
-                if (resp != "")
-                {
-                    if (resp == "404")
-                    {
-                        StatusLibrary.Log($"Failed to download {url}, 404 error (website may be down?)");
-                        return;
-                    }
-                    StatusLibrary.Log($"Failed to download {url}: {resp}");
-                    return;
-                }
-                curBytes += entry.size;
-                Application.DoEvents();
-                if (!isPatching)
-                {
-                    StatusLibrary.Log("Patching cancelled.");
-                    return;
-                }
-            }
-            progressBar.Value = progressBar.Maximum;
-            StatusLibrary.Log("Complete! Press Play to begin.");
+            
+            string elapsed = start.Elapsed.ToString("ss\\.ff");
+            StatusLibrary.Log($"Complete! Patched {generateSize(patchedBytes)} in {elapsed} seconds. Press Play to begin.");
             IniLibrary.instance.LastPatchedVersion = filelist.version;
             IniLibrary.Save();
-            btnCheck.BackColor = SystemColors.Control;
-            btnCheck.Text = "Patch";
+            return Task.CompletedTask;
         }
-
 
         private void chkAutoPlay_CheckedChanged(object sender, EventArgs e)
         {
@@ -632,7 +554,34 @@ namespace EQEmu_Patcher
                 StartPatch();
             }
         }
+
+        private string generateSize(double size) {
+            if (size < 1024) {
+                return $"{Math.Round(size, 2)} bytes";
+            }
+
+            size /= 1024;
+            if (size < 1024)
+            {
+                return $"{Math.Round(size, 2)} KB";
+            }
+
+            size /= 1024;
+            if (size < 1024)
+            {
+                return $"{Math.Round(size, 2)} MB";
+            }
+
+            size /= 1024;
+            if (size < 1024)
+            {
+                return $"{Math.Round(size, 2)} GB";
+            }
+
+            return $"{Math.Round(size, 2)} TB";
+        }
     }
+
     public class FileList
     {
         public string version { get; set; }
@@ -643,6 +592,7 @@ namespace EQEmu_Patcher
         public List<FileEntry> unpacks { get; set; }
 
     }
+
     public class FileEntry
     {
         public string name { get; set;  }
@@ -650,7 +600,7 @@ namespace EQEmu_Patcher
         public string date { get; set; }
         public string zip { get; set; }
         public int size { get; set; }
-    }    
+    }
 }
 
 

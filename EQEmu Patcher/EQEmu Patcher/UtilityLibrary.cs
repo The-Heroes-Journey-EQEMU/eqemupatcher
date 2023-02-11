@@ -24,7 +24,7 @@ namespace EQEmu_Patcher
                     client.DownloadFile(url, outFile);
                 }
             } catch( IOException ie)
-            {                
+            {
                 return "IOException: "+ie.Message;
             } catch (WebException we) {
                 if (we.Message == "The remote server returned an error: (404) Not Found.")

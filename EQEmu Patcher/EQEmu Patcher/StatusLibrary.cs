@@ -18,6 +18,9 @@ namespace EQEmu_Patcher
         public delegate void LogAddHandler(string message);
         static event LogAddHandler logAddChange;
 
+        public delegate void PatchStateHandler(bool isPatching);
+        static event PatchStateHandler patchStateChange;
+
         public static int Progress()
         {
             mux.WaitOne();
@@ -52,6 +55,20 @@ namespace EQEmu_Patcher
         {
             mux.WaitOne();
             logAddChange += f;
+            mux.ReleaseMutex();
+        }
+
+        public static void SetPatchState(bool isPatching)
+        {
+            mux.WaitOne();
+            patchStateChange?.BeginInvoke(isPatching, null, null);
+            mux.ReleaseMutex();
+        }
+
+        public static void SubscribePatchState(PatchStateHandler f)
+        {
+            mux.WaitOne();
+            patchStateChange += f;
             mux.ReleaseMutex();
         }
     }
