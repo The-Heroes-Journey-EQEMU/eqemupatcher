@@ -12,7 +12,7 @@ env:
   BUILD_CONFIGURATION: Release
   FILELIST_URL: ${{vars.FILELIST_URL}}
   SERVER_NAME: ${{vars.SERVER_NAME}}
-  STORAGE_URL: ${{vars.STORAGE_URL}}
+  STORAGE_URL: ${{ vars.STORAGE_URL == '' && 'https://raw.githubusercontent.com/'+github.repository+'/master/rof/' || vars.STORAGE_URL }}
 
 jobs:
   build:
