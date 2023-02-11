@@ -19,7 +19,8 @@ jobs:
     runs-on: windows-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - name: Checkout
+      uses: actions/checkout@v3
 
     - name: Add MSBuild to PATH
       uses: microsoft/setup-msbuild@v1.0.2
@@ -33,14 +34,15 @@ jobs:
       run: |
         cd "EQEmu Patcher" && msbuild /m /p:Configuration=${{env.BUILD_CONFIGURATION}} /p:Version=${{env.VERSION}} /p:FILELIST_URL=${{env.FILELIST_URL}} /p:SERVER_NAME="${{env.SERVER_NAME}}" "EQEmu Patcher.sln"
 
-    - name: Generate patch
+    - name: Generate filelist
       run: |
         cd "rof"
         C:\msys64\usr\bin\wget.exe --no-verbose https://github.com/xackery/filelistbuilder/releases/download/latest/filelistbuilder-win-x64.exe
         .\filelistbuilder-win-x64.exe "rof" "${{env.STORAGE_URL}}" "../EQEmu Patcher/EQEmu Patcher/bin/Release/eqemupatcher.exe"
 
-    - uses: "marvinpinto/action-automatic-releases@latest"
-      name: Release
+    - name: Release
+      uses: "marvinpinto/action-automatic-releases@latest"
+      if: github.ref == 'refs/heads/main'
       with:
         repo_token: "${{ secrets.GITHUB_TOKEN }}"
         automatic_release_tag: "latest"
