@@ -10,6 +10,7 @@ using YamlDotNet.Serialization.NamingConventions;
 using Microsoft.WindowsAPICodePack.Taskbar;
 using System.Diagnostics;
 using System.Threading;
+
 namespace EQEmu_Patcher
 {
     
@@ -75,7 +76,7 @@ namespace EQEmu_Patcher
 
             fileName = Assembly.GetExecutingAssembly().GetCustomAttribute<FileName>().Value;
 #if (DEBUG)
-            fileName = "emupatcher";
+            fileName = "eqemupatcher";
 #endif
             if (fileName == "")
             {
@@ -238,7 +239,7 @@ namespace EQEmu_Patcher
                 if (response != myHash)
                 {
                     isNeedingSelfUpdate = true;
-                    StatusLibrary.Log($"{myHash} vs {response} selfpatch");
+                    //StatusLibrary.Log($"{myHash} vs {response} selfpatch");
                     if (!isPendingPatch)
                     {
                         btnCheck.BackColor = Color.Red;
@@ -494,7 +495,7 @@ namespace EQEmu_Patcher
                 }
                 StatusLibrary.Log("Resuming patching...");
             }
-
+            if (!filelist.downloadprefix.EndsWith("/")) filelist.downloadprefix += "/";
             foreach (var entry in filelist.downloads)
             {
                 if (isPatchCancelled)
@@ -526,6 +527,7 @@ namespace EQEmu_Patcher
 
 
                 string url = filelist.downloadprefix + entry.name.Replace("\\", "/");
+                
                 string resp = await DownloadFile(cts, url, entry.name);
                 if (resp != "")
                 {

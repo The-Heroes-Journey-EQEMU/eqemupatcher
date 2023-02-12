@@ -11,9 +11,9 @@ env:
   BUILD_CONFIGURATION: Release
   SERVER_NAME: ${{ vars.SERVER_NAME == '' && 'EQEmu Patcher' || vars.SERVER_NAME }}
   FILE_NAME: ${{ vars.FILE_NAME == '' && 'eqemupatcher' || vars.FILE_NAME }}
-  FILELIST_URL: ${{ vars.FILELIST_URL == '' && format('https://github.com/{0}/releases/latest/download', github.repository) || vars.FILELIST_URL }}
-  PATCHER_URL: ${{ vars.PATCHER_URL == '' && format('https://github.com/{0}/releases/latest/download', github.repository) || vars.PATCHER }}
-  STORAGE_URL: ${{ vars.STORAGE_URL == '' && format('https://raw.githubusercontent.com/{0}/master/rof', github.repository) || vars.STORAGE_URL }}
+  FILELIST_URL: ${{ vars.FILELIST_URL == '' && format('https://github.com/{0}/releases/latest/download/', github.repository) || vars.FILELIST_URL }}
+  PATCHER_URL: ${{ vars.PATCHER_URL == '' && format('https://github.com/{0}/releases/latest/download/', github.repository) || vars.PATCHER }}
+  STORAGE_URL: ${{ vars.STORAGE_URL == '' && format('https://raw.githubusercontent.com/{0}/master/rof/', github.repository) || vars.STORAGE_URL }}
 
 jobs:
   build:
