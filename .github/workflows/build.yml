@@ -7,7 +7,7 @@ on:
     branches: [ "master" ]
 
 env:
-  VERSION: 1.0.3
+  VERSION: 1.0.4
   BUILD_CONFIGURATION: Release
   FILELIST_URL: ${{ vars.FILELIST_URL == '' && format('https://github.com/{0}/releases/latest/download', github.repository) || vars.FILELIST_URL }}
   PATCHER_URL: ${{ vars.PATCHER_URL == '' && format('https://github.com/{0}/releases/latest/download/eqemupatcher.exe', github.repository) || vars.PATCHER }}
@@ -25,7 +25,7 @@ jobs:
     - name: Add MSBuild to PATH
       uses: microsoft/setup-msbuild@v1.1
       with:
-        vs-version:'[17.3, 17.4)'
+        vs-version: '[17.3, 17.4)'
 
     - name: Restore NuGet packages
       working-directory: ${{env.GITHUB_WORKSPACE}}
