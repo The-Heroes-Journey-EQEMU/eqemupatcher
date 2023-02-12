@@ -19,14 +19,13 @@ namespace EQEmu_Patcher
         public static string serverName;
         public static string filelistUrl;
         public static string patcherUrl;
-        public static bool defaultAutoPlay = false; //When a user runs this first time, what should Autoplay be set to?
-        public static bool defaultAutoPatch = false; //When a user runs this first time, what should Autopatch be set to?
+        public static string version;
         bool isPatching = false;
         bool isPatchCancelled = false;
+        bool isPendingPatch = false; // This is used to indicate that someone pressed "Patch" before we did some background update checks
         string myHash; //my MD5 generated hash
         bool isNeedingSelfUpdate;
         bool isLoading;
-        bool isNeedingPatch;
         CancellationTokenSource cts;
         System.Diagnostics.Process process;
 
@@ -54,8 +53,10 @@ namespace EQEmu_Patcher
 
         private async void MainForm_Load(object sender, EventArgs e)
         {
-            
-            Console.WriteLine("Initializing");
+
+            isLoading = true;
+            version = Assembly.GetEntryAssembly().GetName().Version.ToString();
+            Console.WriteLine($"Initializing {version}");
             cts = new CancellationTokenSource();
 
             serverName = Assembly.GetExecutingAssembly().GetCustomAttribute<ServerName>().Value;
@@ -95,13 +96,7 @@ namespace EQEmu_Patcher
                 this.Close();
                 return;
             }
-
-            if (defaultAutoPlay || defaultAutoPatch)
-            {
-                Console.WriteLine("Auto default enabled");
-            }
-
-            isLoading = true;
+           
             txtList.Visible = false;
             splashLogo.Visible = true;
             if (this.Width < 432) {
@@ -114,7 +109,9 @@ namespace EQEmu_Patcher
             buildClientVersions();
             IniLibrary.Load();
             detectClientVersion();
-            
+            chkAutoPlay.Checked = (IniLibrary.instance.AutoPlay == "true");
+            chkAutoPatch.Checked = (IniLibrary.instance.AutoPatch == "true");
+
             if (IniLibrary.instance.ClientVersion == VersionTypes.Unknown)
             {
                 detectClientVersion();
@@ -217,13 +214,13 @@ namespace EQEmu_Patcher
                 if (response != myHash)
                 {
                     isNeedingSelfUpdate = true;
-                    isNeedingPatch = true;
-                    btnCheck.BackColor = Color.Red;
+                    if (!isPendingPatch)
+                    {
+                        btnCheck.BackColor = Color.Red;
+                    }
                 }
             }
 
-            txtList.Visible = false;
-            splashLogo.Visible = true;
             FileList filelist;
 
             using (var input = File.OpenText("filelist.yml"))
@@ -237,14 +234,14 @@ namespace EQEmu_Patcher
             
             if (filelist.version != IniLibrary.instance.LastPatchedVersion)
             {
-               isNeedingPatch = true;
-               btnCheck.BackColor = Color.Red;
+                if (!isPendingPatch)
+                {
+                    btnCheck.BackColor = Color.Red;
+                }
             } else
             {
                 if (IniLibrary.instance.AutoPlay.ToLower() == "true") PlayGame();
             }
-            chkAutoPlay.Checked = (IniLibrary.instance.AutoPlay == "true");
-            chkAutoPatch.Checked = (IniLibrary.instance.AutoPatch == "true");
             isLoading = false;
             if (File.Exists("eqemupatcher.png"))
             {
@@ -361,6 +358,15 @@ namespace EQEmu_Patcher
 
         private void btnCheck_Click(object sender, EventArgs e)
         {
+            if (isLoading && !isPendingPatch)
+            {
+                isPendingPatch = true;
+                pendingPatchTimer.Enabled = true;
+                StatusLibrary.Log("Checking for updates...");
+                btnCheck.Text = "Cancel";
+                return;
+            }
+
             if (isPatching)
             {
                 isPatchCancelled = true;
@@ -416,7 +422,7 @@ namespace EQEmu_Patcher
         private async Task AsyncPatch()
         {
             Stopwatch start = Stopwatch.StartNew();
-            StatusLibrary.Log("Patching...");
+            StatusLibrary.Log($"Patching with patcher version {version}...");
             StatusLibrary.SetProgress(0);
             FileList filelist;
              
@@ -569,10 +575,17 @@ namespace EQEmu_Patcher
 
         private void MainForm_Shown(object sender, EventArgs e)
         {
-            if (isNeedingPatch && IniLibrary.instance.AutoPatch == "true")
+            if (IniLibrary.instance.AutoPatch == "true")
             {
-                btnCheck.BackColor = SystemColors.Control;
-                StartPatch();
+                if (!isLoading)
+                {
+                    StartPatch();
+                    return;
+                }
+                isPendingPatch = true;
+                pendingPatchTimer.Enabled = true;
+                StatusLibrary.Log("Checking for updates...");
+                btnCheck.Text = "Cancel";
             }
         }
 
@@ -600,6 +613,14 @@ namespace EQEmu_Patcher
             }
 
             return $"{Math.Round(size, 2)} TB";
+        }
+
+        private void pendingPatchTimer_Tick(object sender, EventArgs e)
+        {
+            if (isLoading) return;
+            pendingPatchTimer.Enabled = false;
+            isPendingPatch = false;
+            btnCheck_Click(sender, e);
         }
     }
 

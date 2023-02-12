@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.progressBar = new System.Windows.Forms.ProgressBar();
             this.txtList = new System.Windows.Forms.TextBox();
@@ -36,6 +37,7 @@
             this.btnCheck = new System.Windows.Forms.Button();
             this.chkAutoPlay = new System.Windows.Forms.CheckBox();
             this.chkAutoPatch = new System.Windows.Forms.CheckBox();
+            this.pendingPatchTimer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.splashLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -120,6 +122,10 @@
             this.chkAutoPatch.UseVisualStyleBackColor = true;
             this.chkAutoPatch.CheckedChanged += new System.EventHandler(this.chkAutoPatch_CheckedChanged);
             // 
+            // pendingPatchTimer
+            // 
+            this.pendingPatchTimer.Tick += new System.EventHandler(this.pendingPatchTimer_Tick);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -155,6 +161,7 @@
         private System.Windows.Forms.Button btnCheck;
         private System.Windows.Forms.CheckBox chkAutoPlay;
         private System.Windows.Forms.CheckBox chkAutoPatch;
+        private System.Windows.Forms.Timer pendingPatchTimer;
     }
 }
 

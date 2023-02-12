@@ -100,7 +100,6 @@
     <Compile Include="PatcherUrl.cs" />
     <Compile Include="PatchVersion.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServerName.cs" />
     <Compile Include="StatusLibrary.cs" />
     <Compile Include="UtilityLibrary.cs" />
@@ -174,6 +173,9 @@
       </AssemblyAttributes>
       <AssemblyAttributes Include="EQEmu_Patcher.PatcherUrl">
         <_Parameter1>$(PATCHER_URL)</_Parameter1>
+      </AssemblyAttributes>
+      <AssemblyAttributes Include="AssemblyVersion">
+        <_Parameter1>$(VERSION)</_Parameter1>
       </AssemblyAttributes>
     </ItemGroup>
     <WriteCodeFragment AssemblyAttributes="@(AssemblyAttributes)" Language="C#" OutputFile="SolutionInfo.cs">

@@ -53,8 +53,6 @@ namespace EQEmu_Patcher
         public static void ResetDefaults()
         {
             instance = new IniLibrary();
-            instance.AutoPatch = (MainForm.defaultAutoPatch) ? "true":  "false";
-            instance.AutoPlay = (MainForm.defaultAutoPlay) ? "true" : "false";
         }
     }
 }
