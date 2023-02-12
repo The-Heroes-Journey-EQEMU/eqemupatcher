@@ -227,7 +227,7 @@ namespace EQEmu_Patcher
             try
             {
                 var data = await Download(cts, url);
-                response = System.Text.Encoding.Default.GetString(data);
+                response = System.Text.Encoding.Default.GetString(data).ToUpper();
             } catch (Exception ex)
             {
                 Console.WriteLine($"Failed to fetch patch from {url}: {ex.Message}");
