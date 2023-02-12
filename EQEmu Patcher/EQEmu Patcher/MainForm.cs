@@ -16,16 +16,19 @@ namespace EQEmu_Patcher
     public partial class MainForm : Form
     {
 
-        public static string serverName;
-        public static string filelistUrl;
-        public static string patcherUrl;
-        public static string version;
+        public static string serverName; // server title name
+        public static string filelistUrl; //filelist url
+        public static string patcherUrl; //patcher url e.g. eqemupatcher-hash.txt
+        public static string version; //version of file
+        string fileName; //base name of executable
         bool isPatching = false;
         bool isPatchCancelled = false;
         bool isPendingPatch = false; // This is used to indicate that someone pressed "Patch" before we did some background update checks
         string myHash; //my MD5 generated hash
         bool isNeedingSelfUpdate;
         bool isLoading;
+        bool isAutoPatch = false;
+        bool isAutoPlay = false;
         CancellationTokenSource cts;
         System.Diagnostics.Process process;
 
@@ -69,10 +72,21 @@ namespace EQEmu_Patcher
                 this.Close();
                 return;
             }
-            
+
+            fileName = Assembly.GetExecutingAssembly().GetCustomAttribute<FileName>().Value;
+#if (DEBUG)
+            fileName = "emupatcher";
+#endif
+            if (fileName == "")
+            {
+                MessageBox.Show("This patcher was built incorrectly. Please contact the distributor of this and inform them the file name is not provided or screenshot this message.");
+                this.Close();
+                return;
+            }
+
             filelistUrl = Assembly.GetExecutingAssembly().GetCustomAttribute<FileListUrl>().Value;
 #if (DEBUG)
-            filelistUrl = "https://github.com/xackery/eqemupatcher/releases/download/latest";
+            filelistUrl = "https://github.com/xackery/eqemupatcher/releases/latest/download";
 #endif
             if (filelistUrl == "") {
                 MessageBox.Show("This patcher was built incorrectly. Please contact the distributor of this and inform them the file list url is not provided or screenshot this message.", serverName);
@@ -81,15 +95,9 @@ namespace EQEmu_Patcher
             }
             if (!filelistUrl.EndsWith("/")) filelistUrl += "/";
 
-            var currentDirectory = new DirectoryInfo(Application.StartupPath);
-            if (currentDirectory.Parent != null)
-            {
-                
-            }
-
             patcherUrl = Assembly.GetExecutingAssembly().GetCustomAttribute<PatcherUrl>().Value;
 #if (DEBUG)
-            patcherUrl = "https://github.com/xackery/eqemupatcher/releases/download/latest";
+            patcherUrl = $"https://github.com/xackery/eqemupatcher/releases/latest/download/{fileName}-hash.txt";
 #endif
             if (patcherUrl == "")
             {
@@ -110,8 +118,10 @@ namespace EQEmu_Patcher
             buildClientVersions();
             IniLibrary.Load();
             detectClientVersion();
-            chkAutoPlay.Checked = (IniLibrary.instance.AutoPlay == "true");
-            chkAutoPatch.Checked = (IniLibrary.instance.AutoPatch == "true");
+            isAutoPlay = (IniLibrary.instance.AutoPlay.ToLower() == "true");
+            isAutoPatch = (IniLibrary.instance.AutoPatch.ToLower() == "true");
+            chkAutoPlay.Checked = isAutoPlay;
+            chkAutoPatch.Checked = isAutoPatch;
 
             if (IniLibrary.instance.ClientVersion == VersionTypes.Unknown)
             {
@@ -202,8 +212,8 @@ namespace EQEmu_Patcher
 
             try
             {
-                var data = await Download(cts, webUrl);
-                response = data.ToString();
+                var data = await Download(cts, patcherUrl);
+                response = System.Text.Encoding.Default.GetString(data);
             } catch (Exception ex)
             {
                 Console.WriteLine($"Failed to save patch: {ex.Message}");
@@ -215,6 +225,7 @@ namespace EQEmu_Patcher
                 if (response != myHash)
                 {
                     isNeedingSelfUpdate = true;
+                    StatusLibrary.Log($"{myHash} vs {response} selfpatch");
                     if (!isPendingPatch)
                     {
                         btnCheck.BackColor = Color.Red;
@@ -241,7 +252,7 @@ namespace EQEmu_Patcher
                 }
             } else
             {
-                if (IniLibrary.instance.AutoPlay.ToLower() == "true") PlayGame();
+                if (isAutoPlay) PlayGame();
             }
             isLoading = false;
             if (File.Exists("eqemupatcher.png"))
@@ -562,21 +573,24 @@ namespace EQEmu_Patcher
         private void chkAutoPlay_CheckedChanged(object sender, EventArgs e)
         {
             if (isLoading) return;
-            IniLibrary.instance.AutoPlay = (chkAutoPlay.Checked) ? "true" : "false";
-            if (chkAutoPlay.Checked) StatusLibrary.Log("To disable autoplay: edit eqemupatcher.yml or wait until next patch.");
+            isAutoPlay = chkAutoPlay.Checked;
+            IniLibrary.instance.AutoPlay = (isAutoPlay) ? "true" : "false";
+            if (isAutoPlay) StatusLibrary.Log("To disable autoplay: edit eqemupatcher.yml or wait until next patch.");
+
             IniLibrary.Save();
         }
 
         private void chkAutoPatch_CheckedChanged(object sender, EventArgs e)
         {
             if (isLoading) return;
-            IniLibrary.instance.AutoPatch = (chkAutoPatch.Checked) ? "true" : "false";
+            isAutoPatch = chkAutoPatch.Checked;
+            IniLibrary.instance.AutoPatch = (isAutoPatch) ? "true" : "false";
             IniLibrary.Save();
         }
 
         private void MainForm_Shown(object sender, EventArgs e)
         {
-            if (IniLibrary.instance.AutoPatch == "true")
+            if (isAutoPatch)
             {
                 if (!isLoading)
                 {

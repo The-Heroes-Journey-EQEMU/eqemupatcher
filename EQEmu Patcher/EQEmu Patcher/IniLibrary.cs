@@ -44,15 +44,21 @@ namespace EQEmu_Patcher
                     ResetDefaults();
                     Save();
                 }
-            } catch (System.IO.FileNotFoundException) {                
+            } catch (FileNotFoundException e) {
+                Console.WriteLine($"Failed loading config: {e.Message}");
                 ResetDefaults();
                 Save();
             }
+
+            if (instance.AutoPatch == null) instance.AutoPatch = "false";
+            if (instance.AutoPlay == null) instance.AutoPlay = "false";
         }
 
         public static void ResetDefaults()
         {
             instance = new IniLibrary();
+            instance.AutoPlay = "false";
+            instance.AutoPatch = "false";
         }
     }
 }

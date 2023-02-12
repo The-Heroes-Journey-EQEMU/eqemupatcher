@@ -91,6 +91,7 @@
   <ItemGroup>
     <Compile Include="ClientVersion.cs" />
     <Compile Include="FileListUrl.cs" />
+    <Compile Include="FileName.cs" />
     <Compile Include="IniLibrary.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -174,6 +175,9 @@
       </AssemblyAttributes>
       <AssemblyAttributes Include="EQEmu_Patcher.PatcherUrl">
         <_Parameter1>$(PATCHER_URL)</_Parameter1>
+      </AssemblyAttributes>
+      <AssemblyAttributes Include="EQEmu_Patcher.FileName">
+        <_Parameter1>$(FILE_NAME)</_Parameter1>
       </AssemblyAttributes>
       <AssemblyAttributes Include="AssemblyVersion">
         <_Parameter1>$(VERSION)</_Parameter1>
