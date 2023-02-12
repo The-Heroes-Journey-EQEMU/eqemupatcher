@@ -493,6 +493,8 @@ namespace EQEmu_Patcher
                 {
                     StatusLibrary.Log($"Self update failed {url}: {e.Message}");
                 }
+                isNeedingSelfUpdate = false;
+
                 StatusLibrary.Log("Resuming patching...");
             }
             if (!filelist.downloadprefix.EndsWith("/")) filelist.downloadprefix += "/";
