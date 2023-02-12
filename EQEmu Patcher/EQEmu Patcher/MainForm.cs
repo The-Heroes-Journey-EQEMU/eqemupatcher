@@ -97,7 +97,7 @@ namespace EQEmu_Patcher
 
             patcherUrl = Assembly.GetExecutingAssembly().GetCustomAttribute<PatcherUrl>().Value;
 #if (DEBUG)
-            patcherUrl = $"https://github.com/xackery/eqemupatcher/releases/latest/download/{fileName}-hash.txt";
+            patcherUrl = $"https://github.com/xackery/eqemupatcher/releases/latest/download/";
 #endif
             if (patcherUrl == "")
             {
@@ -105,7 +105,8 @@ namespace EQEmu_Patcher
                 this.Close();
                 return;
             }
-           
+            if (!patcherUrl.EndsWith("/")) patcherUrl += "/";
+
             txtList.Visible = false;
             splashLogo.Visible = true;
             if (this.Width < 432) {
@@ -122,6 +123,17 @@ namespace EQEmu_Patcher
             isAutoPatch = (IniLibrary.instance.AutoPatch.ToLower() == "true");
             chkAutoPlay.Checked = isAutoPlay;
             chkAutoPatch.Checked = isAutoPatch;
+            try
+            {
+                if (File.Exists(Application.ExecutablePath + ".old"))
+                {
+                    File.Delete(Application.ExecutablePath + ".old");
+                }
+
+            } catch (Exception exDelete)
+            {
+                Console.WriteLine($"Failed to delete .old file: {exDelete.Message}");
+            }
 
             if (IniLibrary.instance.ClientVersion == VersionTypes.Unknown)
             {
@@ -210,13 +222,14 @@ namespace EQEmu_Patcher
                 }
             }
 
+            string url = $"{patcherUrl}{fileName}-hash.txt";
             try
             {
-                var data = await Download(cts, patcherUrl);
+                var data = await Download(cts, url);
                 response = System.Text.Encoding.Default.GetString(data);
             } catch (Exception ex)
             {
-                Console.WriteLine($"Failed to save patch: {ex.Message}");
+                Console.WriteLine($"Failed to fetch patch from {url}: {ex.Message}");
             }
 
             if (response != "")
@@ -304,6 +317,7 @@ namespace EQEmu_Patcher
                     case "2FD5E6243BCC909D9FD0587A156A1165": //https://github.com/xackery/eqemupatcher/issues/20
                     case "26DC13388395A20B73E1B5A08415B0F8": //Legacy of Norrath Custom RoF2 Client https://github.com/xackery/eqemupatcher/issues/16
                     case "3B44C6CD42313CB80C323647BCB296EF": //https://github.com/xackery/eqemupatcher/issues/15
+                    case "513FDC2B5CC63898D7962F0985D5C207": //aslr checksum removed
                         currentVersion = VersionTypes.Broken_Mirror;
                         splashLogo.Image = Properties.Resources.brokenmirror;
                         break;
@@ -460,9 +474,10 @@ namespace EQEmu_Patcher
             if (myHash != "" && isNeedingSelfUpdate)
             {
                 StatusLibrary.Log("Self update needed, starting with self patch...");
+                string url = $"{patcherUrl}/{fileName}.exe";
                 try
                 {
-                    var data = await Download(cts, patcherUrl);
+                    var data = await Download(cts, url);
                     if (File.Exists(Application.ExecutablePath + ".old")) {
                         File.Delete(Application.ExecutablePath + ".old");
                     }
@@ -475,7 +490,7 @@ namespace EQEmu_Patcher
                     
                 } catch (Exception e)
                 {
-                    StatusLibrary.Log($"Self update failed {patcherUrl}: {e.Message}");
+                    StatusLibrary.Log($"Self update failed {url}: {e.Message}");
                 }
                 StatusLibrary.Log("Resuming patching...");
             }
@@ -506,6 +521,7 @@ namespace EQEmu_Patcher
                         currentBytes += entry.size;
                         continue;
                     }
+                    Console.WriteLine($"{path} {md5} vs {entry.md5}");
                 }
 
 
@@ -550,7 +566,7 @@ namespace EQEmu_Patcher
                 }
             }
 
-            StatusLibrary.SetProgress(100);
+            StatusLibrary.SetProgress(10000);
             if (patchedBytes == 0)
             {
                 string version = filelist.version;
