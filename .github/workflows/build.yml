@@ -9,8 +9,8 @@ on:
 env:
   VERSION: 1.0.3
   BUILD_CONFIGURATION: Release
-  FILELIST_URL: ${{ vars.FILELIST_URL == '' && format('https://github.com/{0}/releases/download/latest', github.repository) || vars.FILELIST_URL }}
-  PATCHER_URL: ${{ vars.PATCHER_URL == '' && format('https://github.com/{0}/releases/download/latest', github.repository) || vars.PATCHER }}
+  FILELIST_URL: ${{ vars.FILELIST_URL == '' && format('https://github.com/{0}/releases/latest/download', github.repository) || vars.FILELIST_URL }}
+  PATCHER_URL: ${{ vars.PATCHER_URL == '' && format('https://github.com/{0}/releases/latest/download', github.repository) || vars.PATCHER }}
   SERVER_NAME: ${{ vars.SERVER_NAME == '' && 'EQEmu Patcher' || vars.SERVER_NAME }}
   STORAGE_URL: ${{ vars.STORAGE_URL == '' && format('https://raw.githubusercontent.com/{0}/master/rof/', github.repository) || vars.STORAGE_URL }}
 
@@ -37,7 +37,7 @@ jobs:
     - name: Generate filelist
       run: |
         cd "rof"
-        C:\msys64\usr\bin\wget.exe --no-verbose https://github.com/xackery/filelistbuilder/releases/download/latest/filelistbuilder-win-x64.exe
+        C:\msys64\usr\bin\wget.exe --no-verbose https://github.com/xackery/filelistbuilder/releases/latest/download/filelistbuilder-win-x64.exe
         .\filelistbuilder-win-x64.exe "rof" "${{env.STORAGE_URL}}" "../EQEmu Patcher/EQEmu Patcher/bin/Release/eqemupatcher.exe"
 
     - name: Release
