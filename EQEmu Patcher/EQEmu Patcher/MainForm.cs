@@ -57,6 +57,7 @@ namespace EQEmu_Patcher
             isLoading = true;
             version = Assembly.GetEntryAssembly().GetName().Version.ToString();
             Console.WriteLine($"Initializing {version}");
+            Console.WriteLine($"Current Directory: {Directory.GetCurrentDirectory()}");
             cts = new CancellationTokenSource();
 
             serverName = Assembly.GetExecutingAssembly().GetCustomAttribute<ServerName>().Value;
@@ -463,7 +464,7 @@ namespace EQEmu_Patcher
                     
                 } catch (Exception e)
                 {
-                    StatusLibrary.Log($"Self update failed: {e.Message}");
+                    StatusLibrary.Log($"Self update failed {patcherUrl}: {e.Message}");
                 }
                 StatusLibrary.Log("Resuming patching...");
             }

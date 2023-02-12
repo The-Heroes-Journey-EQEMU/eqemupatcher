@@ -195,5 +195,7 @@ FakesAssemblies/
 # Visual Studio 6 workspace options file
 *.opt
 
+eqemupatcher.yml
 eqemupatcher.exe
 SolutionInfo.cs
+lib/
