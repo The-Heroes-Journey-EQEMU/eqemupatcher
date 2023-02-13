@@ -443,6 +443,7 @@ namespace EQEmu_Patcher
                 isPatching = false;
                 isPatchCancelled = false;
                 cts.Cancel();
+                if (isAutoPlay) PlayGame();
             });
         }
 
