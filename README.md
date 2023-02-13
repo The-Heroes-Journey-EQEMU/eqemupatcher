@@ -6,12 +6,14 @@ EQEmu File Comparison and Patcher
 ---
 
 There are two ways to set up eqemupatcher:
-The easier but limited is the [Quick Build](#quick-build) steps.
+The easier but limited is the [Quick Guide](#quick-guide) steps.
 The more custom but advanced is the [Advanced Build](#advanced-build) steps.
 
-# Quick Build
+# Quick Guide
 
-A video will be presented soon with this information!
+[![EQEmu Patcher Video](http://img.youtube.com/vi/oS2V0BABNvk/0.jpg)](http://www.youtube.com/watch?v=oS2V0BABNvk "Want Your Own EQ Patcher? Quick Guide")
+
+click above to watch a step by step video
 
 # Advanced Build
 
