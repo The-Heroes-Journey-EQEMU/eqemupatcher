@@ -14,6 +14,7 @@
 *.tff binary
 *.ttf binary
 *.zon binary
+*.exe binary
 
 ###############################################################################
 # Set default behavior for command prompt diff.
@@ -46,6 +47,7 @@
 *.modelproj merge=binary
 *.sqlproj   merge=binary
 *.wwaproj   merge=binary
+*.exe       marge=binary
 
 ###############################################################################
 # behavior for image files
