@@ -1204,7 +1204,7 @@
 		<TopAnchorOffset>73</TopAnchorOffset>
 		<BottomAnchorOffset>90</BottomAnchorOffset>
 		<LeftAnchorOffset>2</LeftAnchorOffset>
-		<RightAnchorOffset>60</RightAnchorOffset>		
+		<RightAnchorOffset>2</RightAnchorOffset>		
 		<RightAnchorToLeft>false</RightAnchorToLeft>
 	</Gauge>
 	<Label item="GW_Exp_Percent">
@@ -1223,7 +1223,7 @@
 		<AutoStretch>true</AutoStretch>
 		<TopAnchorOffset>73</TopAnchorOffset>
 		<BottomAnchorOffset>90</BottomAnchorOffset>
-		<RightAnchorOffset>71</RightAnchorOffset>
+		<RightAnchorOffset>0</RightAnchorOffset>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
 		<Style_Tooltip>false</Style_Tooltip>
 	</Label>
@@ -1240,7 +1240,7 @@
 		<AutoStretch>true</AutoStretch>
 		<TopAnchorOffset>73</TopAnchorOffset>
 		<BottomAnchorOffset>90</BottomAnchorOffset>
-		<RightAnchorOffset>41</RightAnchorOffset>
+		<RightAnchorOffset>-30</RightAnchorOffset>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
 		<Style_Tooltip>false</Style_Tooltip>
 	</Label>
@@ -1264,7 +1264,7 @@
 		<TopAnchorOffset>94</TopAnchorOffset>
 		<BottomAnchorOffset>111</BottomAnchorOffset>
 		<LeftAnchorOffset>2</LeftAnchorOffset>
-		<RightAnchorOffset>60</RightAnchorOffset>		
+		<RightAnchorOffset>2</RightAnchorOffset>		
 		<RightAnchorToLeft>false</RightAnchorToLeft>
 	</Gauge>
 	<Label item="GW_Alt_Percent">
@@ -1283,7 +1283,7 @@
 		<AutoStretch>true</AutoStretch>
 		<TopAnchorOffset>94</TopAnchorOffset>
 		<BottomAnchorOffset>111</BottomAnchorOffset>
-		<RightAnchorOffset>71</RightAnchorOffset>
+		<RightAnchorOffset>0</RightAnchorOffset>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
 		<Style_Tooltip>false</Style_Tooltip>
 	</Label>
@@ -1300,7 +1300,7 @@
 		<AutoStretch>true</AutoStretch>
 		<TopAnchorOffset>94</TopAnchorOffset>
 		<BottomAnchorOffset>111</BottomAnchorOffset>
-		<RightAnchorOffset>41</RightAnchorOffset>
+		<RightAnchorOffset>-30</RightAnchorOffset>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
 		<Style_Tooltip>false</Style_Tooltip>
 	</Label>
@@ -1324,7 +1324,7 @@
 		<TopAnchorOffset>115</TopAnchorOffset>
 		<BottomAnchorOffset>132</BottomAnchorOffset>
 		<LeftAnchorOffset>2</LeftAnchorOffset>
-		<RightAnchorOffset>60</RightAnchorOffset>		
+		<RightAnchorOffset>2</RightAnchorOffset>		
 		<RightAnchorToLeft>false</RightAnchorToLeft>
 	</Gauge>
 	<Label item="GW_CastName">
@@ -2327,8 +2327,8 @@
 			<Y>1123</Y>
 		</Location>
 		<Size>
-			<CX>240</CX>
-			<CY>372</CY>
+			<CX>200</CX>
+			<CY>384</CY>
 		</Size>
 		<Text>Group</Text>
 		<Style_VScroll>false</Style_VScroll>
@@ -2381,12 +2381,7 @@
 		<Pieces>GW_DisbandButton</Pieces>
 		<Pieces>GW_FollowButton</Pieces>
 		<Pieces>GW_DeclineButton</Pieces>
-		<Pieces>GW_LFGButton</Pieces>
-
-
 		<!-- Player Status -->
-
-
 		<Pieces>GW_Player_HP</Pieces>
 		<Pieces>GW_Player_HPLabel</Pieces>
 		<Pieces>GW_Player_HPPercLabel</Pieces>		
@@ -2412,39 +2407,5 @@
 		<Pieces>GW_CastName</Pieces>
 		<Pieces>GW_Player_CombatTimer</Pieces>
 		<Pieces>GW_Player_CombatTimerLabel</Pieces>
-		<Pieces>GW_STR_Label</Pieces>
-		<Pieces>GW_STR</Pieces>
-		<Pieces>GW_STA_Label</Pieces>
-		<Pieces>GW_STA</Pieces>
-		<Pieces>GW_AGI_Label</Pieces>
-		<Pieces>GW_AGI</Pieces>
-		<Pieces>GW_DEX_Label</Pieces>
-		<Pieces>GW_DEX</Pieces>
-		<Pieces>GW_WIS_Label</Pieces>
-		<Pieces>GW_WIS</Pieces>
-		<Pieces>GW_INT_Label</Pieces>
-		<Pieces>GW_INT</Pieces>
-		<Pieces>GW_CHA_Label</Pieces>
-		<Pieces>GW_CHA</Pieces>
-		<Pieces>GW_MIT_Label</Pieces>
-		<Pieces>GW_MIT</Pieces>
-		<Pieces>GW_ATK_Label</Pieces>
-		<Pieces>GW_ATK</Pieces>
-		<Pieces>GW_HASTE_Label</Pieces>
-		<Pieces>GW_HASTE</Pieces>
-		<Pieces>GW_MR_Label</Pieces>
-		<Pieces>GW_MR</Pieces>
-		<Pieces>GW_FR_Label</Pieces>
-		<Pieces>GW_FR</Pieces>
-		<Pieces>GW_CR_Label</Pieces>
-		<Pieces>GW_CR</Pieces>
-		<Pieces>GW_DR_Label</Pieces>
-		<Pieces>GW_DR</Pieces>
-		<Pieces>GW_PR_Label</Pieces>
-		<Pieces>GW_PR</Pieces>
-		<Pieces>GW_WT_Label</Pieces>
-		<Pieces>GW_WT</Pieces>
-		<Pieces>GW_MWT_Label</Pieces>
-		<Pieces>GW_MWT</Pieces>
 	</Screen>
 </XML>
