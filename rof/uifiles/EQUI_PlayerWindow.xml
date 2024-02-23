@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+	<Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+	<TextureInfo item="AttackIndicator.tga">
+		<Size>
+			<CX>128</CX>
+			<CY>32</CY>
+		</Size>
+	</TextureInfo>
+	<Ui2DAnimation item="A_AttackIndicatorTop">
+		<Cycle>false</Cycle>
+		<Frames>
+			<Texture>AttackIndicator.tga</Texture>
+			<Location>
+				<X>0</X>
+				<Y>0</Y>
+			</Location>
+			<Size>
+				<CX>111</CX>
+				<CY>3</CY>
+			</Size>
+		</Frames>
+	</Ui2DAnimation>
+	<Ui2DAnimation item="A_AttackIndicatorBottom">
+		<Cycle>false</Cycle>
+		<Frames>
+			<Texture>AttackIndicator.tga</Texture>
+			<Location>
+				<X>0</X>
+				<Y>28</Y>
+			</Location>
+			<Size>
+				<CX>111</CX>
+				<CY>3</CY>
+			</Size>
+		</Frames>
+	</Ui2DAnimation>
+	<Ui2DAnimation item="A_AttackIndicatorLeft">
+		<Cycle>false</Cycle>
+		<Frames>
+			<Texture>AttackIndicator.tga</Texture>
+			<Location>
+				<X>0</X>
+				<Y>3</Y>
+			</Location>
+			<Size>
+				<CX>3</CX>
+				<CY>24</CY>
+			</Size>
+		</Frames>
+	</Ui2DAnimation>
+	<Ui2DAnimation item="A_AttackIndicatorRight">
+		<Cycle>false</Cycle>
+		<Frames>
+			<Texture>AttackIndicator.tga</Texture>
+			<Location>
+				<X>109</X>
+				<Y>3</Y>
+			</Location>
+			<Size>
+				<CX>3</CX>
+				<CY>24</CY>
+			</Size>
+		</Frames>
+	</Ui2DAnimation>
+	<Ui2DAnimation item="A_AttackIndicatorFill">
+		<Cycle>false</Cycle>
+		<Frames>
+			<Texture>AttackIndicator.tga</Texture>
+			<Location>
+				<X>3</X>
+				<Y>3</Y>
+			</Location>
+			<Size>
+				<CX>105</CX>
+				<CY>24</CY>
+			</Size>
+		</Frames>
+	</Ui2DAnimation>
+	<StaticAnimation item="A_AttackIndicatorAnimTop">
+		<ScreenID>A_AttackIndicatorAnimTop</ScreenID>
+		<Animation>A_AttackIndicatorTop</Animation>
+		<AutoDraw>false</AutoDraw>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>0</TopAnchorOffset>
+		<BottomAnchorOffset>3</BottomAnchorOffset>
+		<LeftAnchorOffset>0</LeftAnchorOffset>
+		<RightAnchorOffset>0</RightAnchorOffset>
+		<TopAnchorToTop>true</TopAnchorToTop>
+		<BottomAnchorToTop>true</BottomAnchorToTop>
+		<LeftAnchorToLeft>true</LeftAnchorToLeft>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+	</StaticAnimation>
+	<StaticAnimation item="A_AttackIndicatorAnimBottom">
+		<ScreenID>A_AttackIndicatorAnimBottom</ScreenID>
+		<Animation>A_AttackIndicatorBottom</Animation>
+		<AutoDraw>false</AutoDraw>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>3</TopAnchorOffset>
+		<BottomAnchorOffset>0</BottomAnchorOffset>
+		<LeftAnchorOffset>0</LeftAnchorOffset>
+		<RightAnchorOffset>0</RightAnchorOffset>
+		<TopAnchorToTop>false</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<LeftAnchorToLeft>true</LeftAnchorToLeft>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+	</StaticAnimation>
+	<StaticAnimation item="A_AttackIndicatorAnimLeft">
+		<ScreenID>A_AttackIndicatorAnimLeft</ScreenID>
+		<Animation>A_AttackIndicatorLeft</Animation>
+		<AutoDraw>false</AutoDraw>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>3</TopAnchorOffset>
+		<BottomAnchorOffset>3</BottomAnchorOffset>
+		<LeftAnchorOffset>0</LeftAnchorOffset>
+		<RightAnchorOffset>3</RightAnchorOffset>		
+		<TopAnchorToTop>true</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<LeftAnchorToLeft>true</LeftAnchorToLeft>
+		<RightAnchorToLeft>true</RightAnchorToLeft>
+	</StaticAnimation>
+	<StaticAnimation item="A_AttackIndicatorAnimRight">
+		<ScreenID>A_AttackIndicatorAnimRight</ScreenID>
+		<Animation>A_AttackIndicatorRight</Animation>
+		<AutoDraw>false</AutoDraw>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>3</TopAnchorOffset>
+		<BottomAnchorOffset>3</BottomAnchorOffset>
+		<LeftAnchorOffset>3</LeftAnchorOffset>
+		<RightAnchorOffset>0</RightAnchorOffset>
+		<TopAnchorToTop>true</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<LeftAnchorToLeft>false</LeftAnchorToLeft>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+	</StaticAnimation>
+	<StaticAnimation item="A_AttackIndicatorAnimFill">
+		<ScreenID>A_AttackIndicatorAnimFill</ScreenID>
+		<Animation>A_AttackIndicatorFill</Animation>
+		<AutoDraw>false</AutoDraw>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>3</LeftAnchorOffset>
+		<TopAnchorOffset>3</TopAnchorOffset>
+		<RightAnchorOffset>3</RightAnchorOffset>
+		<BottomAnchorOffset>3</BottomAnchorOffset>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+	</StaticAnimation>
+	<Ui2DAnimation item="A_PWCSInCombat">
+		<Cycle>true</Cycle>
+		<Frames>
+			<Texture>window_pieces06.tga</Texture>
+			<Location>
+				<X>200</X>
+				<Y>0</Y>
+			</Location>
+			<Size>
+				<CX>40</CX>
+				<CY>40</CY>
+			</Size>
+			<Hotspot>
+				<X>0</X>
+				<Y>0</Y>
+			</Hotspot>
+			<Duration>1000</Duration>
+		</Frames>
+	</Ui2DAnimation>
+	<Ui2DAnimation item="A_PWCSTimer">
+		<Cycle>true</Cycle>
+		<Frames>
+			<Texture>window_pieces06.tga</Texture>
+			<Location>
+				<X>200</X>
+				<Y>80</Y>
+			</Location>
+			<Size>
+				<CX>40</CX>
+				<CY>40</CY>
+			</Size>
+			<Hotspot>
+				<X>0</X>
+				<Y>0</Y>
+			</Hotspot>
+			<Duration>1000</Duration>
+		</Frames>
+	</Ui2DAnimation>
+	<Ui2DAnimation item="A_PWCSDebuff">
+		<Cycle>true</Cycle>
+		<Frames>
+			<Texture>window_pieces06.tga</Texture>
+			<Location>
+				<X>200</X>
+				<Y>40</Y>
+			</Location>
+			<Size>
+				<CX>40</CX>
+				<CY>40</CY>
+			</Size>
+			<Hotspot>
+				<X>0</X>
+				<Y>0</Y>
+			</Hotspot>
+			<Duration>1000</Duration>
+		</Frames>
+	</Ui2DAnimation>
+	<Ui2DAnimation item="A_PWCSStanding">
+		<Cycle>true</Cycle>
+		<Frames>
+			<Texture>window_pieces06.tga</Texture>
+			<Location>
+				<X>200</X>
+				<Y>120</Y>
+			</Location>
+			<Size>
+				<CX>40</CX>
+				<CY>40</CY>
+			</Size>
+			<Hotspot>
+				<X>0</X>
+				<Y>0</Y>
+			</Hotspot>
+			<Duration>1000</Duration>
+		</Frames>
+	</Ui2DAnimation>
+	<Ui2DAnimation item="A_PWCSRegen">
+		<Cycle>true</Cycle>
+		<Frames>
+			<Texture>window_pieces06.tga</Texture>
+			<Location>
+				<X>200</X>
+				<Y>160</Y>
+			</Location>
+			<Size>
+				<CX>40</CX>
+				<CY>40</CY>
+			</Size>
+			<Hotspot>
+				<X>0</X>
+				<Y>0</Y>
+			</Hotspot>
+			<Duration>1000</Duration>
+		</Frames>
+	</Ui2DAnimation>
+	<Ui2DAnimation item="A_AttackIndicator">
+		<Cycle>false</Cycle>
+		<Frames>
+			<Texture>AttackIndicator.tga</Texture>
+			<Location>
+				<X>0</X>
+				<Y>0</Y>
+			</Location>
+			<Size>
+				<CX>114</CX>
+				<CY>32</CY>
+			</Size>
+		</Frames>
+	</Ui2DAnimation>
+	<Button item="PW_CombatStateAnim">
+		<ScreenID>PW_CombatStateAnim</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Style_Transparent>false</Style_Transparent>
+		<Style_Checkbox>false</Style_Checkbox>
+		<DecalSize>
+			<CX>24</CX>
+			<CY>24</CY>
+		</DecalSize>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>5</TopAnchorOffset>
+		<BottomAnchorOffset>29</BottomAnchorOffset>
+		<LeftAnchorOffset>29</LeftAnchorOffset>
+		<RightAnchorOffset>4</RightAnchorOffset>
+		<LeftAnchorToLeft>false</LeftAnchorToLeft>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+	</Button>
+
+
+		<!-- Unused blank gauges included to prevent warnings -->
+
+
+	<Gauge item="Player_HP">
+		<ScreenID>PlayerHP</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<EQType>1</EQType>
+		<Location>
+			<X>0</X>
+			<Y>0</Y>
+		</Location>
+		<Size>
+			<CX>0</CX>
+			<CY>0</CY>
+		</Size>
+	</Gauge>
+	<Gauge item="Pet_HP">
+		<ScreenID>PetHP</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<EQType>16</EQType>
+		<Location>
+			<X>0</X>
+			<Y>0</Y>
+		</Location>
+		<Size>
+			<CX>0</CX>
+			<CY>0</CY>
+		</Size>
+	</Gauge>
+	<Gauge item="Player_Mana">
+		<ScreenID>PlayerMana</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<EQType>2</EQType>
+		<Location>
+			<X>0</X>
+			<Y>0</Y>
+		</Location>
+		<Size>
+			<CX>0</CX>
+			<CY>0</CY>
+		</Size>
+	</Gauge>
+	<Gauge item="Player_Fatigue">
+		<ScreenID>PlayerFatigue</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<EQType>3</EQType>
+		<Location>
+			<X>0</X>
+			<Y>0</Y>
+		</Location>
+		<Size>
+			<CX>0</CX>
+			<CY>0</CY>
+		</Size>
+	</Gauge>
+	<Gauge item="Player_CombatTimer">
+		<ScreenID>Player_CombatTimer</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<EQType>29</EQType>
+		<Location>
+			<X>0</X>
+			<Y>0</Y>
+		</Location>
+		<Size>
+			<CX>0</CX>
+			<CY>0</CY>
+		</Size>
+	</Gauge>
+
+		<!-- Unused blank labels included to prevent warnings -->
+
+
+	<Label item="Player_HPLabel">
+		<ScreenID>HPLabel</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<EQType>19</EQType>
+		<Location>
+			<X>0</X>
+			<Y>0</Y>
+		</Location>
+		<Size>
+			<CX>0</CX>
+			<CY>0</CY>
+		</Size>
+	</Label>
+	<Label item="Player_HPPercLabel">
+		<ScreenID>HPPerLabel</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Text>%</Text>
+		<Location>
+			<X>0</X>
+			<Y>0</Y>
+		</Location>
+		<Size>
+			<CX>0</CX>
+			<CY>0</CY>
+		</Size>
+	</Label>
+	<Label item="Player_ManaLabel">
+		<ScreenID>ManaLabel</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<EQType>20</EQType>
+		<Location>
+			<X>0</X>
+			<Y>0</Y>
+		</Location>
+		<Size>
+			<CX>0</CX>
+			<CY>0</CY>
+		</Size>
+	</Label>
+	<Label item="Player_ManaPercLabel">
+		<ScreenID>ManPercLabel</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Text>%</Text>
+		<Location>
+			<X>0</X>
+			<Y>0</Y>
+		</Location>
+		<Size>
+			<CX>0</CX>
+			<CY>0</CY>
+		</Size>
+	</Label>
+	<Label item="Player_FatigueLabel">
+		<ScreenID>FatigueLabel</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<EQType>21</EQType>
+		<Location>
+			<X>0</X>
+			<Y>0</Y>
+		</Location>
+		<Size>
+			<CX>0</CX>
+			<CY>0</CY>
+		</Size>
+	</Label>
+	<Label item="Player_FatiguePercLabel">
+		<ScreenID>FatiguePercLabel</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Text>%</Text>
+		<Location>
+			<X>0</X>
+			<Y>0</Y>
+		</Location>
+		<Size>
+			<CX>0</CX>
+			<CY>0</CY>
+		</Size>
+	</Label>
+	<Label item="Player_CombatTimerLabel">
+		<ScreenID>Player_CombatTimerLabel</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<EQType>137</EQType>
+		<Location>
+			<X>0</X>
+			<Y>0</Y>
+		</Location>
+		<Size>
+			<CX>0</CX>
+			<CY>0</CY>
+		</Size>
+	</Label>
+
+
+	<Screen item="PlayerWindow">
+		<RelativePosition>false</RelativePosition>
+		<Location>
+			<X>975</X>
+			<Y>1498</Y>
+		</Location>
+		<Size>
+			<CX>240</CX>
+			<CY>44</CY>
+		</Size>
+		<Font>3</Font>
+		<Text>Player</Text>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>false</Style_Transparent>
+		<TooltipReference>This is the player window.</TooltipReference>
+		<DrawTemplate>WDT_RoundedNoTitle</DrawTemplate>
+		<Style_Titlebar>false</Style_Titlebar>
+		<Style_Closebox>false</Style_Closebox>
+		<Style_Minimizebox>false</Style_Minimizebox>
+		<Style_Border>true</Style_Border>
+		<Style_Sizable>false</Style_Sizable>
+		<Escapable>false</Escapable>
+		<Pieces>PW_CombatStateAnim</Pieces>
+		<Pieces>A_AttackIndicatorAnimTop</Pieces>
+		<Pieces>A_AttackIndicatorAnimBottom</Pieces>
+		<Pieces>A_AttackIndicatorAnimLeft</Pieces>
+		<Pieces>A_AttackIndicatorAnimRight</Pieces>
+		<Pieces>A_AttackIndicatorAnimFill</Pieces>
+
+		<!-- Unused blank gauges included to prevent warnings -->
+
+		<Pieces>Player_HP</Pieces>
+		<Pieces>Pet_HP</Pieces>
+		<Pieces>Player_Mana</Pieces>
+		<Pieces>Player_Fatigue</Pieces>
+		<Pieces>Player_CombatTimer</Pieces>
+
+		<!-- Unused blank labels included to prevent warnings -->
+
+		<Pieces>Player_HPLabel</Pieces>
+		<Pieces>Player_HPPercLabel</Pieces>
+		<Pieces>Player_ManaLabel</Pieces>
+		<Pieces>Player_ManaPercLabel</Pieces>
+		<Pieces>Player_FatigueLabel</Pieces>
+		<Pieces>Player_FatiguePercLabel</Pieces>
+		<Pieces>Player_CombatTimerLabel</Pieces>
+
+
+
+	</Screen>
+</XML>
