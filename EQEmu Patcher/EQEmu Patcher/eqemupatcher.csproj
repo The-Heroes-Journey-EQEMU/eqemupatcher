@@ -188,7 +188,7 @@
         <_Parameter1_TypeName>System.String</_Parameter1_TypeName>
       </AssemblyAttributes>
     </ItemGroup>
-    <WriteCodeFragment Language="C#" OutputFile="SolutionInfo.cs">
+    <WriteCodeFragment AssemblyAttributes="@(AssemblyAttributes)" Language="C#" OutputFile=".\SolutionInfo.cs">
       <Output TaskParameter="OutputFile" ItemName="Compile" />
       <Output TaskParameter="OutputFile" ItemName="FileWrites" />
     </WriteCodeFragment>
