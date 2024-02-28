@@ -408,7 +408,7 @@ namespace EQEmu_Patcher
         {
             path = path.Replace("/", "\\");
             if (path.Contains("\\")) { //Make directory if needed.
-                string dir = Application.ExecutablePath + "\\" + path.Substring(0, path.LastIndexOf("\\"));
+                string dir = Application.StartupPath + "\\" + path.Substring(0, path.LastIndexOf("\\"));
                 Directory.CreateDirectory(dir);
             }
             return await UtilityLibrary.DownloadFile(cts, url, path);
