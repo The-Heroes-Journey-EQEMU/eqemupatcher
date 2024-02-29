@@ -18,6 +18,10 @@
 *.tga binary
 *.jpg binary
 *.dds binary
+*.cur binary
+*.emt binary
+*.ini binary
+*.xml binary
 
 ###############################################################################
 # Set default behavior for command prompt diff.
