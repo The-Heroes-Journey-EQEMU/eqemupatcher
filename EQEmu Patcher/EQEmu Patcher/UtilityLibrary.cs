@@ -10,6 +10,7 @@ using System.Net.Http;
 using System.Threading;
 using YamlDotNet.Core.Tokens;
 using System.Runtime.InteropServices.ComTypes;
+using System.Windows.Forms;
 
 namespace EQEmu_Patcher
 {
@@ -27,7 +28,14 @@ namespace EQEmu_Patcher
                 response.EnsureSuccessStatusCode();
                 using (var stream = await response.Content.ReadAsStreamAsync())
                 {
-                    using (var w = File.Create(outFile)) {
+                    var outPath = outFile.Replace("/", "\\");
+                    if (outFile.Contains("\\")) { //Make directory if needed.
+                        string dir = System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "\\" + outFile.Substring(0, outFile.LastIndexOf("\\"));
+                        Directory.CreateDirectory(dir);
+                    }
+                    outPath = System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "\\" + outFile;
+
+                    using (var w = File.Create(outPath)) {
                         await stream.CopyToAsync(w, 81920, cts.Token);
                     }
                 }
@@ -44,6 +52,7 @@ namespace EQEmu_Patcher
             return "";
         }
 
+        // Download will grab a remote URL's file and return the data as a byte array
         public static async Task<byte[]> Download(CancellationTokenSource cts, string url)
         {
             var client = new HttpClient();
@@ -66,7 +75,7 @@ namespace EQEmu_Patcher
                 using (var stream = File.OpenRead(filename))
                 {
                     var hash = md5.ComputeHash(stream);
-                    
+
                     StringBuilder sb = new StringBuilder();
 
                     for (int i = 0; i < hash.Length; i++)
