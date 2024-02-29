@@ -16,8 +16,8 @@
 				<Y>0</Y>
 			</Location>
 			<Size>
-				<CX>111</CX>
-				<CY>3</CY>
+				<CX>112</CX>
+				<CY>2</CY>
 			</Size>
 		</Frames>
 	</Ui2DAnimation>
@@ -27,10 +27,10 @@
 			<Texture>AttackIndicator.tga</Texture>
 			<Location>
 				<X>0</X>
-				<Y>28</Y>
+				<Y>29</Y>
 			</Location>
 			<Size>
-				<CX>111</CX>
+				<CX>112</CX>
 				<CY>3</CY>
 			</Size>
 		</Frames>
@@ -41,11 +41,11 @@
 			<Texture>AttackIndicator.tga</Texture>
 			<Location>
 				<X>0</X>
-				<Y>3</Y>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>3</CX>
-				<CY>24</CY>
+				<CY>27</CY>
 			</Size>
 		</Frames>
 	</Ui2DAnimation>
@@ -54,12 +54,12 @@
 		<Frames>
 			<Texture>AttackIndicator.tga</Texture>
 			<Location>
-				<X>109</X>
+				<X>111</X>
 				<Y>3</Y>
 			</Location>
 			<Size>
-				<CX>3</CX>
-				<CY>24</CY>
+				<CX>1</CX>
+				<CY>26</CY>
 			</Size>
 		</Frames>
 	</Ui2DAnimation>
@@ -68,11 +68,11 @@
 		<Frames>
 			<Texture>AttackIndicator.tga</Texture>
 			<Location>
-				<X>3</X>
-				<Y>3</Y>
+				<X>4</X>
+				<Y>4</Y>
 			</Location>
 			<Size>
-				<CX>105</CX>
+				<CX>104</CX>
 				<CY>24</CY>
 			</Size>
 		</Frames>
@@ -96,12 +96,12 @@
 		<Animation>A_AttackIndicatorBottom</Animation>
 		<AutoDraw>false</AutoDraw>
 		<AutoStretch>true</AutoStretch>
-		<TopAnchorOffset>3</TopAnchorOffset>
-		<BottomAnchorOffset>0</BottomAnchorOffset>
+		<TopAnchorOffset>28</TopAnchorOffset>
+		<BottomAnchorOffset>32</BottomAnchorOffset>
 		<LeftAnchorOffset>0</LeftAnchorOffset>
 		<RightAnchorOffset>0</RightAnchorOffset>
-		<TopAnchorToTop>false</TopAnchorToTop>
-		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<TopAnchorToTop>true</TopAnchorToTop>
+		<BottomAnchorToTop>true</BottomAnchorToTop>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
 	</StaticAnimation>
@@ -111,11 +111,11 @@
 		<AutoDraw>false</AutoDraw>
 		<AutoStretch>true</AutoStretch>
 		<TopAnchorOffset>3</TopAnchorOffset>
-		<BottomAnchorOffset>3</BottomAnchorOffset>
+		<BottomAnchorOffset>28</BottomAnchorOffset>
 		<LeftAnchorOffset>0</LeftAnchorOffset>
-		<RightAnchorOffset>3</RightAnchorOffset>		
+		<RightAnchorOffset>4</RightAnchorOffset>		
 		<TopAnchorToTop>true</TopAnchorToTop>
-		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<BottomAnchorToTop>true</BottomAnchorToTop>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
 		<RightAnchorToLeft>true</RightAnchorToLeft>
 	</StaticAnimation>
@@ -125,11 +125,11 @@
 		<AutoDraw>false</AutoDraw>
 		<AutoStretch>true</AutoStretch>
 		<TopAnchorOffset>3</TopAnchorOffset>
-		<BottomAnchorOffset>3</BottomAnchorOffset>
-		<LeftAnchorOffset>3</LeftAnchorOffset>
+		<BottomAnchorOffset>28</BottomAnchorOffset>
+		<LeftAnchorOffset>4</LeftAnchorOffset>
 		<RightAnchorOffset>0</RightAnchorOffset>
 		<TopAnchorToTop>true</TopAnchorToTop>
-		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<BottomAnchorToTop>true</BottomAnchorToTop>
 		<LeftAnchorToLeft>false</LeftAnchorToLeft>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
 	</StaticAnimation>
@@ -138,11 +138,11 @@
 		<Animation>A_AttackIndicatorFill</Animation>
 		<AutoDraw>false</AutoDraw>
 		<AutoStretch>true</AutoStretch>
-		<LeftAnchorOffset>3</LeftAnchorOffset>
+		<LeftAnchorOffset>4</LeftAnchorOffset>
 		<TopAnchorOffset>3</TopAnchorOffset>
-		<RightAnchorOffset>3</RightAnchorOffset>
-		<BottomAnchorOffset>3</BottomAnchorOffset>
-		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<RightAnchorOffset>5</RightAnchorOffset>
+		<BottomAnchorOffset>28</BottomAnchorOffset>
+		<BottomAnchorToTop>true</BottomAnchorToTop>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
 	</StaticAnimation>
 	<Ui2DAnimation item="A_PWCSInCombat">
@@ -254,230 +254,488 @@
 			</Size>
 		</Frames>
 	</Ui2DAnimation>
+	<Gauge item="Player_CombatTimer">
+		<ScreenID>Player_CombatTimer</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<GaugeOffsetY>0</GaugeOffsetY>
+		<FillTint>
+			<R>169</R>
+			<G>169</G>
+			<B>169</B>
+		</FillTint>
+		<EQType>29</EQType>
+		<GaugeDrawTemplate>
+			<Background>A_GaugeBackground</Background>
+			<Fill>A_GaugeFill</Fill>
+			<Lines>A_GaugeLines</Lines>
+			<EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
+			<EndCapRight>A_GaugeEndCapRight</EndCapRight>
+		</GaugeDrawTemplate>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>82</TopAnchorOffset>
+		<BottomAnchorOffset>92</BottomAnchorOffset>
+		<LeftAnchorOffset>2</LeftAnchorOffset>
+		<RightAnchorOffset>0</RightAnchorOffset>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+	</Gauge>
+	<Label item="Player_CombatTimerLabel">
+		<ScreenID>Player_CombatTimerLabel</ScreenID>
+		<EQType>137</EQType>
+		<RelativePosition>true</RelativePosition>
+		<Text>00:30</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>true</AlignCenter>
+		<AlignRight>false</AlignRight>
+		<Font>1</Font>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>82</TopAnchorOffset>
+		<BottomAnchorOffset>92</BottomAnchorOffset>
+		<LeftAnchorOffset>2</LeftAnchorOffset>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<Style_Tooltip>false</Style_Tooltip>
+	</Label>
 	<Button item="PW_CombatStateAnim">
 		<ScreenID>PW_CombatStateAnim</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Style_Transparent>false</Style_Transparent>
 		<Style_Checkbox>false</Style_Checkbox>
 		<DecalSize>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>26</CX>
+			<CY>26</CY>
 		</DecalSize>
 		<AutoStretch>true</AutoStretch>
-		<TopAnchorOffset>5</TopAnchorOffset>
-		<BottomAnchorOffset>29</BottomAnchorOffset>
-		<LeftAnchorOffset>29</LeftAnchorOffset>
-		<RightAnchorOffset>4</RightAnchorOffset>
+		<BottomAnchorOffset>26</BottomAnchorOffset>
+		<LeftAnchorOffset>27</LeftAnchorOffset>
+		<RightAnchorOffset>1</RightAnchorOffset>
 		<LeftAnchorToLeft>false</LeftAnchorToLeft>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
 	</Button>
-
-
-		<!-- Unused blank gauges included to prevent warnings -->
-
-
+	
+	<Button item="PW_NewMailIcon">
+		<ScreenID>PW_NewMailIcon</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Style_Transparent>true</Style_Transparent>
+		<Style_Checkbox>false</Style_Checkbox>
+		<TooltipReference>You have unread mail in your inbox.</TooltipReference>
+		<ButtonDrawTemplate>
+			<Normal>A_NewMailIcon</Normal>
+		</ButtonDrawTemplate>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>11</TopAnchorOffset>
+		<LeftAnchorOffset>80</LeftAnchorOffset>
+		<BottomAnchorOffset>36</BottomAnchorOffset>
+		<RightAnchorOffset>55</RightAnchorOffset>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<LeftAnchorToLeft>false</LeftAnchorToLeft>
+	</Button>
+    
+    <Button item="PW_ParcelsIcon">
+		<ScreenID>PW_ParcelsIcon</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Style_Transparent>true</Style_Transparent>
+		<Style_Checkbox>false</Style_Checkbox>
+		<TooltipReference>You have parcel deliveries.</TooltipReference>
+		<ButtonDrawTemplate>
+			<Normal>A_ParcelsIcon</Normal>
+		</ButtonDrawTemplate>
+		<AutoStretch>true</AutoStretch>
+		<BottomAnchorOffset>36</BottomAnchorOffset>
+		<TopAnchorOffset>11</TopAnchorOffset>
+		<RightAnchorOffset>30</RightAnchorOffset>
+		<LeftAnchorOffset>55</LeftAnchorOffset>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<LeftAnchorToLeft>false</LeftAnchorToLeft>
+	</Button>
+	<Button item="PW_ParcelsOverLimitIcon">
+		<ScreenID>PW_ParcelsOverLimitIcon</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Style_Transparent>true</Style_Transparent>
+		<Style_Checkbox>false</Style_Checkbox>
+		<TooltipReference>You are over your parcel limit! Retrieve the excess ones soon or risk losing them!</TooltipReference>
+		<ButtonDrawTemplate>
+			<Normal>A_ParcelsOverLimitIcon</Normal>
+		</ButtonDrawTemplate>
+		<AutoStretch>true</AutoStretch>
+		<BottomAnchorOffset>36</BottomAnchorOffset>
+		<TopAnchorOffset>11</TopAnchorOffset>
+		<RightAnchorOffset>30</RightAnchorOffset>
+		<LeftAnchorOffset>55</LeftAnchorOffset>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<LeftAnchorToLeft>false</LeftAnchorToLeft>
+	</Button>
+	
 	<Gauge item="Player_HP">
 		<ScreenID>PlayerHP</ScreenID>
+		<TextColor>
+			<R>240</R>
+			<G>240</G>
+			<B>240</B>
+		</TextColor>
 		<RelativePosition>true</RelativePosition>
+		<TextOffsetX>1</TextOffsetX>
+        <TextOffsetY>-2</TextOffsetY>
+		<GaugeOffsetY>34</GaugeOffsetY>
+		<FillTint>
+			<R>240</R>
+			<G>0</G>
+			<B>0</B>
+		</FillTint>
 		<EQType>1</EQType>
-		<Location>
-			<X>0</X>
-			<Y>0</Y>
-		</Location>
-		<Size>
-			<CX>0</CX>
-			<CY>0</CY>
-		</Size>
+		<GaugeDrawTemplate>
+			<Background>A_GaugeBackground</Background>
+			<Fill>A_GaugeFill</Fill>
+			<Lines>A_GaugeLines</Lines>
+			<EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
+			<EndCapRight>A_GaugeEndCapRight</EndCapRight>
+		</GaugeDrawTemplate>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>1</TopAnchorOffset>
+		<BottomAnchorOffset>45</BottomAnchorOffset>
+		<LeftAnchorOffset>2</LeftAnchorOffset>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
 	</Gauge>
-	<Gauge item="Pet_HP">
-		<ScreenID>PetHP</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<EQType>16</EQType>
-		<Location>
-			<X>0</X>
-			<Y>0</Y>
-		</Location>
-		<Size>
-			<CX>0</CX>
-			<CY>0</CY>
-		</Size>
-	</Gauge>
-	<Gauge item="Player_Mana">
-		<ScreenID>PlayerMana</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<EQType>2</EQType>
-		<Location>
-			<X>0</X>
-			<Y>0</Y>
-		</Location>
-		<Size>
-			<CX>0</CX>
-			<CY>0</CY>
-		</Size>
-	</Gauge>
-	<Gauge item="Player_Fatigue">
-		<ScreenID>PlayerFatigue</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<EQType>3</EQType>
-		<Location>
-			<X>0</X>
-			<Y>0</Y>
-		</Location>
-		<Size>
-			<CX>0</CX>
-			<CY>0</CY>
-		</Size>
-	</Gauge>
-	<Gauge item="Player_CombatTimer">
-		<ScreenID>Player_CombatTimer</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<EQType>29</EQType>
-		<Location>
-			<X>0</X>
-			<Y>0</Y>
-		</Location>
-		<Size>
-			<CX>0</CX>
-			<CY>0</CY>
-		</Size>
-	</Gauge>
-
-		<!-- Unused blank labels included to prevent warnings -->
-
-
+   
 	<Label item="Player_HPLabel">
 		<ScreenID>HPLabel</ScreenID>
-		<RelativePosition>true</RelativePosition>
 		<EQType>19</EQType>
-		<Location>
-			<X>0</X>
-			<Y>0</Y>
-		</Location>
-		<Size>
-			<CX>0</CX>
-			<CY>0</CY>
-		</Size>
+		<RelativePosition>true</RelativePosition>
+		<Text>100</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>true</AlignCenter>
+		<Font>1</Font>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>35</TopAnchorOffset>
+		<BottomAnchorOffset>45</BottomAnchorOffset>
+		<LeftAnchorOffset>2</LeftAnchorOffset>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<Style_Tooltip>false</Style_Tooltip>
 	</Label>
 	<Label item="Player_HPPercLabel">
 		<ScreenID>HPPerLabel</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Text>%</Text>
-		<Location>
-			<X>0</X>
-			<Y>0</Y>
-		</Location>
-		<Size>
-			<CX>0</CX>
-			<CY>0</CY>
-		</Size>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>true</AlignCenter>
+		<Font>1</Font>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>35</TopAnchorOffset>
+		<BottomAnchorOffset>45</BottomAnchorOffset>
+		<LeftAnchorOffset>24</LeftAnchorOffset>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<Style_Tooltip>false</Style_Tooltip>
 	</Label>
+	<Gauge item="Pet_HP">
+		<ScreenID>PetHP</ScreenID>
+		<TextColor>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+		</TextColor>
+		<RelativePosition>true</RelativePosition>
+		<TextOffsetY>-50</TextOffsetY>
+		<GaugeOffsetY>-2</GaugeOffsetY>
+		<FillTint>
+			<R>51</R>
+			<G>192</G>
+			<B>51</B>
+		</FillTint>
+		<EQType>16</EQType>
+		<GaugeDrawTemplate>
+			<Fill>A_GaugeFill</Fill>
+		</GaugeDrawTemplate>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>41</TopAnchorOffset>
+		<BottomAnchorOffset>45</BottomAnchorOffset>
+		<LeftAnchorOffset>6</LeftAnchorOffset>
+		<RightAnchorOffset>4</RightAnchorOffset>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+	</Gauge>
+	<Gauge item="Player_Mana">
+		<ScreenID>PlayerMana</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<GaugeOffsetY>0</GaugeOffsetY>
+		<FillTint>
+			<R>0</R>
+			<G>128</G>
+			<B>255</B>
+		</FillTint>
+		<EQType>2</EQType>
+		<GaugeDrawTemplate>
+			<Background>A_GaugeBackground</Background>
+			<Fill>A_GaugeFill</Fill>
+			<Lines>A_GaugeLines</Lines>
+			<EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
+			<EndCapRight>A_GaugeEndCapRight</EndCapRight>
+		</GaugeDrawTemplate>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>45</TopAnchorOffset>
+		<BottomAnchorOffset>55</BottomAnchorOffset>
+		<LeftAnchorOffset>2</LeftAnchorOffset>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+	</Gauge>
 	<Label item="Player_ManaLabel">
 		<ScreenID>ManaLabel</ScreenID>
-		<RelativePosition>true</RelativePosition>
 		<EQType>20</EQType>
-		<Location>
-			<X>0</X>
-			<Y>0</Y>
-		</Location>
-		<Size>
-			<CX>0</CX>
-			<CY>0</CY>
-		</Size>
+		<Font>1</Font>
+		<RelativePosition>true</RelativePosition>
+		<Text>100</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>true</AlignCenter>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>45</TopAnchorOffset>
+		<BottomAnchorOffset>55</BottomAnchorOffset>
+		<LeftAnchorOffset>2</LeftAnchorOffset>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<Style_Tooltip>false</Style_Tooltip>
 	</Label>
 	<Label item="Player_ManaPercLabel">
 		<ScreenID>ManPercLabel</ScreenID>
-		<RelativePosition>true</RelativePosition>
+		<Font>1</Font>
 		<Text>%</Text>
-		<Location>
-			<X>0</X>
-			<Y>0</Y>
-		</Location>
-		<Size>
-			<CX>0</CX>
-			<CY>0</CY>
-		</Size>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<AlignCenter>true</AlignCenter>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>45</TopAnchorOffset>
+		<BottomAnchorOffset>55</BottomAnchorOffset>
+		<LeftAnchorOffset>24</LeftAnchorOffset>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<Style_Tooltip>false</Style_Tooltip>
 	</Label>
+	<Gauge item="Player_Fatigue">
+		<ScreenID>PlayerFatigue</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<GaugeOffsetY>0</GaugeOffsetY>
+		<FillTint>
+			<R>240</R>
+			<G>240</G>
+			<B>0</B>
+		</FillTint>
+		<EQType>3</EQType>
+		<GaugeDrawTemplate>
+			<Background>A_GaugeBackground</Background>
+			<Fill>A_GaugeFill</Fill>
+			<Lines>A_GaugeLines</Lines>
+			<EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
+			<EndCapRight>A_GaugeEndCapRight</EndCapRight>
+		</GaugeDrawTemplate>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>55</TopAnchorOffset>
+		<BottomAnchorOffset>65</BottomAnchorOffset>
+		<LeftAnchorOffset>2</LeftAnchorOffset>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+	</Gauge>
 	<Label item="Player_FatigueLabel">
 		<ScreenID>FatigueLabel</ScreenID>
-		<RelativePosition>true</RelativePosition>
 		<EQType>21</EQType>
-		<Location>
-			<X>0</X>
-			<Y>0</Y>
-		</Location>
-		<Size>
-			<CX>0</CX>
-			<CY>0</CY>
-		</Size>
+		<Font>1</Font>
+		<RelativePosition>true</RelativePosition>
+		<Text>100</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>true</AlignCenter>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>55</TopAnchorOffset>
+		<BottomAnchorOffset>65</BottomAnchorOffset>
+		<LeftAnchorOffset>2</LeftAnchorOffset>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<Style_Tooltip>false</Style_Tooltip>
 	</Label>
 	<Label item="Player_FatiguePercLabel">
 		<ScreenID>FatiguePercLabel</ScreenID>
-		<RelativePosition>true</RelativePosition>
+		<Font>1</Font>
 		<Text>%</Text>
-		<Location>
-			<X>0</X>
-			<Y>0</Y>
-		</Location>
-		<Size>
-			<CX>0</CX>
-			<CY>0</CY>
-		</Size>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<AlignCenter>true</AlignCenter>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>55</TopAnchorOffset>
+		<BottomAnchorOffset>65</BottomAnchorOffset>
+		<LeftAnchorOffset>24</LeftAnchorOffset>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<Style_Tooltip>false</Style_Tooltip>
 	</Label>
-	<Label item="Player_CombatTimerLabel">
-		<ScreenID>Player_CombatTimerLabel</ScreenID>
+	<Button item="PW_VoiceVolume">
+		<ScreenID>PW_VoiceVolume</ScreenID>
+		<EQType>voicechat/SpeakingIndicator</EQType>
 		<RelativePosition>true</RelativePosition>
-		<EQType>137</EQType>
-		<Location>
-			<X>0</X>
-			<Y>0</Y>
-		</Location>
-		<Size>
-			<CX>0</CX>
-			<CY>0</CY>
-		</Size>
+		<Style_Transparent>false</Style_Transparent>
+		<Style_Checkbox>false</Style_Checkbox>
+		<Template>BDT_Checkbox</Template>
+		<AutoStretch>true</AutoStretch>
+		<BottomAnchorOffset>15</BottomAnchorOffset>
+		<LeftAnchorOffset>42</LeftAnchorOffset>
+		<RightAnchorOffset>27</RightAnchorOffset>
+		<LeftAnchorToLeft>false</LeftAnchorToLeft>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+	</Button>
+	<Button item="PW_GroupRoleTank">
+		<ScreenID>GroupRoleTank</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Style_Transparent>false</Style_Transparent>
+		<Style_Checkbox>false</Style_Checkbox>
+		<ButtonDrawTemplate>
+			<NormalDecal>A_Tank</NormalDecal>
+		</ButtonDrawTemplate>
+		<DecalSize>
+			<CX>15</CX>
+			<CY>15</CY>
+		</DecalSize>
+		<AutoStretch>true</AutoStretch>
+		<BottomAnchorOffset>15</BottomAnchorOffset>
+		<LeftAnchorOffset>87</LeftAnchorOffset>
+		<RightAnchorOffset>72</RightAnchorOffset>
+		<LeftAnchorToLeft>false</LeftAnchorToLeft>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+	</Button>
+	<Button item="PW_GroupRoleAssist">
+		<ScreenID>GroupRoleAssist</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Style_Transparent>false</Style_Transparent>
+		<Style_Checkbox>false</Style_Checkbox>
+		<ButtonDrawTemplate>
+			<NormalDecal>A_Assist</NormalDecal>
+		</ButtonDrawTemplate>
+		<DecalSize>
+			<CX>15</CX>
+			<CY>15</CY>
+		</DecalSize>
+		<AutoStretch>true</AutoStretch>
+		<BottomAnchorOffset>15</BottomAnchorOffset>
+		<LeftAnchorOffset>72</LeftAnchorOffset>
+		<RightAnchorOffset>57</RightAnchorOffset>
+		<LeftAnchorToLeft>false</LeftAnchorToLeft>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+	</Button>
+	<Button item="PW_GroupRolePuller">
+		<ScreenID>GroupRolePuller</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Style_Transparent>false</Style_Transparent>
+		<Style_Checkbox>false</Style_Checkbox>
+		<ButtonDrawTemplate>
+			<NormalDecal>A_Puller</NormalDecal>
+		</ButtonDrawTemplate>
+		<DecalSize>
+			<CX>15</CX>
+			<CY>15</CY>
+		</DecalSize>
+		<AutoStretch>true</AutoStretch>
+		<BottomAnchorOffset>15</BottomAnchorOffset>
+		<LeftAnchorOffset>57</LeftAnchorOffset>
+		<RightAnchorOffset>42</RightAnchorOffset>
+		<LeftAnchorToLeft>false</LeftAnchorToLeft>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+	</Button>
+	<Label item="PW_AggroPctPlayerLabel">
+		<ScreenID>PW_AggroPctPlayerLabel</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Font>2</Font>
+		<Text></Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<EQType>306</EQType>
+		<NoWrap>true</NoWrap>
+		<AutoStretch>true</AutoStretch>
+		<AlignLeft>true</AlignLeft>
+		<TopAnchorOffset>65</TopAnchorOffset>
+		<BottomAnchorOffset>79</BottomAnchorOffset>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
 	</Label>
-
-
+	<Label item="PW_AggroNameSecondaryLabel">
+		<ScreenID>PW_AggroNameSecondaryLabel</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Font>2</Font>
+		<Text></Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<EQType>304</EQType>
+		<NoWrap>true</NoWrap>
+		<AutoStretch>true</AutoStretch>
+		<AlignCenter>true</AlignCenter>
+		<TopAnchorOffset>65</TopAnchorOffset>
+		<BottomAnchorOffset>79</BottomAnchorOffset>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+	</Label>
+	<Label item="PW_AggroPctSecondaryLabel">
+		<ScreenID>PW_AggroPctSecondaryLabel</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Font>2</Font>
+		<Text></Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<EQType>308</EQType>
+		<NoWrap>true</NoWrap>
+		<AutoStretch>true</AutoStretch>
+		<AlignRight>true</AlignRight>
+		<TopAnchorOffset>65</TopAnchorOffset>
+		<BottomAnchorOffset>79</BottomAnchorOffset>
+		<LeftAnchorOffset>35</LeftAnchorOffset>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+	</Label>
 	<Screen item="PlayerWindow">
 		<RelativePosition>false</RelativePosition>
 		<Location>
-			<X>975</X>
-			<Y>1498</Y>
+			<X>3</X>
+			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>400</CX>
-			<CY>44</CY>
+			<CX>160</CX>
+			<CY>95</CY>
 		</Size>
-		<Font>3</Font>
-		<Text>Player</Text>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
-		<TooltipReference>This is the player window.</TooltipReference>
-		<DrawTemplate>WDT_RoundedNoTitle</DrawTemplate>
-		<Style_Titlebar>false</Style_Titlebar>
+		<DrawTemplate>WDT_Filigree3</DrawTemplate>
+		<Style_Titlebar>true</Style_Titlebar>
 		<Style_Closebox>false</Style_Closebox>
 		<Style_Minimizebox>false</Style_Minimizebox>
 		<Style_Border>true</Style_Border>
-		<Style_Sizable>false</Style_Sizable>
+		<Style_Sizable>true</Style_Sizable>
 		<Escapable>false</Escapable>
-		<Pieces>PW_CombatStateAnim</Pieces>
-		<Pieces>A_AttackIndicatorAnimTop</Pieces>
-		<Pieces>A_AttackIndicatorAnimBottom</Pieces>
-		<Pieces>A_AttackIndicatorAnimLeft</Pieces>
-		<Pieces>A_AttackIndicatorAnimRight</Pieces>
-		<Pieces>A_AttackIndicatorAnimFill</Pieces>
-
-		<!-- Unused blank gauges included to prevent warnings -->
-
 		<Pieces>Player_HP</Pieces>
 		<Pieces>Pet_HP</Pieces>
 		<Pieces>Player_Mana</Pieces>
 		<Pieces>Player_Fatigue</Pieces>
 		<Pieces>Player_CombatTimer</Pieces>
-
-		<!-- Unused blank labels included to prevent warnings -->
-
 		<Pieces>Player_HPLabel</Pieces>
 		<Pieces>Player_HPPercLabel</Pieces>
 		<Pieces>Player_ManaLabel</Pieces>
@@ -485,8 +743,21 @@
 		<Pieces>Player_FatigueLabel</Pieces>
 		<Pieces>Player_FatiguePercLabel</Pieces>
 		<Pieces>Player_CombatTimerLabel</Pieces>
-
-
-
+		<Pieces>PW_CombatStateAnim</Pieces>
+		<Pieces>PW_NewMailIcon</Pieces>
+		<Pieces>PW_ParcelsIcon</Pieces>
+		<Pieces>PW_ParcelsOverLimitIcon</Pieces> 
+		<Pieces>PW_VoiceVolume</Pieces>
+		<Pieces>PW_GroupRoleTank</Pieces>
+		<Pieces>PW_GroupRoleAssist</Pieces>
+		<Pieces>PW_GroupRolePuller</Pieces>
+		<Pieces>A_AttackIndicatorAnimTop</Pieces>
+		<Pieces>A_AttackIndicatorAnimBottom</Pieces>
+		<Pieces>A_AttackIndicatorAnimLeft</Pieces>
+		<Pieces>A_AttackIndicatorAnimRight</Pieces>
+		<Pieces>A_AttackIndicatorAnimFill</Pieces>
+		<Pieces>PW_AggroPctPlayerLabel</Pieces>
+		<Pieces>PW_AggroNameSecondaryLabel</Pieces>
+		<Pieces>PW_AggroPctSecondaryLabel</Pieces>
 	</Screen>
 </XML>

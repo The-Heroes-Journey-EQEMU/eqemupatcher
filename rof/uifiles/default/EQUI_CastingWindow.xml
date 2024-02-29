@@ -72,19 +72,19 @@
 			<Y>50</Y>
 		</Location>
 		<Size>
-			<CX>0</CX>
-			<CY>0</CY>
+			<CX>140</CX>
+			<CY>60</CY>
 		</Size>
 		<Text>Casting Time</Text>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
-		<Style_Transparent>true</Style_Transparent>
+		<Style_Transparent>false</Style_Transparent>
 		<TooltipReference>The Breath Meter</TooltipReference>
 		<DrawTemplate>WDT_Filigree</DrawTemplate>
-		<Style_Titlebar>false</Style_Titlebar>
+		<Style_Titlebar>true</Style_Titlebar>
 		<Style_Closebox>false</Style_Closebox>
 		<Style_Minimizebox>false</Style_Minimizebox>
-		<Style_Border>false</Style_Border>
+		<Style_Border>true</Style_Border>
 		<Style_Sizable>false</Style_Sizable>
 		<Escapable>false</Escapable>
 		<Pieces>Casting_Gauge</Pieces>
