@@ -17,6 +17,7 @@
 *.exe binary
 *.tga binary
 *.jpg binary
+*.dds binary
 
 ###############################################################################
 # Set default behavior for command prompt diff.
