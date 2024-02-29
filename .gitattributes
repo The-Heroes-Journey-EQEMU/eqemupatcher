@@ -15,6 +15,8 @@
 *.ttf binary
 *.zon binary
 *.exe binary
+*.tga binary
+*.jpg binary
 
 ###############################################################################
 # Set default behavior for command prompt diff.
@@ -76,3 +78,4 @@
 *.PDF   diff=astextplain
 *.rtf   diff=astextplain
 *.RTF   diff=astextplain
+*.xml   diff=astextplain
