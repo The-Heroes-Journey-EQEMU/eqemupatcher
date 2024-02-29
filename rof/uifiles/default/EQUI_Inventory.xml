@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="us-ascii" ?>
 <XML ID="EQInterfaceDefinitionLanguage">
 	<Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+	<StaticAnimation item="Inv_Seperator0">
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>1</X>
+			<Y>60</Y>
+		</Location>
+		<Size>
+			<CX>120</CX>
+			<CY>4</CY>
+		</Size>
+		<Animation>A_DividerMiddle</Animation>
+	</StaticAnimation>
 	<StaticAnimation item="Inv_Seperator1">
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>1</X>
-			<Y>117</Y>
+			<Y>106</Y>
 		</Location>
 		<Size>
 			<CX>120</CX>
@@ -17,7 +29,7 @@
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>0</X>
-			<Y>174</Y>
+			<Y>195</Y>
 		</Location>
 		<Size>
 			<CX>120</CX>
@@ -29,7 +41,7 @@
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>0</X>
-			<Y>280</Y>
+			<Y>239</Y>
 		</Location>
 		<Size>
 			<CX>120</CX>
@@ -41,7 +53,7 @@
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>-1</X>
-			<Y>235</Y>
+			<Y>332</Y>
 		</Location>
 		<Size>
 			<CX>120</CX>
@@ -53,7 +65,7 @@
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>0</X>
-			<Y>374</Y>
+			<Y>400</Y>
 		</Location>
 		<Size>
 			<CX>120</CX>
@@ -522,7 +534,7 @@
 		<Style_Transparent>false</Style_Transparent>
 		<!--<TooltipReference/>-->
 	</InvSlot>
-	<!-- IS_POWER_SOURCE		21 -->
+	<!-- IS_POWER_SOURCE		
 	<InvSlot item="InvSlot21">
 		<ScreenID>InvSlot21</ScreenID>
 		<RelativePosition>true</RelativePosition>
@@ -539,8 +551,7 @@
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
-		<!--<TooltipReference/>-->
-	</InvSlot>
+	</InvSlot>21 -->
 	<!-- IS_AMMO		22 -->
 	<InvSlot item="InvSlot22">
 		<ScreenID>InvSlot22</ScreenID>
@@ -555,25 +566,6 @@
 		</Size>
 		<Background>A_InvAmmo</Background>
 		<EQType>inventory/Equip 22</EQType>
-		<Style_VScroll>false</Style_VScroll>
-		<Style_HScroll>false</Style_HScroll>
-		<Style_Transparent>false</Style_Transparent>
-		<!--<TooltipReference/>-->
-	</InvSlot>
-	<!-- IS_KRONO		   -->
-	<InvSlot item="InvSlotKrono">
-		<ScreenID>InvSlotKrono</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>123</X>
-			<Y>360</Y>
-		</Location>
-		<Size>
-			<CX>42</CX>
-			<CY>42</CY>
-		</Size>
-		<Background>A_RecessedBox</Background>
-		<EQType>inventory/Krono</EQType>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
@@ -689,16 +681,16 @@
 		<AlignCenter>false</AlignCenter>
 		<AlignRight>true</AlignRight>
 	</Label>
-	<Label item="IW_Name">
+	<Label item="IW_CharTitle">
 		<ScreenID>NameLabel</ScreenID>
-		<EQType>1</EQType>
+		<EQType>74</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>1</X>
-			<Y>2</Y>
+			<X>150</X>
+			<Y>365</Y>
 		</Location>
 		<Size>
-			<CX>112</CX>
+			<CX>120</CX>
 			<CY>14</CY>
 		</Size>
 		<Text>Playername123456</Text>
@@ -708,7 +700,51 @@
 			<B>255</B>
 		</TextColor>
 		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
+		<AlignCenter>true</AlignCenter>
+		<AlignRight>false</AlignRight>
+	</Label>
+	<Label item="IW_Name">
+		<ScreenID>NameLabel</ScreenID>
+		<EQType>1</EQType>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>150</X>
+			<Y>379</Y>
+		</Location>
+		<Size>
+			<CX>120</CX>
+			<CY>14</CY>
+		</Size>
+		<Text>Playername123456</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>true</AlignCenter>
+		<AlignRight>false</AlignRight>
+	</Label>
+	<Label item="IW_LastName">
+		<ScreenID>NameLabel</ScreenID>
+		<EQType>73</EQType>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>150</X>
+			<Y>393</Y>
+		</Location>
+		<Size>
+			<CX>120</CX>
+			<CY>14</CY>
+		</Size>
+		<Text>Playername123456</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>true</AlignCenter>
 		<AlignRight>false</AlignRight>
 	</Label>
 	<Label item="IW_Level">
@@ -716,14 +752,35 @@
 		<EQType>2</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>1</X>
-			<Y>16</Y>
+			<X>40</X>
+			<Y>2</Y>
 		</Location>
 		<Size>
-			<CX>25</CX>
-			<CY>14</CY>
+			<CX>15</CX>
+			<CY>20</CY>
 		</Size>
-		<Text>60 Shadow Knight</Text>
+		<Text></Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+	</Label>
+	<Label item="IW_LevelLabel">
+		<ScreenID>LevelClassLabel2</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>2</X>
+			<Y>2</Y>
+		</Location>
+		<Size>
+			<CX>100</CX>
+			<CY>100</CY>
+		</Size>
+		<Text>Level: </Text>
 		<TextColor>
 			<R>255</R>
 			<G>255</G>
@@ -737,14 +794,56 @@
 		<EQType>3</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>26</X>
+			<X>30</X>
 			<Y>16</Y>
 		</Location>
 		<Size>
-			<CX>100</CX>
-			<CY>14</CY>
+			<CX>90</CX>
+			<CY>100</CY>
 		</Size>
 		<Text>60 Shadow Knight</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+	</Label>
+	<Label item="IW_ClassAbbr">
+		<EQType>6666</EQType>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>2</X>
+			<Y>16</Y>
+		</Location>
+		<Size>
+			<CX>30</CX>
+			<CY>100</CY>
+		</Size>
+		<Text>SHD</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+	</Label>
+	<Label item="IW_DeityLabel">
+		<ScreenID>DeityLabel</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>122</X>
+			<Y>360</Y>
+		</Location>
+		<Size>
+			<CX>112</CX>
+			<CY>14</CY>
+		</Size>
+		<Text>Deity:</Text>
 		<TextColor>
 			<R>255</R>
 			<G>255</G>
@@ -759,8 +858,8 @@
 		<EQType>4</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>1</X>
-			<Y>30</Y>
+			<X>160</X>
+			<Y>360</Y>
 		</Location>
 		<Size>
 			<CX>112</CX>
@@ -781,7 +880,7 @@
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>1</X>
-			<Y>48</Y>
+			<Y>64</Y>
 		</Location>
 		<Size>
 			<CX>20</CX>
@@ -802,7 +901,7 @@
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>21</X>
-			<Y>48</Y>
+			<Y>64</Y>
 		</Location>
 		<Size>
 			<CX>47</CX>
@@ -821,7 +920,7 @@
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>71</X>
-			<Y>48</Y>
+			<Y>64</Y>
 		</Location>
 		<Size>
 			<CX>8</CX>
@@ -840,7 +939,7 @@
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>76</X>
-			<Y>48</Y>
+			<Y>64</Y>
 		</Location>
 		<Size>
 			<CX>47</CX>
@@ -859,7 +958,7 @@
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>1</X>
-			<Y>62</Y>
+			<Y>78</Y>
 		</Location>
 		<Size>
 			<CX>20</CX>
@@ -882,7 +981,7 @@
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>21</X>
-			<Y>62</Y>
+			<Y>78</Y>
 		</Location>
 		<Size>
 			<CX>47</CX>
@@ -901,7 +1000,7 @@
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>71</X>
-			<Y>62</Y>
+			<Y>78</Y>
 		</Location>
 		<Size>
 			<CX>8</CX>
@@ -920,7 +1019,7 @@
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>76</X>
-			<Y>62</Y>
+			<Y>78</Y>
 		</Location>
 		<Size>
 			<CX>47</CX>
@@ -938,8 +1037,8 @@
 		<ScreenID>ENDRLabel</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>1</X>
-			<Y>76</Y>
+			<X>2</X>
+			<Y>92</Y>
 		</Location>
 		<Size>
 			<CX>20</CX>
@@ -962,7 +1061,7 @@
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>21</X>
-			<Y>76</Y>
+			<Y>92</Y>
 		</Location>
 		<Size>
 			<CX>47</CX>
@@ -981,7 +1080,7 @@
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>71</X>
-			<Y>76</Y>
+			<Y>92</Y>
 		</Location>
 		<Size>
 			<CX>8</CX>
@@ -1000,7 +1099,7 @@
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>76</X>
-			<Y>76</Y>
+			<Y>92</Y>
 		</Location>
 		<Size>
 			<CX>47</CX>
@@ -1018,8 +1117,8 @@
 		<ScreenID>ACLabel</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>1</X>
-			<Y>90</Y>
+			<X>2</X>
+			<Y>110</Y>
 		</Location>
 		<Size>
 			<CX>64</CX>
@@ -1034,15 +1133,103 @@
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
 		<AlignRight>false</AlignRight>
-		<TooltipReference>Determines how well you mitigate incoming damage</TooltipReference>
+		<TooltipReference>Determines the effectiveness of your armor. Derived from MIT and AVD</TooltipReference>
 	</Label>
 	<Label item="IW_ACNumber">
 		<ScreenID>ACNumberLabel</ScreenID>
 		<EQType>22</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>33</X>
-			<Y>90</Y>
+			<X>30</X>
+			<Y>110</Y>
+		</Location>
+		<Size>
+			<CX>80</CX>
+			<CY>14</CY>
+		</Size>
+		<Text>0</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>true</AlignCenter>
+		<AlignRight>false</AlignRight>
+	</Label>
+	<Label item="IW_MIT">
+		<ScreenID>ACLabel</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>2</X>
+			<Y>124</Y>
+		</Location>
+		<Size>
+			<CX>64</CX>
+			<CY>14</CY>
+		</Size>
+		<Text>MIT</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+		<TooltipReference>Determines how well you mitigate incoming damage</TooltipReference>
+	</Label>
+	<Label item="IW_MITNumber">
+		<ScreenID>ACNumberLabel</ScreenID>
+		<EQType>6668</EQType>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>30</X>
+			<Y>124</Y>
+		</Location>
+		<Size>
+			<CX>80</CX>
+			<CY>14</CY>
+		</Size>
+		<Text>0</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>true</AlignCenter>
+		<AlignRight>false</AlignRight>
+	</Label>
+	<Label item="IW_AVD">
+		<ScreenID>ACLabel</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>2</X>
+			<Y>138</Y>
+		</Location>
+		<Size>
+			<CX>64</CX>
+			<CY>14</CY>
+		</Size>
+		<Text>AVD</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+		<TooltipReference>Determines how well you avoid incoming damage</TooltipReference>
+	</Label>
+	<Label item="IW_AVDNumber">
+		<ScreenID>ACNumberLabel</ScreenID>
+		<EQType>6667</EQType>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>30</X>
+			<Y>138</Y>
 		</Location>
 		<Size>
 			<CX>80</CX>
@@ -1062,8 +1249,8 @@
 		<ScreenID>ATKLabel</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>1</X>
-			<Y>104</Y>
+			<X>2</X>
+			<Y>152</Y>
 		</Location>
 		<Size>
 			<CX>64</CX>
@@ -1085,8 +1272,96 @@
 		<EQType>23</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>33</X>
-			<Y>104</Y>
+			<X>30</X>
+			<Y>152</Y>
+		</Location>
+		<Size>
+			<CX>80</CX>
+			<CY>14</CY>
+		</Size>
+		<Text>0</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>true</AlignCenter>
+		<AlignRight>false</AlignRight>
+	</Label>
+	<Label item="IW_SpellDMG">
+		<ScreenID>ATKLabel</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>2</X>
+			<Y>166</Y>
+		</Location>
+		<Size>
+			<CX>64</CX>
+			<CY>14</CY>
+		</Size>
+		<Text>DMG</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+		<TooltipReference>Adds to your spell attacks.</TooltipReference>
+	</Label>
+	<Label item="IW_SpellDMGNumber">
+		<ScreenID>ATKNumberLabel</ScreenID>
+		<EQType>226</EQType>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>30</X>
+			<Y>166</Y>
+		</Location>
+		<Size>
+			<CX>80</CX>
+			<CY>14</CY>
+		</Size>
+		<Text>0</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>true</AlignCenter>
+		<AlignRight>false</AlignRight>
+	</Label>
+	<Label item="IW_Heal">
+		<ScreenID>ATKLabel</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>2</X>
+			<Y>180</Y>
+		</Location>
+		<Size>
+			<CX>64</CX>
+			<CY>14</CY>
+		</Size>
+		<Text>HEAL</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+		<TooltipReference>Adds to your spell attacks.</TooltipReference>
+	</Label>
+	<Label item="IW_HealNumber">
+		<ScreenID>ATKNumberLabel</ScreenID>
+		<EQType>225</EQType>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>30</X>
+			<Y>180</Y>
 		</Location>
 		<Size>
 			<CX>80</CX>
@@ -1108,13 +1383,13 @@
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>1</X>
-			<Y>122</Y>
+			<Y>200</Y>
 		</Location>
 		<Size>
 			<CX>120</CX>
 			<CY>14</CY>
 		</Size>
-		<Text>NEXT LEVEL</Text>
+		<Text>EXP / AAEXP</Text>
 		<TextColor>
 			<R>255</R>
 			<G>255</G>
@@ -1129,7 +1404,7 @@
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>1</X>
-			<Y>137</Y>
+			<Y>213</Y>
 		</Location>
 		<Size>
 			<CX>118</CX>
@@ -1165,8 +1440,8 @@
 		<ScreenID>STRLabel</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>1</X>
-			<Y>179</Y>
+			<X>2</X>
+			<Y>242</Y>
 		</Location>
 		<Size>
 			<CX>50</CX>
@@ -1188,11 +1463,11 @@
 		<EQType>5</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>31</X>
-			<Y>179</Y>
+			<X>30</X>
+			<Y>242</Y>
 		</Location>
 		<Size>
-			<CX>50</CX>
+			<CX>25</CX>
 			<CY>14</CY>
 		</Size>
 		<Text>255</Text>
@@ -1203,14 +1478,99 @@
 		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
+		<AlignRight>true</AlignRight>
+	</Label>
+	<Label item="IW_StrengthDivider">
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>55</X>
+			<Y>242</Y>
+		</Location>
+		<Size>
+			<CX>5</CX>
+			<CY>14</CY>
+		</Size>
+		<Text>/</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>true</AlignCenter>
 		<AlignRight>false</AlignRight>
+	</Label>
+	<Label item="IW_MaxSTR">
+		<EQType>264</EQType>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>62</X>
+			<Y>242</Y>
+		</Location>
+		<Size>
+			<CX>25</CX>
+			<CY>14</CY>
+		</Size>
+		<Text>0</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+		<AlignLeft>true</AlignLeft>
+	</Label>
+	<Label item="IW_STRPlus">
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>87</X>
+			<Y>242</Y>
+		</Location>
+		<Size>
+			<CX>10</CX>
+			<CY>14</CY>
+		</Size>
+		<Text>+</Text>
+		<TextColor>
+			<R>214</R>
+			<G>178</G>
+			<B>40</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+		<AlignLeft>true</AlignLeft>
+	</Label>
+	<Label item="IW_HeroicSTR">
+		<EQType>251</EQType>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>94</X>
+			<Y>242</Y>
+		</Location>
+		<Size>
+			<CX>23</CX>
+			<CY>14</CY>
+		</Size>
+		<Text>0</Text>
+		<TextColor>
+			<R>214</R>
+			<G>178</G>
+			<B>40</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+		<AlignLeft>true</AlignLeft>
 	</Label>
 	<Label item="IW_STA">
 		<ScreenID>STALabel</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>1</X>
-			<Y>193</Y>
+			<X>2</X>
+			<Y>255</Y>
 		</Location>
 		<Size>
 			<CX>50</CX>
@@ -1232,11 +1592,11 @@
 		<EQType>6</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>31</X>
-			<Y>193</Y>
+			<X>30</X>
+			<Y>255</Y>
 		</Location>
 		<Size>
-			<CX>50</CX>
+			<CX>25</CX>
 			<CY>14</CY>
 		</Size>
 		<Text>255</Text>
@@ -1247,14 +1607,99 @@
 		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
+		<AlignRight>true</AlignRight>
+	</Label>
+	<Label item="IW_StaminaDivider">
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>55</X>
+			<Y>255</Y>
+		</Location>
+		<Size>
+			<CX>5</CX>
+			<CY>14</CY>
+		</Size>
+		<Text>/</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>true</AlignCenter>
 		<AlignRight>false</AlignRight>
 	</Label>
+	<Label item="IW_MaxSTA">
+		<EQType>265</EQType>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>62</X>
+			<Y>255</Y>
+		</Location>
+		<Size>
+			<CX>25</CX>
+			<CY>14</CY>
+		</Size>
+		<Text>0</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+		<AlignLeft>true</AlignLeft>
+	</Label>
+	<Label item="IW_STAPlus">
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>87</X>
+			<Y>255</Y>
+		</Location>
+		<Size>
+			<CX>10</CX>
+			<CY>14</CY>
+		</Size>
+		<Text>+</Text>
+		<TextColor>
+			<R>214</R>
+			<G>178</G>
+			<B>40</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+		<AlignLeft>true</AlignLeft>
+	</Label>
+	<Label item="IW_HeroicSTA">
+		<EQType>252</EQType>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>94</X>
+			<Y>255</Y>
+		</Location>
+		<Size>
+			<CX>23</CX>
+			<CY>14</CY>
+		</Size>
+		<Text>0</Text>
+		<TextColor>
+			<R>214</R>
+			<G>178</G>
+			<B>40</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+		<AlignLeft>true</AlignLeft>
+	</Label>	
 	<Label item="IW_AGI">
 		<ScreenID>AGILabel</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>1</X>
-			<Y>207</Y>
+			<X>2</X>
+			<Y>268</Y>
 		</Location>
 		<Size>
 			<CX>50</CX>
@@ -1276,11 +1721,11 @@
 		<EQType>8</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>31</X>
-			<Y>207</Y>
+			<X>30</X>
+			<Y>268</Y>
 		</Location>
 		<Size>
-			<CX>50</CX>
+			<CX>25</CX>
 			<CY>14</CY>
 		</Size>
 		<Text>255</Text>
@@ -1291,14 +1736,99 @@
 		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
+		<AlignRight>true</AlignRight>
+	</Label>
+	<Label item="IW_AgilityDivider">
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>55</X>
+			<Y>268</Y>
+		</Location>
+		<Size>
+			<CX>5</CX>
+			<CY>14</CY>
+		</Size>
+		<Text>/</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>true</AlignCenter>
 		<AlignRight>false</AlignRight>
+	</Label>
+	<Label item="IW_MaxAGI">
+		<EQType>267</EQType>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>62</X>
+			<Y>268</Y>
+		</Location>
+		<Size>
+			<CX>25</CX>
+			<CY>14</CY>
+		</Size>
+		<Text>0</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+		<AlignLeft>true</AlignLeft>
+	</Label>
+	<Label item="IW_AGIPlus">
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>87</X>
+			<Y>268</Y>
+		</Location>
+		<Size>
+			<CX>10</CX>
+			<CY>14</CY>
+		</Size>
+		<Text>+</Text>
+		<TextColor>
+			<R>214</R>
+			<G>178</G>
+			<B>40</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+		<AlignLeft>true</AlignLeft>
+	</Label>
+	<Label item="IW_HeroicAGI">
+		<EQType>254</EQType>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>94</X>
+			<Y>268</Y>
+		</Location>
+		<Size>
+			<CX>23</CX>
+			<CY>14</CY>
+		</Size>
+		<Text>0</Text>
+		<TextColor>
+			<R>214</R>
+			<G>178</G>
+			<B>40</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+		<AlignLeft>true</AlignLeft>
 	</Label>
 	<Label item="IW_DEX">
 		<ScreenID>DEXLabel</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>1</X>
-			<Y>221</Y>
+			<X>2</X>
+			<Y>281</Y>
 		</Location>
 		<Size>
 			<CX>50</CX>
@@ -1320,11 +1850,11 @@
 		<EQType>7</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>31</X>
-			<Y>221</Y>
+			<X>30</X>
+			<Y>281</Y>
 		</Location>
 		<Size>
-			<CX>50</CX>
+			<CX>25</CX>
 			<CY>14</CY>
 		</Size>
 		<Text>255</Text>
@@ -1335,14 +1865,99 @@
 		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
+		<AlignRight>true</AlignRight>
+	</Label>
+	<Label item="IW_DexterityDivider">
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>55</X>
+			<Y>281</Y>
+		</Location>
+		<Size>
+			<CX>5</CX>
+			<CY>14</CY>
+		</Size>
+		<Text>/</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>true</AlignCenter>
 		<AlignRight>false</AlignRight>
+	</Label>
+	<Label item="IW_MaxDEX">
+		<EQType>266</EQType>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>62</X>
+			<Y>281</Y>
+		</Location>
+		<Size>
+			<CX>25</CX>
+			<CY>14</CY>
+		</Size>
+		<Text>0</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+		<AlignLeft>true</AlignLeft>
+	</Label>
+	<Label item="IW_DEXPlus">
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>87</X>
+			<Y>281</Y>
+		</Location>
+		<Size>
+			<CX>10</CX>
+			<CY>14</CY>
+		</Size>
+		<Text>+</Text>
+		<TextColor>
+			<R>214</R>
+			<G>178</G>
+			<B>40</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+		<AlignLeft>true</AlignLeft>
+	</Label>
+	<Label item="IW_HeroicDEX">
+		<EQType>253</EQType>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>94</X>
+			<Y>281</Y>
+		</Location>
+		<Size>
+			<CX>23</CX>
+			<CY>14</CY>
+		</Size>
+		<Text>0</Text>
+		<TextColor>
+			<R>214</R>
+			<G>178</G>
+			<B>40</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+		<AlignLeft>true</AlignLeft>
 	</Label>
 	<Label item="IW_WIS">
 		<ScreenID>WISLabel</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>0</X>
-			<Y>239</Y>
+			<X>2</X>
+			<Y>294</Y>
 		</Location>
 		<Size>
 			<CX>50</CX>
@@ -1365,10 +1980,10 @@
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>30</X>
-			<Y>239</Y>
+			<Y>294</Y>
 		</Location>
 		<Size>
-			<CX>50</CX>
+			<CX>25</CX>
 			<CY>14</CY>
 		</Size>
 		<Text>255</Text>
@@ -1379,14 +1994,99 @@
 		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
+		<AlignRight>true</AlignRight>
+	</Label>
+	<Label item="IW_WisdomDivider">
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>55</X>
+			<Y>294</Y>
+		</Location>
+		<Size>
+			<CX>5</CX>
+			<CY>14</CY>
+		</Size>
+		<Text>/</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>true</AlignCenter>
 		<AlignRight>false</AlignRight>
+	</Label>
+	<Label item="IW_MaxWIS">
+		<EQType>268</EQType>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>62</X>
+			<Y>294</Y>
+		</Location>
+		<Size>
+			<CX>25</CX>
+			<CY>14</CY>
+		</Size>
+		<Text>0</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+		<AlignLeft>true</AlignLeft>
+	</Label>
+	<Label item="IW_WISPlus">
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>87</X>
+			<Y>294</Y>
+		</Location>
+		<Size>
+			<CX>10</CX>
+			<CY>14</CY>
+		</Size>
+		<Text>+</Text>
+		<TextColor>
+			<R>214</R>
+			<G>178</G>
+			<B>40</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+		<AlignLeft>true</AlignLeft>
+	</Label>
+	<Label item="IW_HeroicWIS">
+		<EQType>255</EQType>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>94</X>
+			<Y>294</Y>
+		</Location>
+		<Size>
+			<CX>23</CX>
+			<CY>14</CY>
+		</Size>
+		<Text>0</Text>
+		<TextColor>
+			<R>214</R>
+			<G>178</G>
+			<B>40</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+		<AlignLeft>true</AlignLeft>
 	</Label>
 	<Label item="IW_INT">
 		<ScreenID>INTLabel</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>0</X>
-			<Y>253</Y>
+			<X>2</X>
+			<Y>307</Y>
 		</Location>
 		<Size>
 			<CX>50</CX>
@@ -1409,10 +2109,10 @@
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>30</X>
-			<Y>253</Y>
+			<Y>307</Y>
 		</Location>
 		<Size>
-			<CX>50</CX>
+			<CX>25</CX>
 			<CY>14</CY>
 		</Size>
 		<Text>255</Text>
@@ -1423,14 +2123,99 @@
 		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
+		<AlignRight>true</AlignRight>
+	</Label>	
+	<Label item="IW_IntelligenceDivider">
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>55</X>
+			<Y>307</Y>
+		</Location>
+		<Size>
+			<CX>5</CX>
+			<CY>14</CY>
+		</Size>
+		<Text>/</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>true</AlignCenter>
 		<AlignRight>false</AlignRight>
+	</Label>
+	<Label item="IW_MaxINT">
+		<EQType>269</EQType>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>62</X>
+			<Y>307</Y>
+		</Location>
+		<Size>
+			<CX>25</CX>
+			<CY>14</CY>
+		</Size>
+		<Text>0</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+		<AlignLeft>true</AlignLeft>
+	</Label>
+	<Label item="IW_INTPlus">
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>87</X>
+			<Y>307</Y>
+		</Location>
+		<Size>
+			<CX>10</CX>
+			<CY>14</CY>
+		</Size>
+		<Text>+</Text>
+		<TextColor>
+			<R>214</R>
+			<G>178</G>
+			<B>40</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+		<AlignLeft>true</AlignLeft>
+	</Label>
+	<Label item="IW_HeroicINT">
+		<EQType>256</EQType>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>94</X>
+			<Y>307</Y>
+		</Location>
+		<Size>
+			<CX>23</CX>
+			<CY>14</CY>
+		</Size>
+		<Text>0</Text>
+		<TextColor>
+			<R>214</R>
+			<G>178</G>
+			<B>40</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+		<AlignLeft>true</AlignLeft>
 	</Label>
 	<Label item="IW_CHA">
 		<ScreenID>CHALabel</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>0</X>
-			<Y>267</Y>
+			<X>1</X>
+			<Y>320</Y>
 		</Location>
 		<Size>
 			<CX>50</CX>
@@ -1453,10 +2238,10 @@
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>30</X>
-			<Y>267</Y>
+			<Y>320</Y>
 		</Location>
 		<Size>
-			<CX>50</CX>
+			<CX>25</CX>
 			<CY>14</CY>
 		</Size>
 		<Text>255</Text>
@@ -1467,14 +2252,99 @@
 		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
+		<AlignRight>true</AlignRight>
+	</Label>
+	<Label item="IW_CharismaDivider">
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>55</X>
+			<Y>320</Y>
+		</Location>
+		<Size>
+			<CX>5</CX>
+			<CY>14</CY>
+		</Size>
+		<Text>/</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>true</AlignCenter>
 		<AlignRight>false</AlignRight>
+	</Label>
+	<Label item="IW_MaxCHA">
+		<EQType>270</EQType>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>62</X>
+			<Y>320</Y>
+		</Location>
+		<Size>
+			<CX>25</CX>
+			<CY>14</CY>
+		</Size>
+		<Text>0</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+		<AlignLeft>true</AlignLeft>
+	</Label>
+	<Label item="IW_CHAPlus">
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>87</X>
+			<Y>320</Y>
+		</Location>
+		<Size>
+			<CX>10</CX>
+			<CY>14</CY>
+		</Size>
+		<Text>+</Text>
+		<TextColor>
+			<R>214</R>
+			<G>178</G>
+			<B>40</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+		<AlignLeft>true</AlignLeft>
+	</Label>
+	<Label item="IW_HeroicCHA">
+		<EQType>257</EQType>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>94</X>
+			<Y>320</Y>
+		</Location>
+		<Size>
+			<CX>23</CX>
+			<CY>14</CY>
+		</Size>
+		<Text>0</Text>
+		<TextColor>
+			<R>214</R>
+			<G>178</G>
+			<B>40</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+		<AlignLeft>true</AlignLeft>
 	</Label>
 	<Label item="IW_Poison">
 		<ScreenID>PoisonLabel</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>1</X>
-			<Y>284</Y>
+			<Y>336</Y>
 		</Location>
 		<Size>
 			<CX>64</CX>
@@ -1497,7 +2367,7 @@
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>65</X>
-			<Y>284</Y>
+			<Y>336</Y>
 		</Location>
 		<Size>
 			<CX>50</CX>
@@ -1518,7 +2388,7 @@
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>1</X>
-			<Y>298</Y>
+			<Y>349</Y>
 		</Location>
 		<Size>
 			<CX>64</CX>
@@ -1541,7 +2411,7 @@
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>65</X>
-			<Y>298</Y>
+			<Y>349</Y>
 		</Location>
 		<Size>
 			<CX>50</CX>
@@ -1562,7 +2432,7 @@
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>1</X>
-			<Y>312</Y>
+			<Y>362</Y>
 		</Location>
 		<Size>
 			<CX>64</CX>
@@ -1585,7 +2455,7 @@
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>65</X>
-			<Y>312</Y>
+			<Y>362</Y>
 		</Location>
 		<Size>
 			<CX>50</CX>
@@ -1606,7 +2476,7 @@
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>1</X>
-			<Y>326</Y>
+			<Y>375</Y>
 		</Location>
 		<Size>
 			<CX>64</CX>
@@ -1629,7 +2499,7 @@
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>65</X>
-			<Y>326</Y>
+			<Y>375</Y>
 		</Location>
 		<Size>
 			<CX>50</CX>
@@ -1650,7 +2520,7 @@
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>1</X>
-			<Y>340</Y>
+			<Y>388</Y>
 		</Location>
 		<Size>
 			<CX>64</CX>
@@ -1673,7 +2543,7 @@
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>65</X>
-			<Y>340</Y>
+			<Y>388</Y>
 		</Location>
 		<Size>
 			<CX>50</CX>
@@ -1738,7 +2608,7 @@
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>0</X>
-			<Y>379</Y>
+			<Y>405</Y>
 		</Location>
 		<Size>
 			<CX>64</CX>
@@ -1760,7 +2630,7 @@
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>46</X>
-			<Y>379</Y>
+			<Y>405</Y>
 		</Location>
 		<Size>
 			<CX>30</CX>
@@ -1780,7 +2650,7 @@
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>76</X>
-			<Y>379</Y>
+			<Y>405</Y>
 		</Location>
 		<Size>
 			<CX>4</CX>
@@ -1801,7 +2671,7 @@
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>81</X>
-			<Y>379</Y>
+			<Y>405</Y>
 		</Location>
 		<Size>
 			<CX>32</CX>
@@ -1824,7 +2694,7 @@
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>2</X>
-			<Y>148</Y>
+			<Y>213</Y>
 		</Location>
 		<Size>
 			<CX>120</CX>
@@ -1845,7 +2715,7 @@
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>1</X>
-			<Y>163</Y>
+			<Y>227</Y>
 		</Location>
 		<Size>
 			<CX>118</CX>
@@ -2198,7 +3068,7 @@
 		<Style_Minimizebox>false</Style_Minimizebox>
 		<Style_Border>true</Style_Border>
 		<Style_Sizable>false</Style_Sizable>
-		<Pieces>ClassAnim</Pieces>
+		
 	</Screen>
 	<Button item="IW_DoneButton">
 		<ScreenID>DoneButton</ScreenID>
@@ -2406,24 +3276,25 @@
 		<Pieces>InvSlot18</Pieces>
 		<Pieces>InvSlot19</Pieces>
 		<Pieces>InvSlot20</Pieces>
-		<Pieces>InvSlot21</Pieces>
+		<!-- <Pieces>InvSlot21</Pieces> -->
 		<Pieces>InvSlot22</Pieces>
-		<Pieces>InvSlotKrono</Pieces>
 		<Pieces>TileLayoutBox:IW_Slots</Pieces>
-		<Pieces>IW_ConsumeKrono</Pieces>
-		<Pieces>IW_SubscriptionTime</Pieces>
 		<Pieces>IW_Money0</Pieces>
 		<Pieces>IW_Money1</Pieces>
 		<Pieces>IW_Money2</Pieces>
 		<Pieces>IW_Money3</Pieces>
-		<Pieces>IW_PlotItems</Pieces>
 		<Pieces>IW_Skills</Pieces>
 		<Pieces>IW_AltAdvBtn</Pieces>
 		<Pieces>IW_Destroy</Pieces>
 		<Pieces>IW_Name</Pieces>
+		<Pieces>IW_LastName</Pieces>
+		<Pieces>IW_CharTitle</Pieces>
 		<Pieces>IW_Level</Pieces>
+		<Pieces>IW_LevelLabel</Pieces>
 		<Pieces>IW_Class</Pieces>
-		<Pieces>IW_Deity</Pieces>
+		<Pieces>IW_ClassAbbr</Pieces>
+		<!-- <Pieces>IW_Deity</Pieces>
+		<Pieces>IW_DeityLabel</Pieces> -->
 		<Pieces>IW_HP</Pieces>
 		<Pieces>IW_CurrentHP</Pieces>
 		<Pieces>IW_MaxHP</Pieces>
@@ -2438,24 +3309,60 @@
 		<Pieces>IW_ENDRDivider</Pieces>
 		<Pieces>IW_AC</Pieces>
 		<Pieces>IW_ACNumber</Pieces>
+		<Pieces>IW_MIT</Pieces>
+		<Pieces>IW_MITNumber</Pieces>
+		<Pieces>IW_AVD</Pieces>
+		<Pieces>IW_AVDNumber</Pieces>
 		<Pieces>IW_ATK</Pieces>
 		<Pieces>IW_ATKNumber</Pieces>
+		<Pieces>IW_SpellDMG</Pieces>
+		<Pieces>IW_SpellDMGNumber</Pieces>
+		<Pieces>IW_Heal</Pieces>
+		<Pieces>IW_HealNumber</Pieces>
 		<Pieces>IW_NextLevel</Pieces>
 		<Pieces>IW_ExpGauge</Pieces>
 		<Pieces>IW_STR</Pieces>
 		<Pieces>IW_STRNumber</Pieces>
+		<Pieces>IW_StrengthDivider</Pieces>
+		<Pieces>IW_MaxSTR</Pieces>
+		<Pieces>IW_STRPlus</Pieces>
+		<Pieces>IW_HeroicSTR</Pieces>
 		<Pieces>IW_STA</Pieces>
 		<Pieces>IW_STANumber</Pieces>
+		<Pieces>IW_StaminaDivider</Pieces>
+		<Pieces>IW_MaxSTA</Pieces>
+		<Pieces>IW_STAPlus</Pieces>
+		<Pieces>IW_HeroicSTA</Pieces>
 		<Pieces>IW_AGI</Pieces>
 		<Pieces>IW_AGINumber</Pieces>
+		<Pieces>IW_AgilityDivider</Pieces>
+		<Pieces>IW_MaxAGI</Pieces>
+		<Pieces>IW_AGIPlus</Pieces>
+		<Pieces>IW_HeroicAGI</Pieces>
 		<Pieces>IW_DEX</Pieces>
 		<Pieces>IW_DEXNumber</Pieces>
+		<Pieces>IW_DexterityDivider</Pieces>
+		<Pieces>IW_MaxDEX</Pieces>
+		<Pieces>IW_DEXPlus</Pieces>
+		<Pieces>IW_HeroicDEX</Pieces>
 		<Pieces>IW_WIS</Pieces>
 		<Pieces>IW_WISNumber</Pieces>
+		<Pieces>IW_WisdomDivider</Pieces>
+		<Pieces>IW_MaxWIS</Pieces>
+		<Pieces>IW_WISPlus</Pieces>
+		<Pieces>IW_HeroicWIS</Pieces>
 		<Pieces>IW_INT</Pieces>
 		<Pieces>IW_INTNumber</Pieces>
+		<Pieces>IW_IntelligenceDivider</Pieces>
+		<Pieces>IW_MaxINT</Pieces>
+		<Pieces>IW_INTPlus</Pieces>
+		<Pieces>IW_HeroicINT</Pieces>
 		<Pieces>IW_CHA</Pieces>
 		<Pieces>IW_CHANumber</Pieces>
+		<Pieces>IW_CharismaDivider</Pieces>
+		<Pieces>IW_MaxCHA</Pieces>
+		<Pieces>IW_CHAPlus</Pieces>
+		<Pieces>IW_HeroicCHA</Pieces>
 		<Pieces>IW_Poison</Pieces>
 		<Pieces>IW_PoisonNumber</Pieces>
 		<Pieces>IW_Magic</Pieces>
@@ -2466,13 +3373,10 @@
 		<Pieces>IW_FireNumber</Pieces>
 		<Pieces>IW_Cold</Pieces>
 		<Pieces>IW_ColdNumber</Pieces>
-		<Pieces>IW_Corruption</Pieces>
-		<Pieces>IW_CorruptionNumber</Pieces>
 		<Pieces>IW_Weight</Pieces>
 		<Pieces>IW_CurrentWeight</Pieces>
 		<Pieces>IW_WeightNumber</Pieces>
 		<Pieces>IW_MaxWeight</Pieces>
-		<Pieces>IW_AltAdv</Pieces>
 		<Pieces>IW_AltAdvGauge</Pieces>
 		<Pieces>Screen:IW_CharacterView</Pieces>
 		<Pieces>IW_DoneButton</Pieces>
@@ -2483,8 +3387,9 @@
 		<Pieces>IW_ReclaimButton</Pieces>
 		<Pieces>RadiantShardsLabel</Pieces>
 		<Pieces>EbonShardsLabel</Pieces>
-		<Pieces>IW_VitalityGauge</Pieces>
-		<Pieces>IW_AAVitalityGauge</Pieces>
+		<Pieces>Inv_Seperator0</Pieces>
+		<Pieces>Inv_Seperator1</Pieces>
+		<Pieces>Inv_Seperator2</Pieces>
 		<Pieces>Inv_Seperator3</Pieces>
 		<Pieces>Inv_Seperator4</Pieces>
 		<Pieces>Inv_Seperator5</Pieces>
@@ -7382,10 +8287,6 @@
 			<B>0</B>
 		</TabTextActiveColor>
 		<Style_Sizable>true</Style_Sizable>
-		<Pieces>IW_AltCurr_LoyaltyTokensLabel</Pieces>
-		<Pieces>IW_AltCurr_LoyaltyTokens</Pieces>
-		<Pieces>IW_AltCurr_LoyaltyVelocityLabel</Pieces>
-		<Pieces>IW_AltCurr_LoyaltyVelocity</Pieces>
 		<Pieces>IW_AltCurr_PointList</Pieces>
 		<Pieces>IW_AltCurr_DisplayMissingButton</Pieces>
 		<Pieces>IW_AltCurr_CreateItemButton</Pieces>
@@ -7412,8 +8313,6 @@
 		<PageBorderTemplate>FT_DefPageBorder</PageBorderTemplate>
 		<Pages>Page:IW_InvPage</Pages>
 		<Pages>Page:IW_StatPage</Pages>
-		<Pages>Page:IW_EIPage</Pages>
-		<Pages>Page:IW_AltCharProgPage</Pages>
 		<Pages>Page:IW_AltCurrPage</Pages>
 		<LeftAnchorOffset>1</LeftAnchorOffset>
 		<RightAnchorOffset>0</RightAnchorOffset>
