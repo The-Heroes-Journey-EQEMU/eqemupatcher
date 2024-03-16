@@ -1,0 +1,3 @@
+nektulos.eqg
+lavastorm.eqg
+bazaar.eqg
