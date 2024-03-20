@@ -1,0 +1,11 @@
+10
+rtn,rtn
+btn,btn
+cst,cst
+tpo,tpo_chr
+gpm,gpm_chr
+gpf,gpf_chr
+dpo,dpo_chr
+dpf,dpf_chr
+epm,epm_chr
+epf,epf_chr
