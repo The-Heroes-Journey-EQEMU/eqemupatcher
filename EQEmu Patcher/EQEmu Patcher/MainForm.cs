@@ -309,6 +309,7 @@ namespace EQEmu_Patcher
                         break;
                     case "240C80800112ADA825C146D7349CE85B":
                     case "A057A23F030BAA1C4910323B131407105ACAD14D": //This is a custom ROF2 from a torrent download
+                    case "389709EC0E456C3DAE881A61218AAB3F": // This is a 4gb patched eqgame
                         currentVersion = VersionTypes.Rain_Of_Fear_2;
                         splashLogo.Image = Properties.Resources.rof;
                         break;
