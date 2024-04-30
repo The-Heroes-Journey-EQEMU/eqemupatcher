@@ -534,7 +534,7 @@
 		<Style_Transparent>false</Style_Transparent>
 		<!--<TooltipReference/>-->
 	</InvSlot>
-	<!-- IS_POWER_SOURCE		
+	<!-- IS_POWER_SOURCE -->
 	<InvSlot item="InvSlot21">
 		<ScreenID>InvSlot21</ScreenID>
 		<RelativePosition>true</RelativePosition>
@@ -551,7 +551,7 @@
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
-	</InvSlot>21 -->
+	</InvSlot>
 	<!-- IS_AMMO		22 -->
 	<InvSlot item="InvSlot22">
 		<ScreenID>InvSlot22</ScreenID>
@@ -3276,7 +3276,7 @@
 		<Pieces>InvSlot18</Pieces>
 		<Pieces>InvSlot19</Pieces>
 		<Pieces>InvSlot20</Pieces>
-		<!-- <Pieces>InvSlot21</Pieces> -->
+		<Pieces>InvSlot21</Pieces>
 		<Pieces>InvSlot22</Pieces>
 		<Pieces>TileLayoutBox:IW_Slots</Pieces>
 		<Pieces>IW_Money0</Pieces>
