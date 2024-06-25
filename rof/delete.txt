@@ -1,3 +1,8 @@
 nektulos.eqg
 lavastorm.eqg
 bazaar.eqg
+highpasshold.emt
+highpasshold.eqg
+highpasshold.zon
+highpasshold_chr.txt
+highpasshold_EnvironmentEmitters.txt

@@ -1,0 +1,8 @@
+6
+cst,cst_chr
+gem,paineel_chr
+sca,eastkarana_chr
+coc,dreadlands_chr
+cwr,cwr
+scc,scc
+
