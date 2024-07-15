@@ -15,6 +15,7 @@
 2,0,TFFFE,loyequip,Loading Character Equipment Files
 2,0,TFFFE,ldonequip,Loading Character Equipment Files
 2,0,TFFFE,gatesequip,Loading Character Equipment Files
+3,0,TFFF,wof_v2_chr,Loading New Chokidai
 3,0,TFFFC,rap_chr,Loading Characters
 3,0,TFFFC,Dpm_chr,Loading Characters
 3,0,TFFFC,Dpf_chr,Loading Characters
@@ -44,17 +45,17 @@
 3,0,TFFFC,rpt.eqg,Loading Characters
 3,0,TFFFC,jkr_chr,Loading Characters
 3,0,TFFFC,mmy_chr,Loading Characters
+3,0,TFFFC,xef.eqg,Loading Characters
+3,0,TFFFC,xhm.eqg,Loading Characters
+3,0,TFFFC,bwd_chr,Loading Characters
+3,0,TFFFC,pma.eqg,Loading Custom Beastlord Pets...
+3,0,TFFFC,kbd.eqg,Loading Custom Beaslotrd Pets...
+3,0,TFFFC,dke.eqg,Loading Custom Beaslotrd Pets...
+3,0,TFFFC,gbl_chr,Loading Custom Beaslotrd Pets...
+3,0,TFFFC,snk.eqg,Loading Custom Beaslotrd Pets...
+3,0,TFFFC,ponightmare_chr,Loading Custom Beaslotrd Pets...
+3,0,TFFFC,poinnovation_chr,Loading Custom Beaslotrd Pets...
+3,0,TFFFC,pbr_chr,Loading Custom Beaslotrd Pets...
+3,0,TFFFC,fng.eqg,Loading Custom Beaslotrd Pets...
 4,0,TFFFC,Global2_chr,Loading Global Items and Equipment
 4,0,TFFFC,Global3_chr,Loading Global Items and Equipment
-5,0,TFFFC,xhm.eqg,Loading Custom Characters (Human Ghost)
-5,0,TFFFC,kbd.eqg,Loading Custom Warders
-5,0,TFFFC,tox_chr,Loading Custom Warders
-5,0,TFFFC,tox_chr,Loading Custom Warders
-5,0,TFFFC,tar.eqg,Loading Custom Warders
-5,0,TFFFC,qrg_chr,Loading Custom Warders
-5,0,TFFFC,gbn.eqg,Loading Custom Warders
-5,0,TFFFC,pma.eqg,Loading Custom Warders
-5,0,TFFFC,bxi.eqg,Loading Custom Warders
-5,0,TFFFC,poinnovation_chr,Loading Custom Warders
-5,0,TFFFC,fng.eqg,Loading Custom Warders
-
