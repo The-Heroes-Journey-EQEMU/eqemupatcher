@@ -200,3 +200,5 @@ eqemupatcher.exe
 SolutionInfo.cs
 lib/
 rof/eqgame.exe.Backup
+rof/dinput8.exp
+rof/dinput8.lib
