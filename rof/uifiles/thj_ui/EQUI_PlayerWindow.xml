@@ -266,9 +266,9 @@
 		<AutoStretch>true</AutoStretch>
 		<TopAnchorOffset>5</TopAnchorOffset>
 		<BottomAnchorOffset>29</BottomAnchorOffset>
-		<LeftAnchorOffset>29</LeftAnchorOffset>
+		<LeftAnchorOffset>4</LeftAnchorOffset>
 		<RightAnchorOffset>4</RightAnchorOffset>
-		<LeftAnchorToLeft>false</LeftAnchorToLeft>
+		<LeftAnchorToLeft>true</LeftAnchorToLeft>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
 	</Button>
 
@@ -445,7 +445,7 @@
 			<Y>1498</Y>
 		</Location>
 		<Size>
-			<CX>400</CX>
+			<CX>348</CX>
 			<CY>44</CY>
 		</Size>
 		<Font>3</Font>
