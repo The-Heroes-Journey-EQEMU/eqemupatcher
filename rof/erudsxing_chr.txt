@@ -1,0 +1,7 @@
+6
+tar,tar
+btn,btn
+snk,snk
+shi,shi
+mmy,mmy_chr
+kdg,kdg

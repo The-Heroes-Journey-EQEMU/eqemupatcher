@@ -1,0 +1,15 @@
+14
+btl,btl
+gum,gum
+mud,mud
+tar,tar
+cry,cry
+hyc,hyc
+tnt,tnt
+clw,clw
+cls,cls
+i22,i22
+cam,cam
+cse,cse
+cst,cst
+bel,bel

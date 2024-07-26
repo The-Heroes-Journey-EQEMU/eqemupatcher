@@ -1,0 +1,8 @@
+7
+gol,overthere_chr
+gia,overthere_chr
+dke,dke
+ikg,sebilis_chr
+sim,sebilis_chr
+iks,firiona_chr
+cst,cst

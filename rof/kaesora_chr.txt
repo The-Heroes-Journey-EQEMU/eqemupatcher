@@ -1,0 +1,17 @@
+16
+tar,tar
+cst,cst
+fud,fud_chr
+fsk,fsk_chr
+spl,povalor_chr
+spd,povalor_chr
+zeb,potimeb_chr
+iks,lakeofillomen_chr
+ssk,lakeofillomen_chr
+sim,sebilis_chr
+ssn,karnor_chr
+icm,warslikswood_chr
+srw,lakeofillomen_chr
+vst,karnor_chr
+hpm,hpm_chr
+fgh,fgh_chr

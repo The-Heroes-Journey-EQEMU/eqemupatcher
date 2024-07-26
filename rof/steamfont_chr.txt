@@ -1,0 +1,12 @@
+11
+zof,unrest_chr
+qcm,qeynos_chr
+dru,hateplaneb_chr
+ccd,poinnovation_chr
+cst,cst
+rtn,rtn
+dke,dke
+tar,tar
+pma,pma
+mmy,mmy_chr
+hrp,hrp

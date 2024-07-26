@@ -1,0 +1,9 @@
+8
+ddm,ddm
+cst,cst
+btn,btn
+rtn,rtn
+dma,dma
+ihu,ihu_chr
+isb,isb_chr
+iwh,iwh_chr

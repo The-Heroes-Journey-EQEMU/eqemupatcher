@@ -1,0 +1,10 @@
+9
+efr,soltemple_chr
+cst,cst
+dke,dke
+mmy,mmy_chr
+lmf,lmf_chr
+lmm,lmm_chr
+mmf,mmf_chr
+mmm,mmm_chr
+bdr,bdr

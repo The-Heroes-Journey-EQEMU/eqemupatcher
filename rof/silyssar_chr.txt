@@ -1,0 +1,10 @@
+9
+ikg,thegrey_chr
+cst,cst
+rkp,rkp
+snk,snk
+wae,wae
+gum,gum
+btl,btl
+shs,shs
+hnm,hnm

@@ -1,0 +1,12 @@
+11
+gol,overthere_chr
+gia,overthere_chr
+dke,dke
+dcm,dcm
+dcf,dcf
+mmy,mmy_chr
+lmf,lmf_chr
+lmm,lmm_chr
+mmf,mmf_chr
+mmm,mmm_chr
+rkp,rkp

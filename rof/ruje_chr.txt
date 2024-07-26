@@ -1,0 +1,15 @@
+14
+nin,nin_chr
+ivm,qeynos_chr
+wbu,wbu_chr
+rom,rom_chr
+roe,roe_chr
+gbl,gbl_chr
+pbr,pbr_chr
+box,box_chr
+brl,brl_chr
+cst,cst_chr
+rak,rak_chr
+clm,steamfont_chr
+clf,steamfont_chr
+clb,clb_chr

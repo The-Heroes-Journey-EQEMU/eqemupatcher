@@ -1,0 +1,15 @@
+14
+gor,cazicthule_chr
+imp,soldunga_chr
+dra,dra_chr
+lim,northkarana_chr
+efr,soldungb_chr
+tmt,tmt_chr
+ikg,sebilis_chr
+min,steamfont_chr
+gri,northkarana_chr
+dcm,dcm
+gnn,steamfont_chr
+pma,pma
+grl,grl
+cdm,cdm

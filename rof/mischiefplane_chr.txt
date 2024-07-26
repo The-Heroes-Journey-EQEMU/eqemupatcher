@@ -1,0 +1,14 @@
+13
+cst,cst
+shr,shr_chr
+jkr,jkr_chr
+eey,eey_chr
+rtn,rtn
+qcm,qeynos_chr
+bts,bts
+inv,inv
+prt,prt
+mrt,mrt
+zbc,zbc
+swc,swc
+bny,bny

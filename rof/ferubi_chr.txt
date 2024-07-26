@@ -1,0 +1,17 @@
+16
+tac,tac_chr
+iwh,iwh_chr
+iec,iec_chr
+ila,ila_chr
+icy,icy_chr
+ihu,ihu_chr
+isb,isb_chr
+ibr,ibr_chr
+ilb,ilb_chr
+ise,ise_chr
+tmb,tmb_chr
+ttb,ttb_chr
+twf,twf_chr
+tnm,tnm_chr
+gef,paineel_chr
+gem,paineel_chr

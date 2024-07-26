@@ -1,0 +1,13 @@
+12
+pir,qeynos_chr
+shf,ssratemple_chr
+shm,ssratemple_chr
+shn,ssratemple_chr
+kor,kor
+mmy,mmy_chr
+lmf,lmf_chr
+lmm,lmm_chr
+mmf,mmf_chr
+mmm,mmm_chr
+T02,T02
+tre,southkarana_chr

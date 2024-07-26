@@ -1,0 +1,7 @@
+6
+kgo,lakeofillomen_chr
+eey,eey_chr
+cst,cst
+rtn,rtn
+mnt,mnt
+snk,snk

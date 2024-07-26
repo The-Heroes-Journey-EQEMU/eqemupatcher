@@ -1,0 +1,5 @@
+4
+tra,tra
+pma,pma
+mmy,mmy_chr
+cls,cls

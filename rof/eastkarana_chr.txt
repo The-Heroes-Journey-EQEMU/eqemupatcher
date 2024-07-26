@@ -1,0 +1,9 @@
+8
+beh,beholder_chr
+ghu,commons_chr
+gnn,steamfont_chr
+tar,tar
+tra,tra
+pma,pma
+snk,snk
+mmy,mmy_chr

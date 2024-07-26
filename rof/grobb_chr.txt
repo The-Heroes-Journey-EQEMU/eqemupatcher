@@ -1,0 +1,8 @@
+7
+mos,cazicthule_chr2
+pir,qeynos_chr
+tar,tar
+cst,cst
+bse,bse
+inv,inv
+prt,prt

@@ -1,0 +1,15 @@
+14
+cst,cst
+dru,hateplaneb_chr
+udk,udk_chr
+efe,poair_chr
+dcm,dcm
+dcf,dcf
+mmy,mmy_chr
+lmf,lmf_chr
+lmm,lmm_chr
+mmf,mmf_chr
+mmm,mmm_chr
+onm,onm
+dke,dke
+cdm,cdm

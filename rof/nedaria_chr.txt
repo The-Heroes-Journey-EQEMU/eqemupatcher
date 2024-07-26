@@ -1,0 +1,11 @@
+10
+gri,gri_chr
+pir,qeynos_chr
+stu,stu_chr
+pbr,pbr_chr
+paf,paf_chr
+tnf,tnf_chr
+shp,shp_chr
+snk,snk
+pma,pma
+mmy,mmy_chr

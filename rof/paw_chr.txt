@@ -1,0 +1,8 @@
+7
+veg,veg_chr
+wmp,wmp_chr
+str,str_chr
+gtd,gtd_chr
+glm,glm_chr
+cst,cst
+snk,snk

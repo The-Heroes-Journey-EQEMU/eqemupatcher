@@ -1,0 +1,8 @@
+7
+wuf,wuf_chr
+tar,tar
+mmy,mmy_chr
+icy,icy_chr
+prt,prt
+xim,xim
+grl,grl

@@ -1,0 +1,11 @@
+10
+scu,scu
+dsg,dsg
+mur,mur
+tgo,tgo
+ddm,ddm
+cst,cst
+frd,frd
+dma,dma
+map,map
+bat,bat

@@ -1,0 +1,7 @@
+6
+mur,mur
+cst,cst
+bat,bat
+dma,dma
+map,map
+ihu,ihu_chr

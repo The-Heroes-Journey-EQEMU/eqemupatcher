@@ -1,0 +1,9 @@
+8
+rtn,rtn
+btn,btn
+snk,snk
+mmy,mmy_chr
+gnl,gnl
+ihu,ihu_chr
+prt,prt
+bdr,bdr

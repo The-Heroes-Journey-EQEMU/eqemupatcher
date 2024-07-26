@@ -1,0 +1,14 @@
+13
+cst,cst
+dvs,dvs
+dke,dke
+pma,pma
+tar,tar
+spq,spq
+ans,ans
+fgt,fgt
+mmy,mmy_chr
+lmf,lmf_chr
+lmm,lmm_chr
+mmf,mmf_chr
+mmm,mmm_chr

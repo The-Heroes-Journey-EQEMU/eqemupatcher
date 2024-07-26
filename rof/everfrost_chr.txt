@@ -1,0 +1,8 @@
+7
+tar,tar
+pma,pma
+gem,paineel_chr
+syn,syn_chr
+eru,eru
+wil,airplane_chr
+bdr,bdr

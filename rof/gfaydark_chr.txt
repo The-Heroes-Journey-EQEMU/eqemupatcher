@@ -1,0 +1,7 @@
+6
+tar,tar
+dke,dke
+btn,btn
+tra,tra
+mmm,mmm_chr
+bse,bse

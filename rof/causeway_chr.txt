@@ -1,0 +1,17 @@
+16
+mur,mur
+dsg,dsg
+fra,fra
+ddm,ddm
+bat,bat
+dma,dma
+dsf,dsf
+cst,cst
+dbp,dbp
+rkp,rkp
+mes,mes
+iwh,iwh_chr
+ila,ila_chr
+icy,icy_chr
+ihu,ihu_chr
+isb,isb_chr

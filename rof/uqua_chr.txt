@@ -1,0 +1,13 @@
+12
+tem,tem_chr
+tef,tef_chr
+iec,iec_chr
+ihu,ihu_chr
+icy,icy_chr
+tac,tac_chr
+tmb,tmb_chr
+ttb,ttb_chr
+twf,twf_chr
+tnm,tnm_chr
+tnf,tnf_chr
+tgl,tgl_chr

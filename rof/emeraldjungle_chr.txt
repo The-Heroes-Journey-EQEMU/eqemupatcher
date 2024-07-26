@@ -1,0 +1,6 @@
+5
+pma,pma
+fud,fud_chr
+rkp,rkp
+wil,airplane_chr
+vnm,vnm

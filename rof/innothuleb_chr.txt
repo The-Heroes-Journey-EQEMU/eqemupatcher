@@ -1,0 +1,8 @@
+7
+mos,cazicthule_chr2
+mmy,mmy_chr
+rtn,rtn
+tar,tar
+snk,snk
+frt,innothule_chr
+bdr,bdr

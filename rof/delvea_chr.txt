@@ -1,0 +1,11 @@
+10
+cst,cst
+dvs,dvs
+dke,dke
+dre,dre
+lvr,lvr
+seg,seg
+lsp,lsp
+lsq,lsq
+tar,tar
+spq,spq

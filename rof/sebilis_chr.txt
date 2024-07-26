@@ -1,0 +1,7 @@
+6
+srw,lakeofillomen_chr
+dra,dra_chr
+cst,cst
+onm,onm
+myg,myg
+cdm,cdm

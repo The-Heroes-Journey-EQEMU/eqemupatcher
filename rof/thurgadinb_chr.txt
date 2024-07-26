@@ -1,0 +1,10 @@
+9
+myg,myg
+pma,pma
+drg,drg
+mph,mph
+cst,cst
+cdm,cdm
+cdf,cdf
+mud,mud
+gcb,gcb

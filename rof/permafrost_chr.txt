@@ -1,0 +1,15 @@
+14
+mim,mim_chr
+hlf,halas_chr
+hlm,halas_chr
+efr,soldungb_chr
+spc,frozenshadow_chr
+dke,dke
+tar,tar
+onm,onm
+myg,myg
+cst,cst
+tnt,tnt
+seg,seg
+t12,t12
+cdm,cdm

@@ -1,0 +1,14 @@
+13
+msc,msc
+kng,kng
+inv,inv
+brx,brx
+aie,aie
+mud,mud
+dvs,dvs
+I10,I10
+I26,I26
+bdr,bdr
+swi,swi
+I16,I16
+ALA,ALA

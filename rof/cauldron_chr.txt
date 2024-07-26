@@ -1,0 +1,5 @@
+4
+sed,sed_chr
+rtn,rtn
+snk,snk
+mmy,mmy_chr

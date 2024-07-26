@@ -1,0 +1,16 @@
+15
+vek,vek_chr
+gvk,gvk_chr
+bvk,bvk_chr
+wof,wof_chr
+wuf,wuf_chr
+sim,karnor_chr
+dml,charasis_chr
+ikg,karnor_chr
+rea,karnor_chr
+ikh,karnor_chr
+kgo,lakeofillomen_chr
+bgg,lakeofillomen_chr
+trk,hateplane_chr
+dru,hateplane_chr
+cls,cls

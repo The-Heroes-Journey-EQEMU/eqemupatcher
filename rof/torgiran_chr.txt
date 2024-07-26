@@ -1,0 +1,13 @@
+12
+lug,lug_chr
+lgr,lgr_chr
+lga,lga_chr
+fbm,fbm_chr
+fbf,fbf_chr
+tbm,tbm_chr
+tbf,tbf_chr
+tpb,tpb_chr
+tpo,tpo_chr
+gpm,gpm_chr
+opm,opm_chr
+rat,qeynos_chr

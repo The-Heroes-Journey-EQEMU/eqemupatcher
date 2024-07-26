@@ -1,0 +1,12 @@
+11
+tnm,tnm_chr
+tnf,tnf_chr
+tem,tem_chr
+tef,tef_chr
+tgl,tgl_chr
+bon,bon_chr
+ttb,ttb_chr
+tac,tac_chr
+tmb,tmb_chr
+twf,twf_chr
+T05,T05

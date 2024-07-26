@@ -1,0 +1,12 @@
+11
+btn,btn
+ddm,ddm
+ddv,ddv
+dma,dma
+dsf,dsf
+ila,ila_chr
+isb,isb_chr
+iwh,iwh_chr
+rtn,rtn
+tgo,tgo
+tmb,tmb_chr

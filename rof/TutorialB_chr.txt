@@ -1,0 +1,14 @@
+13
+rtn,rtn
+btn,btn
+dke,dke
+tar,tar
+dre,dre
+spq,spq
+dsg,dsg
+rkp,rkp
+seg,seg
+box,box_chr
+brl,brl_chr
+cst,cst_chr
+bon,bon_chr

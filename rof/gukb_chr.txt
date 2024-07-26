@@ -1,0 +1,16 @@
+15
+tar,tar
+fro,gukbottom_chr
+frg,gukbottom_chr
+ivm,qeynos_chr
+wil,gfaydark_chr
+goo,goo_chr
+fsk,fsk_chr
+fud,fud_chr
+nin,nin_chr
+fgh,fgh_chr
+eey,eey_chr
+box,box_chr
+cst,cst_chr
+brl,brl_chr
+bon,bon_chr

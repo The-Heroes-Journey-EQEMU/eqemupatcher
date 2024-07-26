@@ -1,0 +1,5 @@
+4
+rtn,rtn
+snk,snk
+gnl,gnl
+ibr,ibr_chr

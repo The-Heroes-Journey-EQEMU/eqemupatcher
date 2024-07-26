@@ -1,0 +1,16 @@
+15
+eel,eel_chr
+ivm,qeynos_chr
+rgm,rgm_chr
+sgr,sgr_chr
+trn,trn_chr
+paf,paf_chr
+sem,sem_chr
+sef,sef_chr
+nin,nin_chr
+glm,glm_chr
+drv,drv_chr
+box,box_chr
+brl,brl_chr
+cst,cst_chr
+vas,vas_chr

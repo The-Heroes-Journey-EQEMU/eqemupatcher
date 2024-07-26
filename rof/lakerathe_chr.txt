@@ -1,0 +1,4 @@
+3
+cst,cst
+snk,snk
+mmy,mmy_chr

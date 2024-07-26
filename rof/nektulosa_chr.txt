@@ -1,0 +1,17 @@
+16
+SHR,SHR
+FNG,FNG
+ORK,ORK
+SHR,SHR
+CST,CST
+WIL,WIL
+CRS,CRS
+ZMM,ZMM
+IMP,soldungb_chr
+WIL,commons_chr
+SHR,fungusgrove_chr
+CRS,CRS
+CRL,CRL
+FGP,FGP
+RTN,RTN
+T05,T05

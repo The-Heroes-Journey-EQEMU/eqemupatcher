@@ -1,0 +1,12 @@
+11
+RTN,RTN
+TNM,TNM_CHR
+TNF,TNF_CHR
+BRL,BRL_CHR
+BOX,BOX_CHR
+CST,CST_CHR
+SHP,SHP_CHR
+tac,tac_chr
+tmb,tmb_chr
+ttb,ttb_chr
+twf,twf_chr

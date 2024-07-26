@@ -619,29 +619,3 @@ L 1150, 3980, 0, 1180, 3980, 0, 255, 0, 0
 L 1150, 4010, 0, 1180, 4010, 0, 255, 0, 0
 L 1150, 3950, 0, 1150, 4010, 0, 255, 0, 0
 L 1180, 3950, 0, 1150, 3950, 0, 255, 0, 0
-P 0, 2300, 0, 0, 0, 0, 2, Revised_Map:_Brewall_Rainsiger_(Cazic-Thule)
-P 0, 2500, 0, 0, 0, 0, 2, http://www.eqmaps.info
-P 0, 2700, 0, 0, 0, 0, 2, Return_of_the_Exiled_(www.roteguild.org)
-P 0, 2900, 0, 127, 64, 0, 2, a_Dragorn_Prodigy
-P 0, 3100, 0, 127, 64, 0, 2, Bolno_the_Peon
-P 0, 3300, 0, 127, 64, 0, 2, Bowlord_Rorn
-P 0, 3500, 0, 127, 64, 0, 2, Dragorn_Laborer
-P 0, 3700, 0, 127, 64, 0, 2, Granitesmash
-P 0, 3900, 0, 127, 64, 0, 2, Guttertusk_the_Cruel
-P 0, 4100, 0, 127, 64, 0, 2, Ikaav_Slaveherder
-P 0, 4300, 0, 127, 64, 0, 2, Illis_Mindweaver
-P 0, 4500, 0, 127, 64, 0, 2, Kyv_Bowguard
-P 0, 4700, 0, 127, 64, 0, 2, Kyv_Bowhound
-P 0, 4900, 0, 127, 64, 0, 2, Mistress_Ujani
-P 0, 5100, 0, 127, 64, 0, 2, Murkglider_Deathsting
-P 0, 5300, 0, 127, 64, 0, 2, Noc_Slavehunter
-P 0, 5500, 0, 127, 64, 0, 2, Ornaia_the_Foul
-P 0, 5700, 0, 127, 64, 0, 2, Reinad_Scalebreath
-P 0, 5900, 0, 127, 64, 0, 2, Siliena_the_Wicked
-P 0, 6100, 0, 127, 64, 0, 2, Souldrainer
-P 0, 6300, 0, 127, 64, 0, 2, Stoneworker_Stonetooth
-P 0, 6500, 0, 127, 64, 0, 2, Tyian_Rianda
-P 0, 6700, 0, 127, 64, 0, 2, Ukun_Fleshhunter
-P 0, 6900, 0, 127, 64, 0, 2, Ungi_the_Swift
-P 0, 7100, 0, 127, 64, 0, 2, Ungorn_the_Furious
-P 0, 7300, 0, 127, 64, 0, 2, Vornad_Deathtusk
