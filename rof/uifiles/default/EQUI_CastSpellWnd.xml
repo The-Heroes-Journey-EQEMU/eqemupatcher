@@ -251,7 +251,7 @@
 		<TopAnchorOffset>2</TopAnchorOffset>
 		<BottomAnchorOffset>2</BottomAnchorOffset>
 		<LeftAnchorOffset>2</LeftAnchorOffset>
-		<RightAnchorOffset>24</RightAnchorOffset>	
+		<RightAnchorOffset>22</RightAnchorOffset>	
 		<TopAnchorToTop>true</TopAnchorToTop>
 		<BottomAnchorToTop>false</BottomAnchorToTop>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
@@ -263,8 +263,8 @@
 		<ScreenID>CSPW_VerticalOrientationTemplate</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<AutoStretch>true</AutoStretch>
-		<TopAnchorOffset>2</TopAnchorOffset>
-		<BottomAnchorOffset>26</BottomAnchorOffset>
+		<TopAnchorOffset>0</TopAnchorOffset>
+		<BottomAnchorOffset>22</BottomAnchorOffset>
 		<LeftAnchorOffset>2</LeftAnchorOffset>
 		<RightAnchorOffset>0</RightAnchorOffset>	
 		<TopAnchorToTop>true</TopAnchorToTop>
@@ -323,8 +323,8 @@
 		<ScreenID>CSPW_VerticalOrientationBook</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<AutoStretch>true</AutoStretch>
-		<TopAnchorOffset>26</TopAnchorOffset>
-		<BottomAnchorOffset>2</BottomAnchorOffset>
+		<TopAnchorOffset>22</TopAnchorOffset>
+		<BottomAnchorOffset>0</BottomAnchorOffset>
 		<LeftAnchorOffset>12</LeftAnchorOffset>
 		<RightAnchorOffset>34</RightAnchorOffset>	
 		<TopAnchorToTop>false</TopAnchorToTop>
@@ -350,7 +350,7 @@
 		</Location>
 		<Size>
 			<CX>55</CX>
-			<CY>373</CY>
+			<CY>365</CY>
 		</Size>
 		<Text>Spells</Text>
 		<Style_Transparent>false</Style_Transparent>
@@ -364,9 +364,9 @@
 		<Style_ClientMovable>true</Style_ClientMovable>
 		<Escapable>false</Escapable>
 		<Pieces>TileLayoutBox:CSPW_SpellGemLayout</Pieces>
-		<Pieces>Screen:CSPW_VerticalOrientationBook</Pieces>
+		<!--<Pieces>Screen:CSPW_VerticalOrientationBook</Pieces>
 		<Pieces>Screen:CSPW_HorizontalOrientationBook</Pieces>
 		<Pieces>Screen:CSPW_HorizontalOrientationTemplate</Pieces>
-		<Pieces>Screen:CSPW_VerticalOrientationTemplate</Pieces>
+		<Pieces>Screen:CSPW_VerticalOrientationTemplate</Pieces>-->
 	</Screen>
 </XML>

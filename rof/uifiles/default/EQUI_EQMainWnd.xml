@@ -405,13 +405,14 @@
 		<Style_Border>true</Style_Border>
 		<Style_Sizable>false</Style_Sizable>
 	</Screen>
+	
 	<Button item = "EQM_EQButton">
 		<ScreenID>EQButton</ScreenID>
 		<!--<Font>3</Font>-->
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>0</X>
-			<Y>44</Y>
+			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>44</CX>
@@ -436,46 +437,7 @@
 			<PressedFlyby>A_EQBtnPressedFlyby</PressedFlyby>
 		</ButtonDrawTemplate>
 	</Button>
-
-	<Button item = "EQM_SCButton">
-		<ScreenID>SCButton</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>0</X>
-			<Y>0</Y>
-		</Location>
-		<Size>
-			<CX>44</CX>
-			<CY>44</CY>
-		</Size>
-		<TooltipReference>Click this to open the Marketplace</TooltipReference>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
-		<Template>BDT_SCBtn</Template>
-	</Button>
-  
-	<Button item = "EQM_SCFSButton">
-		<ScreenID>SCFSButton</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>0</X>
-			<Y>0</Y>
-		</Location>
-		<Size>
-			<CX>44</CX>
-			<CY>44</CY>
-		</Size>
-		<TooltipReference>Click this to open the Marketplace</TooltipReference>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
-		<Template>BDT_SCFSBtn</Template>
-	</Button>
+	
 	<Screen item = "EQMainWnd">
 		<ScreenID/>
 		<RelativePosition>false</RelativePosition>
@@ -484,8 +446,8 @@
 			<Y>550</Y>
 		</Location>
 		<Size>
-			<CX>54</CX>
-			<CY>96</CY>
+			<CX>53</CX>
+			<CY>53</CY>
 		</Size>
 		<Text></Text>
 		<Style_VScroll>false</Style_VScroll>
@@ -499,7 +461,5 @@
 		<Style_Border>true</Style_Border>
 		<Style_Sizable>false</Style_Sizable>
 		<Pieces>EQM_EQButton</Pieces>
-		<Pieces>EQM_SCButton</Pieces>
-		<Pieces>EQM_SCFSButton</Pieces>
 	</Screen>
 </XML>

@@ -1618,9 +1618,9 @@
 		<ScreenID>HB_HotButtonLayout</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<AutoStretch>true</AutoStretch>
-		<TopAnchorOffset>4</TopAnchorOffset>
-		<BottomAnchorOffset>4</BottomAnchorOffset>
-		<LeftAnchorOffset>4</LeftAnchorOffset>
+		<TopAnchorOffset>2</TopAnchorOffset>
+		<BottomAnchorOffset>2</BottomAnchorOffset>
+		<LeftAnchorOffset>2</LeftAnchorOffset>
 		<RightAnchorOffset>11</RightAnchorOffset>	
 		<TopAnchorToTop>true</TopAnchorToTop>
 		<BottomAnchorToTop>false</BottomAnchorToTop>
@@ -1628,8 +1628,8 @@
 		<RightAnchorToLeft>false</RightAnchorToLeft>
 		<Style_Transparent>true</Style_Transparent>
 		<Style_TransparentControl>true</Style_TransparentControl>
-		<Spacing>4</Spacing>
-		<SecondarySpacing>4</SecondarySpacing>
+		<Spacing>2</Spacing>
+		<SecondarySpacing>2</SecondarySpacing>
 		<HorizontalFirst>true</HorizontalFirst>
 		<AnchorToTop>true</AnchorToTop>
 		<AnchorToLeft>true</AnchorToLeft>

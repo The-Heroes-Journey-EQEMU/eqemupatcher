@@ -17,7 +17,7 @@
 			</Location>
 			<Size>
 				<CX>114</CX>
-				<CY>2</CY>
+				<CY>3</CY>
 			</Size>
 		</Frames>
 	</Ui2DAnimation>
@@ -31,7 +31,7 @@
 			</Location>
 			<Size>
 				<CX>114</CX>
-				<CY>2</CY>
+				<CY>3</CY>
 			</Size>
 		</Frames>
 	</Ui2DAnimation>
@@ -41,11 +41,11 @@
 			<Texture>TargetBox.tga</Texture>
 			<Location>
 				<X>1</X>
-				<Y>3</Y>
+				<Y>4</Y>
 			</Location>
 			<Size>
 				<CX>3</CX>
-				<CY>23</CY>
+				<CY>21</CY>
 			</Size>
 		</Frames>
 	</Ui2DAnimation>
@@ -54,12 +54,12 @@
 		<Frames>
 			<Texture>TargetBox.tga</Texture>
 			<Location>
-				<X>111</X>
-				<Y>3</Y>
+				<X>112</X>
+				<Y>4</Y>
 			</Location>
 			<Size>
 				<CX>3</CX>
-				<CY>23</CY>
+				<CY>21</CY>
 			</Size>
 		</Frames>
 	</Ui2DAnimation>
@@ -82,10 +82,10 @@
 		<Animation>A_TargetBoxTop</Animation>
 		<AutoDraw>false</AutoDraw>
 		<AutoStretch>true</AutoStretch>
-		<TopAnchorOffset>0</TopAnchorOffset>
-		<BottomAnchorOffset>3</BottomAnchorOffset>
-		<LeftAnchorOffset>0</LeftAnchorOffset>
-		<RightAnchorOffset>0</RightAnchorOffset>
+		<TopAnchorOffset>2</TopAnchorOffset>
+		<BottomAnchorOffset>4</BottomAnchorOffset>
+		<LeftAnchorOffset>1</LeftAnchorOffset>
+		<RightAnchorOffset>1</RightAnchorOffset>
 		<TopAnchorToTop>true</TopAnchorToTop>
 		<BottomAnchorToTop>true</BottomAnchorToTop>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
@@ -96,10 +96,10 @@
 		<Animation>A_TargetBoxBottom</Animation>
 		<AutoDraw>false</AutoDraw>
 		<AutoStretch>true</AutoStretch>
-		<TopAnchorOffset>30</TopAnchorOffset>
-		<BottomAnchorOffset>32</BottomAnchorOffset>
-		<LeftAnchorOffset>0</LeftAnchorOffset>
-		<RightAnchorOffset>0</RightAnchorOffset>
+		<TopAnchorOffset>38</TopAnchorOffset>
+		<BottomAnchorOffset>40</BottomAnchorOffset>
+		<LeftAnchorOffset>1</LeftAnchorOffset>
+		<RightAnchorOffset>1</RightAnchorOffset>
 		<TopAnchorToTop>true</TopAnchorToTop>
 		<BottomAnchorToTop>true</BottomAnchorToTop>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
@@ -110,10 +110,10 @@
 		<Animation>A_TargetBoxLeft</Animation>
 		<AutoDraw>false</AutoDraw>
 		<AutoStretch>true</AutoStretch>
-		<TopAnchorOffset>3</TopAnchorOffset>
-		<BottomAnchorOffset>30</BottomAnchorOffset>
-		<LeftAnchorOffset>0</LeftAnchorOffset>
-		<RightAnchorOffset>4</RightAnchorOffset>		
+		<TopAnchorOffset>4</TopAnchorOffset>
+		<BottomAnchorOffset>38</BottomAnchorOffset>
+		<LeftAnchorOffset>1</LeftAnchorOffset>
+		<RightAnchorOffset>3</RightAnchorOffset>		
 		<TopAnchorToTop>true</TopAnchorToTop>
 		<BottomAnchorToTop>true</BottomAnchorToTop>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
@@ -124,10 +124,10 @@
 		<Animation>A_TargetBoxRight</Animation>
 		<AutoDraw>false</AutoDraw>
 		<AutoStretch>true</AutoStretch>
-		<TopAnchorOffset>3</TopAnchorOffset>
-		<BottomAnchorOffset>30</BottomAnchorOffset>
-		<LeftAnchorOffset>4</LeftAnchorOffset>
-		<RightAnchorOffset>0</RightAnchorOffset>
+		<TopAnchorOffset>4</TopAnchorOffset>
+		<BottomAnchorOffset>38</BottomAnchorOffset>
+		<LeftAnchorOffset>3</LeftAnchorOffset>
+		<RightAnchorOffset>1</RightAnchorOffset>
 		<TopAnchorToTop>true</TopAnchorToTop>
 		<BottomAnchorToTop>true</BottomAnchorToTop>
 		<LeftAnchorToLeft>false</LeftAnchorToLeft>
@@ -139,23 +139,23 @@
 		<AutoDraw>false</AutoDraw>
 		<AutoStretch>true</AutoStretch>
 		<LeftAnchorOffset>4</LeftAnchorOffset>
-		<TopAnchorOffset>3</TopAnchorOffset>
+		<TopAnchorOffset>4</TopAnchorOffset>
 		<RightAnchorOffset>0</RightAnchorOffset>
-		<BottomAnchorOffset>32</BottomAnchorOffset>
+		<BottomAnchorOffset>38</BottomAnchorOffset>
 		<BottomAnchorToTop>true</BottomAnchorToTop>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
 	</StaticAnimation>
 	<Gauge item="Target_HP">
 		<ScreenID>TargetHP</ScreenID>
-		<Font>3</Font>
+		<Font>4</Font>
 		<TextColor>
 			<R>240</R>
 			<G>240</G>
 			<B>240</B>
 		</TextColor>
 		<RelativePosition>true</RelativePosition>
-		<GaugeOffsetY>16</GaugeOffsetY>
-		<TextOffsetX>8</TextOffsetX>
+		<GaugeOffsetY>17</GaugeOffsetY>
+		<TextOffsetY>1</TextOffsetY>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
@@ -177,16 +177,16 @@
 		</GaugeDrawTemplate>
 		<AutoStretch>true</AutoStretch>
 		<TopAnchorOffset>2</TopAnchorOffset>
-		<BottomAnchorOffset>29</BottomAnchorOffset>
-		<LeftAnchorOffset>2</LeftAnchorOffset>
-		<RightAnchorOffset>4</RightAnchorOffset>
+		<BottomAnchorOffset>35</BottomAnchorOffset>
+		<LeftAnchorOffset>5</LeftAnchorOffset>
+		<RightAnchorOffset>5</RightAnchorOffset>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
 	</Gauge>
 	<Label item="Target_HPLabel">
 		<ScreenID>HPLabel</ScreenID>
 		<EQType>29</EQType>
 		<RelativePosition>true</RelativePosition>
-		<Font>1</Font>
+		<Font>3</Font>
 		<Text>100</Text>
 		<TextColor>
 			<R>255</R>
@@ -196,15 +196,15 @@
 		<NoWrap>true</NoWrap>
 		<AlignCenter>true</AlignCenter>
 		<AutoStretch>true</AutoStretch>
-		<TopAnchorOffset>17</TopAnchorOffset>
-		<BottomAnchorOffset>29</BottomAnchorOffset>
-		<LeftAnchorOffset>2</LeftAnchorOffset>
+		<TopAnchorOffset>18</TopAnchorOffset>
+		<BottomAnchorOffset>32</BottomAnchorOffset>
+		<LeftAnchorOffset>-14</LeftAnchorOffset>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
 	</Label>
 	<Label item="Target_HPPercLabel">
 		<ScreenID>HPPercLabel</ScreenID>
 		<RelativePosition>true</RelativePosition>
-		<Font>1</Font>
+		<Font>3</Font>
 		<Text>%</Text>
 		<TextColor>
 			<R>255</R>
@@ -214,16 +214,90 @@
 		<NoWrap>true</NoWrap>
 		<AlignCenter>true</AlignCenter>
 		<AutoStretch>true</AutoStretch>
-		<TopAnchorOffset>17</TopAnchorOffset>
-		<BottomAnchorOffset>29</BottomAnchorOffset>
-		<LeftAnchorOffset>24</LeftAnchorOffset>
+		<TopAnchorOffset>18</TopAnchorOffset>
+		<BottomAnchorOffset>32</BottomAnchorOffset>
+		<LeftAnchorOffset>20</LeftAnchorOffset>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+	</Label>
+	<Gauge item="HoTT_HP">
+		<ScreenID>HoTT_HP</ScreenID>
+		<Font>4</Font>
+		<TextColor>
+			<R>240</R>
+			<G>240</G>
+			<B>240</B>
+		</TextColor>
+		<RelativePosition>true</RelativePosition>
+		<GaugeOffsetY>17</GaugeOffsetY>
+		<TextOffsetY>1</TextOffsetY>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>false</Style_Transparent>
+		<TooltipReference />
+		<FillTint>
+			<R>240</R>
+			<G>0</G>
+			<B>0</B>
+		</FillTint>
+		<DrawLinesFill>false</DrawLinesFill>
+		<EQType>27</EQType>
+		<GaugeDrawTemplate>
+			<Background>A_GaugeBackground</Background>
+			<Fill>A_GaugeFill</Fill>
+			<Lines>A_GaugeLines</Lines>
+			<LinesFill>A_GaugeLinesFill</LinesFill>
+			<EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
+			<EndCapRight>A_GaugeEndCapRight</EndCapRight>
+		</GaugeDrawTemplate>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>42</TopAnchorOffset>
+		<BottomAnchorOffset>75</BottomAnchorOffset>
+		<LeftAnchorOffset>5</LeftAnchorOffset>
+		<RightAnchorOffset>5</RightAnchorOffset>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+	</Gauge>
+	<Label item="HoTT_HPLabel">
+		<ScreenID>HoTT_HPLabel</ScreenID>
+		<EQType>120</EQType>
+		<RelativePosition>true</RelativePosition>
+		<Font>3</Font>
+		<Text>100</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>true</AlignCenter>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>59</TopAnchorOffset>
+		<BottomAnchorOffset>75</BottomAnchorOffset>
+		<LeftAnchorOffset>-14</LeftAnchorOffset>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+	</Label>
+	<Label item="HoTT_HPPercLabel">
+		<ScreenID>HoTT_HPPercLabel</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Font>3</Font>
+		<Text>%</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>true</AlignCenter>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>59</TopAnchorOffset>
+		<BottomAnchorOffset>75</BottomAnchorOffset>
+		<LeftAnchorOffset>20</LeftAnchorOffset>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
 	</Label>
 	<Button item="Target_Buff0_Button">
 		<ScreenID>Buff0</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -234,15 +308,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff1_Button">
 		<ScreenID>Buff1</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -253,15 +327,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff2_Button">
 		<ScreenID>Buff2</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -272,15 +346,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff3_Button">
 		<ScreenID>Buff3</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -291,15 +365,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff4_Button">
 		<ScreenID>Buff4</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -310,15 +384,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff5_Button">
 		<ScreenID>Buff5</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -329,15 +403,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff6_Button">
 		<ScreenID>Buff6</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -348,15 +422,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff7_Button">
 		<ScreenID>Buff7</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -367,15 +441,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff8_Button">
 		<ScreenID>Buff8</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -386,15 +460,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff9_Button">
 		<ScreenID>Buff9</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -405,15 +479,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff10_Button">
 		<ScreenID>Buff10</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -424,15 +498,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff11_Button">
 		<ScreenID>Buff11</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -443,15 +517,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff12_Button">
 		<ScreenID>Buff12</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -462,15 +536,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff13_Button">
 		<ScreenID>Buff13</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -481,15 +555,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff14_Button">
 		<ScreenID>Buff14</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -500,15 +574,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff15_Button">
 		<ScreenID>Buff15</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -519,15 +593,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff16_Button">
 		<ScreenID>Buff16</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -538,15 +612,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff17_Button">
 		<ScreenID>Buff17</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -557,15 +631,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff18_Button">
 		<ScreenID>Buff18</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -576,15 +650,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff19_Button">
 		<ScreenID>Buff19</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -595,15 +669,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff20_Button">
 		<ScreenID>Buff20</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -614,15 +688,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff21_Button">
 		<ScreenID>Buff21</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -633,15 +707,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff22_Button">
 		<ScreenID>Buff22</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -652,15 +726,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff23_Button">
 		<ScreenID>Buff23</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -671,15 +745,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff24_Button">
 		<ScreenID>Buff24</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -690,15 +764,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff25_Button">
 		<ScreenID>Buff25</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -709,15 +783,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff26_Button">
 		<ScreenID>Buff26</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -728,15 +802,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff27_Button">
 		<ScreenID>Buff27</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -747,15 +821,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff28_Button">
 		<ScreenID>Buff28</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -766,15 +840,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff29_Button">
 		<ScreenID>Buff29</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -785,15 +859,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff30_Button">
 		<ScreenID>Buff30</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -804,15 +878,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff31_Button">
 		<ScreenID>Buff31</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -823,15 +897,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff32_Button">
 		<ScreenID>Buff32</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -842,15 +916,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff33_Button">
 		<ScreenID>Buff33</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -861,15 +935,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff34_Button">
 		<ScreenID>Buff34</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -880,15 +954,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff35_Button">
 		<ScreenID>Buff35</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -899,15 +973,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff36_Button">
 		<ScreenID>Buff36</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -918,15 +992,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff37_Button">
 		<ScreenID>Buff37</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -937,15 +1011,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff38_Button">
 		<ScreenID>Buff38</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -956,15 +1030,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff39_Button">
 		<ScreenID>Buff39</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -975,15 +1049,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff40_Button">
 		<ScreenID>Buff40</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -994,15 +1068,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff41_Button">
 		<ScreenID>Buff41</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -1013,15 +1087,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff42_Button">
 		<ScreenID>Buff42</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -1032,15 +1106,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff43_Button">
 		<ScreenID>Buff43</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -1051,15 +1125,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff44_Button">
 		<ScreenID>Buff44</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -1070,15 +1144,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff45_Button">
 		<ScreenID>Buff45</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -1089,15 +1163,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff46_Button">
 		<ScreenID>Buff46</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -1108,15 +1182,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff47_Button">
 		<ScreenID>Buff47</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -1127,15 +1201,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff48_Button">
 		<ScreenID>Buff48</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -1146,15 +1220,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff49_Button">
 		<ScreenID>Buff49</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -1165,15 +1239,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff50_Button">
 		<ScreenID>Buff50</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -1184,15 +1258,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff51_Button">
 		<ScreenID>Buff51</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -1203,15 +1277,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff52_Button">
 		<ScreenID>Buff52</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -1222,15 +1296,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff53_Button">
 		<ScreenID>Buff53</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -1241,15 +1315,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff54_Button">
 		<ScreenID>Buff54</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -1260,15 +1334,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff55_Button">
 		<ScreenID>Buff55</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -1279,15 +1353,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff56_Button">
 		<ScreenID>Buff56</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -1298,15 +1372,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff57_Button">
 		<ScreenID>Buff57</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -1317,15 +1391,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff58_Button">
 		<ScreenID>Buff58</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -1336,15 +1410,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff59_Button">
 		<ScreenID>Buff59</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -1355,15 +1429,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff60_Button">
 		<ScreenID>Buff60</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -1374,15 +1448,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff61_Button">
 		<ScreenID>Buff61</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -1393,15 +1467,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff62_Button">
 		<ScreenID>Buff62</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -1412,15 +1486,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff63_Button">
 		<ScreenID>Buff63</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -1431,15 +1505,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff64_Button">
 		<ScreenID>Buff64</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -1450,15 +1524,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff65_Button">
 		<ScreenID>Buff65</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -1469,15 +1543,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff66_Button">
 		<ScreenID>Buff66</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -1488,15 +1562,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff67_Button">
 		<ScreenID>Buff67</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -1507,15 +1581,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff68_Button">
 		<ScreenID>Buff68</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -1526,15 +1600,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff69_Button">
 		<ScreenID>Buff69</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -1545,15 +1619,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff70_Button">
 		<ScreenID>Buff70</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -1564,15 +1638,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff71_Button">
 		<ScreenID>Buff71</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -1583,15 +1657,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff72_Button">
 		<ScreenID>Buff72</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -1602,15 +1676,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff73_Button">
 		<ScreenID>Buff73</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -1621,15 +1695,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff74_Button">
 		<ScreenID>Buff74</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -1640,15 +1714,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff75_Button">
 		<ScreenID>Buff75</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -1659,15 +1733,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff76_Button">
 		<ScreenID>Buff76</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -1678,15 +1752,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff77_Button">
 		<ScreenID>Buff77</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -1697,15 +1771,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff78_Button">
 		<ScreenID>Buff78</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -1716,15 +1790,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff79_Button">
 		<ScreenID>Buff79</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -1735,15 +1809,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff80_Button">
 		<ScreenID>Buff80</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -1754,15 +1828,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff81_Button">
 		<ScreenID>Buff81</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -1773,15 +1847,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff82_Button">
 		<ScreenID>Buff82</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -1792,15 +1866,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff83_Button">
 		<ScreenID>Buff83</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -1811,15 +1885,15 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<Button item="Target_Buff84_Button">
 		<ScreenID>Buff84</ScreenID>
 		<Size>
-			<CX>24</CX>
-			<CY>24</CY>
+			<CX>37</CX>
+			<CY>37</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -1830,8 +1904,8 @@
 			<Y>2</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>20</CX>
-			<CY>20</CY>
+			<CX>34</CX>
+			<CY>34</CY>
 		</DecalSize>
 	</Button>
 	<TileLayoutBox item="Target_Buttons">
@@ -1840,8 +1914,8 @@
 		<BottomAnchorToTop>false</BottomAnchorToTop>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
 		<Style_Transparent>true</Style_Transparent>
-		<Spacing>0</Spacing>
-		<SecondarySpacing>0</SecondarySpacing>
+		<Spacing>2</Spacing>
+		<SecondarySpacing>1</SecondarySpacing>
 		<HorizontalFirst>true</HorizontalFirst>
 		<AnchorToTop>true</AnchorToTop>
 		<AnchorToLeft>true</AnchorToLeft>
@@ -1934,12 +2008,13 @@
 	</TileLayoutBox>
 	<Screen item="Target_BuffWindow">
 		<ScreenID>BuffWindow</ScreenID>
+		<Font>3</Font>
 		<RelativePosition>true</RelativePosition>
 		<AutoStretch>true</AutoStretch>
-		<LeftAnchorOffset>2</LeftAnchorOffset>
-		<TopAnchorOffset>50</TopAnchorOffset>
-		<RightAnchorOffset>4</RightAnchorOffset>
-		<BottomAnchorOffset>4</BottomAnchorOffset>
+		<TopAnchorOffset>80</TopAnchorOffset>
+		<BottomAnchorOffset>1</BottomAnchorOffset>
+		<LeftAnchorOffset>0</LeftAnchorOffset>
+		<RightAnchorOffset>0</RightAnchorOffset>
 		<BottomAnchorToTop>false</BottomAnchorToTop>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
 		<Style_VScroll>false</Style_VScroll>
@@ -2016,14 +2091,16 @@
 			<Y>86</Y>
 		</Location>
 		<Size>
-			<CX>147</CX>
-			<CY>110</CY>
+			<CX>250</CX>
+			<CY>175</CY>
 		</Size>
+		<Font>3</Font>
+		<Text>Target</Text>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
 		<TooltipReference>Your Current Target</TooltipReference>
-		<DrawTemplate>WDT_Filigree3</DrawTemplate>
+		<DrawTemplate>WDT_Def2</DrawTemplate>
 		<Style_Titlebar>true</Style_Titlebar>
 		<Style_Closebox>false</Style_Closebox>
 		<Style_Minimizebox>false</Style_Minimizebox>
@@ -2031,16 +2108,12 @@
 		<Style_Sizable>true</Style_Sizable>
 		<Escapable>false</Escapable>
 		<Pieces>Target_HP</Pieces>
-		<Pieces>Target_HPLabel</Pieces>
-		<Pieces>Target_HPPercLabel</Pieces>
 		<Pieces>A_TargetBoxStaticAnimTop</Pieces>
 		<Pieces>A_TargetBoxStaticAnimBottom</Pieces>
 		<Pieces>A_TargetBoxStaticAnimLeft</Pieces>
 		<Pieces>A_TargetBoxStaticAnimRight</Pieces>
 		<Pieces>A_TargetBoxStaticAnimFill</Pieces>
-		<Pieces>Target_AggroPctPlayerLabel</Pieces>
-		<Pieces>Target_AggroNameSecondaryLabel</Pieces>
-		<Pieces>Target_AggroPctSecondaryLabel</Pieces>
 		<Pieces>Target_BuffWindow</Pieces>
+		<Pieces>HoTT_HP</Pieces>
 	</Screen>
 </XML>
