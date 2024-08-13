@@ -5222,7 +5222,7 @@ EQST0002
 9175 You are not in combat and may rest at any time.
 9176 You are resting and recovering health, mana, and endurance at an increased rate. 
 9177 You are recovering from combat and cannot rest currently.
-9178 
+9178 Power Source
 9179 Power: %1/%2
 9180 Power Drain: %1 per sec
 9181 Infusible

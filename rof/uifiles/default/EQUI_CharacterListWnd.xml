@@ -1,7 +1,6 @@
 <?xml version = "1.0"?>
 <XML ID = "EQInterfaceDefinitionLanguage">
 	<Schema xmlns = "EverQuestData" xmlns:dt = "EverQuestDataTypes"/>
-
 	<Ui2DAnimation item="CLW_EQIcon">
 		<Cycle>false</Cycle>
 		<Grid>false</Grid>
@@ -77,43 +76,6 @@
 			</Size>
 		</Frames>
 	</Ui2DAnimation>
-	<StaticAnimation item="CLW_LogoAnim">
-		<ScreenID>Logo_Anim</ScreenID>
-		<Location>
-			<X>0</X>
-			<Y>0</Y>
-		</Location>
-		<Size>
-			<CX>225</CX>
-			<CY>108</CY>
-		</Size>
-		<Animation>CLW_EQIcon</Animation>
-	</StaticAnimation>
-	
-	<Screen item="CLW_LogoScreen">
-		<ScreenID>CC_LogoScreen</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<AutoStretch>true</AutoStretch>
-		<LeftAnchorOffset>241</LeftAnchorOffset>
-		<TopAnchorOffset>16</TopAnchorOffset>
-		<RightAnchorOffset>16</RightAnchorOffset>
-		<BottomAnchorOffset>124</BottomAnchorOffset>
-		<LeftAnchorToLeft>false</LeftAnchorToLeft>
-		<RightAnchorToLeft>false</RightAnchorToLeft>
-		<TopAnchorToTop>true</TopAnchorToTop>
-		<BottomAnchorToTop>true</BottomAnchorToTop>
-		<Style_VScroll>false</Style_VScroll>
-		<Style_HScroll>false</Style_HScroll>
-		<Style_Transparent>true</Style_Transparent>
-		<DrawTemplate>WDT_Def</DrawTemplate>
-		<Style_Titlebar>false</Style_Titlebar>
-		<Style_Closebox>false</Style_Closebox>
-		<Style_Minimizebox>false</Style_Minimizebox>
-		<Style_Border>false</Style_Border>
-		<Style_Sizable>true</Style_Sizable>
-		<Pieces>CLW_LogoAnim</Pieces>
-	</Screen>
-	
 	<StaticAnimation item="CLW_Title">
 		<ScreenID>Title</ScreenID>
 		<Location>
@@ -250,7 +212,6 @@
 		<Pieces>CLW_Character_List</Pieces>
 		<Pieces>CLW_Title</Pieces>
 		<Pieces>CLW_Count_Label</Pieces>
-		<Pieces>CLW_Buy_Slot_Button</Pieces>
 	</Screen>
 	
 	<Button item="CLW_Create_Button">
@@ -322,7 +283,7 @@
 	</Button>
 	
 	<Button item="CLW_Tutorial_Button">
-		<ScreenID>Tutorial_Button</ScreenID>
+		<ScreenID>Quit_Button</ScreenID>
 		<!--<Font>3</Font>-->
 		<RelativePosition>true</RelativePosition>
 		<Location>
@@ -336,9 +297,8 @@
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
-		<TooltipReference>Go to the tutorial zone</TooltipReference>
 		<Style_Checkbox>false</Style_Checkbox>
-		<Text>Enter Tutorial</Text>
+		<Text>Quit</Text>
 		<TextColor>
 			<R>255</R>
 			<G>233</G>
@@ -472,8 +432,8 @@
 		<Style_Sizable>false</Style_Sizable>
 		<Pieces>CLW_Create_Button</Pieces>
 		<Pieces>CLW_Delete_Button</Pieces>
-		<Pieces>CLW_Tutorial_Button</Pieces>
 		<Pieces>CLW_Home_Button</Pieces>
+		<Pieces>CLW_Tutorial_Button</Pieces>
 		<Pieces>CLW_Play_Button</Pieces>
 		<Pieces>CLW_ResetUICheckbox</Pieces>
 	</Screen>
@@ -509,24 +469,6 @@
 			<Flyby>A_GoldHoverIcon</Flyby>
 		</ButtonDrawTemplate>
 	</Button>
-	<Button item="CLW_Quit_Button">
-		<ScreenID>Quit_Button</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<AutoStretch>true</AutoStretch>
-		<LeftAnchorOffset>32</LeftAnchorOffset>
-		<TopAnchorOffset>42</TopAnchorOffset>
-		<RightAnchorOffset>224</RightAnchorOffset>
-		<BottomAnchorOffset>10</BottomAnchorOffset>
-		<TopAnchorToTop>false</TopAnchorToTop>
-		<BottomAnchorToTop>false</BottomAnchorToTop>
-		<Text>Quit</Text>
-		<TextColor>
-			<R>255</R>
-			<G>233</G>
-			<B>129</B>
-		</TextColor>
-		<Template>BDT_Normal</Template>
-	</Button>
 	<Screen item = "CLW_LeftScreen">
 		<ScreenID>Left_Screen</ScreenID>
 		<RelativePosition>true</RelativePosition>
@@ -546,14 +488,8 @@
 		<Style_Minimizebox>false</Style_Minimizebox>
 		<Style_Border>false</Style_Border>
 		<Style_Sizable>false</Style_Sizable>
-		<Pieces>CLW_FreeMemberAnim</Pieces>
-		<Pieces>CLW_SilverMemberAnim</Pieces>
-		<Pieces>CLW_GoldMemberAnim</Pieces>
 		<Pieces>CLW_CharactersScreen</Pieces>
-		<Pieces>CLW_ButtonsScreen</Pieces>
-		<Pieces>CLW_Quit_Button</Pieces>
-		<Pieces>CLW_FreeGold_Button</Pieces>
-		<Pieces>CLW_SilverGold_Button</Pieces>
+		<Pieces>CLW_ButtonsScreen</Pieces>		
 	</Screen>
 	
 	<Button item="CLW_Rotate_Button">
@@ -639,9 +575,7 @@
 		<Style_Border>false</Style_Border>
 		<Style_Sizable>true</Style_Sizable>
 		<Pieces>CLW_LeftScreen</Pieces>
-		<Pieces>CLW_LogoScreen</Pieces>
-		<Pieces>CLW_BottomScreen</Pieces>
-		<Pieces>CLW_MarketplaceButton</Pieces>
+		<Pieces>CLW_BottomScreen</Pieces>		
 	</Screen>
 
 
