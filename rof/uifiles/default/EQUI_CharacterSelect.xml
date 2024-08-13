@@ -560,7 +560,6 @@
 		<Style_Sizable>false</Style_Sizable>
 		<Pieces>CSW_Explore_Button</Pieces>
 		<Pieces>CSW_Rotate_Button</Pieces>
-		<Pieces>CSW_Tutorial_Button</Pieces>
 		<Pieces>CSW_Char1_Button</Pieces>
 		<Pieces>CSW_Char2_Button</Pieces>
 		<Pieces>CSW_Char3_Button</Pieces>
@@ -570,15 +569,15 @@
 		<Pieces>CSW_Char7_Button</Pieces>
 		<Pieces>CSW_Char8_Button</Pieces>
 		<Pieces>CSW_Enter_World_Button</Pieces>
+		<Pieces>CLW_Quit_Button</Pieces>
 		<Pieces>CSW_Go_Home_Button</Pieces>
 		<Pieces>CSW_Delete_Button</Pieces>
-		<Pieces>CSW_Quit_Button</Pieces>
 		<Pieces>CS_LeftTitlePiece</Pieces>
 		<Pieces>CS_RightTitlePiece</Pieces>
 		<Pieces>CS_MiddleTitlePiece</Pieces>
 		<Pieces>CS_LeftCenterTitlePiece</Pieces>
 		<Pieces>CS_RightCenterTitlePiece</Pieces>
-		<Pieces>CS_TitleLabel</Pieces>
+		<!--<Pieces>CS_TitleLabel</Pieces>-->
 	</Screen>
 
 
