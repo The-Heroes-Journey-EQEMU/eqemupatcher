@@ -73,53 +73,15 @@
 		</Size>
 		<Animation>A_DividerMiddle</Animation>
 	</StaticAnimation>
-	<Label item="EbonShardsLabel">
-		<ScreenID>EbonShardsLabel</ScreenID>
-		<Font>2</Font>
-		<Text>Ebon Crystals</Text>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
-		<Size>
-			<CX>95</CX>
-			<CY>17</CY>
-		</Size>
-		<AlignCenter>false</AlignCenter>
-		<Location>
-			<X>303</X>
-			<Y>47</Y>
-		</Location>
-	</Label>
-	<Label item="RadiantShardsLabel">
-		<ScreenID>RadiantShardsLabel</ScreenID>
-		<Font>2</Font>
-		<Text>Radiant Crystals</Text>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
-		<Size>
-			<CX>93</CX>
-			<CY>19</CY>
-		</Size>
-		<AlignCenter>false</AlignCenter>
-		<Location>
-			<X>303</X>
-			<Y>1</Y>
-		</Location>
-	</Label>
 	<Button item="IW_ReclaimButton">
 		<ScreenID>IW_ReclaimButton</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>303</X>
+			<X>300</X>
 			<Y>92</Y>
 		</Location>
 		<Size>
-			<CX>71</CX>
+			<CX>85</CX>
 			<CY>25</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
@@ -635,52 +597,7 @@
 		<RelativePosition>true</RelativePosition>
 		<Background>A_RecessedBox</Background>
 		<EQType>inventory/Equip 32</EQType>
-	</InvSlot>
-	<Button item="IW_ConsumeKrono">
-		<ScreenID>IW_ConsumeKrono</ScreenID>
-		<Font>2</Font>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>170</X>
-			<Y>360</Y>
-		</Location>
-		<Size>
-			<CX>90</CX>
-			<CY>20</CY>
-		</Size>
-		<Style_Transparent>false</Style_Transparent>
-		<Style_Checkbox>false</Style_Checkbox>
-		<Text>Consume Krono</Text>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
-		<Template>BDT_Normal</Template>
-	</Button>
-	<Label item="IW_SubscriptionTime">
-		<ScreenID>IW_SubscriptionTime</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Font>1</Font>
-		<EQType>334</EQType>
-		<Location>
-			<X>170</X>
-			<Y>385</Y>
-		</Location>
-		<Size>
-			<CX>128</CX>
-			<CY>30</CY>
-		</Size>
-		<Text>Gold Days Left: 185 days</Text>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
-		<NoWrap>false</NoWrap>
-		<AlignCenter>false</AlignCenter>
-		<AlignRight>true</AlignRight>
-	</Label>
+	</InvSlot>	
 	<Label item="IW_CharTitle">
 		<ScreenID>NameLabel</ScreenID>
 		<EQType>74</EQType>
@@ -836,8 +753,8 @@
 		<ScreenID>DeityLabel</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>122</X>
-			<Y>360</Y>
+			<X>295</X>
+			<Y>05</Y>
 		</Location>
 		<Size>
 			<CX>112</CX>
@@ -850,7 +767,7 @@
 			<B>255</B>
 		</TextColor>
 		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
+		<AlignCenter>true</AlignCenter>
 		<AlignRight>false</AlignRight>
 	</Label>
 	<Label item="IW_Deity">
@@ -858,8 +775,8 @@
 		<EQType>4</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>160</X>
-			<Y>360</Y>
+			<X>300</X>
+			<Y>05</Y>
 		</Location>
 		<Size>
 			<CX>112</CX>
@@ -2751,11 +2668,11 @@
 		<ScreenID>IW_GoodPoints</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>303</X>
-			<Y>21</Y>
+			<X>300</X>
+			<Y>45</Y>
 		</Location>
 		<Size>
-			<CX>70</CX>
+			<CX>85</CX>
 			<CY>24</CY>
 		</Size>
 		<Style_Transparent>false</Style_Transparent>
@@ -2773,7 +2690,7 @@
 			<NormalDecal>A_RadiantCrystal</NormalDecal>
 		</ButtonDrawTemplate>
 		<DecalOffset>
-			<X>1</X>
+			<X>3</X>
 			<Y>3</Y>
 		</DecalOffset>
 		<DecalSize>
@@ -2785,11 +2702,11 @@
 		<ScreenID>IW_EvilPoints</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>303</X>
-			<Y>66</Y>
+			<X>300</X>
+			<Y>70</Y>
 		</Location>
 		<Size>
-			<CX>70</CX>
+			<CX>85</CX>
 			<CY>24</CY>
 		</Size>
 		<Style_Transparent>false</Style_Transparent>
@@ -2807,7 +2724,7 @@
 			<NormalDecal>A_EbonCrystal</NormalDecal>
 		</ButtonDrawTemplate>
 		<DecalOffset>
-			<X>1</X>
+			<X>3</X>
 			<Y>3</Y>
 		</DecalOffset>
 		<DecalSize>
@@ -2819,11 +2736,11 @@
 		<ScreenID>IW_Money0</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>303</X>
+			<X>300</X>
 			<Y>121</Y>
 		</Location>
 		<Size>
-			<CX>70</CX>
+			<CX>85</CX>
 			<CY>24</CY>
 		</Size>
 		<Style_Transparent>false</Style_Transparent>
@@ -2838,7 +2755,7 @@
 		</TextColor>
 		<Template>BDT_PlatinumCoin</Template>
 		<DecalOffset>
-			<X>1</X>
+			<X>3</X>
 			<Y>3</Y>
 		</DecalOffset>
 		<DecalSize>
@@ -2850,11 +2767,11 @@
 		<ScreenID>IW_Money1</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>303</X>
-			<Y>147</Y>
+			<X>300</X>
+			<Y>146</Y>
 		</Location>
 		<Size>
-			<CX>70</CX>
+			<CX>85</CX>
 			<CY>24</CY>
 		</Size>
 		<Style_Transparent>false</Style_Transparent>
@@ -2869,7 +2786,7 @@
 		</TextColor>
 		<Template>BDT_GoldCoin</Template>
 		<DecalOffset>
-			<X>1</X>
+			<X>3</X>
 			<Y>3</Y>
 		</DecalOffset>
 		<DecalSize>
@@ -2881,11 +2798,11 @@
 		<ScreenID>IW_Money2</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>303</X>
+			<X>300</X>
 			<Y>171</Y>
 		</Location>
 		<Size>
-			<CX>70</CX>
+			<CX>85</CX>
 			<CY>24</CY>
 		</Size>
 		<Style_Transparent>false</Style_Transparent>
@@ -2900,7 +2817,7 @@
 		</TextColor>
 		<Template>BDT_SilverCoin</Template>
 		<DecalOffset>
-			<X>1</X>
+			<X>3</X>
 			<Y>3</Y>
 		</DecalOffset>
 		<DecalSize>
@@ -2912,11 +2829,11 @@
 		<ScreenID>IW_Money3</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>303</X>
+			<X>300</X>
 			<Y>197</Y>
 		</Location>
 		<Size>
-			<CX>70</CX>
+			<CX>85</CX>
 			<CY>24</CY>
 		</Size>
 		<Style_Transparent>false</Style_Transparent>
@@ -2931,7 +2848,7 @@
 		</TextColor>
 		<Template>BDT_CopperCoin</Template>
 		<DecalOffset>
-			<X>1</X>
+			<X>3</X>
 			<Y>3</Y>
 		</DecalOffset>
 		<DecalSize>
@@ -2945,7 +2862,7 @@
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>1</X>
-			<Y>398</Y>
+			<Y>395</Y>
 		</Location>
 		<Size>
 			<CX>65</CX>
@@ -3293,8 +3210,8 @@
 		<Pieces>IW_LevelLabel</Pieces>
 		<Pieces>IW_Class</Pieces>
 		<Pieces>IW_ClassAbbr</Pieces>
-		<!-- <Pieces>IW_Deity</Pieces>
-		<Pieces>IW_DeityLabel</Pieces> -->
+		<Pieces>IW_Deity</Pieces>
+		<!--<Pieces>IW_DeityLabel</Pieces>-->
 		<Pieces>IW_HP</Pieces>
 		<Pieces>IW_CurrentHP</Pieces>
 		<Pieces>IW_MaxHP</Pieces>
@@ -3385,8 +3302,6 @@
 		<Pieces>IW_GoodPoints</Pieces>
 		<Pieces>IW_EvilPoints</Pieces>
 		<Pieces>IW_ReclaimButton</Pieces>
-		<Pieces>RadiantShardsLabel</Pieces>
-		<Pieces>EbonShardsLabel</Pieces>
 		<Pieces>Inv_Seperator0</Pieces>
 		<Pieces>Inv_Seperator1</Pieces>
 		<Pieces>Inv_Seperator2</Pieces>
@@ -8327,7 +8242,7 @@
 			<Y>50</Y>
 		</Location>
 		<Size>
-			<CX>428</CX>
+			<CX>426</CX>
 			<CY>500</CY>
 		</Size>
 		<Text>Inventory</Text>
