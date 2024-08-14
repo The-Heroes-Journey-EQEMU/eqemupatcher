@@ -6,7 +6,6 @@
 *.mp3 binary
 *.txt binary
 *.eff binary
-*.xml binary
 *.dll binary
 *.s3d binary
 *.txc binary
@@ -20,8 +19,8 @@
 *.dds binary
 *.cur binary
 *.emt binary
-*.ini binary
-*.xml binary
+*.ini text
+*.xml text
 
 ###############################################################################
 # Set default behavior for command prompt diff.
