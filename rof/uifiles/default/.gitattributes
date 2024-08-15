@@ -18,7 +18,8 @@
 *.dds binary
 *.sh binary
 *.cur binary
-.gitattributes* binary
+*.gitattributes binary
+*.ini binary
 
 ###############################################################################
 # Set default behavior for command prompt diff.
