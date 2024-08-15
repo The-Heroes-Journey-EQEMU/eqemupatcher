@@ -16,6 +16,9 @@
 *.xml binary
 *.tga binary
 *.dds binary
+*.sh binary
+*.cur binary
+.gitattributes* binary
 
 ###############################################################################
 # Set default behavior for command prompt diff.
