@@ -3,7 +3,7 @@
 	<Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
 	<Button item="GW_InviteButton">
 		<ScreenID>InviteButton</ScreenID>
-		<RelativePosition>true</RelativePosition>
+		<RelativePosition>false</RelativePosition>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
