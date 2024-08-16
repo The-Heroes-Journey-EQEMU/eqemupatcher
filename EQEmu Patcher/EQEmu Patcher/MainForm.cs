@@ -310,6 +310,7 @@ namespace EQEmu_Patcher
                     case "240C80800112ADA825C146D7349CE85B":
                     case "A057A23F030BAA1C4910323B131407105ACAD14D": //This is a custom ROF2 from a torrent download
                     case "178C9C8FDDDF8F78B6B9142D025FE059": // Custom THJ
+                    case "36968E793EBFDB3A1A1C55C7FF1D7C1A": // Retribution
                     case "6574AC667D4C522D21A47F4D00920CC2": //LAA
                         currentVersion = VersionTypes.Rain_Of_Fear_2;
                         splashLogo.Image = Properties.Resources.rof;
