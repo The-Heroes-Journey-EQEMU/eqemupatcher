@@ -711,7 +711,7 @@
 		<EQType>3</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>30</X>
+			<X>35</X>
 			<Y>16</Y>
 		</Location>
 		<Size>
@@ -736,7 +736,7 @@
 			<Y>16</Y>
 		</Location>
 		<Size>
-			<CX>30</CX>
+			<CX>40</CX>
 			<CY>100</CY>
 		</Size>
 		<Text>SHD</Text>
@@ -8250,7 +8250,7 @@
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
 		<TooltipReference>Inventory</TooltipReference>
-		<DrawTemplate>WDT_Filigree</DrawTemplate>
+		<DrawTemplate>WDT_Rounded</DrawTemplate>
 		<Style_Titlebar>true</Style_Titlebar>
 		<Style_Qmarkbox>true</Style_Qmarkbox>
 		<Style_Closebox>true</Style_Closebox>

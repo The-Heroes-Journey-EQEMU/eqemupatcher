@@ -3,7 +3,7 @@
 	<Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
 	<Button item="GW_InviteButton">
 		<ScreenID>InviteButton</ScreenID>
-		<RelativePosition>false</RelativePosition>
+		<RelativePosition>true</RelativePosition>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
@@ -17,8 +17,8 @@
 		</TextColor>
 		<Template>BDT_SmallNormal</Template>
 		<AutoStretch>true</AutoStretch>
-		<TopAnchorOffset>26</TopAnchorOffset>
-		<RightAnchorOffset>54</RightAnchorOffset>
+		<TopAnchorOffset>20</TopAnchorOffset>
+		<RightAnchorOffset>99</RightAnchorOffset>
 		<TopAnchorToTop>false</TopAnchorToTop>
 		<BottomAnchorToTop>false</BottomAnchorToTop>
 	</Button>
@@ -38,9 +38,9 @@
 			<B>255</B>
 		</TextColor>
 		<AutoStretch>true</AutoStretch>
-		<TopAnchorOffset>26</TopAnchorOffset>
-		<LeftAnchorOffset>62</LeftAnchorOffset>
-		<RightAnchorOffset>116</RightAnchorOffset>
+		<TopAnchorOffset>20</TopAnchorOffset>
+		<LeftAnchorOffset>101</LeftAnchorOffset>
+		<RightAnchorOffset>200</RightAnchorOffset>
 		<TopAnchorToTop>false</TopAnchorToTop>
 		<BottomAnchorToTop>false</BottomAnchorToTop>
 	</Button>
@@ -60,8 +60,8 @@
 		</TextColor>
 		<Template>BDT_Normal</Template>
 		<AutoStretch>true</AutoStretch>
-		<TopAnchorOffset>26</TopAnchorOffset>
-		<RightAnchorOffset>54</RightAnchorOffset>
+		<TopAnchorOffset>20</TopAnchorOffset>
+		<RightAnchorOffset>99</RightAnchorOffset>
 		<TopAnchorToTop>false</TopAnchorToTop>
 		<BottomAnchorToTop>false</BottomAnchorToTop>
 	</Button>
@@ -81,31 +81,9 @@
 			<B>255</B>
 		</TextColor>
 		<AutoStretch>true</AutoStretch>
-		<TopAnchorOffset>26</TopAnchorOffset>
-		<LeftAnchorOffset>62</LeftAnchorOffset>
-		<RightAnchorOffset>116</RightAnchorOffset>
-		<TopAnchorToTop>false</TopAnchorToTop>
-		<BottomAnchorToTop>false</BottomAnchorToTop>
-	</Button>
-	<Button item="GW_LFGButton">
-		<ScreenID>LFGButton</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Style_VScroll>false</Style_VScroll>
-		<Style_HScroll>false</Style_HScroll>
-		<Style_Transparent>false</Style_Transparent>
-		<TooltipReference>Open LFG Window</TooltipReference>
-		<Style_Checkbox>false</Style_Checkbox>
-		<ButtonDrawTemplate>
-			<Normal>A_LFGBtnNormal</Normal>
-			<Pressed>A_LFGBtnPressed</Pressed>
-			<Flyby>A_LFGBtnFlyby</Flyby>
-			<Disabled>A_LFGBtnNormal</Disabled>
-			<PressedFlyby>A_LFGBtnPressedFlyby</PressedFlyby>
-		</ButtonDrawTemplate>
-		<AutoStretch>true</AutoStretch>
-		<TopAnchorOffset>26</TopAnchorOffset>
-		<LeftAnchorOffset>124</LeftAnchorOffset>
-		<RightAnchorOffset>150</RightAnchorOffset>
+		<TopAnchorOffset>20</TopAnchorOffset>
+		<LeftAnchorOffset>101</LeftAnchorOffset>
+		<RightAnchorOffset>200</RightAnchorOffset>
 		<TopAnchorToTop>false</TopAnchorToTop>
 		<BottomAnchorToTop>false</BottomAnchorToTop>
 	</Button>
@@ -2314,7 +2292,7 @@
 		</Location>
 		<Size>
 			<CX>200</CX>
-			<CY>384</CY>
+			<CY>300</CY>
 		</Size>
 		<Text>Group</Text>
 		<Style_VScroll>false</Style_VScroll>
@@ -2325,7 +2303,7 @@
 		<Style_Closebox>false</Style_Closebox>
 		<Style_Minimizebox>false</Style_Minimizebox>
 		<Style_Border>true</Style_Border>
-		<Style_Sizable>true</Style_Sizable>
+		<Style_Sizable>false</Style_Sizable>
 		<Escapable>false</Escapable>
 		<DrawTemplate>WDT_RoundedNoTitle</DrawTemplate>
 		<Pieces>GW_AggroPctPlayer1</Pieces>

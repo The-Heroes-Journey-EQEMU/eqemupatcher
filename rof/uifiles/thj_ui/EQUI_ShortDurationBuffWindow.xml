@@ -108,7 +108,7 @@
 			<CX>10</CX>
 			<CY>10</CY>
 		</Size>
-		<Text>1</Text>
+		
 		<TextColor>
                         <R>197</R>
                         <G>183</G>
@@ -155,7 +155,7 @@
 			<CX>10</CX>
 			<CY>10</CY>
 		</Size>
-		<Text>2</Text>
+		
 		<TextColor>
                         <R>197</R>
                         <G>183</G>
@@ -202,7 +202,7 @@
 			<CX>10</CX>
 			<CY>10</CY>
 		</Size>
-		<Text>3</Text>
+		
 		<TextColor>
                         <R>197</R>
                         <G>183</G>
@@ -251,7 +251,7 @@
 			<CX>10</CX>
 			<CY>10</CY>
 		</Size>
-		<Text>4</Text>
+		
 		<TextColor>
                         <R>197</R>
                         <G>183</G>
@@ -301,7 +301,7 @@
 			<CX>10</CX>
 			<CY>10</CY>
 		</Size>
-		<Text>5</Text>
+		
 		<TextColor>
                         <R>197</R>
                         <G>183</G>
@@ -348,7 +348,7 @@
 			<CX>10</CX>
 			<CY>10</CY>
 		</Size>
-		<Text>6</Text>
+		
 		<TextColor>
                         <R>197</R>
                         <G>183</G>
@@ -395,7 +395,7 @@
 			<CX>10</CX>
 			<CY>10</CY>
 		</Size>
-		<Text>7</Text>
+		
 		<TextColor>
                         <R>197</R>
                         <G>183</G>
@@ -442,7 +442,7 @@
 			<CX>10</CX>
 			<CY>10</CY>
 		</Size>
-		<Text>8</Text>
+		
 		<TextColor>
                         <R>197</R>
                         <G>183</G>
@@ -489,7 +489,7 @@
 			<CX>10</CX>
 			<CY>10</CY>
 		</Size>
-		<Text>9</Text>
+		
 		<TextColor>
                         <R>197</R>
                         <G>183</G>
@@ -536,7 +536,7 @@
 			<CX>10</CX>
 			<CY>10</CY>
 		</Size>
-		<Text>10</Text>
+		
 		<TextColor>
                         <R>197</R>
                         <G>183</G>
@@ -583,7 +583,7 @@
 			<CX>10</CX>
 			<CY>10</CY>
 		</Size>
-		<Text>11</Text>
+		
 		<TextColor>
                         <R>197</R>
                         <G>183</G>
@@ -630,7 +630,7 @@
 			<CX>10</CX>
 			<CY>10</CY>
 		</Size>
-		<Text>12</Text>
+		
 		<TextColor>
                         <R>197</R>
                         <G>183</G>
@@ -677,7 +677,7 @@
 			<CX>10</CX>
 			<CY>10</CY>
 		</Size>
-		<Text>13</Text>
+		
 		<TextColor>
                         <R>197</R>
                         <G>183</G>
@@ -724,7 +724,7 @@
 			<CX>10</CX>
 			<CY>10</CY>
 		</Size>
-		<Text>14</Text>
+		
 		<TextColor>
                         <R>197</R>
                         <G>183</G>
@@ -771,7 +771,7 @@
 			<CX>10</CX>
 			<CY>10</CY>
 		</Size>
-		<Text>15</Text>
+		
 		<TextColor>
                         <R>197</R>
                         <G>183</G>
@@ -819,7 +819,7 @@
 			<CX>10</CX>
 			<CY>10</CY>
 		</Size>
-		<Text>16</Text>
+		
 		<TextColor>
                         <R>197</R>
                         <G>183</G>
@@ -868,7 +868,7 @@
 			<CX>10</CX>
 			<CY>10</CY>
 		</Size>
-		<Text>17</Text>
+		
 		<TextColor>
                         <R>197</R>
                         <G>183</G>
@@ -917,7 +917,7 @@
 			<CX>10</CX>
 			<CY>10</CY>
 		</Size>
-		<Text>18</Text>
+		
 		<TextColor>
                         <R>197</R>
                         <G>183</G>
@@ -966,7 +966,7 @@
 			<CX>10</CX>
 			<CY>10</CY>
 		</Size>
-		<Text>19</Text>
+		
 		<TextColor>
                         <R>197</R>
                         <G>183</G>
@@ -1015,7 +1015,7 @@
 			<CX>10</CX>
 			<CY>10</CY>
 		</Size>
-		<Text>20</Text>
+		
 		<TextColor>
                         <R>197</R>
                         <G>183</G>
