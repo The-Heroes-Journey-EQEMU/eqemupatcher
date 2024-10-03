@@ -25,7 +25,7 @@
 		<AutoStretch>true</AutoStretch>
 		<LeftAnchorOffset>2</LeftAnchorOffset>
 		<TopAnchorOffset>22</TopAnchorOffset>
-		<RightAnchorOffset>92</RightAnchorOffset>
+		<RightAnchorOffset>198</RightAnchorOffset>
 		<BottomAnchorOffset>2</BottomAnchorOffset>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
 		<RightAnchorToLeft>true</RightAnchorToLeft>
@@ -47,7 +47,7 @@
 		<ScreenID>LDW_NoButton</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<AutoStretch>true</AutoStretch>
-		<LeftAnchorOffset>92</LeftAnchorOffset>
+		<LeftAnchorOffset>198</LeftAnchorOffset>
 		<TopAnchorOffset>22</TopAnchorOffset>
 		<RightAnchorOffset>2</RightAnchorOffset>
 		<BottomAnchorOffset>2</BottomAnchorOffset>
@@ -187,22 +187,22 @@
 		<Text />
 		<!-- Window title set by server -->
 		<Location>
-			<X>20</X>
-			<Y>20</Y>
+			<X>40</X>
+			<Y>40</Y>
 		</Location>
 		<Size>
-			<CX>330</CX>
-			<CY>338</CY>
+			<CX>400</CX>
+			<CY>800</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
 		<DrawTemplate>WDT_Def</DrawTemplate>
 		<Style_Titlebar>true</Style_Titlebar>
-		<Style_Closebox>false</Style_Closebox>
+		<Style_Closebox>true</Style_Closebox>
 		<Style_Minimizebox>false</Style_Minimizebox>
 		<Style_Border>true</Style_Border>
-		<Style_Sizable>true</Style_Sizable>
+		<Style_Sizable>false</Style_Sizable>
 		<Escapable>false</Escapable> <!-- important for the tutorial -->
 		<Pieces>LDW_TextBox</Pieces>
 		<Pieces>LDW_YesButton</Pieces>

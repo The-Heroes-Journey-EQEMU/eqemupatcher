@@ -18,7 +18,8 @@
 		<Template>BDT_SmallNormal</Template>
 		<AutoStretch>true</AutoStretch>
 		<TopAnchorOffset>20</TopAnchorOffset>
-		<RightAnchorOffset>54</RightAnchorOffset>
+		<RightAnchorOffset>74</RightAnchorOffset>
+		<LeftAnchorOffset>1</LeftAnchorOffset>
 		<TopAnchorToTop>false</TopAnchorToTop>
 		<BottomAnchorToTop>false</BottomAnchorToTop>
 	</Button>
@@ -39,8 +40,8 @@
 		</TextColor>
 		<AutoStretch>true</AutoStretch>
 		<TopAnchorOffset>20</TopAnchorOffset>
-		<LeftAnchorOffset>62</LeftAnchorOffset>
-		<RightAnchorOffset>116</RightAnchorOffset>
+		<LeftAnchorOffset>76</LeftAnchorOffset>
+		<RightAnchorOffset>150</RightAnchorOffset>
 		<TopAnchorToTop>false</TopAnchorToTop>
 		<BottomAnchorToTop>false</BottomAnchorToTop>
 	</Button>
@@ -61,7 +62,8 @@
 		<Template>BDT_Normal</Template>
 		<AutoStretch>true</AutoStretch>
 		<TopAnchorOffset>20</TopAnchorOffset>
-		<RightAnchorOffset>54</RightAnchorOffset>
+		<LeftAnchorOffset>1</LeftAnchorOffset>
+		<RightAnchorOffset>74</RightAnchorOffset>
 		<TopAnchorToTop>false</TopAnchorToTop>
 		<BottomAnchorToTop>false</BottomAnchorToTop>
 	</Button>
@@ -82,8 +84,8 @@
 		</TextColor>
 		<AutoStretch>true</AutoStretch>
 		<TopAnchorOffset>20</TopAnchorOffset>
-		<LeftAnchorOffset>62</LeftAnchorOffset>
-		<RightAnchorOffset>116</RightAnchorOffset>
+		<LeftAnchorOffset>76</LeftAnchorOffset>
+		<RightAnchorOffset>150</RightAnchorOffset>
 		<TopAnchorToTop>false</TopAnchorToTop>
 		<BottomAnchorToTop>false</BottomAnchorToTop>
 	</Button>
@@ -1224,7 +1226,7 @@
 			<Y>134</Y>
 		</Location>
 		<Size>
-			<CX>147</CX>
+			<CX>160</CX>
 			<CY>260</CY>
 		</Size>
 		<Text>Group</Text>
@@ -1232,11 +1234,11 @@
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
 		<TooltipReference>This is the party window.</TooltipReference>
-		<Style_Titlebar>true</Style_Titlebar>
+		<Style_Titlebar>false</Style_Titlebar>
 		<Style_Closebox>false</Style_Closebox>
 		<Style_Minimizebox>false</Style_Minimizebox>
 		<Style_Border>true</Style_Border>
-		<Style_Sizable>true</Style_Sizable>
+		<Style_Sizable>false</Style_Sizable>
 		<Escapable>false</Escapable>
 		<DrawTemplate>WDT_Rounded</DrawTemplate>
 		<Pieces>GW_AggroPctPlayer1</Pieces>

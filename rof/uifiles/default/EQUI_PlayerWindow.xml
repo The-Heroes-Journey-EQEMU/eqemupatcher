@@ -719,7 +719,7 @@
 		</Location>
 		<Size>
 			<CX>160</CX>
-			<CY>95</CY>
+			<CY>90</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -729,7 +729,7 @@
 		<Style_Closebox>false</Style_Closebox>
 		<Style_Minimizebox>false</Style_Minimizebox>
 		<Style_Border>true</Style_Border>
-		<Style_Sizable>true</Style_Sizable>
+		<Style_Sizable>false</Style_Sizable>
 		<Escapable>false</Escapable>
 		<Pieces>Player_HP</Pieces>
 		<Pieces>Pet_HP</Pieces>
