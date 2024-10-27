@@ -1,0 +1,16 @@
+// This file contains the list of channels that the player might be autojoin'd to 
+// unless he has this option turned off.
+
+// Format:
+// Channel=[Channelname],[Restriction],[Restriction],...  (no trailing comma needed)
+
+// [Restriction] is replaced by:
+// [RestrictionType]^[data1]^[data2]^...  (no trailing ^ needed)
+
+// Possible Restriction types (and their data required)
+// 0 = Levelbased, data1 = minLevel, data2 = maxLevel, inclusive
+// 1 = Classbased, data1 = class (e.g. Warrior = 1)
+// 2 = Zonelist, data1 = zoneGeomID, data2 = zoneGeomID, only players in one of the listed zones will be autojoined to the channel
+
+// This is the block of level based channels
+Channel=General,0^-1^-1
