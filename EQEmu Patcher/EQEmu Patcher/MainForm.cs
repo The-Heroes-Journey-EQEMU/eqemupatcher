@@ -268,9 +268,10 @@ namespace EQEmu_Patcher
                 if (isAutoPlay) PlayGame();
             }
             isLoading = false;
-            if (File.Exists("eqemupatcher.png"))
+            var path = System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "\\eqemupatcher.png";
+            if (File.Exists(path))
             {
-                splashLogo.Load("eqemupatcher.png");
+                splashLogo.Load(path);
             }
             cts.Cancel();
         }
@@ -311,7 +312,14 @@ namespace EQEmu_Patcher
                     case "A057A23F030BAA1C4910323B131407105ACAD14D": //This is a custom ROF2 from a torrent download
                     case "178C9C8FDDDF8F78B6B9142D025FE059": // Custom THJ
                     case "36968E793EBFDB3A1A1C55C7FF1D7C1A": // Retribution
-                    case "6574AC667D4C522D21A47F4D00920CC2": //LAA
+                    case "6574AC667D4C522D21A47F4D00920CC2": // LAA
+                    case "389709EC0E456C3DAE881A61218AAB3F": // This is a 4gb patched eqgame
+                    case "6574AC667D4C522D21A47F4D00920CC2": // Unknown origin, issue #29
+                    case "AE4E4C995DF8842DAE3127E88E724033": // gangsta of RoT 4gb patched eqgame
+                    case "3B44C6CD42313CB80C323647BCB296EF": // https://github.com/xackery/eqemupatcher/issues/15
+                    case "513FDC2B5CC63898D7962F0985D5C207": // aslr checksum removed
+                    case "2FD5E6243BCC909D9FD0587A156A1165": // https://github.com/xackery/eqemupatcher/issues/20
+                    case "26DC13388395A20B73E1B5A08415B0F8": // Legacy of Norrath Custom RoF2 Client https://github.com/xackery/eqemupatcher/issues/16
                         currentVersion = VersionTypes.Rain_Of_Fear_2;
                         splashLogo.Image = Properties.Resources.rof;
                         break;
@@ -512,7 +520,7 @@ namespace EQEmu_Patcher
 
                 StatusLibrary.SetProgress((int)(currentBytes / totalBytes * 10000));
 
-                var path = entry.name.Replace("/", "\\");
+                var path = Path.GetDirectoryName(Application.ExecutablePath)+"\\"+entry.name.Replace("/", "\\");
                 if (!UtilityLibrary.IsPathChild(path))
                 {
                     StatusLibrary.Log("Path " + path + " might be outside of your Everquest directory. Skipping download to this location.");
@@ -554,21 +562,22 @@ namespace EQEmu_Patcher
             {
                 foreach (var entry in filelist.deletes)
                 {
+                    var path = Path.GetDirectoryName(Application.ExecutablePath) + "\\" + entry.name.Replace("/", "\\");
                     if (isPatchCancelled)
                     {
                         Console.WriteLine("cancellled while deleting");
                         StatusLibrary.Log("Patching cancelled.");
                         return;
                     }
-                    if (!UtilityLibrary.IsPathChild(entry.name))
+                    if (!UtilityLibrary.IsPathChild(path))
                     {
                         StatusLibrary.Log("Path " + entry.name + " might be outside your Everquest directory. Skipping deletion of this file.");
                         continue;
                     }
-                    if (File.Exists(entry.name))
+                    if (File.Exists(path))
                     {
                         StatusLibrary.Log("Deleting " + entry.name + "...");
-                        File.Delete(entry.name);
+                        File.Delete(path);
                     }
                 }
             }

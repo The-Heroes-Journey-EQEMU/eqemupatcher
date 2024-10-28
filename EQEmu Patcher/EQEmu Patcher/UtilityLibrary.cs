@@ -108,7 +108,11 @@ namespace EQEmu_Patcher
         // Returns true only if the path is a relative and does not contain ..
         public static bool IsPathChild(string path)
         {
-            if (Path.IsPathRooted(path))
+            // get the absolute path
+            var absPath = Path.GetFullPath(path);
+            var basePath = Path.GetDirectoryName(Application.ExecutablePath); 
+            // check if absPath contains basePath
+            if (!absPath.Contains(basePath))
             {
                 return false;
             }
