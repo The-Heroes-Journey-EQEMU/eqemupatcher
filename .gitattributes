@@ -20,6 +20,7 @@
 *.cur binary
 *.gitattributes binary
 *.ini binary
+*.pfs binary
 
 ###############################################################################
 # Set default behavior for command prompt diff.
