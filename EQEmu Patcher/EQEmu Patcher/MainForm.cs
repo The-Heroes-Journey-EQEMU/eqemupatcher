@@ -265,7 +265,6 @@ namespace EQEmu_Patcher
                 }
             } else
             {
-                if (isAutoPlay) PlayGame();
             }
             isLoading = false;
             var path = System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "\\eqemupatcher.png";
@@ -424,7 +423,6 @@ namespace EQEmu_Patcher
                 isPatching = false;
                 isPatchCancelled = false;
                 cts.Cancel();
-                if (isAutoPlay) PlayGame();
             });
         }
 
@@ -593,18 +591,6 @@ namespace EQEmu_Patcher
 
         private void MainForm_Shown(object sender, EventArgs e)
         {
-            if (isAutoPatch)
-            {
-                if (!isLoading)
-                {
-                    StartPatch();
-                    return;
-                }
-                isPendingPatch = true;
-                pendingPatchTimer.Enabled = true;
-                StatusLibrary.Log("Checking for updates...");
-                btnCheck.Text = "Cancel";
-            }
         }
 
         private string generateSize(double size) {
