@@ -109,6 +109,7 @@
             this.chkAutoPlay.TabIndex = 7;
             this.chkAutoPlay.Text = "Auto Play";
             this.chkAutoPlay.UseVisualStyleBackColor = true;
+            this.chkAutoPlay.Visible = false;
             this.chkAutoPlay.CheckedChanged += new System.EventHandler(this.chkAutoPlay_CheckedChanged);
             // 
             // chkAutoPatch
@@ -120,6 +121,7 @@
             this.chkAutoPatch.TabIndex = 8;
             this.chkAutoPatch.Text = "Auto Patch";
             this.chkAutoPatch.UseVisualStyleBackColor = true;
+            this.chkAutoPatch.Visible = false;
             this.chkAutoPatch.CheckedChanged += new System.EventHandler(this.chkAutoPatch_CheckedChanged);
             // 
             // pendingPatchTimer
