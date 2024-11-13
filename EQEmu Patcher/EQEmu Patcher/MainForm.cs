@@ -277,9 +277,9 @@ namespace EQEmu_Patcher
 
         private void detectClientVersion()
         {
+            /*
             try
             {
-
                 var hash = UtilityLibrary.GetEverquestExecutableHash(AppDomain.CurrentDomain.BaseDirectory);
                 if (hash == "")
                 {
@@ -327,6 +327,9 @@ namespace EQEmu_Patcher
                 MessageBox.Show("You need to run this program with Administrative Privileges" + err.Message);
                 return;
             }
+            */
+            currentVersion = VersionTypes.Rain_Of_Fear_2;
+            splashLogo.Image = Properties.Resources.rof;
         }
 
         //Build out all client version's dictionary
