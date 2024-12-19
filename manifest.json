@@ -10,8 +10,17 @@
         "66.70.227.48"
     ],
     "required": [
-        "dinput8.dll",
+        "entry.dll",
         "config.json"
+    ],
+    "ignored": [
+        "dinput8.dll",
+        "eqnexus/bg.png",
+        "eqnexus/config.ini",
+        "eqnexus/core.dll",
+        "eqnexus/Raleway-Bold.ttf",
+        "eqnexus/Roboto-Regular.ttf",
+        "eqnexus/sep.png"
     ],
     "files": {}
 }
