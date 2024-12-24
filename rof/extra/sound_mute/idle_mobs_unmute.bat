@@ -172,6 +172,16 @@ del ..\..\sounds\dragon_robo_idle.wav
 if exist "idle_mobs\original\dragon_robo_idle.wav" (
 	copy "idle_mobs\original\dragon_robo_idle.wav" "..\..\sounds\dragon_robo_idle.wav" /Y
 )
+del ..\..\sounds\drake_lp.wav
+
+if exist "idle_mobs\original\drake_lp.wav" (
+	copy "idle_mobs\original\drake_lp.wav" "..\..\sounds\drake_lp.wav" /Y
+)
+del ..\..\sounds\drakeidl.wav
+
+if exist "idle_mobs\original\drakeidl.wav" (
+	copy "idle_mobs\original\drakeidl.wav" "..\..\sounds\drakeidl.wav" /Y
+)
 del ..\..\sounds\drakf_wool_idle.wav
 
 if exist "idle_mobs\original\drakf_wool_idle.wav" (
@@ -621,6 +631,11 @@ del ..\..\sounds\spec_idl.wav
 
 if exist "idle_mobs\original\spec_idl.wav" (
 	copy "idle_mobs\original\spec_idl.wav" "..\..\sounds\spec_idl.wav" /Y
+)
+del ..\..\sounds\specloop.wav
+
+if exist "idle_mobs\original\specloop.wav" (
+	copy "idle_mobs\original\specloop.wav" "..\..\sounds\specloop.wav" /Y
 )
 del ..\..\sounds\spectre_cold_idle.wav
 
