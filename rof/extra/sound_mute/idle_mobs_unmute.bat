@@ -262,6 +262,11 @@ del ..\..\sounds\frog_idl.wav
 if exist "idle_mobs\original\frog_idl.wav" (
 	copy "idle_mobs\original\frog_idl.wav" "..\..\sounds\frog_idl.wav" /Y
 )
+del ..\..\sounds\froggidl.wav
+
+if exist "idle_mobs\original\froggidl.wav" (
+	copy "idle_mobs\original\froggidl.wav" "..\..\sounds\froggidl.wav" /Y
+)
 del ..\..\sounds\fung_idl.wav
 
 if exist "idle_mobs\original\fung_idl.wav" (

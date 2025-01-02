@@ -575,6 +575,17 @@ if exist "..\..\sounds\frog_idl.wav" (
 )
 copy blank.wav ..\..\sounds\frog_idl.wav /Y
 
+if exist "..\..\sounds\froggidl.wav" (
+	for %%F in ("..\..\sounds\froggidl.wav") do (
+		set "size=%%~zF"
+	)
+	if !size! GTR 250 (
+		mkdir "idle_mobs\original\" >nul 2>&1
+		copy "..\..\sounds\froggidl.wav" "idle_mobs\original\froggidl.wav" /Y
+	)
+)
+copy blank.wav ..\..\sounds\froggidl.wav /Y
+
 if exist "..\..\sounds\fung_idl.wav" (
 	for %%F in ("..\..\sounds\fung_idl.wav") do (
 		set "size=%%~zF"
