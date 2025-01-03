@@ -377,6 +377,28 @@ if exist "..\..\sounds\dragon_robo_idle.wav" (
 )
 copy blank.wav ..\..\sounds\dragon_robo_idle.wav /Y
 
+if exist "..\..\sounds\drake_lp.wav" (
+	for %%F in ("..\..\sounds\drake_lp.wav") do (
+		set "size=%%~zF"
+	)
+	if !size! GTR 250 (
+		mkdir "idle_mobs\original\" >nul 2>&1
+		copy "..\..\sounds\drake_lp.wav" "idle_mobs\original\drake_lp.wav" /Y
+	)
+)
+copy blank.wav ..\..\sounds\drake_lp.wav /Y
+
+if exist "..\..\sounds\drakeidl.wav" (
+	for %%F in ("..\..\sounds\drakeidl.wav") do (
+		set "size=%%~zF"
+	)
+	if !size! GTR 250 (
+		mkdir "idle_mobs\original\" >nul 2>&1
+		copy "..\..\sounds\drakeidl.wav" "idle_mobs\original\drakeidl.wav" /Y
+	)
+)
+copy blank.wav ..\..\sounds\drakeidl.wav /Y
+
 if exist "..\..\sounds\drakf_wool_idle.wav" (
 	for %%F in ("..\..\sounds\drakf_wool_idle.wav") do (
 		set "size=%%~zF"
@@ -552,6 +574,17 @@ if exist "..\..\sounds\frog_idl.wav" (
 	)
 )
 copy blank.wav ..\..\sounds\frog_idl.wav /Y
+
+if exist "..\..\sounds\froggidl.wav" (
+	for %%F in ("..\..\sounds\froggidl.wav") do (
+		set "size=%%~zF"
+	)
+	if !size! GTR 250 (
+		mkdir "idle_mobs\original\" >nul 2>&1
+		copy "..\..\sounds\froggidl.wav" "idle_mobs\original\froggidl.wav" /Y
+	)
+)
+copy blank.wav ..\..\sounds\froggidl.wav /Y
 
 if exist "..\..\sounds\fung_idl.wav" (
 	for %%F in ("..\..\sounds\fung_idl.wav") do (
@@ -1366,6 +1399,17 @@ if exist "..\..\sounds\spec_idl.wav" (
 	)
 )
 copy blank.wav ..\..\sounds\spec_idl.wav /Y
+
+if exist "..\..\sounds\specloop.wav" (
+	for %%F in ("..\..\sounds\specloop.wav") do (
+		set "size=%%~zF"
+	)
+	if !size! GTR 250 (
+		mkdir "idle_mobs\original\" >nul 2>&1
+		copy "..\..\sounds\specloop.wav" "idle_mobs\original\specloop.wav" /Y
+	)
+)
+copy blank.wav ..\..\sounds\specloop.wav /Y
 
 if exist "..\..\sounds\spectre_cold_idle.wav" (
 	for %%F in ("..\..\sounds\spectre_cold_idle.wav") do (
