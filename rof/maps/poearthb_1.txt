@@ -1,7 +1,9 @@
-P -408.8838, -178.7618, -60.0238,  127, 64, 0,  2,  Warlord_Gintolaken
-P -255.0154, -268.6191, -22.4767,  127, 64, 0,  2,  War_Cheifetan_Awisano
-P -33.4956, -332.1054, -22.4649,  127, 64, 0,  2,  War_Chieftan_Birak
-P -66.1350, -31.9780, -23.9980,  127, 64, 0,  2,  War_Chieftan_Galronar_(Named)
-P 103.6229, -161.6882, -63.9980,  240, 240, 0,  2,  Door_-_Kill_all_mobs_prior_to_door_to_unlock
-P 785.0000, -185.0000, 0.0000,  255, 0, 0,  3,  Zone_In
-P 789.6253, -335.0445, -59.4756,  255, 0, 0,  3,  to_Plane_of_Earth
+P 789.6251, -335.0444, -59.4755, 255, 0, 0, 3, to_Vegarlson,_The_Earthen_Badlands
+P 103.6228, -161.6881, -63.9979, 240, 240, 0, 2, Locked_Door_-_Kill_all_mobs_to_unlock
+P -1296.9018, -397.7045, 16.0019, 240, 240, 0, 2, One-Way_Fall_to_Lower_Area
+P -486.5472, -157.7358, -62.4727, 240, 240, 0, 2, Locked_Door_-_Kill_all_mobs_to_unlock
+P -66.1349, -31.9779, -23.9979, 0, 0, 0, 2, War_Chieftan_Galronar
+P -33.4955, -332.1053, -22.4648, 0, 0, 0, 2, War_Chieftan_Birak
+P -255.0153, -268.6190, -22.4766, 0, 0, 0, 2, War_Cheifetan_Awisano
+P -2043.7196, -412.2336, -223.5671, 240, 127, 0, 2, Avatar_of_Earth_(Raid)
+P -408.8837, -178.7617, -60.0237, 240, 127, 0, 2, Warlord_Gintolaken_(Raid)

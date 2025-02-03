@@ -701,6 +701,3 @@ P 100.0000, 1700.0000, 0.0000,  127, 64, 0,  2,  a_goblin_archaeologist
 P 100.0000, 1500.0000, 0.0000,  127, 64, 0,  2,  a_goblin_alchemist
 P 100.0000, 1300.0000, 0.0000,  127, 64, 0,  2,  an_elite_honor_guard
 P 100.0000, 1100.0000, 0.0000,  240, 127, 0,  2,  Lady_Vox
-P 100.0000, 900.0000, 0.0000,  0, 0, 0,  2,  Return_of_the_Exiled_(www.roteguild.org)
-P 100.0000, 700.0000, 0.0000,  0, 0, 0,  2,  http://www.eqmaps.info
-P 100.0000, 500.0000, 0.0000,  0, 0, 0,  2,  Revised_Map:_Brewall_Rainsinger_(Cazic-Thule)

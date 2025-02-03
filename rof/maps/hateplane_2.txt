@@ -51,7 +51,7 @@ L 599.0, -90.0, 0.0, 637.3, -90.0, 0.0, 255, 0, 0
 L 599.0, -20.0, 0.0, 637.3, -20.0, 0.0, 255, 0, 0
 L 599.0, -90.0, 0.0, 599.0, -20.0, 0.0, 255, 0, 0
 L 637.3, -90.0, 0.0, 637.3, -20.0, 0.0, 255, 0, 0
-P 100, 900, 0, 0, 0, 0, 2, Revised_Map:_Brewall_Rainsiger_(Cazic-Thule)
+P 100, 900, 0, 0, 0, 0, 2, Revised_Map:_Brewall_Rainsinger_(Cazic-Thule)
 P 100, 1100, 0, 0, 0, 0, 2, http://www.eqmaps.info
 P 100, 1300, 0, 0, 0, 0, 2, Return_of_the_Exiled_(www.roteguild.org)
 P 100, 1500, 0, 240, 127, 0, 2, Innoruuk
