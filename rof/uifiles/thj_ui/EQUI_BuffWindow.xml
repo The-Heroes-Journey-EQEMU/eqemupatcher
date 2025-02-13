@@ -103,6 +103,58 @@
         </Size>
         <Animation>Drak_BuffBackground</Animation>
     </StaticAnimation>
+    <StaticAnimation item="Drak_BuffBack7">
+        <ScreenID>Drak_BuffBack7</ScreenID>
+        <RelativePosition>true</RelativePosition>
+        <Location>
+            <X>990</X>
+            <Y>1</Y>
+        </Location>
+        <Size>
+            <CX>165</CX>
+            <CY>42</CY>
+        </Size>
+        <Animation>Drak_BuffBackground</Animation>
+    </StaticAnimation>
+    <StaticAnimation item="Drak_BuffBack8">
+        <ScreenID>Drak_BuffBack8</ScreenID>
+        <RelativePosition>true</RelativePosition>
+        <Location>
+            <X>1155</X>
+            <Y>1</Y>
+        </Location>
+        <Size>
+            <CX>165</CX>
+            <CY>42</CY>
+        </Size>
+        <Animation>Drak_BuffBackground</Animation>
+    </StaticAnimation>
+    <StaticAnimation item="Drak_BuffBack9">
+        <ScreenID>Drak_BuffBack9</ScreenID>
+        <RelativePosition>true</RelativePosition>
+        <Location>
+            <X>1320</X>
+            <Y>1</Y>
+        </Location>
+        <Size>
+            <CX>165</CX>
+            <CY>42</CY>
+        </Size>
+        <Animation>Drak_BuffBackground</Animation>
+    </StaticAnimation>
+    <StaticAnimation item="Drak_BuffBack10">
+        <ScreenID>Drak_BuffBack10</ScreenID>
+        <RelativePosition>true</RelativePosition>
+        <Location>
+            <X>1485</X>
+            <Y>1</Y>
+        </Location>
+        <Size>
+            <CX>165</CX>
+            <CY>42</CY>
+        </Size>
+        <Animation>Drak_BuffBackground</Animation>
+    </StaticAnimation>
     <!-- Buff 1 Start -->
     <Button item="BW_Buff0_Button">
         <ScreenID>Buff0</ScreenID>
@@ -2236,6 +2288,10 @@
         <Pieces>Drak_BuffBack4</Pieces>
         <Pieces>Drak_BuffBack5</Pieces>
         <Pieces>Drak_BuffBack6</Pieces>
+        <Pieces>Drak_BuffBack7</Pieces>
+        <Pieces>Drak_BuffBack8</Pieces>
+        <Pieces>Drak_BuffBack9</Pieces>
+        <Pieces>Drak_BuffBack10</Pieces>
         <Pieces>BW_Buff0_Button</Pieces>
         <Pieces>BW_Buff1_Button</Pieces>
         <Pieces>BW_Buff2_Button</Pieces>
