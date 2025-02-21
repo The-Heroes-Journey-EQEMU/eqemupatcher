@@ -1,0 +1,41 @@
+<c "#ff0000">TORDEN, BASTION OF THUNDER</c>
+<br><br>
+
+<c "#35db24"> Pre-Flag - Tordern Tower Key</c><br>
+Kill trash in each of the wings and loot the following:<br>
+<c "#ffd700">Blizzard Gem</c> found in the EAST WING<br>
+<c "#ffd700">Lightning Gem</c> found in the WEST WING<br>
+<c "#ffd700">Sandstorm Gem</c> found in the SOUTH WING<br>
+<c "#ffd700">Tornado Gem</c> found in the NORTH WING<br><br>
+
+Find and kill any of the following:<br>
+<c "#ff0000">Gaukr Sandstorm<br>
+Hreidar Lynhillig<br>
+Laef Windfall<br>
+Oreen Wavecrasher</c><br>
+Loot <c "#ffd700">Ring of Torden</c><br><br>
+
+Combine the four gems in the <c "#ffd700">Ring of Torden</c> to aquire <c "#ffd700">Enchanted Ring of Torden</c><br>
+<br><br><br><br>
+
+<c "#35db24"> Pre-Flag - Tordern Tower Key</c><br>
+On the 1st floor there are 3 A Firestorm Portal & Envyd Firestorm.
+<br><br>
+Once Envyd Firestorm is dead, Askr the Lost will appear, say to Askr, "Transport." This will take you to the 2nd floor.
+<br><br>
+On the 2nd floor you will encounter Emmerick Skyfury, more adds and three more Portals. 
+Once Skyfury is dead, Askr the Lost will show up once more. Sspeak to him and say, "What storm? At that point a portal will open. The 'portal' is actually an NPC (A Raging Storm). Players need to stand under A Raging Storm, target it and hit the letter "U" (for 'Use') on their keyboard, to port up to the 3rd and final floor.
+<br><br>
+On the 3rd floor you will encounter Agnarr, the Storm Lord and 5 A Firestorm Portals (one cannot be targeted) and a few adds.  Adds will appoear at 99% (Jolur Sandstorm), 74% (Ekil Thundercall), 49% (Oljin Stormtide) and 24% (Hibdin Cyclone).
+<br><br>
+Once everything is dead, Karana will spawn in the room at the top of the stairs. To complete this flag, say to Karana, "I will walk the path of the fallen." This will also zone you out.
+<br><br>
+<c "#35db24"> Post-Flag - Plane of Knowledge</c><br><br>
+Now go talk to Seer Mal Nae`Shi in the Plane of Knowledge, sit down and say to her, "Unlock my memories." 
+<br><br>
+Now talk to Gram Dunnar in that same building and say, 'I will tell you stories.' to wrap up this leg of the progression and get a possible upgrade to your Intricate Wooden Totem and / or AA(s) (you don't get these everytime).
+<br><br>
+>>>NEXT STEP<<<<br>
+<a href="file:///storyline/PlanarProgression/storyhallsofhonor.txt">Halls of Honor</a>
+<br><br><br><br>
+<a href="file:///storyline/storyplanarprogression.txt">Back Home

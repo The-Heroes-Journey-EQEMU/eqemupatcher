@@ -1,0 +1,58 @@
+<c "#ff0000">Doomfire, the Burning Land (Plane of Fire)</c>
+<br><br>
+
+<c "#35db24"> ***Note - Loot to collect while in this zone***</c><br>
+While killing trash, look for <c "#ffd700">Solidified Magma</c> and <c "#ffd700">Fiery Granite</c>.<br>
+One each of these will be needed later to craft the Plane of Time key.<br><br>
+
+
+<c "#35db24"> Part One - Mini Bosses</c><br>
+Another straight forward zone. Make your way thru the zone killing mobs. Along the way you will face several named mobs.<br>
+<c "#ff0000">
+General Druav Flamesinger<br>
+Jaxoliz Dawneyes<br>
+Criare Sunmane<br>
+Quavonis Firetail<br>
+Magmaton<br>
+Babnoxis, the Spider Queen<br>
+Pyronis<br>
+Blazzax the Omnifiend<br>
+General Reparm<br></c>
+and finally <c "#ff0000">Arch Mage Yozanni</c><br><br>
+
+<c "#35db24"> Part Two - Clearing to Fennin Ro</c><br><br>
+      <c "#35db24"> Phase One - Guardian of Doomfire</c><br>
+Kill <c "#ff0000">Guardian of Doomfire</c> to start the event<br><br>
+      <c "#35db24"> Phase Two - Named Wave One</c><br><br>
+Clear the trash mobs and four named and additional trash mobs will spawn.<br>
+Kill <c "#ff0000">Azobian the Darklord<br>
+Hebabbilys the Ragelord<br>
+Javonn the Overlord<br>
+Reaxnous the Chaoslord<br></c><br>
+      <c "#35db24"> Phase Three - Named Wave Two</c><br><br>
+Kill <c "#ff0000">Chancellor Kirtra<br>
+Chancellor Traxom<br>
+Omni Magus Crato<br>
+Warlord Prollaz<br></c><br>
+      <c "#35db24"> Phase Four - Fennin Ro</c><br><br>
+Time for <c "#ff0000>Fennin Ro</c><br><br>
+– 1.1 Million HP<br>
+– Hits 2500+<br>
+– Slowable<br>
+– AE Rampage<br>
+– Casts Cataclysm of Ro (PBAE, 3300 DD/-100 Mana Drain DoT/100 HP DoT,  -1000 Fire Based, 18 curse cure)<br><br>
+
+Once he is dead, hail <c "#dc7633">Essence of Fire</c>, this will give you your flag and <c "#ffd700">Globe of Dancing Flame</c> which is needed for the key to Plane of Time.<br><br>
+
+	  
+	  
+	  
+<c "#35db24"> Post-Flag - Plane of Knowledge</c><br><br>
+Now go talk to Seer Mal Nae`Shi in the Plane of Knowledge, sit down and say to her, "Unlock my memories." 
+<br><br>
+Now talk to Gram Dunnar in that same building and say, 'I will tell you stories.' to wrap up this leg of the progression and get a possible upgrade to your Intricate Wooden Totem and / or AA(s) (you don't get these everytime).
+<br><br>
+>>>NEXT STEP<<<<br>
+<a href="file:///storyline/PlanarProgression/storyplaneofair.txt">Eryslai, the Kingdom of Wind (Plane of Air)</a>
+<br><br><br><br>
+<a href="file:///storyline/storyplanarprogression.txt">Back Home

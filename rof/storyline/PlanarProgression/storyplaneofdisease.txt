@@ -1,0 +1,30 @@
+<c "#ff0000">PLANE OF DISEASE</c>
+<br><br>
+
+<c "#35db24"> Pre-Flag - Plane of Tranquility</c><br>
+Talk to Adler Fuirstel in the Plane of Tranquility, who is near the Plane of Disease portal (faucet). Hail him and say, 'What Ward?'
+<br><br>
+Head into the Plane of Disease and go to the top of the Castle to kill Gryme the Crypt Guardian and loot Gryme's Crypt Key.
+<br><br>
+Use Gryme's Crypt Key to open the Castle doo and head in to find and kill Aramin the Spider Guardian.
+<br><br>
+Clear your way to Grummus
+<br><br>
+Once Grummus is dead, A Planar Projection will appear. Hail A Planar Projection to get your flag text.
+<br><br>
+Now go on down into the pit in order to zone into the Ruins of Lxanvom, to complete the flag.
+<br><br>
+
+
+<c "#35db24"> Post-Flag - Plane of Tranquility</c><br>
+Go back and talk to Adler Fuirstel in the Plane of Tranquility, again.
+<br><br>
+<c "#35db24"> Post-Flag - Plane of Knowledge</c><br>
+Now go talk to Seer Mal Nae`Shi in the Plane of Knowledge, sit down and say to her, "Unlock my memories." 
+<br><br>
+Now talk to Gram Dunnar in that same building and say, 'I will tell you stories.' to wrap up this leg of the progression and get a possible upgrade to your Intricate Wooden Totem and / or AA(s) (you don't get these everytime).
+<br><br>
+>>>NEXT STEP<<<<br>
+<a href="file:///storyline/PlanarProgression/storyplaneofjustice.txt">Plane of Justice</a>
+<br><br><br><br>
+<a href="file:///storyline/storyplanarprogression.txt">Back Home

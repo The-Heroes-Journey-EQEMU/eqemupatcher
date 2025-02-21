@@ -1,0 +1,28 @@
+<c "#ff0000">TOWER OF SOLUSEK RO</c>
+<br><br>
+
+
+<c "#35db24"> Zone Information</c><br><br>
+This zone is fairly straight forward. There are 5 wings that each contain a boss at the end. Kill your way to them, and once they are dead, hail the <c "#dc7633">A Planar Projection</c> to get your flag.<br><br>
+
+
+<c "#35db24"> Part One - Mini Boss</c><br><br>
+Kill all 5 Mini bosses and click through the stones after killing each one. You’ll also need all flags up to Rallos Zek to zone into Solusek Ro’s chamber.  (5x You’ve received a character flag!)<br><br>
+<c "#ff0000">Xuzl<br>
+Arlyxir<br>
+Jiva<br>
+Rizlona<br>
+The Protector of Dresolik</c><br><br>
+<c "#35db24"> Part Two - Solusek Ro</c><br><br>
+Kill <c "#ff0000">Solusek Ro</c> and Hail <c "#dc7633">A Planar Projection</c><br>
+Drop down into Lava Pit in Solusek Ro’s chamber to zone into Plane of Fire. Welcome to the Elemental Planes!<BR><BR>
+
+<c "#35db24"> Post-Flag - Plane of Knowledge</c><br><br>
+Now go talk to Seer Mal Nae`Shi in the Plane of Knowledge, sit down and say to her, "Unlock my memories." 
+<br><br>
+Now talk to Gram Dunnar in that same building and say, 'I will tell you stories.' to wrap up this leg of the progression and get a possible upgrade to your Intricate Wooden Totem and / or AA(s) (you don't get these everytime).
+<br><br>
+>>>NEXT STEP<<<<br>
+<a href="file:///storyline/PlanarProgression/storyplaneoffire.txt">Doomfire, the Burning Land (Plane of Fire)</a>
+<br><br><br><br>
+<a href="file:///storyline/storyplanarprogression.txt">Back Home

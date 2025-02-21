@@ -1,0 +1,29 @@
+<c "#ff0000">PLANE OF INNOVATION</c>
+<br><br>
+
+<c "#35db24"> Pre-Flag - Factory Key</c><br><br>
+Kill trash until you find three items<br>
+    <c "#ffd700">Copper Node</c><br>
+    <c "#ffd700">Bundle of Super Conductive Wires</c><br>
+    <c "#ffd700">Intact Power Cell</c><br>
+Give these three items to <c "#dc7633">Nitram Anizok</c><br>
+Follow him thru the zone (yes, the whole zone), where he will eventually take you to <c "#ff0000">Xanamech Nezmirthafen"</c> who you will need to kill.<br>
+Hail Nitram and then head to the factory to finalize your Factory Key.<br>
+<br>
+<c "#35db24"> Manaetic Behemoth Event</c><br>
+<br>
+Just inside, you should find a gnome named <c "#dc7633">Giwin Mirakon</c>. Hail him and say, "I will test the machine."
+<br>
+Head into the Factory to find Manaetic Behemoth (/waypoint -0.85, 1140), who is in a room that has a door on either side. A clockwork device will come in from both doors. Kill a clockwork device keeping them out of the main room until Manaetic Behemoth activates (Approx 5 minutes), then kill Manaetic Behemoth.
+<br><br>
+Once Manaetic Behemoth is dead, talk to Giwin Mirakon for a flag.
+<br><br>
+<c "#35db24"> Post-Flag - Plane of Knowledge</c><br><br>
+Now go talk to Seer Mal Nae`Shi in the Plane of Knowledge, sit down and say to her, "Unlock my memories." 
+<br><br>
+Now talk to Gram Dunnar in that same building and say, 'I will tell you stories.' to wrap up this leg of the progression and get a possible upgrade to your Intricate Wooden Totem and / or AA(s) (you don't get these everytime).
+<br><br>
+>>>NEXT STEP<<<<br>
+<a href="file:///storyline/PlanarProgression/storyplaneofnightmares.txt">Plane of Nightmares</a>
+<br><br><br><br>
+<a href="file:///storyline/storyplanarprogression.txt">Back Home

@@ -1,0 +1,31 @@
+<c "#ff0000">HALLS OF HONOR</c>
+<br><br>
+
+<c "#35db24"> Trial 1 - North East Basement - Trydan Faye</c><br>
+In the NE Basement is <c "#dc7633">Trydan Faye</c> , hail him and say We are ready to start the trial.<br>
+<c "#dc7633">A Custodian of Marr</c> will spawn, and upon his death, <c "#dc7633">Rydda'Dar</c> will spawn.<br>
+After the dragon is dead, <c "#dc7633">A Planar Projection</c> will spawn. Hail him for your flag.<br><br>
+
+
+<c "#35db24"> Trial 2 - Norht West Basement - Rhaliq Trell</c><br>
+In the NW Basement is <c "#dc7633">Rhaliq Trell</c> , hail him and say "We are ready to start the trial.<br>
+<c "#dc7633">A Custodian of Marr</c> will spawn, and upon his death, <c "#dc7633">Villages</c> will spawn in the three basement rooms. Do not kill them!<br>
+Around the villagers will be several named mobs that will begin attacking the villagers. Kill them all! If all of the villagers die, the trial will end in failure.<br>
+After all of the named mobs die, the villagers will despawn and <c "#dc7633">Rhaliq Trell</c> will spawn back in the end room. Hail him for your flag.<br><br>
+
+
+<c "#35db24"> Trial 3 - South East Basement - Alekson Garn</c><br>
+In the SE Basement is <c "#dc7633">Alekson Garn</c> , hail him and say We are ready to start the trial.<br>
+<c "#dc7633">A Custodian of Marr</c> will spawn, and upon his death, <c "#dc7633">Innocents</c> will spawn in the three basement rooms. Do not kill them!<br>
+Around the innocents will be several named mobs that will begin attacking the innocents. Kill them all! If all of the innocents die, the trial will end in failure.<br>
+After all of the named mobs die, the innocents will despawn and <c "#dc7633">Alekson Garn</c> will spawn back in the end room. Hail him for your flag.<br><br>
+
+<c "#35db24"> Post-Flag - Plane of Knowledge</c><br><br>
+Now go talk to Seer Mal Nae`Shi in the Plane of Knowledge, sit down and say to her, "Unlock my memories." 
+<br><br>
+Now talk to Gram Dunnar in that same building and say, 'I will tell you stories.' to wrap up this leg of the progression and get a possible upgrade to your Intricate Wooden Totem and / or AA(s) (you don't get these everytime).
+<br><br>
+>>>NEXT STEP<<<<br>
+<a href="file:///storyline/PlanarProgression/storytempleofmarr.txt">Temple of Marr</a>
+<br><br><br><br>
+<a href="file:///storyline/storyplanarprogression.txt">Back Home

@@ -1,0 +1,56 @@
+<c "#ff0000">Eryslai, the Kingdom of Wind (Plane of Air)</c>
+<br><br>
+
+
+<c "#35db24"> ***Note - Loot to collect while in this zone***</c><br>
+While killing trash, look for <c "#ffd700">Alabaster Beak</c> and <c "#ffd700">Ivory Stormrider Canine</c>.<br>
+One each of these will be needed later to craft the Plane of Time key.<br><br>
+
+
+<c "#35db24"> Part One - Wind Etched Key - Key to Xegony Island</c><br><br>
+To gain the <c "#ffd700">Wind Etched Key</c> you will need to gather five items:<br>
+<c "#ffd700">
+Pouch of Swirling Winds<br>
+Mystical Essence of Wind<br>
+Mystical Essence of Smoke<br>
+Mystical Essence of Mist<br>
+Mystical Essence of Dust<br></c>
+Combine the four Essences in the Pouch to obtain the <c "#ffd700">Wind Etched Key</c><br><br>
+The Mysical Essences drop from various Wing Bosses called the Avatar’s. You must first complete a ring event to spawn each Avatar. The Avatar’s are triggered from the corresponding ring.<br><br>
+
+
+<c "#35db24"> Stormrider Ring</c><br><br>
+1) Clear all mobs from the island. Once the island is clear, several stormrides spawn in front of the <c "#ff0000">Stormrider Priest of Destruction.</c>.<br>
+The stormriders will become targetable in waves of two, and once all are dead, you may attack <c "#ff0000">Stormrider Priest of Destruction.</c>
+2) During the next 5 to 10 minutes, more mobs will spawn, eventually leading to <c "#ff0000">Pherlondien Clawpikes</c>.<br>
+Continue killing these until <c "#ff0000">Avatar of Wind</c> spawns. Kill him and collect your Essence.<br><br>
+
+
+<c "#35db24"> Elemental Ring</c><br><br>
+Clear all mobs from the island. Once the island is clear, several <c "#ff0000">an elemental champion</c> spawns.<br>
+When the last champion dies, <c "#ff0000">The Elemental Masterpiece</c> will spawn, kill him to spawn <c "#ff0000">Avatar of Smoke</c> spawns. Kill him and collect your Essence.<br><br>
+
+
+<c "#35db24"> Phoenix Ring</c><br><br>
+Clear all mobs from the island. Once the island is clear, several <c "#ff0000">a phoenix firesurger</c> will spawn.<br>
+When the last firesurger dies, <c "#ff0000">Melernil Faal`Armanna</c> will spawn, kill him to spawn <c "#ff0000">Avatar of Mist</c> spawns. Kill him and collect your Essence.<br><br>
+
+<c "#35db24"> Spider Ring</c><br><br>
+Clear all mobs from the island. Once the island is clear, several <c "#ff0000">an erratic arachnidc</c> will spawn. These will continue to spawn throught the event.<br>
+At the same time, <c "#ff0000">a vorladien archwalker</c> will spawn. Killing this will spawn three <c "#ff0000">a vorladien spawn</c>, kill these, and another archwalker will take it's place. Repeat this 3 times.<br>
+When the last archwalker dies, <c "#ff0000">Sigismond Windwalker</c> will spawn, kill him to spawn <c "#ff0000">Avatar of Dust</c> spawns. Kill him and collect your Essence.<br><br>
+<c "#35db24"> Part Two - Xegony</c><br><br>
+<c "#ff0000">Xegony, The Queen of Air</c> is again a pretty straight forward fight.<br>
+Engage her, and ever 15%, she will spawn several adds that you will either need to tank thru, or kill and then go back to Xegony.<br><br>
+
+Once she is dead, hail <c "#dc7633">Essence of Wind</c>, this will give you your flag and <c "#ffd700">Amorphous Cloud of Air</c> which is needed for the key to Plane of Time.<br><br>
+
+<c "#35db24"> Post-Flag - Plane of Knowledge</c><br><br>
+Now go talk to Seer Mal Nae`Shi in the Plane of Knowledge, sit down and say to her, "Unlock my memories." 
+<br><br>
+Now talk to Gram Dunnar in that same building and say, 'I will tell you stories.' to wrap up this leg of the progression and get a possible upgrade to your Intricate Wooden Totem and / or AA(s) (you don't get these everytime).
+<br><br>
+>>>NEXT STEP<<<<br>
+<a href="file:///storyline/PlanarProgression/storyplaneofwater.txt">Reef of Coirnav (Plane of Water)</a>
+<br><br><br><br>
+<a href="file:///storyline/storyplanarprogression.txt">Back Home

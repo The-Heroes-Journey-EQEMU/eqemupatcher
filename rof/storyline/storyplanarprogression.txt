@@ -1,0 +1,53 @@
+THE HERO'S JOURNEY PLANAR PROGRESSION GUIDE
+<br><br>
+Following this guide should allow you to quickly move thru the mostly linear Planes of Power Progression. While there are several ways to progress, this is the most direct path with the least amount of "fixing flags".
+<br><br>
+If you do end up with any out of order flags, you can use this guide: <a href="file:///storyline/PlanarProgression/storyflagfixplanprog.txt">Fixing Your PoP Flags</a>
+<br><br>
+<c "#35db24">TIER 0 - Pre Work - Plane of Knowledge</c>
+<br><br>
+Locate Gram Dunnar in Plane of Knowledge and say "craft" to receive <c "#ffd700">Intricate Wooden Figurine</c> - You will receive one for each of your classes.<br>
+        Return to Gram after progressing thru a flag to receive AAXP and stat increases to your Figurine
+<br><br><br>
+<c "#35db24">TIER 1</c>
+<br><br>
+<a href="file:///storyline/PlanarProgression/storyplaneofdisease.txt">Plane of Disease</a><br>
+<a href="file:///storyline/PlanarProgression/storyplaneofjustice.txt">Plane of Justice</a><br>
+<a href="file:///storyline/PlanarProgression/storyplaneofinnovation.txt">Plane of Innovation</a><br>
+<a href="file:///storyline/PlanarProgression/storyplaneofnightmares.txt">Plane of Nightmare</a><br>
+
+
+<br><br>
+<c "#35db24">TIER 2</c>
+<br><br>
+<a href="file:///storyline/PlanarProgression/storyruinsoflxanvom.txt">Ruins of Lxanvom (Crypt of Decay)</a><br>
+<a href="file:///storyline/PlanarProgression/storyplaneoftorment.txt">Plane of Torment</a><br>
+<a href="file:///storyline/PlanarProgression/storyplaneofstorms.txt">Plane of Storms</a><br>
+<a href="file:///storyline/PlanarProgression/storyplaneofvalor.txt">Plane of Valor</a><br>
+
+
+
+<br><br>
+<c "#35db24">TIER 3</c>
+<br><br>
+<a href="file:///storyline/PlanarProgression/storybastionofthunder.txt">Torden, Bastion of Thunder</a><br>
+<a href="file:///storyline/PlanarProgression/storyhallsofhonor.txt">Halls of Honor</a><br>
+<a href="file:///storyline/PlanarProgression/storytempleofmarr.txt">Temple of Marr</a><br>
+<a href="file:///storyline/PlanarProgression/storyplaneoftactics.txt">Drunder, Fortress of Zek (Plane of Tactics)</a><br>
+<a href="file:///storyline/PlanarProgression/storytowerofsolro.txt">Tower of Solusek Ro</a><br>
+<br><br>
+
+
+<c "#35db24">TIER 4 - Elemental Planes</c>
+<br><br>
+<a href="file:///storyline/PlanarProgression/storyplaneoffire.txt">Doomfire, the Burning Land (Plane of Fire)</a><br>
+<a href="file:///storyline/PlanarProgression/storyplaneofair.txt">Eryslai, the Kingdom of Wind (Plane of Air)</a><br>
+<a href="file:///storyline/PlanarProgression/storyplaneofwater.txt">Reef of Coirnav (Plane of Water)</a><br>
+<a href="file:///storyline/PlanarProgression/storyplaneofeartha.txt">Vegarlson, the Earthen Badlands (Plane of Earth A)</a><br>
+    <a href="file:///storyline/PlanarProgression/storyplaneofearthb.txt">Ragrax, Stronghold of the Twelve (Plane of Earth B - The Rathe Council)</a><br>
+<br><br>
+<c "#35db24">TIER 5 - Plane of Time</c><br><br>
+<a href="file:///storyline/PlanarProgression/storyplaneoftimea.txt">Quintessence of Elements (Plane of Time Access)</a><br>
+<a href="file:///storyline/PlanarProgression/storyplaneoftimeb.txt">Plane of Time</a><br>
+<br><br><br><br>
+<a href="file:///storyline/storyplanarprogression.txt">Back Home

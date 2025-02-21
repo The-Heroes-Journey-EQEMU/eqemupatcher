@@ -1,0 +1,52 @@
+<c "#ff0000">CRYPT OF DECAY</c>
+<br><br>
+
+
+<c "#35db24"> Pre-Flag - Plane of Tranquility</c><br>
+Talk to Adler Fuirstel, who is in the Plane of Tranquility at the entrance to the Plane of Disease.
+<br><br>
+Then go talk to (hail) Elder Fuirstel in the sick bay in the Plane of Tranquility (area of /waypoint -255, -1420).
+<br><br>
+
+<c "#35db24"> Part 1 - The Carprin Cycle</c><br>
+Aggro Carprin but don't kill him. Pull his 3 guards (Abroan Drian, Fran Prisoal & Breddan Rutyl) away from him and kill them first (if you don't, the 'cycle' might not activate).
+<br><br>
+Once the 3 guards are dead, kill Carprin Deatharn.
+<br><br>
+Continue forward and kill Avhi Escron.
+<br><br>
+Next, continue forwards and kill Bishop Toluwon.
+<br><br>
+Now head further in to kill Raex Pwodill & Vindor Mawnil.
+<br><br>
+Finally, kill High Priest Ultor Szanvon.
+<br><br>
+Once High Priest Ultor Szanvon is dead, Tarkil Adan will spawn. DON'T KILL HIM. Instead, hail Tarkil Adan for your flag.
+<br><br>
+
+
+<c "#35db24"> Part 2 - Bertoxxulous the Plaguebringer</c><br>
+Click the chair at the entrance of the zone. This will port you to the next event.<br>
+Kill the Spectre of Corruption to start the event. 
+<br><br>
+The Summoner of Bertoxxulous will appear... DO NOT KILL OR ATTACK the Summoner of Bertoxxulous, who is the 'timer' for this event (you have 2 hours to finish).
+<br><br>
+In the side tunnesl are 12 'Kings' ('Adans'). Pull and kill all twelve (and the trash MoB's)... Darwol Adan; Feig Adan; Xhut Adan; Kavilis Adan; Raddi Adan; Wavadozzik Adan; Zandal Adan; Akkapain Adan; Bhaly Adan; Qezzin Adan; Meedo Adan; & Pzo Adan.
+<br><br>
+Once they are all dead, Bertoxxulous the Plaguebringer spawns on the east side. Kill hima and any adds that appear.
+<br><br>
+Once Bertoxxulous the Plaguebringer is dead, A Planar Projection will appear. Hail it for your flag.
+<br><br>
+
+<c "#35db24"> Post-Flag - Plane of Tranquility</c><br>
+Go back and talk to Elder Fuirstel in the Plane of Tranquility, again.
+<br><br>
+<c "#35db24"> Post-Flag - Plane of Knowledge</c><br>
+Now go talk to Seer Mal Nae`Shi in the Plane of Knowledge, sit down and say to her, "Unlock my memories." 
+<br><br>
+Now talk to Gram Dunnar in that same building and say, 'I will tell you stories.' to wrap up this leg of the progression and get a possible upgrade to your Intricate Wooden Totem and / or AA(s) (you don't get these everytime).
+<br><br>
+>>>NEXT STEP<<<<br>
+<a href="file:///storyline/PlanarProgression/storyplaneoftorment.txt">Plane of Torment</a>
+<br><br><br><br>
+<a href="file:///storyline/storyplanarprogression.txt">Back Home

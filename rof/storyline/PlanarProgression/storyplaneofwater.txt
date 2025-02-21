@@ -1,0 +1,39 @@
+<c "#ff0000">Reef of Coirnav (Plane of Water)</c>
+<br><br>
+
+<c "#35db24"> ***Note - Loot to collect while in this zone***</c><br>
+While killing trash, look for <c "#ffd700">Emerald Colored Mephit Scales</c> and <c "#ffd700">Oil of a Frog</c>.<br>
+One each of these will be needed later to craft the Plane of Time key.<br><br>
+
+
+
+Coirnav is a 4 wave fight followed by Coirnav himself.<br><BR>
+
+<c "#35db24"> Wave One</c><br><br>
+Engage <c "#ff0000">Guardian of Coirnav</c>, and once he dies <c "#ff0000">Pwelon of Vapor</c> will spawn along with 20-25 <c "#ff0000">vaporfiend</c> adds.<br>Kill all of this to start wave two.<br><br>
+
+<c "#35db24"> Wave Two</c><br><br>
+A few minutes after wave one is complete, <c "#ff0000">Nrinda of Ice</c> will spawn along with 20-25 <c "#ff0000">icefiend</c> adds.<br>Kill all of this to start wave three.<br><br>
+
+
+<c "#35db24"> Wave Three</c><br><br>
+A few minutes after wave two is complete, <c "#ff0000">Vamuil of Water</c> will spawn along with 20-25 <c "#ff0000">waterfiend</c> adds.<br>Kill all of this to start wave four.<br><br>
+
+<c "#35db24"> Wave Four - Coirnav Protectors</c><br><br>
+Once wave three is complete, the previous three bosses <c "#ff0000">Nrinda of Ice, Pwelon of Vapor, and Vamuil of Water</c> will respawn in front of Coirnav.<br> Dispatch these and prepare to fight Coirnav.<br><br>
+
+<c "#35db24"> Coirnav, the Avatar of Water </c><br><br>
+Once everything else is dead, <c "#ff0000">Coirnav, the Avatar of Water</c> will spawn along with several adds.<br>
+
+Once he is dead, hail <c "#dc7633">Essence of Water</c>, this will give you your flag and <c "#ffd700">Sphere of Coalesced Water</c> which is needed for the key to Plane of Time.<br><br>
+
+
+<c "#35db24"> Post-Flag - Plane of Knowledge</c><br><br>
+Now go talk to Seer Mal Nae`Shi in the Plane of Knowledge, sit down and say to her, "Unlock my memories." 
+<br><br>
+Now talk to Gram Dunnar in that same building and say, 'I will tell you stories.' to wrap up this leg of the progression and get a possible upgrade to your Intricate Wooden Totem and / or AA(s) (you don't get these everytime).
+<br><br>
+>>>NEXT STEP<<<<br>
+<a href="file:///storyline/PlanarProgression/storyplaneofeartha.txt">Vegarlson, the Earthen Badlands (Plane of Earth A)</a>
+<br><br><br><br>
+<a href="file:///storyline/storyplanarprogression.txt">Back Home

@@ -1,0 +1,103 @@
+<c "#ff0000">Quintessence of Elements (Plane of Time Access)</c>
+<br><br>
+The <c "#ffd700">Odylic Vial</c> is a crafting item needed to combine the four Essences from the Elemental Planes in order to create the <c "#ffd700">Quintessence of Elements</c>, the key to Plane of Time!<br><Br>
+***Subject to change on THJ***<BR><br>
+
+
+
+<c "#35db24"> Crafting Items to Gather</c><br><br>
+4x <c "#ffd700">Glaze Lacquer</c> – Elisha Dirtyshoes, Northern Trader Building, PoK | Loc: +400, +950<br>
+1x <c "#ffd700">Glaze Mortar</c> (4-slot container) – Elisha Dirtyshoes, Northern Trader Building, PoK | Loc: +400, +950<br>
+2x <c "#ffd700">High Quality Firing Shee</c>t – Elisha Dirtyshoes, Northern Trader Building, PoK | Loc: +400, +950<br>
+1x <c "#ffd700">Block of Clay</c> – Elisha Dirtyshoes, Northern Trader Building, PoK | Loc: +400, +950<br>
+1x <c "#ffd700">Medium Jar Sketch</c> – Elisha Dirtyshoes, Northern Trader Building, PoK | Loc: +400, +950<br>
+1x <c "#ffd700">Water Flask</c> – Perago Crotal, Eastern Trader Building, PoK | Loc: +16, +238<br><br><br><br>
+
+
+
+<c "#35db24">Lootable Items from Elemental Planes </c><br><br>
+Items from Elemental Planes:<br>
+PoAir<BR>
+1x <c "#ffd700">Alabaster Beak</c> (“nilborien” type birds)<BR>
+1x <c "#ffd700">Ivory Stormrider Canine</c> (Stormriders)<BR><BR>
+PoEarth<BR>
+1x <c "#ffd700">Liquefied Earth</c> (Mud Golems)<BR>
+1x <c "#ffd700">Shattered Crystal</c> (Mephits, Earth A/B)<BR><BR>
+PoFire<BR>
+1x <c "#ffd700">Solidified Magma</c> (Rock Magmas)<BR>
+1x <c "#ffd700">Fiery Granite</c> (“Humanoid Soldier” type mobs)<BR><BR>
+PoWater<BR>
+1x <c "#ffd700">Emerald Colored Mephit Scales</c> (Mephits)<BR>
+1x <c "#ffd700">Oil of a Frog</c> (Frogs)<BR><BR><br>
+
+<c "#35db24">The Crafting Part One</c><br><br>
+Inside  <c "#ffd700">Glaze Mortar</c> (4-slot container):<br><br>
+***Create <c "#ffd700">Windy Glaze</c> (no-fail)***<br>
+ 1x <c "#ffd700">Alabaster Beak</c><br>
+ 1x <c "#ffd700">Ivory Stormrider Canine</c><br>
+ 1x <c "#ffd700">Glaze Lacquer</c><br><br>
+
+***Create <c "#ffd700">Earthen Glaze</c> (no-fail)***<br>
+ 1x <c "#ffd700">Liquefied Earth</c><br>
+ 1x <c "#ffd700">Shattered Crystal</c><br>
+ 1x <c "#ffd700">Glaze Lacquer </c><br><br>
+
+***Create <c "#ffd700">Magma Glaze</c> (no-fail)***<br>
+ 1x <c "#ffd700">Solidified Magma</c><br>
+ 1x <c "#ffd700">Fiery Granite</c><br>
+ 1x <c "#ffd700">Glaze Lacquer </c><br><br>
+
+***Create <c "#ffd700">Aqua Glaze</c> (no-fail)***<br>
+ 1x <c "#ffd700">Emerald Colored Mephit Scales</c><br>
+ 1x <c "#ffd700">Oil of a Frog</c><br>
+ 1x <c "#ffd700">Glaze Lacquer</c><br><br>
+ 
+ 
+ 
+ <c "#35db24">The Crafting Part Two</c><br><br>
+ Inside  <c "#ffd700">Glaze Mortar</c> (4-slot container):<br><br>
+***Create <c "#ffd700">Multielement Glaze</c> (no-fail)***<br>
+1x <c "#ffd700">Windy Glaze</c><br>
+1x <c "#ffd700">Earthen Glaze</c><br>
+1x <c "#ffd700">Magma Glaze</c><br>
+1x <c "#ffd700">Aqua Glaze</c><br><br><br>
+ 
+ 
+ <c "#35db24">The Crafting Part Three</c><br><br>
+  Inside  <c "#ffd700">Pottery Wheel</c>:<br><br>
+***Create <c "#ffd700">Unfired Medium Container</c> (Pottery, Trivial 36***<br>
+1x <c "#ffd700">Block of Clay</c><br>
+1x <c "#ffd700">Medium Jar Sketch</c><br>
+1x <c "#ffd700">Water Flask</c><br><br><br>
+ 
+ 
+ 
+ 
+ <c "#35db24">The Crafting Part Four</c><br><br>
+  Inside  <c "#ffd700">Kiln</c>:<br><br>
+***Create <c "#ffd700">Odylic Vial</c> (no-fail)*** and is not consumed in the process<br>
+1x <c "#ffd700">Multielement Glaze</c><br>
+1x <c "#ffd700">Unfired Medium Container</c><br>
+2x <c "#ffd700">High Quality Firing Sheets</c><br><br><br>
+
+<c "#35db24">The Final Combine - Quintessence of Elements</c><br><br>
+  Inside  <c "#ffd700">Odylic Vial</c> combine:<br><br>
+1x <c "#ffd700">Amorphous Cloud of Air</c><br>
+1x <c "#ffd700">Globe of Dancing Flame</c><br>
+1x <c "#ffd700">Mound of Living Stone</c><br>
+1x <c "#ffd700">Sphere of Coalesced Water</c><br><br><br>
+
+
+Congratulations! You are now able to enter to final zone in the Planes of Power!!!<BR><BR>
+
+
+
+<c "#35db24"> Post-Flag - Plane of Knowledge</c><br><br>
+Now go talk to Seer Mal Nae`Shi in the Plane of Knowledge, sit down and say to her, "Unlock my memories." 
+<br><br>
+Now talk to Gram Dunnar in that same building and say, 'I will tell you stories.' to wrap up this leg of the progression and get a possible upgrade to your Intricate Wooden Totem and / or AA(s) (you don't get these everytime).
+<br><br>
+>>>NEXT STEP<<<<br>
+<a href="file:///storyline/PlanarProgression/storyplaneoftimeb.txt">Plane of Time</a>
+<br><br><br><br>
+<a href="file:///storyline/storyplanarprogression.txt">Back Home
