@@ -5,7 +5,7 @@
 Find Fahlia Shadyglade and Tylis Newleaf in the Plane of Tranquility (in a building near the zone in to Plane of Nightmare). Hail and talk to them both and follow along for the pre-flagging.
 <br><br>
 
-<c "#35db24"> Part One - Saryn's Key</c><br>
+<c "#35db24"> Part One - Saryn's Key</c> This may be best to do in a RESPAWNING dz<br>
 You need to loot the <c "#ffd700">Orb of Agony</c> from The Avatar of Agony
 <br>
 You need to loot the <c "#ffd700">Orb of Anguish</c> from The Avatar of Anguish

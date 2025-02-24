@@ -1,7 +1,7 @@
 <c "#ff0000">TORDEN, BASTION OF THUNDER</c>
 <br><br>
 
-<c "#35db24"> Pre-Flag - Tordern Tower Key</c><br>
+<c "#35db24"> Pre-Flag - Tordern Tower Key</c> This may be best to do in a RESPAWNING DZ<br>
 Kill trash in each of the wings and loot the following:<br>
 <c "#ffd700">Blizzard Gem</c> found in the EAST WING<br>
 <c "#ffd700">Lightning Gem</c> found in the WEST WING<br>
