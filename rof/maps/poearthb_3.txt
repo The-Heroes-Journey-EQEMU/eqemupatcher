@@ -1,0 +1,5 @@
+P -66.1349, -31.9779, -23.9979, 0, 0, 0, 2, War_Chieftan_Galronar
+P -33.4955, -332.1053, -22.4648, 0, 0, 0, 2, War_Chieftan_Birak
+P -255.0153, -268.6190, -22.4766, 0, 0, 0, 2, War_Cheifetan_Awisano
+P -2043.7196, -412.2336, -223.5671, 240, 127, 0, 2, Avatar_of_Earth_(Raid)
+P -408.8837, -178.7617, -60.0237, 240, 127, 0, 2, Warlord_Gintolaken_(Raid)
