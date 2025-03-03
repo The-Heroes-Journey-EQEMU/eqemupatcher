@@ -31,4 +31,4 @@ Wizard - <c "#dc7633">Channeler Olaemos</c><br>
 <a href="file:///storyline/PoPSpellGuide/storyrangerspells.txt">Ranger Spells</a><br>
 <a href="file:///storyline/PoPSpellGuide/storyshadowknightspells.txt">Shadow Knight Spells</a><br>
 <a href="file:///storyline/PoPSpellGuide/storyshamanspells.txt">Shaman Spells</a><br>
-<a href="file:///storyline/PoPSpellGuide/storywizardspells.txt">Wizard Spells</a><br>
+<a href="file:///storyline/PoPSpellGuide/storywizardspells.txt">Wizard Spells</a><br><br>
