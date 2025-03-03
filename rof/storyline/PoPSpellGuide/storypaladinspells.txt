@@ -1,0 +1,37 @@
+Paladin Spell List<br><br>
+
+<c "#345eeb">----Level 61 Spells----</c><c "#55eb34">Ethereal Parchment</c><br><br>
+Greater Immobilize<br>
+Touch of Nife<br><br>
+
+
+
+<c "#345eeb">----Level 62 Spells----</c><c "#55eb34">Ethereal Parchment</c><br><br>
+Crusader's Touch<br>
+Force of Akilae<br>
+Ward of Nife<br>
+Deny Undead<br><br>
+
+
+
+<br>
+<c "#345eeb">----Level 63 Spells----</c><c "#55eb34">Spectral Parchment</c><br><br>
+Pious Might<br>
+Light of Nife<br><br>
+
+
+
+<c "#345eeb">----Level 64 Spells----</c><c "#55eb34">Spectral Parchment</c><br><br>
+Aura of the Crusader<br>
+Quellious' Word of Serenity<br>
+Supernal Cleansing<br><br>
+
+
+<br>
+<c "#345eeb">----Level 65 Spells----</c><c "#55eb34">Glyphed Rune Word</c><br><br>
+Shackles of Tunare<br>
+Wave of Marr<br>
+Brell's Stalwart Shield
+
+<br><br><br><br>
+<a href="file:///storyline/storypopspells.txt">Back Home

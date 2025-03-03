@@ -1,0 +1,58 @@
+Magician Spell List<br><br>
+
+<c "#345eeb">----Level 61 Spells----</c><c "#55eb34">Ethereal Parchment</c><br><br>
+Belt of Magi'Kot<br>
+Blade of Walnan<br>
+Elemental Barrier<br>
+Flameshield of Ro<br>
+Firebolt of Tallon	<br>
+Shield of the Arcane<br>
+Summon Glowing Bauble<br>
+Summon Platinum Choke<br>
+Summon Runed Mantle<br>
+Summon Sapphire Bracelet<br>
+Summon Spiked Ring<br>
+Summon Steel Bracelet<br>
+Ward of Xegony<br><br>
+
+
+<c "#345eeb">----Level 62 Spells----</c><c "#55eb34">Ethereal Parchment</c><br><br>
+Burnout V<br>
+Fist of Ixiblat<br>
+Servant of Marr<br>
+Sun Storm<br>
+Talisman of Return<br>
+Xegony's Phantasmal Guard<br><br>
+
+
+
+
+<c "#345eeb">----Level 63 Spells----</c><c "#55eb34">Spectral Parchment</c><br><br>
+Black Steel<br>
+Blade of the Kedge<br>
+Child of Ro<br>
+Elemental Silence<br>
+Maelstrom of Ro<br>
+Malosinia<br>
+Summon Jewelry Bag<br><br>
+
+
+<c "#345eeb">----Level 64 Spells----</c><c "#55eb34">Spectral Parchment</c><br><br>
+Destroy Summoned<br>
+Girlde of Magi'Kot<br>
+Maelstrom of Thunder<br>
+Planar Renewal<br>
+Shield of Maelin<br><br>
+
+
+
+<c "#345eeb">----Level 65 Spells----</c><c "#55eb34">Glyphed Rune Word</c><br><br>
+Call of the Arch Mage<br>
+Rathe's Son<br>
+Sun Vortex
+
+
+
+
+<br><br><br><br>
+<a href="file:///storyline/storypopspells.txt">Back Home
