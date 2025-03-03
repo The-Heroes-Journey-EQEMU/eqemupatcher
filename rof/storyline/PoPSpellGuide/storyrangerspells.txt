@@ -1,0 +1,33 @@
+Ranger Spell List<br><br>
+
+<c "#345eeb">----Level 61 Spells----</c><c "#55eb34">Ethereal Parchment</c><br><br>
+No spells in this expansion<br>
+
+
+<c "#345eeb">----Level 62 Spells----</c><c "#55eb34">Ethereal Parchment</c><br><br>
+Call of the Rathe<br>
+Strength of Tunare<br><br>
+
+
+
+
+<c "#345eeb">----Level 63 Spells----</c><c "#55eb34">Spectral Parchment</c><br><br>
+Earther Roots<br>
+Frozen Wind<br><br>
+
+
+<c "#345eeb">----Level 64 Spells----</c><c "#55eb34">Spectral Parchment</c><br><br>
+Brushfire<br>
+Nature's Rebuke<br>
+Spirit of the Predator<br><br>
+
+
+
+<c "#345eeb">----Level 65 Spells----</c><c "#55eb34">Glyphed Rune Word</c><br><br>
+Cry of Thunder<br>
+Protection of the Wild
+
+
+
+<br><br><br><br>
+<a href="file:///storyline/storypopspells.txt">Back Home

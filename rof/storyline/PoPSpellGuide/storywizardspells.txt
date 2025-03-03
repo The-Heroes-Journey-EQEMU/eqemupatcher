@@ -1,0 +1,43 @@
+Wizard Spell List<br><br>
+
+<c "#345eeb">----Level 61 Spells----</c><c "#55eb34">Ethereal Parchment</c><br><br>
+Greater Fetter<br>
+Resistant Armor<br>
+Shield of the Arcane<br>
+Tears of Ro<br><br>
+
+
+<c "#345eeb">----Level 62 Spells----</c><c "#55eb34">Ethereal Parchment</c><br><br>
+Draught of Ro<br>
+Elemental Barrier<br>
+Lure of Ro<br>
+Teleport<br><br>
+
+
+
+
+<c "#345eeb">----Level 63 Spells----</c><c "#55eb34">Spectral Parchment</c><br><br>
+Agnarr's Thunder<br>
+Draught of Thunder<br>
+Force Shield<br>
+Iceflame of E'ci<br><br>
+
+
+<c "#345eeb">----Level 64 Spells----</c><c "#55eb34">Spectral Parchment</c><br><br>
+Draught of E'ci<br>
+Shield of Maelin<br>
+Tears of Arlyxir<br>
+Telekin<br><br>
+
+
+
+<c "#345eeb">----Level 65 Spells----</c><c "#55eb34">Glyphed Rune Word</c><br><br>
+Greater Decession<br>
+Shock of Magic<br>
+Strike of Solosek<br>
+Tears of Marr
+
+
+
+<br><br><br><br>
+<a href="file:///storyline/storypopspells.txt">Back Home
