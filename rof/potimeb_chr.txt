@@ -1,4 +1,4 @@
-17
+16
 onm,onm
 cdm,cdm
 sdm,griegsend_chr
@@ -15,4 +15,3 @@ tho,thedeep_chr
 shn,ssratemple_chr
 akn,vexthal_chr
 owb,paludal_chr
-ser,sseru_chr
