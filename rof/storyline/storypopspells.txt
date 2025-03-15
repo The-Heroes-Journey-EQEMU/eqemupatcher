@@ -1,0 +1,34 @@
+Planes of Power Spell Guide
+<br><br>
+Most spells in the Planes of Power expansion can be aquired by turning in <c "#ffd700">Ethereal Parchments</c> for level 61 and 62 spells, <c "#ffd700">Spectral Parchments</c> for level 63 and 64 spells, or <c "#ffd700">Glyphed Rune Words</c> for level 65 spells.<br> <br><br>
+
+<c "#35db24">Spell Turn In NPCs</c>
+In the Plane of Knowledge Library located in the center of the zone are several Guild Master type NPCs that you can exchange parchments and glyph words to for a RANDOM spell. There are no level or class restrictions on who can exchange the items. IE, a warrior can still turn in parchments to get a wizard spell.<br><br>
+
+Bard - <c "#dc7633">Minstrel Eoweril</c><br>
+Beastlord - <c "#dc7633">Primalist Saosith</c><br>
+Cleric - <c "#dc7633">Vicar Ceraen</c><br>
+Druid - <c "#dc7633">Wanderer Astobin</c><br>
+Enchanter - <c "#dc7633">Illusionist Jerup</c><br>
+Magician - <c "#dc7633">Elementalist Somat</c><br>
+Necromancer - <c "#dc7633">Heretic Drahur</c><br>
+Paladin - <c "#dc7633">Cavalier Waut</c><br>
+Ranger - <c "#dc7633">Pathfinder Viliken</c><br>
+Shadowknight - <c "#dc7633">Reaver Nydlil</c><br>
+Shaman - <c "#dc7633">Mystic Abomin</c><br>
+Wizard - <c "#dc7633">Channeler Olaemos</c><br>
+<br><br><br>
+<c "#35db24">Spell Lists</c>
+<br><br>
+<a href="file:///storyline/PoPSpellGuide/storybardspells.txt">Bard Spells</a><br>
+<a href="file:///storyline/PoPSpellGuide/storybeastlordspells.txt">Beast Lord Spells</a><br>
+<a href="file:///storyline/PoPSpellGuide/storyclericspells.txt">Cleric Spells</a><br>
+<a href="file:///storyline/PoPSpellGuide/storydruidspells.txt">Druid Spells</a><br>
+<a href="file:///storyline/PoPSpellGuide/storyenchanterspells.txt">Enchanter Spells</a><br>
+<a href="file:///storyline/PoPSpellGuide/storymagicianspells.txt">Magician Spells</a><br>
+<a href="file:///storyline/PoPSpellGuide/storynecromancerspells.txt">Necromancer Spells</a><br>
+<a href="file:///storyline/PoPSpellGuide/storypaladinspells.txt">Paladin Spells</a><br>
+<a href="file:///storyline/PoPSpellGuide/storyrangerspells.txt">Ranger Spells</a><br>
+<a href="file:///storyline/PoPSpellGuide/storyshadowknightspells.txt">Shadow Knight Spells</a><br>
+<a href="file:///storyline/PoPSpellGuide/storyshamanspells.txt">Shaman Spells</a><br>
+<a href="file:///storyline/PoPSpellGuide/storywizardspells.txt">Wizard Spells</a><br>

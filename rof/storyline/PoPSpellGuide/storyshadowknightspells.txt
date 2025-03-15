@@ -1,0 +1,38 @@
+Shadow Knight Spell List<br><br>
+
+<c "#345eeb">----Level 61 Spells----</c><c "#55eb34">Ethereal Parchment</c><br><br>
+Aura of Darkness<br>
+Festering Darkness<br><br>
+
+
+<c "#345eeb">----Level 62 Spells----</c><c "#55eb34">Ethereal Parchment</c><br><br>
+Deny Undead<br>
+Touch of Volatis<br>
+Zevfeer's Bite<br><br>
+
+
+
+
+<c "#345eeb">----Level 63 Spells----</c><c "#55eb34">Spectral Parchment</c><br><br>
+Aura of Pain<br>
+Blood of Hate<br>
+Shroud of Chaos<br>
+Terror of Thule<br><br>
+
+
+<c "#345eeb">----Level 64 Spells----</c><c "#55eb34">Spectral Parchment</c><br><br>
+Pact of Hate<br>
+Spear of Decay<br><br>
+
+
+
+<c "#345eeb">----Level 65 Spells----</c><c "#55eb34">Glyphed Rune Word</c><br><br>
+Aura of Hate<br>
+Cloak of Luclin<br>
+Touch of Innoruuk<br>
+Voice of Thule
+
+
+
+<br><br><br><br>
+<a href="file:///storyline/storypopspells.txt">Back Home
