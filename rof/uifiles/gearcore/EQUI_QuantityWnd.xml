@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+  <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+  <Slider item="QTYW_Slider">
+    <ScreenID>QTYW_Slider</ScreenID>
+    <!--<Font>3</Font>-->
+    <RelativePosition>true</RelativePosition>
+    <Location>
+      <X>7</X>
+      <Y>2</Y>
+    </Location>
+    <Size>
+      <CX>100</CX>
+      <CY>20</CY>
+    </Size>
+    <SliderArt>SDT_DefSlider</SliderArt>
+    <Font>2</Font>
+  </Slider>
+  <Editbox item="QTYW_SliderInput">
+    <ScreenID>QTYW_SliderInput</ScreenID>
+    <DrawTemplate>WDT_Inner</DrawTemplate>
+    <RelativePosition>true</RelativePosition>
+    <Style_Border>true</Style_Border>
+    <Location>
+      <X>2</X>
+      <Y>27</Y>
+    </Location>
+    <Size>
+      <CX>70</CX>
+      <CY>20</CY>
+    </Size>
+    <TextColor>
+      <R>255</R>
+      <G>255</G>
+      <B>255</B>
+    </TextColor>
+    <Font>2</Font>
+  </Editbox>
+  <Button item="QTYW_Accept_Button">
+    <ScreenID>QTYW_Accept_Button</ScreenID>
+    <!--<Font>3</Font>-->
+    <RelativePosition>true</RelativePosition>
+    <Location>
+      <X>73</X>
+      <Y>27</Y>
+    </Location>
+    <Size>
+      <CX>39</CX>
+      <CY>20</CY>
+    </Size>
+    <Style_Transparent>false</Style_Transparent>
+    <!--<TooltipReference/>-->
+    <Style_Checkbox>false</Style_Checkbox>
+    <!--<RadioGroup/>-->
+    <Text>Accept</Text>
+    <TextColor>
+      <R>0</R>
+      <G>255</G>
+      <B>0</B>
+    </TextColor>
+    <ButtonDrawTemplate>
+      <Normal>A_BtnNormal</Normal>
+      <Pressed>A_BtnPressed</Pressed>
+      <Flyby>A_BtnFlyby</Flyby>
+      <Disabled>A_BtnDisabled</Disabled>
+      <PressedFlyby>A_BtnPressedFlyby</PressedFlyby>
+    </ButtonDrawTemplate>
+    <Font>2</Font>
+  </Button>
+  <Screen item="QuantityWnd">
+    <!--<ScreenID/>-->
+    <!--<Font/>-->
+    <RelativePosition>false</RelativePosition>
+    <Location>
+      <X>200</X>
+      <Y>200</Y>
+    </Location>
+    <Size>
+      <CX>124</CX>
+      <CY>59</CY>
+    </Size>
+    <Text> ShinSpark - Quantity</Text>
+    <Style_Transparent>false</Style_Transparent>
+    <!--<TooltipReference/>-->
+    <DrawTemplate>WDT_RoundedNoTitle</DrawTemplate>
+    <Style_Titlebar>False</Style_Titlebar>
+    <Style_Closebox>False</Style_Closebox>
+    <Style_Minimizebox>false</Style_Minimizebox>
+    <Style_Border>true</Style_Border>
+    <Style_Sizable>false</Style_Sizable>
+    <Pieces>QTYW_Slider</Pieces>
+    <Pieces>QTYW_SliderInput</Pieces>
+    <Pieces>QTYW_Accept_Button</Pieces>
+    <Font>2</Font>
+  </Screen>
+</XML>
