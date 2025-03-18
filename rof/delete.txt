@@ -8,3 +8,4 @@ highpasshold.zon
 highpasshold_chr.txt
 highpasshold_EnvironmentEmitters.txt
 arena.eqg
+/storyline/storyAmulet.txt
