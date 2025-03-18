@@ -1,31 +1,26 @@
 <c "#ff0000">HALLS OF HONOR</c>
 <br><br>
 
-<c "#35db24"> Trial 1 - North East Basement - Trydan Faye</c><br>
-In the NE Basement is <c "#dc7633">Trydan Faye</c> , hail him and say We are ready to start the trial.<br>
-<c "#dc7633">A Custodian of Marr</c> will spawn, and upon his death, <c "#dc7633">Rydda'Dar</c> will spawn.<br>
-After the dragon is dead, <c "#dc7633">A Planar Projection</c> will spawn. Hail him for your flag.<br><br>
+<c "#35db24"> Trial 1 - North East Basement - </c><c "#dc7633">Trydan Faye</c><br>
+In the NE Basement is <c "#dc7633">Trydan Faye</c>, <c "#00ff00">Hail</c> him, and follow the dialog.<br>
+<c "#ff0000">A Custodian of Marr</c> will spawn, and upon his death, <c "#ff0000">Rydda'Dar</c> will spawn, kill him.<br>
+<c "#dada99">You receive a character flag!</c><br><br>
+A Planar Projection will spawn, you don't have to Hail it.<br><br>
 
+<c "#35db24"> Trial 2 - Norht West Basement - </c><c "#dc7633">Rhaliq Trell</c><br>
+In the NW Basement is <c "#dc7633">Rhaliq Trell</c> , <c "#00ff00">Hail</c> him, and follow the dialog.<br>
+<c "#ff0000">A Custodian of Marr</c> will spawn, and upon his death, <c "#dc7633">villagers</c> will spawn in the three basement rooms. Protect them from the named attacking mobs.<br><br>After you have killed all of the named mobs in the 3 rooms. <c "#dc7633">Rhaliq Trell</c> will reappear, <c "#00ff00">Hail</c> him.<br>
+<c "#dada99">You receive a character flag!</c><br><br>
 
-<c "#35db24"> Trial 2 - Norht West Basement - Rhaliq Trell</c><br>
-In the NW Basement is <c "#dc7633">Rhaliq Trell</c> , hail him and say "We are ready to start the trial.<br>
-<c "#dc7633">A Custodian of Marr</c> will spawn, and upon his death, <c "#dc7633">Villages</c> will spawn in the three basement rooms. Do not kill them!<br>
-Around the villagers will be several named mobs that will begin attacking the villagers. Kill them all! If all of the villagers die, the trial will end in failure.<br>
-After all of the named mobs die, the villagers will despawn and <c "#dc7633">Rhaliq Trell</c> will spawn back in the end room. Hail him for your flag.<br><br>
+<c "#35db24"> Trial 3 - South East Basement - </c><c "#dc7633">Alekson Garn</c><br>
+In the SE Basement is <c "#dc7633">Alekson Garn</c> , <c "#00ff00">Hail</c> him, and follow the dialog.<br>
+<c "#ff0000">A Custodian of Marr</c> will spawn, and upon his death, <c "#dc7633">norrathian maiden</c>'s will spawn in the three basement rooms. Protect them from the <c "#ff0000">crazed norrathian</c>'s.<br><br>
+Each room will have 4 mobs, and after they die, a single harder mob will spawn. Kill each pack like this in all 3 rooms, do not let any room die. After the you saved them, <c "#dc7633">A Planar Projection</c> will spawn, <c "#00ff00">Hail</c> him.<br>
+<c "#dada99">You receive a character flag!</c><br><br>
+Head to and zone into the <c "#35db24">Temple of Marr</c>.<br>
+<c "#dada99">You receive a character flag!</c><br><br>
 
-
-<c "#35db24"> Trial 3 - South East Basement - Alekson Garn</c><br>
-In the SE Basement is <c "#dc7633">Alekson Garn</c> , hail him and say We are ready to start the trial.<br>
-<c "#dc7633">A Custodian of Marr</c> will spawn, and upon his death, <c "#dc7633">Innocents</c> will spawn in the three basement rooms. Do not kill them!<br>
-Around the innocents will be several named mobs that will begin attacking the innocents. Kill them all! If all of the innocents die, the trial will end in failure.<br>
-After all of the named mobs die, the innocents will despawn and <c "#dc7633">Alekson Garn</c> will spawn back in the end room. Hail him for your flag.<br><br>
-
-<c "#35db24"> Post-Flag - Plane of Knowledge</c><br><br>
-Now go talk to Seer Mal Nae`Shi in the Plane of Knowledge, sit down and say to her, "Unlock my memories." 
-<br><br>
-Now talk to Gram Dunnar in that same building and say, 'I will tell you stories.' to wrap up this leg of the progression and get a possible upgrade to your Intricate Wooden Totem and / or AA(s) (you don't get these everytime).
-<br><br>
 >>>NEXT STEP<<<<br>
 <a href="file:///storyline/PlanarProgression/storytempleofmarr.txt">Temple of Marr</a>
-<br><br><br><br>
+<br><br><br>
 <a href="file:///storyline/storyplanarprogression.txt">Back Home

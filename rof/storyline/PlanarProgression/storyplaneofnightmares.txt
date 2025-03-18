@@ -1,36 +1,43 @@
 <c "#ff0000">PLANE OF NIGHTMARES</c>
 <br><br>
 <c "#35db24"> Pre-Flag - Plane of Tranquility</c><br>
-Head over to Adroha Jezith and Elder Poxbourne in the Plane of Tranquility (in a building in the area of /waypoint -255, -1420), hail them and follow along (key phrase, 'Tortured by Nightmares?).'
+Head to the <c "#35db24">Sick Bay</c> (loc: -253, -1415, -906). find <c "#dc7633">Adroha Jezith</c>, <c "#ffff00">Hail</c> her and follow the dialog.
+<br><c "#dcdc99">You receive a character flag!</c>
 <br><br>
-<c "#35db24"> Part One- Hedge Maze Event</c><br>
-Head into the Plane of Nightmare and go to the far northeast (across the water) to find some hedges, to talk to Thelin Poxbourne and follow along to get this raid. Keyword, 'Ready.' The say 'Ready' to teleport inside the hedge maze (not an instance).
-<br><br>
-Once inside the hedge maze, you are to follow and protect Thelin Poxbourne from all sorts of attackers as he meanders about looking for pieces of a dagger (he can get himself killed as he also fights). Once he finds the final piece, A Construct of Nightmares will attack. Kill it!
-<br><br>
-Once you have finished off A Construct of Nightmares, loot the Dagger Blade Shard and give it to Thelin Poxbourne. Terris Thule will then make a brief appearance, disappoint Thelin and then leave (no battle). After she leaves, hail Thelin and you will be transported out of the maze and receive your character flag.
 
+<c "#35db24"> Part One- Hedge Maze Event</c><br>
+Head into the <c "#35db24">Plane of Nightmare</c> and go to the far northeast (across the water) to find some hedges, to talk to <c "#dc7633">Thelin Poxbourne</c> and <c "#ffff00">Hail</c> him, tell him '<c "#ffff00">ready</c>'
+ to teleport inside the hedge maze.
+
+<br><br>
+Once inside the hedge maze, you will encounter<c "#ff0000">A Construct of Nightmares</c> infront of you. You must <c "#00ff00">Kill</c> it!
+<br><br>
+Once you have finished off <c "#ff0000">A Construct of Nightmares</c>, loot the <c "#ffd700">Dagger Blade Shard</c>, and <c "#ffff00">Hail</c> <c "#dc7633">Thelin Poxbourne</c>.
+<br><c "#dada99">You receive a character flag!</c>
+<br><br>
+
+ Hand the <c "#ffd700">Dagger Blade Shard</c> to him and recieve <c "#ffd700">Thelin's Dagger</c>. After you are done, <c "#ffff00">Hail</c> him and say <c "#ffff00">return</c>.<br><br>
+
+Head to the gate to <c "#ff0000">Terris Thule's</c> lair.<br>
+Click the Gate to zone in.
+<br><c "#dada99">You receive a character flag!</c>
+<br><br>
 
 <c "#35db24"> Part Two - Terris Thule</c><br>
+<br>
+Fight your way into where <c "#ff0000">Terris Thule</c> is located (at the end of the path, in a building).
 <br><br>
-Head to the Lair of Terris Thule to do this raid / event. Fight your way into where Terris Thule is located (at the end of the path, in a building).
-<br><br>
-Attack Terris Thule. When Terris Thule is at 75% health, she will spawn a good number of a Dream Defiler. Kill them.
-<br><br>
-When Terris Thule is at 50% health, she will dispell 12 buffs from everyone. 
-<br><br>
-When Terris Thule is at 35% the 'statues' in the room come to life (A Grotesque Statue). Kill them and finish off Terris Thule.
-<br><br>
-A Planar Projection will appear. Hail it for your flag.
+Attack and kill <c "#ff0000">Terris Thule</c>
+<br><c "#dada99">You receive a character flag!</c>
 <br><br>
 
+A Planar Projection will appear. you don't have to <c "#ffff00">Hail</c> it.
+<br><br>
+Head back to <c "#35db24">Plane of Tranquility</c> and goto the <c "#35db24">Sick Bay</c> (loc: -253, -1415, -906). find <c "#dc7633">Elder Poxbourne</c> and <c "#ffff00">Hail</c> him.
+<br><c "#dada99">You receive a character flag!</c>
+<br><br>
 
-<c "#35db24"> Post-Flag - Plane of Knowledge</c><br>
-Now go talk to Seer Mal Nae`Shi in the Plane of Knowledge, sit down and say to her, "Unlock my memories." 
-<br><br>
-Now talk to Gram Dunnar in that same building and say, 'I will tell you stories.' to wrap up this leg of the progression and get a possible upgrade to your Intricate Wooden Totem and / or AA(s) (you don't get these everytime).
-<br><br>
 >>>NEXT STEP<<<<br>
 <a href="file:///storyline/PlanarProgression/storyruinsoflxanvom.txt">Crypt of Decay (Ruins of Lxanvom></a>
-<br><br><br><br>
+<br><br><br>
 <a href="file:///storyline/storyplanarprogression.txt">Back Home

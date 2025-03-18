@@ -3,10 +3,10 @@
 
 <c "#35db24"> Pre-Flag - Tordern Tower Key</c> This may be best to do in a RESPAWNING DZ<br>
 Kill trash in each of the wings and loot the following:<br>
-<c "#ffd700">Blizzard Gem</c> found in the EAST WING<br>
-<c "#ffd700">Lightning Gem</c> found in the WEST WING<br>
-<c "#ffd700">Sandstorm Gem</c> found in the SOUTH WING<br>
-<c "#ffd700">Tornado Gem</c> found in the NORTH WING<br><br>
+<c "#ffd700">Blizzard Gem</c> found in the <c "#35db24">EAST WING</c><br>
+<c "#ffd700">Lightning Gem</c> found in the <c "#35db24">WEST WING</c><br>
+<c "#ffd700">Sandstorm Gem</c> found in the <c "#35db24">SOUTH WING</c><br>
+<c "#ffd700">Tornado Gem</c> found in the <c "#35db24">NORTH WING</c><br><br>
 
 Find and kill any of the following:<br>
 <c "#ff0000">Gaukr Sandstorm<br>
@@ -15,27 +15,32 @@ Laef Windfall<br>
 Oreen Wavecrasher</c><br>
 Loot <c "#ffd700">Ring of Torden</c><br><br>
 
-Combine the four gems in the <c "#ffd700">Ring of Torden</c> to aquire <c "#ffd700">Enchanted Ring of Torden</c><br>
-<br><br><br><br>
+Combine the four gems in the <c "#ffd700">Ring of Torden</c> to aquire <c "#ffd700">Enchanted Ring of Torden</c><br>(Key to the towers in the <c "#35db24">Courtyard</c>)
+<br><br>
+In one of the wings, take a portal to the <c "#35db24">Courtyard</c>.
+Clear each tower, killing all of the trash, and the tower boss.<br> The bosses will drop <c "#ffd700">Unadorned Symbol of Torden</c>. This is the container used to combine the 4 <c "#ffd700">Spheres</c>.<br>
 
-<c "#35db24"> Pre-Flag - Tordern Tower Key</c><br>
-On the 1st floor there are 3 A Firestorm Portal & Envyd Firestorm.
+NW Tower: <c "#ffd700">Sandstorm Sphere</c> (off trash), and boss: <c "#ff0000">Kuanbyr Hailstorm</c><br>
+NE Tower: <c "#ffd700">Lightning Sphere</c> (off trash), and boss: <c "#ff0000">Brynju Thunderclap</c><br>
+SE Tower: <c "#ffd700">Tornado Sphere</c> (off trash), and boss: <c "#ff0000">Auliffe Chaoswind</c><br>
+SW Tower: <c "#ffd700">Blizzard Sphere</c> (off trash), and boss: <c "#ff0000">Eindride Icestorm</c><br><br>
+Combine the 4 Sphere's in the <c "#ffd700>Unadorned Symbol of Torden</c> and receive <c "#ffd700">Symbol of Torden</c> (key to the Lightning Sphere in the middle of the <c "#35db24">Courtyard</c>)<br><br>
+Return to the <c "#35db24">Courtyard</c>, and <c "#00ff00">Click</c> the Lightning Sphere and be ported up.<br><br>
+</c><br>**Note: Kill all the adds before talking to <c "#dc7633">Askr the Lost</c>**
+On the 1st floor there are 3 <c "#ff0000">A Firestorm Portal</c> & <c "#ff0000"
+>Envyd Firestorm</c>.
+<br>
+Kill <c "#ff0000">Envyd Firestorm</c> and adds,<br> <c "#dc7633">Askr the Lost</c> will appear, <c "#00ff00">Hail</c> him, this will take you to the 2nd floor.
 <br><br>
-Once Envyd Firestorm is dead, Askr the Lost will appear, say to Askr, "Transport." This will take you to the 2nd floor.
+On the 2nd floor you will encounter <c "#ff0000">Emmerick Skyfury</c>, and more adds. Kill <c "#ff0000">Emmerick Skyfury</c> and adds, <br><c "#dc7633">Askr the Lost</c> will show up once again. <c "#00ff00">Hail</c> him, this will take you to the 3rd floor.
 <br><br>
-On the 2nd floor you will encounter Emmerick Skyfury, more adds and three more Portals. 
-Once Skyfury is dead, Askr the Lost will show up once more. Sspeak to him and say, "What storm? At that point a portal will open. The 'portal' is actually an NPC (A Raging Storm). Players need to stand under A Raging Storm, target it and hit the letter "U" (for 'Use') on their keyboard, to port up to the 3rd and final floor.
+On the 3rd floor you will encounter <c "#ff0000">Agnarr the Storm Lord</c>. After you kill <c "#ff0000">Agnarr the Storm Lord</c>.<br>
+<c "#dada99">You receive a character flag!</c>
 <br><br>
-On the 3rd floor you will encounter Agnarr, the Storm Lord and 5 A Firestorm Portals (one cannot be targeted) and a few adds.  Adds will appoear at 99% (Jolur Sandstorm), 74% (Ekil Thundercall), 49% (Oljin Stormtide) and 24% (Hibdin Cyclone).
-<br><br>
-Once everything is dead, Karana will spawn in the room at the top of the stairs. To complete this flag, say to Karana, "I will walk the path of the fallen." This will also zone you out.
-<br><br>
-<c "#35db24"> Post-Flag - Plane of Knowledge</c><br><br>
-Now go talk to Seer Mal Nae`Shi in the Plane of Knowledge, sit down and say to her, "Unlock my memories." 
-<br><br>
-Now talk to Gram Dunnar in that same building and say, 'I will tell you stories.' to wrap up this leg of the progression and get a possible upgrade to your Intricate Wooden Totem and / or AA(s) (you don't get these everytime).
+<c "#dc7633">Karana</c> will spawn in the room at the top of the stairs. <c "#00ff00">Hail</c> him, and follow the dialog.<br>
+<c "#dada99">You receive a character flag!</c>
 <br><br>
 >>>NEXT STEP<<<<br>
 <a href="file:///storyline/PlanarProgression/storyhallsofhonor.txt">Halls of Honor</a>
-<br><br><br><br>
+<br><br><br>
 <a href="file:///storyline/storyplanarprogression.txt">Back Home

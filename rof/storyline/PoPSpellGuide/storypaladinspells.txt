@@ -34,4 +34,4 @@ Wave of Marr<br>
 Brell's Stalwart Shield
 
 <br><br><br><br>
-<a href="file:///storyline/storypopspells.txt"> Back Home
+<a href="file:///storyline/storypopspells.txt">Back Home

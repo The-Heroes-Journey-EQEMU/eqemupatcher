@@ -14,7 +14,7 @@ And finally the boss mob of this zone <c "#ff0000">A Mystical Arbitor of Earth</
 
 <c "#35db24"> Key Holder - Tantisala Jaggedtooth</c><br><br>
 In the middle of the zone is a very large crocodile named <c "#ff0000">Tantisala Jaggedtooth</c><br>
-Upon killing him, you will receive a key that allows you to get to the boss of this zone.<br><br>
+Upon killing him, you will receive a <c "#ffd700">key</c> that allows you to get to the boss of this zone.<br><br>
 
 <c "#35db24"> RING EVENTS</c><br><br>
 <c "#35db24"> Rock Golem Event</c><br><br>
@@ -39,7 +39,7 @@ Kill <c "#ff0000">Peregrin Rockskull</c><br><BR>
 
 
 
-<c "#35db24"> Mud Golem Event</c><br><br>
+<c "#35db24">Mud Golem Event</c><br><br>
 ***Wave One***<br>
 Kill all of <c "#ff0000">an Earthen Mudwalkers</c><br>
 
@@ -52,10 +52,6 @@ Kill four <c "#ff0000">A Filth Gorger</c><br>
 ***Wave four***<br>
 Kill <c "#ff0000">A Monstrous Mudwalker</c><br><br>
 
-
-
-
-
 <c "#35db24"> Vine Event</c><br><br>
 ***Wave One***<br>
 Kill all of <c "#ff0000">A Tainted Rock Beast</c>, there are around 30 of them<br>
@@ -66,10 +62,7 @@ Kill all of <c "#ff0000">A Bloodthirsty Vegerog</c>, there are around 10 of thes
 ***Wave three***<br>
 Kill <c "#ff0000">Derugoak Bloodwalker</c><br><br>
 
-
-
-
-<c "#35db24"> Elementals Event</c><br><br>
+<c "#35db24">Elementals Event</c><br><br>
 This is an endurance event. Multiple mobs will be spawning on top of each other.<br>
 ***Wave One***<br>
 Kill <c "#ff0000">A Dusty Warder</c>, several <c "#ff0000">A Dust Devotee</c> will also spawn with him.<br>
@@ -82,44 +75,20 @@ Once all of those are dead, three <c "#ff0000">Triumviate of Soil</c> will spawn
 
 ***Wave four***<br>
 Once all of those are dead, <c "#ff0000">A Perfected Warder of Earth</c> will spawn.<br>
-At around 70% health, three <c "#ff0000">Triumviate of Soil</c> will spawn, and the Warder will not fall below 50% health until these are dead, while you are fighting these, three additonal Triumviates will spawn.<br>
+At around 70% health, three <c "#ff0000">Triumviate of Soil</c> will spawn, and the Warder will not fall below 50% health until these are dead, while you are fighting these, three additonal <c "#ff0000">Triumviates</c> will spawn.<br>
 Once all of these are dead, you can finish off the Warder. <br><br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <c "#35db24"> Zone Boss - A Mystical Arbitor of Earth</c><br><br>
 He will spawn at the bottom of the zone once all 4 ring events are completed. <br>
-– Hits 1800+<br>
-– Slowable<br>
-– Approx. 550K HP<br>
-– Perodically Memblurs<br>
-– Casts Elemental Judgment (PBAE, 35% Slow/7.5 sec stun/-350 Mana Drain/500 HP DoT/-200 Magic Based, 36 sec recast)<br>
-– AE Rampage<br>
-– Flurries<br><br>
+<br>
+Once he is dead.<br>
+<c "#dada99">You receive a character flag!</c><br><br>
 
-Once he is dead, <c "#dc7633">A Planar Projection</c> will spawn. Hail him for your flag and receive <c "#ffd700">Passkey of the Twelve</c> on your keyring.<br><br>
+A Planar Projection will spawn. You don't need to Hail him.<br><br>
 
-<c "#35db24"> Post-Flag - Plane of Knowledge</c><br><br>
-Now go talk to Seer Mal Nae`Shi in the Plane of Knowledge, sit down and say to her, "Unlock my memories." 
-<br><br>
-Now talk to Gram Dunnar in that same building and say, 'I will tell you stories.' to wrap up this leg of the progression and get a possible upgrade to your Intricate Wooden Totem and / or AA(s) (you don't get these everytime).
-<br><br>
+<c "#ffd700">Passkey of the Twelve</c> on your keyring.<br><br>
 >>>NEXT STEP<<<<br>
 <a href="file:///storyline/PlanarProgression/storyplaneofearthb.txt">Ragrax, Stronghold of the Twelve (Plane of Earth B - The Rathe Council)</a>
-<br><br><br><br>
+<br><br><br>
 <a href="file:///storyline/storyplanarprogression.txt">Back Home

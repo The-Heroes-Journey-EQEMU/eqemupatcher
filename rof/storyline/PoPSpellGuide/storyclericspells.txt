@@ -5,8 +5,6 @@ Faith<br>
 Symbol of Kazad<br>
 Tarnation<br>
 Ward of Gallantry<br><br>
-
-
 <c "#345eeb">----Level 62 Spells----</c><c "#55eb34">Ethereal Parchment</c><br><br>
 Blessing of Reverence<br>
 Condemnation<br>
@@ -23,8 +21,6 @@ Hammer of Damnation<br>
 Kazad's Mark<br>
 Sound of Might<br>
 Supernal Light<br><br
-
-
 <c "#345eeb">----Level 64 Spells----</c><c "#55eb34">Spectral Parchment</c><br><br>
 Catastrophe<br>
 Destroy Undead<br>
@@ -43,4 +39,4 @@ Yaulp VI<br>
 The Silent Command
 
 <br><br><br><br>
-<a href="file:///storyline/storypopspells.txt"> Back Home
+<a href="file:///storyline/storypopspells.txt">Back Home
