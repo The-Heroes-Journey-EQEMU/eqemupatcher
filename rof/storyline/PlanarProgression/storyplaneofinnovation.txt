@@ -7,23 +7,25 @@ Kill trash until you find three items<br>
     <c "#ffd700">Bundle of Super Conductive Wires</c><br>
     <c "#ffd700">Intact Power Cell</c><br>
 Give these three items to <c "#dc7633">Nitram Anizok</c><br>
-Follow him thru the zone (yes, the whole zone), where he will eventually take you to <c "#ff0000">Xanamech Nezmirthafen"</c> who you will need to kill.<br>
-Hail Nitram and then head to the factory to finalize your Factory Key.<br>
+Follow him thru the zone (yes, the whole zone), where he will eventually take you to <c "#ff0000">Xanamech Nezmirthafen</c> who you will need to kill.<br>
+**Note** Stand behind <c "#ff0000">Xanamech Nezmirthafen</c> before he activates so that his <c "#ff0000">Cone</c> attack doesn't kill <c "#dc7633">Nitram Anizok</c> and fail the event **Note**<br>
+<c "#ffff00">Hail</c>, <c "#dc7633">Nitram Anizok</c>
+<br><c "#dada99">You receive a character flag!</c>
+<br><br>
+
+Then head to the factory, to finalize your Factory Key, open the door
+<br>
 <br>
 <c "#35db24"> Manaetic Behemoth Event</c><br>
 <br>
-Just inside, you should find a gnome named <c "#dc7633">Giwin Mirakon</c>. Hail him and say, "I will test the machine."
-<br>
-Head into the Factory to find Manaetic Behemoth (/waypoint -0.85, 1140), who is in a room that has a door on either side. A clockwork device will come in from both doors. Kill a clockwork device keeping them out of the main room until Manaetic Behemoth activates (Approx 5 minutes), then kill Manaetic Behemoth.
+Just inside, you should find a gnome named <c "#dc7633">Giwin Mirakon</c>. <c "#ffff00">Hail</c> him and follow his diaglog.
+<br><c "#dada99">You receive a character flag!</c>
 <br><br>
-Once Manaetic Behemoth is dead, talk to Giwin Mirakon for a flag.
+Head into the Factory to find <c "#ff0000">Manaetic Behemoth</c> (/waypoint -0.85, 1140), who is in a room that has a door on either side. A clockwork device will come in from both doors. Kill <c "#ff0000">a clockwork device</c> keeping them out of the main room until <c "#ff0000">Manaetic Behemoth</c> activates (Approx 5 minutes), then kill <c "#ff0000">Manaetic Behemoth</c>. afterwards go back to <c "#dc7633">Giwin Mirakon</c>, and <c "#ffff00">Hail</c> him.
+<br><c "#dada99">You receive a character flag!</c>
 <br><br>
-<c "#35db24"> Post-Flag - Plane of Knowledge</c><br><br>
-Now go talk to Seer Mal Nae`Shi in the Plane of Knowledge, sit down and say to her, "Unlock my memories." 
-<br><br>
-Now talk to Gram Dunnar in that same building and say, 'I will tell you stories.' to wrap up this leg of the progression and get a possible upgrade to your Intricate Wooden Totem and / or AA(s) (you don't get these everytime).
-<br><br>
+
 >>>NEXT STEP<<<<br>
 <a href="file:///storyline/PlanarProgression/storyplaneofnightmares.txt">Plane of Nightmares</a>
-<br><br><br><br>
+<br><br><br>
 <a href="file:///storyline/storyplanarprogression.txt">Back Home

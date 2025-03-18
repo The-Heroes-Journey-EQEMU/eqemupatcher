@@ -1,26 +1,23 @@
 <c "#ff0000">PLANE OF JUSTICE</c>
 <br><br>
 
+Locate <c "#dc7633">Mavuin</c> in the basement of the <c "#35db24">Plane of Justice</c>. <c "#ffff00">Hail</c> him and and follow his dialog.<br>
+<c "#dada99">You receive a character flag!</c>
+<br><br>
+Now head to the <c "#35db24">Trial</c> area and say, to any <c "#dc7633">The Tribunal</c>, <c "#ffff00">Hail</c> one and follow the dialog to start the trial. After completeing any of the trial return and tell <c "#dc7633">The Tribunal</c> '<c "#ffff00">I have come to plead the case of Mavuin.</c>'
+<br><c "#dada99">You receive a character flag!</c>
+<br><br>
+Go back to <c "#dc7633">Mavuin</c> and <c "#ffff00">Hail</c> him.
+<br><c "#dada99">You receive a character flag!</c>
+<br><br>
 
-Locate Mavuin in the basement of the Plane of Justice. Hail him and say, 'What Information?'
+<c "#35db24"> Post-Flag - Plane of Knowledge</c><br>
+Now talk to <c "#dc7633">Gram Dunnar</c>. <c "#ffff00">Hail</c> him and follow his dialog.
 <br><br>
-Now head to the trial area and say, to any The Tribunal, 'I have come to plead the case of Mavuin.'
-<br><br>
-Defeat any 1 of the 6 trials given by any one of The Tribunal. Afterwards, hail any The Tribunal and say, 'What evidence of Mavuin?'
-<br><br>
-Go back to Mavuin and hail him again.
-<br><br>
-
-
-<c "#35db24"> Post-Flag - Plane of Tranquility</c><br>
-Now go talk to Seer Mal Nae`Shi in the Plane of Knowledge sit down and say to her, "Unlock my memories." 
-<br><br>
-Now talk to Gram Dunnar in that same building. If you don't all ready have your Intricate Wooden Totem, say to him, 'What craft?' to get it, BEFORE you speak the next line. Once done, say, 'I will tell you stories.' to wrap up this leg of the progression get a possible upgrade to your Intricate Wooden Totem and / or AA(s) (you don't get these everytime).
-<br><br>
-You should now have access to: Plane of Storms & Plane of Valor.
+You should now have access to: <c "#35db24">Plane of Storms</c> & <c "#35db24">Plane of Valor</c>.
 <br><br>
 >>>NEXT STEP<<<
 <br>
 <a href="file:///storyline/PlanarProgression/storyplaneofinnovation.txt">Plane of Innovation</a>
-<br><br><br><br>
+<br><br><br>
 <a href="file:///storyline/storyplanarprogression.txt">Back Home

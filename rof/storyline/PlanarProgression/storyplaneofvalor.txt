@@ -1,44 +1,41 @@
 <c "#ff0000">PLANE OF VALOR</c>
 <br><br>
 
-<c "#35db24"> Part One - Key to Aerin'Dar's Lair</c><br>
-The below guide is VERY specific! Follow this guide and ignore any in-game NPC responses. This process is the one that finally worked for me! The key is being VERY careful and VERY specific in your conversations with the NPC's.
+<c "#35db24"> Part One - Key to Aerin'Dar's Lair</c>
 <br><br>
-Head to the Plane of Valor. You need to kill A Planarian Larvae (towards river to the east) until you get a A Planarian Larvae's Heart; kill A Razorfiend Subduer (found at the river to the west of the zone in) until you get a A Razorfiend's Heart; kill A Crystalline Arachnae (up on the other side of the castle area) until you get A Crystalline Spider's Heart; kill A Luminii Crawler (same area) until you get A Piece of the Crystalline Globe (identifies as a Crystalline Orb); kill An Undead Vassal (lower forested area) until you get A Piece of the Crystalline Globe (identifies as A Crystalline Gem); and kill A Gamite Frog (near the river banks) until you get another A Piece of the Crystalline Globe (identifies as A Crystalline Staff).
+Head to the <c "#35db24">Plane of Valor</c>.<br>You need to kill <c "#ff0000">A Planarian Larvae</c> (towards river to the east) until you get a <c "#ffd700">A Planarian Larvae's Heart</c><br> 
+kill <c "#ff0000">A Razorfiend Subduer</c> (found at the river to the west of the zone in) until you get a <c "#ffd700">A Razorfiend's Heart</c><br> kill <c "#ff0000">A Crystalline Arachnae</c> (up on the other side of the castle area) until you get <c "#ffd700">A Crystalline Spider's Heart</c><br><br> kill <c "#ff0000>A Luminii Crawler</c> (same area) until you get <c "#ffd700">A Piece of the Crystalline Globe</c><br> kill <c "#ff0000>An Undead Vassal</c> (lower forested area) until you get <c "#ffd700>A Piece of the Crystalline Globe</c><br>kill <c "#ff0000>A Gamite Frog</c> (near the river banks) until you get another <c "#ffd700>A Piece of the Crystalline Globe</c>. **Note: Rare Drop**
 <br><br>
-Now head over to the tent fort to Sergeant Johson Popoah (area of /waypoint -973 -538). WARNING: DO NOT FOLLOW ALONG WITH HIS TEXT! Simply hail him and then hail him again (yes, 2 hails). Do NOT click the keywords or say them back to him! If you failed to heed the above warning, camp out, log back in and try again. It has been reported that this step will fail, if you mess this up! You should get a response something like, "Leave before there is bloodshed."
+Heave over to tent encampment and find <c "#dc7633">Paralin Notion</c>, Hail him and follow along ('<c "#00ffff">brave</c>')
 <br><br>
-Now, immediately turn to Paralin Notion (who is right there, as well). Hail him and follow along ('I am brave.' 'I will help your company.' 'What squad?' 'What about that razorfiend?' 'I will provide you with assistance.' 'What trials?' & 'What things?').
+Next goto <c "#dc7633">Master Sergeant Aaramis Darylin</c> (in the back section of the <c "#35db24">North Bridge House</c>). Say to him, '<c "#ffff00">I am here to aid the cause.</c>' then follow the dialog.
 <br><br>
-Next go DIRECTLY to Master Sergeant Aaramis Darylin (in the back section of the castle aka bridge house). DO NOT HAIL HIM! Instead say, 'I am here to aid the cause.' and then say 'What is Aerin'Dar?'
+Now go back to <c "#dc7633">Paralin Notion</c>. <c "#ffff00">Hail</c> him, and follow the dialog.<br>
+Then give him <c "#ffd700">A Crystalline Spider's Heart</c>, <c "#ffd700">A Planarian Larvae's Heart</c> and <c "#ffd700">A Razorfiend's Heart</c>.
 <br><br>
-Now go back to Paralin Notion. Hail him snd then say, 'How shall I prove myself?' Then give him A Crystalline Spider's Heart, A Planarian Larvae's Heart and A Razorfiend's Heart.
+Head back to <c "#dc7633">Master Sergeant Aaramis Darylin</c>. <c "#ffff00>Hail</c> him, and follow the dialog.
 <br><br>
-Once done, go back to Master Sergeant Aaramis Darylin. Hail him and then say 'What glass lair?' then 'What about Aerin'Dar?' then 'What company?' and then 'What mission?'
+Head back to the <c "#35db24">Tent encampment</c>, and find <c "#dc7633">Captain Ryglot Cupperhide</c>, <c "#ffff00>Hail</c> him, and follow the dialog.<br>
+Turn in all three <c "#ffd700">A Piece of the Crystalline Globe</c>. 
+<br>
+You will get <c "#ffd700">A Crystalline Globe</c>(key to <c "#ff0000">Aerin'Dar</c>)!<br>Go up the the upper area and <c "#ffff00">Click</c> the <c "#ffff00">Lever</c>, then <c "#ffff00">Click</c> the center tunnel, walk in and click the <c "#ffd700">Crystal Ball</c> to port into the cave where <c "#ff0000">Aerin'Dar</c> is.
 <br><br>
-Go find Captain Ryglot Cupperhide (also in the tent camp), hail him and say, 'Why are you busy?' then 'I will help.' then 'What mission?' and then 'What war?' Once done, give him all three A Piece of the Crystalline Globe. If he hands them back to you, try handing them in this order (based on how they identify): the 'Orb,' the 'Staff' and then then the 'Gem.'
+Once down, kill <c "#ff0000">Aerin'Dar</c>! There will also be a number of adds  <c "#ff0000">Mindless Minions</c> and <c "#ff0000">Rahlgon</c> that attack. Kill them all. Once <c "#ff0000">Aerin'Dar</c> dies.<br>
+<c "#dcdc99">You receive a character flag!</c>
 <br><br>
-You will get A Crystalline Globe! Go up the the upper area and click the lever (entrance door to Aerin'Dar area) and it will disappear and you will get the Achievement: Crystalline Globe.
+<c "#dc7633">A Planar Projection</c> will spawn, you don't need to Hail it.
+<br><br>
+<c "#ffff00">Click</c> the trap door, and follow the path and zone into <c "#35db24">Halls of Honor</c>.
+<br><c "#dcdc99">You receive a character flag!</c>
 <br><br>
 
-<c "#35db24"> Part Two - Aerin'Dar</c><br>
 
-Make your way to the door to Aerin's Dar's Lair. Once inside, click the portal there to pop down to the event area.
+<c "#35db24"> Post-Flag - Plane of Knowledge</c>
 <br><br>
-Once down, kill Aerin'Dar! There will also be a number of Mindless Minions and Rahlgon that attack. Kill them all.
-<br><br>
-!!!STOP AND READ AHEAD!!!<br>
-After the event is won, this is where you have to be very careful. Aerin'Dar was standing on a platform that can, and will flip open! Standing on that platform should now be A Planar Projection. /target A Planar Projection and /hail for your flag. The concern here is NOT to click the platform in trying to do this! If you do, the platform will flip open and A Planar Projection will fall through and die!
-<br><br>
-Next, go ahead and click the platform to flip it open to drop down below and then run to the 'electrified' portal and zone into the Halls of Honor to complete the process.
-<br><br>
-<c "#35db24"> Post-Flag - Plane of Knowledge</c><br>
-Now go talk to Seer Mal Nae`Shi in the Plane of Knowledge, sit down and say to her, "Unlock my memories." 
-<br><br>
-Now talk to Gram Dunnar in that same building and say, 'I will tell you stories.' to wrap up this leg of the progression and get a possible upgrade to your Intricate Wooden Totem and / or AA(s) (you don't get these everytime).
+Now talk to <c "#dc7633">Gram Dunnar</c>, <c "#ffff00">Hail</c> him, and select <c "#ffff00">stories</c>.
 <br><br>
 
 >>>NEXT STEP<<<<br>
 <a href="file:///storyline/PlanarProgression/storybastionofthunder.txt">Bastion of Thunder</a>
-<br><br><br><br>
-<a href="file:///storyline/storyplanarprogression.txt">Back Home
+<br><br><br>
+<a href="file:///storyline/storyplanarprogression.txt">Back Home</a>

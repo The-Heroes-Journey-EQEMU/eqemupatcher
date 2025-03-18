@@ -2,20 +2,23 @@
 <br><br>
 
 <c "#35db24"> Pre-Flag - Plane of Tranquility</c><br>
-Find Fahlia Shadyglade and Tylis Newleaf in the Plane of Tranquility (in a building near the zone in to Plane of Nightmare). Hail and talk to them both and follow along for the pre-flagging.
+Head to the <c "#35db24">Sick Bay</c> (loc: -292, -1362, -906). find <c "#dc7633">Fahlia Shadyglade</c>, <c "#ffff00">Hail</c> her, and follow the diaglog.
+<br><c "#dcdc99">You receive a character flag!</c>
 <br><br>
 
 
-<c "#35db24"> Part One - Saryn's Key</c> This may be best to do in a RESPAWNING dz<br>
-You need to loot the <c "#ffd700">Orb of Agony</c> from The Avatar of Agony
+<c "#35db24"> Part One - Saryn's Key</c><br>
+You need to loot the <c "#ffd700">Orb of Agony</c> from <c "#ff0000">The Avatar of Agony</c>
 <br>
-You need to loot the <c "#ffd700">Orb of Anguish</c> from The Avatar of Anguish
+You need to loot the <c "#ffd700">Orb of Anguish</c> from <c "#ff0000">The Avatar of Anguish</c>
 <br>
-You need to loot the <c "#ffd700">Orb of Pain</c> from The Avatar of Pain
+You need to loot the <c "#ffd700">Orb of Pain</c> from <c "#ff0000">The Avatar of Pain</c>
 <br>
-You need to loot the <c "#ffd700">Orb of Suffering</c> from The Avatar of Suffering
+You need to loot the <c "#ffd700">Orb of Suffering</c> from <c "#ff0000">The Avatar of Suffering</c>
 <br>
-You need to find Baraguj Szuul in a room on top of the tower attack him and you will be teleported into his stomach.<br>
+**Note** Make sure you have nothing on your agro list before attacking, so that you don't have the chance of being summoned out of the stomach **Note**
+<br>
+You need to find <c "#ff0000">Baraguj Szuul</c> in a room on top of the tower attack him and you will be teleported into his stomach.<br>
 Once in his stomach, open the trap door in the floor and fall to the bottom.<br>
 Here will be the 2nd trap door, take it down again<br>
 Once at the bottom, there is another trap door (do not use this one), instead, make your way down the hallway to the another trap door.<br>
@@ -25,32 +28,35 @@ Combine <c "#ffd700">Orb of Agony, Orb of Anguish, Orb of Pain,</c> and <c "#ffd
 <br><br>
 
 <c "#35db24"> Part Two - Saryn</c><br>
-Head into the Plane of Torment and make your way to Saryn's Tower.
+Head  your way to Saryn's Tower.
 <br><br>
-Once inside, make your way to the 5th floor. Along the way you may encounter The Acolyte of Affliction and Ta'Grusch the Abomination (kill them). 
+Once inside, make your way to the 5th floor. Along the way you may encounter <c "#ff0000">The Acolyte of Affliction</c> and <c "#ff0000">Ta'Grusch the Abomination</c> (<c "#00ff00">kill</c> them). 
 <br><br>
-You should find Maareq the Prophet on the 5th Floor, lying on the ground. Kill Maareq the Prophet. He is tethered and cannot be pacified. Once you engage him, a number of A Minion of Maareq will spawn to help him. They cannot be stunned or mezzed, but they will despawn once Maareq is dead.
+You should find <c "#ff0000">Maareq the Prophet</c> on the 5th Floor, lying on the ground. <c "#00ff00">Kill</c> <c "#ff0000">Maareq the Prophet</c>. He is tethered and cannot be pacified. Once you engage him, a number of <c "#ff0000">A Minion of Maareq</c> will spawn to help him. They cannot be stunned or mezzed, but they will despawn once <c "#ff0000">Maareq the Prophet</c> is dead.
 <br><br>
-Once Maareq is dead, Tylis Newleaf will appear at one of the three cages in Maareq's room. Everyone in the raid needs to get under Tylis' cage (pile up tight!). Someone will then need to hail Tylis and say "we are ready." Everyone in the cage will be transported to the next area, right on top of two mobs... so be ready for them. Don't fall in the water or else you'll get a lot more adds.
+<c "#dc7633">Tylis Newleaf</c> will appear at one of the three cages in Maareq's room.
+You need to <c "#00ff00">Hail</c> <c "#dc7633">Tylis Newleaf</c> and follow the dialog (he will port you).
 <br><br>
-Make your way to The Keeper of Sorrows (door on your right and make your way in).
+Make your way to <c "#ff0000">The Keeper of Sorrows</c> (door on your right and make your way in).
 <br><br>
-Kill the The Keeper of Sorrows! When the The Keeper of Sorrows dies, Tylis Newleaf will show up again. Hail him for a flag. >>> WARNING!!! Hail only, do not follow along! <<<
+Kill the <c "#ff0000">The Keeper of Sorrows</c>! When it dies, <c "#dc7633">Tylis Newleaf</c> will show up again. <c "#00ff00">Hail</c> him.
+<br><c "#dcdc99">You receive a character flag!</c>
+<br><br>His dialog will port you back.
+
 <br><br>
-After making sure everyone has hailed him for their flag, one person needs to say to Tylis, "I am ready to return." This will take the entire raid back to Maareq's room (thus the reason you do not follow along on the flagging hail).
+Now make your way up the stairs to find <c "#ffff00">Saryrn</c>!
 <br><br>
-Now make your way up the stairs to find Saryrn!
+You need to kill <c "#ffff00">Saryrn</c>, and her pet <c "#ffff00">Sorrowsong</c> and adds. <br><br>
+After <c "#ffff00">Saryrn</c> dies,
+<br><c "#dcdc99">You receive a character flag!</c>
 <br><br>
-You need to kill Saryrn, her pet Sorrowsong and adds. Pull Saryrn into the corner near the window. 3 or 4 a Summoned Servant will spawn for every 10% health that Saryrn goes down (90%, 80%, 70%, 60%, 50%, 40% and 30%). Focus on taking the adds out, before turning attention back to Saryrn. When Saryrn drops to 25%, Sorrowsong will join the fray. Again, focus on Sorrowsong before turning attention back to Saryrn. Sorrowsong has an AoE "silence" DoT, which can last up to 42 seconds. Casters can avoid the AoE by being on the opposite side of the room from Sorrowsong (range of 80). When Saryrn drops to 20% and 10% health, more a Summoned Servants appear.
+A Planar Projection will appear. You don't need to Hail it.<br><br>
+Head to the <c "#35db24">Sick Bay</c> (loc: -292, -1362, -906) in <c "#35db24">Plane of Tranquility</c>. find <c "#dc7633">Tylis Newleaf</c>, <c "#ffff00">Hail</c> him, then <c "#ffff00">Hail</c> <c "#dc7633">Fahlia Shadyglade</c>
+<br><c "#dcdc99">You receive a character flag!</c>
 <br><br>
-After Saryrn dies, A Planar Projection will appear. Hail it to get your flag.<br><br>
-<br><br>
-<c "#35db24"> Post-Flag - Plane of Knowledge</c><br><br>
-Now go talk to Seer Mal Nae`Shi in the Plane of Knowledge, sit down and say to her, "Unlock my memories." 
-<br><br>
-Now talk to Gram Dunnar in that same building and say, 'I will tell you stories.' to wrap up this leg of the progression and get a possible upgrade to your Intricate Wooden Totem and / or AA(s) (you don't get these everytime).
-<br><br>
->>>NEXT STEP<<<<br>
+
+>>>NEXT STEP<<<
+<br>
 <a href="file:///storyline/PlanarProgression/storyplaneofstorms.txt">Plane of Storms</a>
-<br><br><br><br>
+<br><br><br>
 <a href="file:///storyline/storyplanarprogression.txt">Back Home
