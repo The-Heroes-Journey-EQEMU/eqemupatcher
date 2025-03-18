@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+  <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+  <Listbox item="CSSW_SkillSelectorList">
+    <ScreenID>CSSW_SkillSelectorList</ScreenID>
+    <DrawTemplate>WDT_Inner</DrawTemplate>
+    <AutoStretch>true</AutoStretch>
+    <RightAnchorToLeft>false</RightAnchorToLeft>
+    <BottomAnchorToTop>false</BottomAnchorToTop>
+    <LeftAnchorOffset>1</LeftAnchorOffset>
+    <TopAnchorOffset>0</TopAnchorOffset>
+    <RightAnchorOffset>1</RightAnchorOffset>
+    <BottomAnchorOffset>80</BottomAnchorOffset>
+    <Columns>
+      <Heading>Name</Heading>
+      <Width>130</Width>
+    </Columns>
+    <Columns>
+      <Heading>Level</Heading>
+      <Width>50</Width>
+    </Columns>
+    <Columns>
+      <Heading>Cost</Heading>
+      <Width>50</Width>
+    </Columns>
+    <Columns>
+      <Heading>Upkeep</Heading>
+      <Width>50</Width>
+    </Columns>
+    <Columns>
+      <Heading>Target</Heading>
+      <Width>50</Width>
+    </Columns>
+    <Columns>
+      <Heading>Duration</Heading>
+      <Width>50</Width>
+    </Columns>
+    <Columns>
+      <Heading>Reuse</Heading>
+      <Width>50</Width>
+    </Columns>
+    <Columns>
+      <Heading>Timer</Heading>
+      <Width>50</Width>
+    </Columns>
+    <Style_Border>true</Style_Border>
+    <Style_VScroll>true</Style_VScroll>
+    <Font>2</Font>
+  </Listbox>
+  <STMLbox item="CSSW_SkillDescriptionStmlBox">
+    <ScreenID>CSSW_SkillDescriptionStmlBox</ScreenID>
+    <DrawTemplate>WDT_Inner</DrawTemplate>
+    <RelativePosition>true</RelativePosition>
+    <AutoStretch>true</AutoStretch>
+    <RightAnchorToLeft>false</RightAnchorToLeft>
+    <TopAnchorToTop>false</TopAnchorToTop>
+    <BottomAnchorToTop>false</BottomAnchorToTop>
+    <LeftAnchorOffset>1</LeftAnchorOffset>
+    <TopAnchorOffset>78</TopAnchorOffset>
+    <RightAnchorOffset>2</RightAnchorOffset>
+    <BottomAnchorOffset>28</BottomAnchorOffset>
+    <Style_VScroll>false</Style_VScroll>
+    <Style_Border>true</Style_Border>
+    <Text />
+    <Font>2</Font>
+  </STMLbox>
+  <Button item="CSSW_MakeHotkeyButton">
+    <ScreenID>CSSW_MakeHotkeyButton</ScreenID>
+    <AutoStretch>true</AutoStretch>
+    <LeftAnchorToLeft>true</LeftAnchorToLeft>
+    <TopAnchorToTop>false</TopAnchorToTop>
+    <RightAnchorToLeft>true</RightAnchorToLeft>
+    <BottomAnchorToTop>false</BottomAnchorToTop>
+    <LeftAnchorOffset>2</LeftAnchorOffset>
+    <TopAnchorOffset>26</TopAnchorOffset>
+    <RightAnchorOffset>152</RightAnchorOffset>
+    <BottomAnchorOffset>1</BottomAnchorOffset>
+    <Style_Transparent>false</Style_Transparent>
+    <Style_Checkbox>false</Style_Checkbox>
+    <Text>Make Hotkey</Text>
+    <!--<TooltipReference/>-->
+    <TextColor>
+      <R>0</R>
+      <G>255</G>
+      <B>0</B>
+    </TextColor>
+    <Template>BDT_Normal</Template>
+    <Font>2</Font>
+  </Button>
+  <Screen item="CombatSkillSelectWnd">
+    <RelativePosition>false</RelativePosition>
+    <Location>
+      <X>150</X>
+      <Y>55</Y>
+    </Location>
+    <Size>
+      <CX>520</CX>
+      <CY>280</CY>
+    </Size>
+    <Style_VScroll>false</Style_VScroll>
+    <Style_HScroll>false</Style_HScroll>
+    <Style_Transparent>false</Style_Transparent>
+    <Text> ShinSpark - Combat Skills</Text>
+    <DrawTemplate>WDT_Rounded</DrawTemplate>
+    <Style_Titlebar>true</Style_Titlebar>
+    <Style_Closebox>true</Style_Closebox>
+    <Style_Minimizebox>true</Style_Minimizebox>
+    <Style_Border>true</Style_Border>
+    <Style_Sizable>true</Style_Sizable>
+    <Pieces>CSSW_SkillSelectorList</Pieces>
+    <Pieces>CSSW_SkillDescriptionStmlBox</Pieces>
+    <Pieces>CSSW_MakeHotkeyButton</Pieces>
+    <Font>2</Font>
+  </Screen>
+</XML>
