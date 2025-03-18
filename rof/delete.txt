@@ -56,4 +56,4 @@ arena.eqg
 /storyline/storyTroubled.txt
 /storyline/storyUnturned.txt
 /storyline/storyVisions.txt
-/storyline/storyWhispers.txt
+/storyline/storyWhispers.txt 
