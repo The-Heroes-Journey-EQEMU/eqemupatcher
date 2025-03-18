@@ -3,11 +3,7 @@
 
 <c "#35db24"> ***Note - Loot to collect while in this zone and/or Earth A***</c><br>
 While killing trash, look for <c "#ffd700">Liquefied Earth</c> and <c "#ffd700">Shattered Crystal</c>.<br>
-One each of these will be needed later to craft the Plane of Time key.<br><br>
-
-
-
-Thankfully another straight forward zone.<br><br>
+One each of these will be needed later to craft the <c "#35db24">Plane of Time</c> key.<br><br>
 
 <c "#35db24"> First Room</c><br><br>
 Clear all of the trash mobs in the first room to advance to the second room<br><br>
@@ -15,18 +11,12 @@ Clear all of the trash mobs in the first room to advance to the second room<br><
 <c "#35db24"> Second Room</c><br><br>
 Again, clear all of the trash mobs here, which will spawn the war chieftans.<br><br>
 
-<c "#35db24"> War Chiefs</c><br><br>
-Kill <c "#ff0000"> War Chieftan Awisano, War Chieftan Birak, and War Chieftan Galronar</c><br><br>
+<c "#35db24">War Chiefs</c><br><br>
+Kill <c "#ff0000">War Chieftan Awisano, War Chieftan Birak, </c>and <c "#ff0000">War Chieftan Galronar</c><br><br>
 
-<c "#35db24"> Warlord Gintolaken</c><br><br>
-Kill <c "#ff0000">Warlord Gintolaken</c> becomes targetable once the three War Chieftan and dead.<br>
-– Hits 2,400+<br><br><br>
-– Slowable<br><br>
-– 1.1 – 1.2 Million HP<br>
-– AE Rampage<br>
-– Perodically Memblurs including at 50% HP<br>
-– Casts Storm Comet (Targeted AE, 10%Snare/90% Slow/3000 DD, Unresistable, 30 sec recast)<br>
-– Procs Gravel Rain (PBAE, 250 DD + Snare, 72 curse counter, -300 Magic Based)<br><br>
+<c "#35db24">Warlord Gintolaken</c><br><br>
+Kill <c "#ff0000">Warlord Gintolaken</c> becomes targetable once the three War Chieftans are dead.<br>
+<br><br>
 
 <c "#35db24">The Rathe Council</c><br><br>
 ***Subject to change on THJ***<br>
@@ -35,24 +25,14 @@ You must kill all of the <c "#ff0000">Rathe Councilman</c> within approx 6 minut
 
 <c "#35db24">The Avatar of Earth</c><br><br>
 Once all of the councilmen are dead, <c "#ff0000">The Avatar of Earth</c> spawns. Killing him will complete this zone.<br>
-– 550K<br>
-– Slowable<br>
-– Hits 2400+<br>
-– Casts Marl (PBAE, Increases Mana cost of detrimental spells, -100 HP DoT, -350 Magic Based, Curse Cure)<br>
-– Casts Ashen Form (Single Target, -95% Aggro on Main tank, -350 Magic Based, Curse Cure)<br><br>
-
-
-Once he is dead, hail <c "#dc7633">Essence of Earth</c>, this will give you your flag and <c "#ffd700">Mound of Living Stone</c> which is needed for the key to Plane of Time.<br><br>
-
-
-
-
-<c "#35db24"> Post-Flag - Plane of Knowledge</c><br><br>
-Now go talk to Seer Mal Nae`Shi in the Plane of Knowledge, sit down and say to her, "Unlock my memories." 
+<c "#dada99">You receive a character flag!</c><br>
+You receive <c "#ffd700">Mound of Living Stone</c>(needed for <c "#35db24">Plane of Time</c> key.
 <br><br>
-Now talk to Gram Dunnar in that same building and say, 'I will tell you stories.' to wrap up this leg of the progression and get a possible upgrade to your Intricate Wooden Totem and / or AA(s) (you don't get these everytime).
+A Essence of Earth will spawn, you don't need to Hail it.
+
 <br><br>
+
 >>>NEXT STEP<<<<br>
 <a href="file:///storyline/PlanarProgression/storyplaneoftimea.txt">Quintessence of Elements (Plane of Time Access)</a>
-<br><br><br><br>
+<br><br><br>
 <a href="file:///storyline/storyplanarprogression.txt">Back Home

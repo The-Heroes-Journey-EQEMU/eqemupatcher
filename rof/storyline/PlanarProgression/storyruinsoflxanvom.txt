@@ -1,52 +1,46 @@
 <c "#ff0000">CRYPT OF DECAY</c>
 <br><br>
 
-
-<c "#35db24"> Pre-Flag - Plane of Tranquility</c><br>
-Talk to Adler Fuirstel, who is in the Plane of Tranquility at the entrance to the Plane of Disease.
-<br><br>
-Then go talk to (hail) Elder Fuirstel in the sick bay in the Plane of Tranquility (area of /waypoint -255, -1420).
-<br><br>
-
 <c "#35db24"> Part 1 - The Carprin Cycle</c><br>
-Aggro Carprin but don't kill him. Pull his 3 guards (Abroan Drian, Fran Prisoal & Breddan Rutyl) away from him and kill them first (if you don't, the 'cycle' might not activate).
+Aggro <c "#ff0000">Carprin Deatharn</c> but don't kill him. Pull his 3 guards (<c "#ff0000">Abroan Drian, Fran Prisoal & Breddan Rutyl</c>) away from him and kill them first (if you don't, the 'cycle' might not activate).
+<br>
+Once the 3 guards are dead, kill <c "#ff0000">Carprin Deatharn</c>.
 <br><br>
-Once the 3 guards are dead, kill Carprin Deatharn.
+Continue forward and kill <c "#ff0000">Avhi Escron</c>.
 <br><br>
-Continue forward and kill Avhi Escron.
+Next, continue forwards and kill <c "#ff0000">Bishop Toluwon</c>.
 <br><br>
-Next, continue forwards and kill Bishop Toluwon.
+Now head further in to kill <c "#ff0000">Raex Pwodill & Vindor Mawnil</c>.
+<br>
+Finally, kill <c "#ff0000">High Priest Ultor Szanvon</c>.
 <br><br>
-Now head further in to kill Raex Pwodill & Vindor Mawnil.
+Once <c "#ff0000">High Priest Ultor Szanvon</c> is dead, <c "#dc7633">Tarkil Adan</c> will spawn. <c "#00ff00">DON'T KILL HIM!</c> Instead, <c "#ffff00">Hail</c> him.
+<br><c "#dcdc99">You receive a character flag!</c>
 <br><br>
-Finally, kill High Priest Ultor Szanvon.
-<br><br>
-Once High Priest Ultor Szanvon is dead, Tarkil Adan will spawn. DON'T KILL HIM. Instead, hail Tarkil Adan for your flag.
-<br><br>
-
 
 <c "#35db24"> Part 2 - Bertoxxulous the Plaguebringer</c><br>
-Click the chair at the entrance of the zone. This will port you to the next event.<br>
-Kill the Spectre of Corruption to start the event. 
+<c "#ffff00">Click</c> the chair at the entrance of the zone. This will port you to the next event.<br>
+
+Kill the <c "#ff0000">Spectre of Corruption</c> to start the event. 
+<br>
+<c "#dc7633">The Summoner of Bertoxxulous</c> will appear... this is the 'timer' for this event (you have 2 hours to finish).
 <br><br>
-The Summoner of Bertoxxulous will appear... DO NOT KILL OR ATTACK the Summoner of Bertoxxulous, who is the 'timer' for this event (you have 2 hours to finish).
+In the tunnels of the crypt, a king and his men will spawn 1 group at a time. Height Filter on your map is your friend 50 low, 60 high. Locate and kill:<br> <c "#ff0000">Darwol Adan<br>Feig Adan<br>Xhut Adan<br>Kavilis Adan<br>Raddi Adan<br>Wavadozzik Adan<br>Zandal Adan<br>Akkapain Adan<br>Bhaly Adan<br>Qezzin Adan<br>Meedo Adan<br>Pzo Adan.</c>
+
 <br><br>
-In the side tunnesl are 12 'Kings' ('Adans'). Pull and kill all twelve (and the trash MoB's)... Darwol Adan; Feig Adan; Xhut Adan; Kavilis Adan; Raddi Adan; Wavadozzik Adan; Zandal Adan; Akkapain Adan; Bhaly Adan; Qezzin Adan; Meedo Adan; & Pzo Adan.
+Once they are all dead, <c "#ff0000">Bertoxxulous the Plaguebringer</c> spawns in the North. Kill him and any adds that appear.
+<br><c "#dcdc99">You receive a character flag!</c>
 <br><br>
-Once they are all dead, Bertoxxulous the Plaguebringer spawns on the east side. Kill hima and any adds that appear.
-<br><br>
-Once Bertoxxulous the Plaguebringer is dead, A Planar Projection will appear. Hail it for your flag.
+A Planar Projection will appear. You don't need to hail it.
 <br><br>
 
-<c "#35db24"> Post-Flag - Plane of Tranquility</c><br>
-Go back and talk to Elder Fuirstel in the Plane of Tranquility, again.
-<br><br>
-<c "#35db24"> Post-Flag - Plane of Knowledge</c><br>
-Now go talk to Seer Mal Nae`Shi in the Plane of Knowledge, sit down and say to her, "Unlock my memories." 
-<br><br>
-Now talk to Gram Dunnar in that same building and say, 'I will tell you stories.' to wrap up this leg of the progression and get a possible upgrade to your Intricate Wooden Totem and / or AA(s) (you don't get these everytime).
+Head to the <c "#35db24">Sick Bay</c> (loc: -286, -1407, -906) in <c "#35db24">Plane of Tranquility</c>. find <c "#dc7633">Elder Fuirstel</c>, <c "#ffff00">Hail</c> him.
+<br><c "#dcdc99">You receive a character flag!</c>
+<br>
+
+
 <br><br>
 >>>NEXT STEP<<<<br>
 <a href="file:///storyline/PlanarProgression/storyplaneoftorment.txt">Plane of Torment</a>
-<br><br><br><br>
+<br><br><br>
 <a href="file:///storyline/storyplanarprogression.txt">Back Home
