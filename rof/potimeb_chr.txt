@@ -1,4 +1,4 @@
-16
+18
 onm,onm
 cdm,cdm
 sdm,griegsend_chr
@@ -7,11 +7,13 @@ dra,dra_chr
 srw,chardok_chr
 vst,karnor_chr
 brn,kurn_chr
-fsg,kael_chr
+stg,kael_chr
 dr2,skyshrine_chr
 otm,cobaltscar_chr
 spr,griegsend_chr
 tho,thedeep_chr
-shn,ssratemple_chr
+shm,ssratemple_chr
 akn,vexthal_chr
 owb,paludal_chr
+gnn,blackburrow_chr
+pri,povalor_chr
