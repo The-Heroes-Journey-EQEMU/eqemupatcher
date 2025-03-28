@@ -30,7 +30,7 @@ Combine <c "#ffd700">Orb of Agony, Orb of Anguish, Orb of Pain,</c> and <c "#ffd
 <c "#35db24"> Part Two - Saryn</c><br>
 Head  your way to Saryn's Tower.
 <br><br>
-Once inside, make your way to the 5th floor. Along the way you may encounter <c "#ff0000">The Acolyte of Affliction</c> and <c "#ff0000">Ta'Grusch the Abomination</c> (<c "#00ff00">kill</c> them). 
+Once inside, make your way to the 5th floor. Along the way you may encounter <c "#ff0000">The Acolyte of Affliction</c> and <c "#ff0000">Ta'Grusch the Abomination</c>, you may skip these mobs if you would like. 
 <br><br>
 You should find <c "#ff0000">Maareq the Prophet</c> on the 5th Floor, lying on the ground. <c "#00ff00">Kill</c> <c "#ff0000">Maareq the Prophet</c>. He is tethered and cannot be pacified. Once you engage him, a number of <c "#ff0000">A Minion of Maareq</c> will spawn to help him. They cannot be stunned or mezzed, but they will despawn once <c "#ff0000">Maareq the Prophet</c> is dead.
 <br><br>

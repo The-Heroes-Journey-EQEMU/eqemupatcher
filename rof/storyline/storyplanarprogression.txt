@@ -37,7 +37,7 @@ Locate Gram Dunnar in Plane of Knowledge and say "craft" to receive <c "#ffd700"
 <a href="file:///storyline/PlanarProgression/storytowerofsolro.txt">Tower of Solusek Ro</a><br>
 <br><br>
 
-
+At this point, you "may" need to talk to <c "#dc7633">Grand Librarian Maelin</c> in Plane of Knowledge.<br><br>
 <c "#35db24">TIER 4 - Elemental Planes</c>
 <br><br>
 <a href="file:///storyline/PlanarProgression/storyplaneoffire.txt">Doomfire, the Burning Land (Plane of Fire)</a><br>

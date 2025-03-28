@@ -1,7 +1,6 @@
 <c "#ff0000">Quintessence of Elements (Plane of Time Access)</c>
 <br><br>
 The <c "#ffd700">Odylic Vial</c> is a crafting item needed to combine the four Essences from the Elemental Planes in order to create the <c "#ffd700">Quintessence of Elements</c>, the key to Plane of Time!<br><Br>
-***Subject to change on THJ***<BR><br>
 
 
 
@@ -93,8 +92,6 @@ Congratulations! You are now able to enter to final zone in the Planes of Power!
 
 
 <c "#35db24"> Post-Flag - Plane of Knowledge</c><br><br>
-Now go talk to Seer Mal Nae`Shi in the Plane of Knowledge, sit down and say to her, "Unlock my memories." 
-<br><br>
 Now talk to Gram Dunnar in that same building and say, 'I will tell you stories.' to wrap up this leg of the progression and get a possible upgrade to your Intricate Wooden Totem and / or AA(s) (you don't get these everytime).
 <br><br>
 >>>NEXT STEP<<<<br>
