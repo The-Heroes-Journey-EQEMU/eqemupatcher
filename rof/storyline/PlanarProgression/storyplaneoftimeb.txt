@@ -2,7 +2,7 @@
 <br><br>
 <c "#35db24"> Entrance - Plane of Innovation</c><br>
 Find <c "#dc7633">Chronographer Muan</c> and follow his dialog to port to the Plane of Time Clocks.<br>
-Find <c "#dc7633">Loremaster Maelin</c> and follow his dialog and click the machine to zone into the Plane of Time!<BR><BR>
+Find <c "#dc7633">Loreseeker Maelin</c> and follow his dialog and click the machine to zone into the Plane of Time!<BR><BR>
 
 <c "#35db24"> Entrance - Plane of Time</c><br>
 Plane of Time is a multiphase timed event. ***Subject to change on THJ***<br>
