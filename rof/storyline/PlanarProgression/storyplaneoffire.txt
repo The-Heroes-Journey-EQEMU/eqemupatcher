@@ -5,22 +5,9 @@
 While killing trash, look for <c "#ffd700">Solidified Magma</c> and <c "#ffd700">Fiery Granite</c>.<br>
 One each of these will be needed later to craft the <c "#35db24">Plane of Time</c> key.<br><br>
 
+<c "#35db24"> Clearing to Fennin Ro</c><br>
+This is a 4 phase event followed by <c "#ff0000">Fennin Ro</c> himself. Make your way to the back of the castle on the south side of the zone.<br><br>
 
-<c "#35db24"> Part One - Mini Bosses</c><br>
-Another straight forward zone. Make your way thru the zone killing mobs. Along the way you will face several named mobs.<br>
-<c "#ff0000">
-General Druav Flamesinger<br>
-Jaxoliz Dawneyes<br>
-Criare Sunmane<br>
-Quavonis Firetail<br>
-Magmaton<br>
-Babnoxis, the Spider Queen<br>
-Pyronis<br>
-Blazzax the Omnifiend<br>
-General Reparm<br></c>
-and finally <c "#ff0000">Arch Mage Yozanni</c><br><br>
-
-<c "#35db24"> Part Two - Clearing to Fennin Ro</c><br><br>
       <c "#35db24"> Phase One - Guardian of Doomfire</c><br>
 Kill <c "#ff0000">Guardian of Doomfire</c> to start the event<br><br>
       <c "#35db24"> Phase Two - Named Wave One</c><br>
