@@ -8,7 +8,7 @@ One each of these will be needed later to craft the Plane of Time key.<br><br>
 
 
 <c "#ff0000">Coirnav</c> is a 4 wave fight followed by <c "#ff0000">Coirnav</c> himself.<br>
-This event has no time limit in a respawning instance.<br><br>
+This event has no time limit in a non-respawning instance.<br><br>
 
 <c "#35db24"> Wave One</c><br><br>
 Engage <c "#ff0000">Guardian of Coirnav</c>, and once he dies <c "#ff0000">Pwelon of Vapor</c> will spawn along with 20-25 <c "#ff0000">vaporfiend</c> adds.<br>Kill all of this to start wave two.<br><br>
