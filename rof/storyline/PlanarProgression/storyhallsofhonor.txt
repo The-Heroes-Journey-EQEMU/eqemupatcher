@@ -7,7 +7,7 @@ In the NE Basement is <c "#dc7633">Trydan Faye</c>, <c "#00ff00">Hail</c> him, a
 <c "#dada99">You receive a character flag!</c><br><br>
 A Planar Projection will spawn, you don't have to Hail it.<br><br>
 
-<c "#35db24"> Trial 2 - Norht West Basement - </c><c "#dc7633">Rhaliq Trell</c><br>
+<c "#35db24"> Trial 2 - North West Basement - </c><c "#dc7633">Rhaliq Trell</c><br>
 In the NW Basement is <c "#dc7633">Rhaliq Trell</c> , <c "#00ff00">Hail</c> him, and follow the dialog.<br>
 <c "#ff0000">A Custodian of Marr</c> will spawn, and upon his death, <c "#dc7633">villagers</c> will spawn in the three basement rooms. Protect them from the named attacking mobs.<br><br>After you have killed all of the named mobs in the 3 rooms. <c "#dc7633">Rhaliq Trell</c> will reappear, <c "#00ff00">Hail</c> him.<br>
 <c "#dada99">You receive a character flag!</c><br><br>
