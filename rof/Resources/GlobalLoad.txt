@@ -11,12 +11,14 @@
 2,0,TFFFE,GEquip8,Loading Character Equipment Files
 2,0,TFFFE,GEquip2,Loading Character Equipment Files
 2,0,TFFFU,grass,Loading Character Equipment Files
+2,0,TFFFC,ske_chr,Loading Classic Skeleton
 2,0,TFFFE,GEquip5,Loading Character Equipment Files
 2,0,TFFFE,GEquip4,Loading Character Equipment Files
 2,0,TFFFE,GEquip3,Loading Character Equipment Files
 2,0,TFFFE,loyequip,Loading Character Equipment Files
 2,0,TFFFE,ldonequip,Loading Character Equipment Files
 2,0,TFFFE,gatesequip,Loading Character Equipment Files
+3,0,TFFFC,sca_chr,Loading Scarecrow
 3,0,TFFFC,wof_v2_chr,Loading New Chokidai
 3,0,TFFFC,hohonorb_chr,Loading Characters
 3,0,TFFFC,poair_chr,Loading Characters
