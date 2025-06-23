@@ -1,48 +1,49 @@
 Necromancer Epic 
 <br>
-<c "#35db24">Celestial Fists: Quest Guide</c><br><br>
+<c "#35db24">Scythe of the Shadowed Shoul Quest Guide</c><br><br>
 
-<c "#ffd700">The Challenge</c><br>
-The Celestial Fists quest challenges the monk to confront and defeat the four elemental masters:<br><br>
-- <c "#dc7633">Eejag of Fire</c> – found in <c "#ffd700">Lavastorm</c>'s molten pits<br>
-- <c "#dc7633">Gwan of Air</c> – summoned in the <c "#ffd700">Plane of Sky</c><br>
-- <c "#dc7633">Trunt of Earth</c> – located in <c "#ffd700">Nurga</c>'s shadowed depths<br>
-- <c "#dc7633">Xenevorash of Water</c> – encountered in the <c "#ffd700">Lake of Ill Omen</c><br><br>
+<c "#ffd700">Symbol of the Apprentice</c><br>
+Track down and kill <c "#ffd700">Sir Edwin Motte</c> in one of the following locations:<br><br>
+- <c "#ffd700">West Karana</c><br>
+- <c "#ffd700">Rathe Mountains</c> or<br>
+- <c "#ffd700">Eat Freeport</c><br>
+East Freeport seems to be the easiest spot to catch him as he shares a spawn with several named NPCs here on a quick respawn cycle.<br><br>
+Once you kill <c "#ffd700">Sir Edwin Motte</c>, look his head and turn it into <c "#ffd700">Kazen Fecae</c>in <c "#ffd700">Lake Rathetear</c> in return for <c "#dc7633">Symbol of the Apprentice</c><BR><BR><BR>
 
-Each battle proves the monk's mastery over the elements through martial discipline and spiritual fortitude.<br>
-After collecting the elemental tokens, the monk must seek out <c "#ffd700">Kaiaren</c>'s dual aspects in <c "#ffd700">Trakanon's Teeth</c> and present the mystical <c "#dc7633">Book of Celestial Fists</c> alongside the <c "#dc7633">Demon Fangs</c>, ultimately earning the legendary <c "#ffd700">Celestial Fists</c> handwraps.<br><br><br>
+<c "#35db24">Symbol of the Serpent</c><br><br>
+Enter <c "#ffd700">Nektulos Forest</c> and locate <c "#ffd700">Venenzi Oberzendi</c> and give him the <c "#dc7633">Symbol of the Apprentice</c> in return for <c "#dc7633">Twisted Symbol of the Apprentice</c><br>
+Head to <c "#ffd700">Nejena</c>, kill <c "#ffd700">Najena</c> and loot <c "#dc7633">Flowing Black Robe</c><br>
+Return the robe to <c "#ffd700">Venenzi Oberzendi</c> in exchange for <c "#dc7633">Rolling Stone Moss</c><br>
+Find <c "#ffd700">Emkel Kabae</c> in <c "#ffd700">Lake Rathetear</c>, give him the Moss and receive <c "#dc7633">Symbol of the Serpent</c><BR><BR><BR>
 
-<c "#35db24">A Test of Patience</c><br>
-Collect the following items:<br><br>
+<c "#35db24">Symbol of the Testing</c><br><br>
+In <c "#ffd700">Swamp of No Hope</c> find <c "#ffd700">Ssessthrass</c> and give him your <c "#dc7633">Symbol of the Serpent</c> in exchange for <c "#dc7633">Scaled Symbol of the Serpent</c><br>
+Next travel to <c "#ffd700">Chardok</c> and loot <c "#dc7633">Manisi Herb</c> from either <c "#ffd700">Grand Herbalist Mak'ha</c> or <c "#ffd700">Royal Sarnak Herbalist</c>.<br>
+Give the herb to <c "#ffd700">Ssessthrass</c> for <c "#dc7633">Refined Manisi Herb</c><br>
+Give the <c "#dc7633">Refined Manisi Herb</c> to <c "#ffd700">Emkel Kabae</c> and get <c "#dc7633">Symbol of the Testing</c><BR><BR><BR>
 
-- <c "#dc7633">Robe of the Lost Circle</c><br>
-&nbsp;&nbsp;&nbsp;&nbsp;Either:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;- Complete the <c "#ffd700">Monks of the Whistling Fist</c> quests and tailor the robe (trivial 36)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;- Or hunt <c "#ffd700">Brother Qwinn</c> (30%) in <c "#ffd700">South Karana</c> or <c "#ffd700">Brother Zephyl</c> (23%) in <c "#ffd700">Rathe Mountains</c><br><br>
+<c "#35db24">Symbol of the Insanity</c><br><br>
+Go back to <c "#ffd700">Kazen Fecae</c>in <c "#ffd700">Lake Rathetear</c> and give him the <c "#dc7633">Symbol of the Testing</c><BR>
+This will spawn three mobs on a near by inlet; <c "#ffd700">a bone golem, a failed apprectice, and a tortured soul.</c> kill all three. The last one will drop <c "#dc7633">Symbol of Insanity</c><br><BR><BR><BR>
 
-- <c "#dc7633">Metal Pipe (Zan)</c> – from a <c "#ffd700">drolvarg pawbuster</c> in <c "#ffd700">Karnor's Castle</c><br>
-- <c "#dc7633">Metal Pipe (Fi)</c> – from an <c "#ffd700">iksar betrayer</c> in <c "#ffd700">Chardok</c><br><br>
+<c "#35db24">Gzallk in a Box</c><br><br>
+Begin by heading to <c "#ffd700">Timorous Deep</c> where you will find <c "#ffd700">Drendico Metalbones</c>.<br>
+Give him the <c "#dc7633">Symbol of Insanity</c>, he will give you <c "#dc7633">Journal of Drendico</c>.<br>
+Gather the following items from <c "#ffd700">The Plane of Sky:</c><br>
+<c "#dc7633">Silver Disc</c> from <c "#ffd700">an Azarack</c> on the 2nd isle<br>
+<c "#dc7633">Spiroc Feathers</c> from <c "#ffd700">A gorgalask</c>on the 3rd isle<br>
+<c "#dc7633">Black Silk Cape</c> from <c "#ffd700">Keeper of Souls</c>4th isle<br>
+Head to the quest room and tell <c "#ffd700">Drakis Bloodcaster</c>I wish to be tested by jzil. He will give you <c "#dc7633">Shadowy Thoughts</c>. Hand this back to him and he will spawn <c "#ffd700">Jzil G'Six</c>.<br>
+Give Jzil the three looted items and receive <c "#dc7633">Cloak of Spiroc Feathers</c><br>br>
+Now on to <c "#ffd700">Plane of Hate</c>where you need to loot <c "#dc7633">Eye of Innoruuk</c> from any of the named mobs here.<br>
+In the <c "#ffd700">Plane of Fear</c>, loot <c "#dc7633">Slime Blood of Cazic Thule</c> from any of the named golems or CT himself.<br><br>
+Return to <c "#ffd700">Drendico Metalbones</c> and give him the journal, the cloak, the eye, and the slime blood to receive <c "#dc7633">Prepared Regeants Box</c><br>
+Give this to <c "#ffd700">Kazen Fecae</c>in <c "#ffd700">Lake Rathetear</c> for <c "#dc7633">Tome of Instruction</c><br>
+Lastly, return to <c "#ffd700">The Plane of Sky</c>, on isle 1 find <c "#ffd700">Thunder Spirit Princess</c> and give her 10 gold (1 Platinum will NOT work).<br>
+This will spawn <c "#ffd700">Gkzzallk</c> on isle 3. Give him the <c "#dc7633">Tome of Instruction</c> and he will give you <c "#dc7633">Gkzzallk in a Box</c><BR><BR><BR>
 
-Turn all three in to <c "#ffd700">Brother Balatin</c> in <c "#ffd700">Dreadlands</c> → <c "#dc7633">Robe of the Whistling Fists</c><br><br><br>
 
-<c "#35db24">In Defiance of a Demon</c><br>
 
-- <c "#ffd700">Lavastorm</c>: say “I challenge eejag” to a <c "#dc7633">fire sprite</c> → kill <c "#dc7633">Eejag</c> → loot <c "#dc7633">Charred Scale</c><br>
-- <c "#ffd700">Plane of Sky</c>: buy <c "#dc7633">Key of Swords</c>, hand the scale to <c "#dc7633">a presence</c> on Island 1.5 → kill <c "#dc7633">Gwan</c> → loot <c "#dc7633">Breath of Gwan</c><br>
-- <c "#ffd700">The Hole (Nurga)</c>: give Breath to <c "#dc7633">a sleeping ogre</c> → kill <c "#dc7633">Trunt</c> → loot his head<br>
-→ hand to <c "#dc7633">Deep</c> in <c "#ffd700">Lake Rathe</c> → hand turned head to <c "#dc7633">Astral Projection</c> in <c "#ffd700">Overthere</c> → get <c "#dc7633">Eye of Kaiaren</c><br>
-- <c "#ffd700">Lake of Ill Omen</c>: give the eye to the <c "#dc7633">Astral Projection</c> on the platform → kill <c "#dc7633">Vorash</c> then <c "#dc7633">Xenevorash</c> → loot <c "#dc7633">Demon Fangs</c><br><br><br>
 
-<c "#35db24">The Lost Tome</c><br>
-
-- <c "#ffd700">Skyfire</c>: repeat either the <c "#dc7633">Skyfire Named Cycle</c> (Black Scar) or the <c "#dc7633">Eldrig Cycle</c> until <c "#dc7633">Immortals</c> drops<br>
-- <c "#ffd700">Erudin Library</c>: give <c "#dc7633">Immortals</c> to <c "#dc7633">Tomekeeper Danl</c> → <c "#dc7633">Danl's Reference</c><br>
-- Give <c "#dc7633">Danl's Reference</c> + <c "#dc7633">Robe of the Whistling Fists</c> to <c "#dc7633">Lheao</c> in <c "#ffd700">Erudin Palace</c> → <c "#dc7633">Celestial Fists</c> (book only, not epic)<br><br><br>
-
-<c "#35db24">Kaiaren's Crazy!</c><br>
-
-- <c "#ffd700">Trakanon's Teeth</c>: give the book to <c "#dc7633">Kaiaren</c> at the ruins → get it back after he flips out<br>
-- Give the same book to the “real” <c "#dc7633">Kaiaren</c> in the hut by the lake → <c "#dc7633">Book of Celestial Fists</c><br>
-- Hand <c "#dc7633">Book of Celestial Fists</c> + <c "#dc7633">Demon Fangs</c> to him → <c "#ffd700">Celestial Fists!</c><br><br><br>
-
-<br><br><a href="file:///storyline/storyEpicsGuide.txt>Go Back</a><br><br><br>
+<c "#35db24">Scythe of the Shadowed Soul</c><br><br>
+Finally head back to <c "#ffd700">Kazen Fecae</c>in <c "#ffd700">Lake Rathetear</c> and trade him <c "#dc7633">Gkzzallk in a Box</c> for your very own <c "#dc7633">Scythe of the Shadowed Soul</c>. Well Done!!!<br><br><br><br>
