@@ -761,6 +761,6 @@
 		<Pieces>BIGB_DoneButton</Pieces>
 		<Pieces>BIGB_ChangeButton</Pieces>
 		<Pieces>BIGB_SharedBankLabel</Pieces>
-		<Pieces>BIGB_AltStorageButton</Pieces>
+		<!--<Pieces>BIGB_AltStorageButton</Pieces>-->
 	</Screen>
 </XML>

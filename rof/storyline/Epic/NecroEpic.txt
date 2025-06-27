@@ -47,5 +47,3 @@ This will spawn <c "#ffd700">Gkzzallk</c> on isle 3. Give him the <c "#dc7633">T
 
 <c "#35db24">Scythe of the Shadowed Soul</c><br><br>
 Finally head back to <c "#ffd700">Kazen Fecae</c>in <c "#ffd700">Lake Rathetear</c> and trade him <c "#dc7633">Gkzzallk in a Box</c> for your very own <c "#dc7633">Scythe of the Shadowed Soul</c>. Well Done!!!<br><br><br><br>
-
-<br><br><a href="file:///storyline/storyEpicsGuide.txt>Go Back</a><br><br><br>
