@@ -5,7 +5,8 @@
 <c "#35db24"> ***Note - Loot to collect while in this zone***</c><br>
 While killing trash, look for <c "#ffd700">Alabaster Beak</c> and <c "#ffd700">Ivory Stormrider Canine</c>.<br>
 One each of these will be needed later to craft the <c "#35db24">Plane of Time key</c>.<br><br>
-
+<c "#35db24"> Pre Flag - Pouch of Swirling Winds</c><br><br>
+Outside Plane of Air, find <c "#dc7633">Sarhya the Dawnbreeze</c> outside of the Plane of Air, hail her to receive <c "#ffd700">Pouch of Swirling Winds</c> which will be used to combine items in this quest.<br><br>
 
 <c "#35db24"> Part One - Wind Etched Key - Key to Xegony Island</c><br><br>
 To gain the <c "#ffd700">Wind Etched Key</c> you will need to gather five items:<br>

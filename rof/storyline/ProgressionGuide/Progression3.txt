@@ -22,29 +22,7 @@ Velious introduces the second expansion ever released to EverQuest. In <c "#ffd7
 •Located in <c "#dc7633">Cobalt Scar</c>.<br>
 <c "#dc7633">Dozekar the Cursed</c><br>
 •Located in <c "#dc7633">Temple of Veeshan</c>.<br>
-<br><br>
-<c "#35db24">General Raid Bosses</c><br>
-<c "#dc7633">Chardok</c><br>
-• Prince Selrach Di'zok<br>
-• Overking Bathezid<br>
-•• Queen Velazul Di'zok<br>
-<br>
 
-<c "#dc7633">Karnor's Castle</c><br>
-• Venril Sathir<br>
-<br>
-
-<c "#dc7633">Timorous Deep</c><br>
-• Faydedar<br>
-<br>
-
-<c "#dc7633">Veeshan's Peak</c><br>
-• Druushk<br>
-• Hoshkar<br>
-• Nexona<br>
-• Phara Dar<br>
-• Silverwing<br>
-• Xygoz<br>
 <br><br><br>
 
 <a href="file:///storyline/storyProgressionGuide.txt">Go Back</a>
