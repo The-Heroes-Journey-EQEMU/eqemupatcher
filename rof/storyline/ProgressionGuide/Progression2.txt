@@ -4,7 +4,7 @@ Progression 2
 Kunark introduces the first expansion ever released to EverQuest. In <c "#ffd700">The Hero's Journey</c>, here's a list of things worth noting about Kunark that are unique to other servers:<br><br>
 
 • No new <c "#ffd700">AAs</c> are introduced in Kunark<br>
-• No keys are required for <c "#dc7633">Howling Stones (Charasis)</c> or <c "#dc7633">Sebilis</c> (this includes zoning INTO these zones, as well as accessing areas inside them)<br>
+• No keys are required for entry into <c "#dc7633">Howling Stones (Charasis)</c> or <c "#dc7633">Sebilis</c><br>
 • To access <c "#dc7633">Veeshan's Peak</c>, you must kill the 4 dragons of Kunark<br>
 • <c "#dc7633">Veeshan's Peak</c> is 1.0 version, making it in line with Kunark era loot<br>
 • Legacy of Ykesha zones are unlocked with Kunark, as well as <c "#dc7633">Stonebrunt Mountains</c>, <c "#dc7633">Jaggedpine Forest</c>, <c "#dc7633">ChardokB</c>, and <c "#dc7633">Veksar</c>. Note that <c "#dc7633">Soldungc</c> is NOT unlocked until PoP.<br>
