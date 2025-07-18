@@ -15,7 +15,7 @@ Turn all three pages into <c "#00bfff">Jahsohn Aksot</c> to receive <c "#90ee90"
 Kill Gypsy Dancer in Mistmoore for <c "#ADD8E6">Power of Wind</c>.<br>
 Kill Lava Elementals in Solusek's Eye for <c "#ADD8E6">Power of Fire</c>.<br>
 Kill Raveners in Kaesora for <c "#ADD8E6">Power of Water</c>.<br>
-Kill Fairy Guards in Greater Faydark for <c "#ADD8E6">Power of Earth</c>.<br>
+Kill Fairy Guards in Greater Faydark or Lesser Faydark for <c "#ADD8E6">Power of Earth</c>.<br>
 Give all four items to <c "#00bfff">Walnan</c> in Butcherblock to receive <c "#90ee90">Power of the Elements</c>.<br><br>
 
 <c "#FFD700">Words of Mastery</c><br>
