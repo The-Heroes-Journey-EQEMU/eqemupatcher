@@ -36,5 +36,5 @@ Hand her the note, ask <c "#ffd700">"What bag?"</c> and receive a <c "#dc7633">N
     <c "#dc7633">Hilt of the Nobleman</c> – Skeletons, Najena<br>
 <br>
 Combine the four items in the <c "#dc7633">Nobleman's Bag</c> to receive <c "#dc7633">Ghoulbane</c>.<br>
-<br><br><br><a href="file:///storyline/Epic1/PaladinEpic.txt>Go Back</a><br><br><br>
+<br><br><br><a href="file:///storyline/Epic/PaladinEpic.txt>Go Back</a><br><br><br>
 
