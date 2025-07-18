@@ -1,9 +1,9 @@
 Paladin Epic 
 <br>
 <c "#ff0000">WARNING</c>: Fiery Avenger is required to complete this quest.<br>
-<a href="file:///storyline/Epic1/Palprereq1.txt>Part 1 – SoulFire</a><br>
-<a href="file:///storyline/Epic1/Palprereq2.txt>Part 2 – Ghoulbane</a><br>
-<a href="file:///storyline/Epic1/Palprereq3.txt>Part 3 – Fiery Avenger</a><br>
+<a href="file:///storyline/Epic/Palprereq1.txt>Part 1 – SoulFire</a><br>
+<a href="file:///storyline/Epic/Palprereq2.txt>Part 2 – Ghoulbane</a><br>
+<a href="file:///storyline/Epic/Palprereq3.txt>Part 3 – Fiery Avenger</a><br>
 <br><br>
 <c "#35db24">Fiery Defender: Quest Guide</c><br>
 <br>
