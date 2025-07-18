@@ -62,5 +62,5 @@ Finally, make your way to <c "#dc7633">The Lair of the Splitpaw</c>. Find <c "#f
 Return the Note to Brother Hayle along with the <c "#dc7633">Brilliant Sword of Faith</c>, <c "#dc7633">Testimony</c> and <c "#dc7633">Glowing Sword Hilt</c>. Receive <c "#ffd700">SoulFire</c>!<br><br>
 
 <c "#35db24">Congratulations</c> on completing the first step towards the <c "#ffd700">Paladin epic</c>! Take your new weapon forward and use its holy flame to purge evil from this world.<br>
-<br><br><br><a href="file:///storyline/Epic1/PaladinEpic.txt>Go Back</a><br><br><br>
+<br><br><br><a href="file:///storyline/Epic/PaladinEpic.txt>Go Back</a><br><br><br>
 

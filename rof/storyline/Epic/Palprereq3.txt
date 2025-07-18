@@ -57,5 +57,5 @@ On island 4, hand in the following to Inte Akera:<br>
     - <c "#dc7633">Soulfire</c> → <c "#dc7633">Inte's First Blessing</c><br>
     - <c "#dc7633">Ghoulbane</c> → <c "#dc7633">Inte's Second Blessing</c><br>
     - <c "#dc7633">First Blessing</c>, <c "#dc7633">Second Blessing</c>, <c "#dc7633">Miragul's Robe</c>, <c "#dc7633">Miragul's Head</c> → <c "#ffd700">Fiery Avenger!</c><br>
-<br><br><br><a href="file:///storyline/Epic1/PaladinEpic.txt>Go Back</a><br><br><br>
+<br><br><br><a href="file:///storyline/Epic/PaladinEpic.txt>Go Back</a><br><br><br>
 
