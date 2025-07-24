@@ -3456,7 +3456,7 @@ EQST0002
 5976 Your request for a name change was successful.
 5977 Your request for a name change has timed out. Please try again later.
 5978 The server had an error while processing your name request. Please try again later.
-5979 You must wait longer before submitting another name request. Please try again in a few minutes.
+5979 You cannot change your name at this time, you are a member of an Expedition.
 5980 Your character is not eligible for a name change.
 5981 Your character is inaccessible due to a technical issue, please /petition in game from another character. Please use the Stuck Character Category.  Be sure to include the name of the character you cannot access.
 5983 You must enter a valid name to change to!
