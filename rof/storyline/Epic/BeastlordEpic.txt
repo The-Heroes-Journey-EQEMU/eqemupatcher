@@ -52,15 +52,15 @@ Give Seal to spawn <c "#dc7633">The Spirit of Sorrow</c>.<br>
 Kill, loot <c "#dc7633">Totem of the Alligator</c>, exchange it for <c "#dc7633">Wrapped Alligator Totem</c>.<br><br>
 
 <c "#ffd700">Step 9</c><br>
-Combine the following in <c "#dc7633">Carved Wooden Chest</c>:<br>
+Combine the 6 following items in <c "#dc7633">Carved Wooden Chest</c>:<br>
 
     <c "#dc7633">Wrapped Gorilla Totem</c><br>
-
     <c "#dc7633">Wrapped Ice Bear Totem</c><br>
-
     <c "#dc7633">Wrapped Spider Totem</c><br>
-
     <c "#dc7633">Wrapped Wolf Totem</c><br>
+    <c "#dc7633">Wrapped Watcher Totem</c><br>
+    <c "#dc7633">Wrapped Alligator Totem</c><br>
+
     Result: <c "#dc7633">Sealed Box of Totems</c><br><br>
 
 <c "#ffd700">Step 10</c><br>
