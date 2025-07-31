@@ -10,14 +10,12 @@ Beastlord Epic
 <c "#dc7633">Perfect Acrylia Ore</c> – Drops from trap golems in The Grey<br><br>
 
 <c "#ffd700">Step 1</c><br>
-Go to Grimling Forest and head to the southeast town (light blue circle on map).<br>
+Go to Grimling Forest.<br>
 Grimling Forest features 10+ battles where a <c "#dc7633">Copper Medal of War</c> can drop.<br>
-Speak to <c "#dc7633">Captain Necin</c>, say “ready to go” to travel, then “ready to fight”.<br>
-Kill all mobs at the camp. If <c "#dc7633">Bloodguard Kavgis</c> spawns, kill him to try for a Copper Medal of War.<br>
-Repeat if necessary. Other NPCs may offer similar camp events.<br><br>
+Repeat the events until the <c "#dc7633">Copper Medal of War</c> drops, be on the lookout for <c "#dc7633">a coin courier</c> as they have a high chance to drop it.<br><br>
 
 <c "#ffd700">Step 2</c><br>
-Go to Shar Vhal and find <c "#dc7633">Elder Animist Dumul</c>.<br>
+Go to Shar Vahl and find <c "#dc7633">Elder Animist Dumul</c>.<br>
 Give him a <c "#dc7633">Copper Medal of War</c> to receive:<br>
 <c "#dc7633">Official Seal of the Khati Sha</c> and <c "#dc7633">Carved Wooden Chest</c> (6-slot).<br><br>
 
@@ -27,55 +25,56 @@ Hand him the Seal to spawn <c "#dc7633">The Spirit of Rage</c>.<br>
 Kill it, loot <c "#dc7633">Totem of the Gorilla</c>, return it to get <c "#dc7633">Wrapped Gorilla Totem</c>.<br><br>
 
 <c "#ffd700">Step 4</c><br>
-Go to Permafrost, find <c "#dc7633">Scout Janomin</c> (24-hour respawn).<br>
+Go to Permafrost, find <c "#dc7633">Scout Janomin</c>.<br>
 Give him the Seal to spawn <c "#dc7633">The Icebound Spirit</c>.<br>
 Kill, loot <c "#dc7633">Totem of the Ice Bear</c>, hand it in for <c "#dc7633">Wrapped Ice Bear Totem</c>.<br><br>
 
 <c "#ffd700">Step 5</c><br>
-Head to Feerrott, locate <c "#dc7633">Scout Ahlikal</c> (24-hour respawn).<br>
+Head to Feerrott, locate <c "#dc7633">Scout Ahlikal</c>.<br>
 Give him the Seal to spawn <c "#dc7633">The Spirit of Decay</c>.<br>
 Kill, loot <c "#dc7633">Totem of the Spider</c>, trade it for <c "#dc7633">Wrapped Spider Totem</c>.<br><br>
 
 <c "#ffd700">Step 6</c><br>
-In Lesser Faydark, find <c "#dc7633">Scout Rahjiq</c> (24-hour respawn).<br>
+In Lesser Faydark, find <c "#dc7633">Scout Rahjiq</c>.<br>
 Give Seal to spawn <c "#dc7633">The Spirit of Malevolence</c>.<br>
 Kill, loot <c "#dc7633">Totem of the Wolf</c>, exchange it for <c "#dc7633">Wrapped Wolf Totem</c>.<br><br>
 
 <c "#ffd700">Step 7</c><br>
-Travel to Stonebrunt Mountains, locate <c "#dc7633">Scout Malom</c> (24-hour respawn).<br>
+Travel to Stonebrunt Mountains, locate <c "#dc7633">Scout Malom</c>.<br>
 Give Seal to spawn <c "#dc7633">The Spirit of Torment</c> (above waterfall — use lev).<br>
 Kill, loot <c "#dc7633">Totem of the Watcher</c>, hand in for <c "#dc7633">Wrapped Watcher Totem</c>.<br><br>
 
 <c "#ffd700">Step 8</c><br>
-Go to Swamp of No Hope, find <c "#dc7633">Scout Eyru</c> (24-hour respawn).<br>
+Go to Swamp of No Hope, find <c "#dc7633">Scout Eyru</c>.<br>
 Give Seal to spawn <c "#dc7633">The Spirit of Sorrow</c>.<br>
 Kill, loot <c "#dc7633">Totem of the Alligator</c>, exchange it for <c "#dc7633">Wrapped Alligator Totem</c>.<br><br>
 
 <c "#ffd700">Step 9</c><br>
-Combine the following in <c "#dc7633">Carved Wooden Chest</c>:<br>
+Combine the 6 following items in <c "#dc7633">Carved Wooden Chest</c>:<br>
 
     <c "#dc7633">Wrapped Gorilla Totem</c><br>
-
     <c "#dc7633">Wrapped Ice Bear Totem</c><br>
-
     <c "#dc7633">Wrapped Spider Totem</c><br>
-
     <c "#dc7633">Wrapped Wolf Totem</c><br>
-    Result: <c "#dc7633">Sealed Box of Totems</c><br><br>
+    <c "#dc7633">Wrapped Watcher Totem</c><br>
+    <c "#dc7633">Wrapped Alligator Totem</c><br>
+
+    Result: <c "#dc7633">Sealed Box of Totems</c><br>
+Return to Shar Vahl and give the <c "#dc7633">Sealed Box of Totems</c> to <c "#dc7633">Elder Animist Dumul</c> and receive the <c "#dc7633">Seal of Elder Dumul</c>.<br><br>
 
 <c "#ffd700">Step 10</c><br>
 Enter Timorous Deep from Butcherblock docks.<br>
 Give <c "#dc7633">Seal of Elder Dumul</c> to <c "#dc7633">Scout Sihmoj</c> for a <c "#dc7633">Black Silk Sack</c> (6-slot).<br>
-This spawns 6 “Images” on a nearby island (east).<br>
-Kill them with 1–2 groups, loot 6x <c "#dc7633">Shard of Broken Glass</c>.<br>
+This will spawn <c "#dc7633">Draz Nurakk</c> on a nearby island (east).<br>
+Kill <c "#dc7633">Draz Nurakk</c> and this will spawn 6 <c "#dc7633">Draz Nurakks Image</c> that you will need to kill and loot 6x <c "#dc7633">Shard of Broken Glass</c>.<br>
 Combine in sack to make <c "#dc7633">Sack of Broken Glass</c>.<br>
-Return it to Sihmoj. He gives it back and despawns.<br><br>
+Hand in the <c "#dc7633">Sack of Broken Glass</c> to <c "#dc7633">Scout Sihmoj</c> for him to inspect and then he will give it back<br><br>
 
 <c "#ffd700">Step 11</c><br>
-Return to Shar Vhal.<br>
-Give <c "#dc7633">Sealed Box of Totems</c> to <c "#dc7633">Weapons Master Rahoul</c> to get 2x <c "#dc7633">Jagged Claw of Rending</c>.<br>
-Give claws to <c "#dc7633">Elder Animist Dumul</c> for:<br>
-<c "#dc7633">Khati Sha Seal of War</c> and <c "#dc7633">Acrylia Gilded Box</c> (4-slot).<br><br>
+Return to Shar Vahl.<br>
+Hand in the <c "#dc7633">Sack of Broken Glass</c> to <c "#dc7633">Elder Animist Dumul</c> and receive the <c "#dc7633">Note for Historian Qua</c><br>
+Find <c "#dc7633">Arms Historian Qua</c> and hand in the <c "#dc7633">Note for Historian Qua</c> and receive <c "#dc7633">Qua's Receipt</c><br>
+Give <c "#dc7633">Qua's Receipt</c> to <c "#dc7633">Weapons Master Rahoul</c> to get <c "#dc7633">Rahoul's Collection Box</c>.<br><br>
 
 <c "#ffd700">Step 12</c><br>
 Obtain the following:<br>
@@ -88,13 +87,13 @@ Obtain the following:<br>
     Combine in <c "#dc7633">Rahoul’s Collection Box</c> to make <c "#dc7633">Sealed Collection Box</c>.<br><br>
 
 <c "#ffd700">Step 13</c><br>
-Give <c "#dc7633">Sealed Collection Box</c> to <c "#dc7633">Weapons Master Rahoul</c> for 2x <c "#dc7633">Jagged Claw of Rending</c>.<br>
-Give claws to <c "#dc7633">Elder Animist Dumul</c> for <c "#dc7633">Khati Sha Seal of War</c> and <c "#dc7633">Acrylia Gilded Box</c>.<br><br>
+Give the <c "#dc7633">Sealed Collection Box</c> to <c "#dc7633">Weapons Master Rahoul</c> for 2x <c "#dc7633">Jagged Claw of Rending</c>.<br>
+Give both claws to <c "#dc7633">Elder Animist Dumul</c> for <c "#dc7633">Khati Sha Seal of War</c>, <c "#dc7633">Acrylia Gilded Box</c>, and both claws back to use in an upcoming fight.<br><br>
 
 <c "#ffd700">Step 14</c><br>
 In Fungus Grove, find <c "#dc7633">Scout Halmia</c> near Twilight Sea portal.<br>
-Give her <c "#dc7633">Khati Sha Seal of War</c> to spawn <c "#dc7633">Draz Nurakk</c>.<br>
-Kill him, loot <c "#dc7633">Draz Nurakk’s Head</c>.<br><br>
+Give her <c "#dc7633">Khati Sha Seal of War</c> to receive back the Seal and spawn <c "#dc7633">Draz Nurakk</c>.<br>
+Kill him, you can use the Jagged Claws of Rending  for extra bane damage, and loot <c "#dc7633">Draz Nurakk’s Head</c>.<br><br>
 
 <c "#ffd700">Step 15</c><br>
 Combine the following in <c "#dc7633">Acrylia Gilded Box</c>:<br>
@@ -105,7 +104,7 @@ Combine the following in <c "#dc7633">Acrylia Gilded Box</c>:<br>
 
     <c "#dc7633">Draz Nurakk’s Head</c><br>
     Result: <c "#dc7633">Sealed Gilded Wooden Chest</c><br>
-    Give to <c "#dc7633">Elder Animist Dumul</c> to receive your epic:<br>
+    Give the <c "#dc7633">Sealed Gilded Wooden Chest</c> to <c "#dc7633">Elder Animist Dumul</c> in Shar Vahl to receive your Epic Weapons:<br>
     <c "#35db24">2x Claw of the Savage Spirit</c>!<br><br><br>
 
 <a href="file:///storyline/storyEpicsGuide.txt">Go Back</a><br><br><br>
